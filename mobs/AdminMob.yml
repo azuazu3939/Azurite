@@ -1,0 +1,181 @@
+Azuriter_Admin_Mob_1:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 1
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_5:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 5
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_10:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 10
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_20:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 20
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_40:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 40
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_60:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 60
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_80:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 80
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_100:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 100
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_120:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 100
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_140:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 100
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_160:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 100
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_180:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 100
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+Azuriter_Admin_Mob_280:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 100
+  Faction: Admin
+  Skills:
+  - healpercent{m=1} @self ~onDamaged
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10

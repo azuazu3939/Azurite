@@ -1,0 +1,31 @@
+Azuriter_ハルバード_A1_Skills:
+  Cooldown: 0.1
+  Conditions:
+  - (wearing{s=HAND;i=Azuriter_ハルバード} || wearing{s=HAND;i=Azuriter_ハイハルバード})
+  Skills:
+  - sound{s=item.flintandsteel.use;sc=PLAYERS} @self
+  - setVar{k=caster.Halberd;a="<caster.var.Halberd|0> + 1";t=INTEGER} @self
+  - skill{s=Azuriter_ハルバード_Explode} @self ?varrange{k=caster.Halberd;r=>4}
+
+Azuriter_ハルバード_Explode:
+  Skills:
+  - setVar{k=caster.Halberd;a="0";t=INTEGER} @self
+  - setVar{k=skill.damageHalberd;a="<caster.damage>";t=FLOAT} @self
+  - delay 10
+  - projectile{
+    ot=[
+      - e:p{p=explosion;a=1;audience=caster} @origin
+    ];
+    oh=[
+      - aura{n=Azuriter_ハルバード_Explode;t=20;i=10} 
+      - damage{a="<skill.var.damageHalberd> + 24";pi=true;ii=true}
+    ];
+    os=[
+      - sound{s=entity.generic.explode;p=0.5;v=0.1;audience=nearby} @self
+    ];
+    conditions=[
+      - isliving true
+      - isMythicMob true
+      - hasAura{n=Azuriter_ハルバード_Explode} false
+    ];
+    v=16;i=2;mr=20;hp=false;hnp=true;vr=1.25;hr=2.5;se=false} @ring{r=32;p=24}

@@ -1,0 +1,26 @@
+Azuriter_Elite_Zombie_Skills:
+  Cooldown: 2
+  Conditions:
+  - incombat 
+  Skills:
+  - potion{t=SLOWNESS;d=40;l=7;p=false} @self
+  - projectile{
+    ot=[
+      - delay 30
+      - leap{v=250} @origin
+    ];
+    oe=[
+      - e:blockMask{b=PURPLE_TERRACOTTA;r=16;d=60;delay=20}
+      - sound{s=block.end_portal.spawn;sc=NEUTRAL;delay=96;p=2} @origin 
+      - damage{a="<caster.damage> * 2";pi=true;ii=true;delay=100} @PlayersNearOrigin{r=16}
+      - throw{v=8;yv=12;delay=76;delay=100} @PlayersNearOrigin{r=16}
+      - potion{t=WEAKNESS;l=3;d=200;p=false;delay=100} @PlayersNearOrigin{r=16;c=[ - hasAura{n=step_avoid} false ]}
+    ];
+    oh=[
+      - healpercent{m=0.05} @self
+    ];
+    v=20;syo=3;tyo=3;g=1;i=1;se=false;sfo=0;mr=64;vr=2.5;hr=2.5} @T
+  - delay 25
+  - jump{v=1.25} @self 
+  - delay <random.40to240>
+  - skill{s=Azuriter_Elite_Zombie_Skills} @self

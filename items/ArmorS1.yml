@@ -1,0 +1,647 @@
+Azuriter_ビギナーH:
+  Id: leather_helmet
+  Display: "&fビギナーヘルメット"
+  Options:
+    Unbreakable: true
+  Attributes:
+    Head:
+      ArmorToughness: 2 ADD 
+      Armor: 3 ADD 
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+
+Azuriter_ビギナーC:
+  Id: leather_chestplate
+  Display: "&fビギナーチェストプレート"
+  Options:
+    Unbreakable: true
+  Attributes:
+    Chest:
+      ArmorToughness: 2 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+
+Azuriter_ビギナーL:
+  Id: leather_leggings
+  Display: "&fビギナーレギンス"
+  Options:
+    Unbreakable: true
+  Attributes:
+    Legs:
+      ArmorToughness: 2 ADD 
+      Armor: 6 ADD 
+  Group: 'Armor'
+
+Azuriter_ビギナーB:
+  Id: leather_boots
+  Display: "&fビギナーブーツ"
+  Options:
+    Unbreakable: true
+  Attributes:
+    Feet:
+      ArmorToughness: 2 ADD 
+      Armor: 3 ADD 
+  Group: 'Armor'
+
+Azuriter_トラベラーH:
+  Id: leather_helmet
+  Display: "&fトラベラーヘルメット"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Head:
+      ArmorToughness: 4 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+
+Azuriter_トラベラーC:
+  Id: leather_chestplate
+  Display: "&fトラベラーチェストプレート"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Chest:
+      ArmorToughness: 4 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+
+Azuriter_トラベラーL:
+  Id: leather_leggings
+  Display: "&fトラベラーレギンス"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Legs:
+      ArmorToughness: 4 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+
+Azuriter_トラベラーB:
+  Id: leather_boots
+  Display: "&fトラベラーブーツ"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Feet:
+      ArmorToughness: 4 ADD 
+      Armor: 8 ADD 
+  Group: 'Armor'
+
+Azuriter_ディフェンスH:
+  Id: leather_helmet
+  Display: "&fディフェンダーヘルメット"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Head:
+      ArmorToughness: 9 ADD 
+      Armor: 15 ADD
+      Health: 2 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+
+Azuriter_ディフェンスC:
+  Id: leather_chestplate
+  Display: "&fディフェンダーチェストプレート"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Chest:
+      ArmorToughness: 9 ADD 
+      Armor: 12 ADD 
+      Health: 4 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
+
+Azuriter_ディフェンスL:
+  Id: leather_leggings
+  Display: "&fディフェンダーレギンス"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Legs:
+      ArmorToughness: 12 ADD 
+      Armor: 16 ADD 
+      Health: 2 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
+
+Azuriter_ディフェンスB:
+  Id: leather_boots
+  Display: "&fディフェンダーブーツ"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Feet:
+      ArmorToughness: 12 ADD 
+      Armor: 18 ADD 
+      Health: 1 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
+
+Azuriter_アタッカーH:
+  Id: leather_helmet
+  Display: "&fアタッカーヘルメット"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Head:
+      ArmorToughness: 4 ADD 
+      Armor: 8 ADD
+      Damage: 1 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+
+Azuriter_アタッカーC:
+  Id: leather_chestplate
+  Display: "&fアタッカーチェストプレート"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Chest:
+      ArmorToughness: 8 ADD 
+      Armor: 10 ADD
+      Damage: 1 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
+
+Azuriter_アタッカーL:
+  Id: leather_leggings
+  Display: "&fアタッカーレギンス"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Legs:
+      ArmorToughness: 6 ADD 
+      Armor: 10 ADD
+      Damage: 1 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
+
+Azuriter_アタッカーB:
+  Id: leather_boots
+  Display: "&fアタッカーブーツ"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Feet:
+      ArmorToughness: 4 ADD 
+      Armor: 8 ADD
+      Damage: 1 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
+
+Azuriter_ハイトラベラーH:
+  Id: leather_helmet
+  Display: "&fハイトラベラーヘルメット"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Head:
+      ArmorToughness: 10 ADD 
+      Armor: 10 ADD
+      Health: 2 ADD
+      AttackSpeed: 0.125 MULTIPLY_BASE
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+
+Azuriter_ハイトラベラーC:
+  Id: leather_chestplate
+  Display: "&fハイトラベラーチェストプレート"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Chest:
+      ArmorToughness: 10 ADD 
+      Armor: 10 ADD 
+      Health: 2 ADD
+      AttackSpeed: 0.125 MULTIPLY_BASE
+  Group: 'Armor'
+
+Azuriter_ハイトラベラーL:
+  Id: leather_leggings
+  Display: "&fハイトラベラーレギンス"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Legs:
+      ArmorToughness: 10 ADD 
+      Armor: 10 ADD
+      Health: 2 ADD
+      AttackSpeed: 0.125 MULTIPLY_BASE
+  Group: 'Armor'
+
+Azuriter_ハイトラベラーB:
+  Id: leather_boots
+  Display: "&fハイトラベラーブーツ"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Feet:
+      ArmorToughness: 10 ADD 
+      Armor: 10 ADD
+      Health: 2 ADD
+      AttackSpeed: 0.125 MULTIPLY_BASE
+  Group: 'Armor'
+
+Azuriter_作業用ヘルメットH:
+  Id: iron_helmet
+  Display: "&f作業用ヘルメット"
+  Lore:
+  - "&f本日もご安全に。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Head:
+      ArmorToughness: 15 ADD 
+      Armor: 15 ADD
+      Health: 5 ADD
+      MovementSpeed: -0.15 MULTIPLY_BASE
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+
+Azuriter_鋼鉄の鎧C:
+  Id: iron_chestplate
+  Display: "&f鋼鉄の鎧"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Chest:
+      ArmorToughness: 15 ADD 
+      Armor: 15 ADD
+      Health: 2 ADD
+      Damage: 3 ADD
+      MovementSpeed: -0.2 MULTIPLY_BASE
+  Group: 'Armor'
+
+Azuriter_スカウトL:
+  Id: leather_leggings
+  Display: "&fスカウトレギンス"
+  Options:
+    Color: 255,255,255
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Legs:
+      ArmorToughness: 10 ADD 
+      Armor: 10 ADD
+      Health: 3 ADD
+      MovementSpeed: 0.25 MULTIPLY_BASE
+  Group: 'Armor'
+
+Azuriter_スカウトB:
+  Id: leather_boots
+  Display: "&fスカウトブーツ"
+  Options:
+    Color: 255,255,255
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Feet:
+      ArmorToughness: 6 ADD 
+      Armor: 12 ADD
+      Health: 4 ADD
+      MovementSpeed: 0.2 MULTIPLY_BASE
+  Group: 'Armor'
+
+Azuriter_エリートアタッカーH:
+  Id: iron_helmet
+  Display: "&fエリートアタッカーヘルメット"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Head:
+      ArmorToughness: 12 ADD 
+      Armor: 15 ADD
+      Damage: 1.25 ADD
+      Health: 3 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+
+Azuriter_エリートアタッカーC:
+  Id: iron_chestplate
+  Display: "&fエリートアタッカーチェストプレート"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Chest:
+      ArmorToughness: 12 ADD 
+      Armor: 20 ADD
+      Damage: 1.25 ADD
+      Health: 3 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
+
+Azuriter_エリートアタッカーL:
+  Id: iron_leggings
+  Display: "&fエリートアタッカーレギンス"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Legs:
+      ArmorToughness: 12 ADD 
+      Armor: 18 ADD
+      Damage: 1.25 ADD
+      Health: 3 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
+
+Azuriter_エリートアタッカーB:
+  Id: iron_boots
+  Display: "&fエリートアタッカーブーツ"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Feet:
+      ArmorToughness: 12 ADD 
+      Armor: 15 ADD
+      Damage: 1.25 ADD
+      Health: 3 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
+
+Azuriter_エリートディフェンスH:
+  Id: iron_helmet
+  Display: "&fエリートディフェンダーヘルメット"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Head:
+      ArmorToughness: 16 ADD 
+      Armor: 24 ADD
+      Health: 5 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+
+Azuriter_エリートディフェンスC:
+  Id: iron_chestplate
+  Display: "&fエリートディフェンダーチェストプレート"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Chest:
+      ArmorToughness: 16 ADD 
+      Armor: 30 ADD 
+      Health: 5 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
+
+Azuriter_エリートディフェンスL:
+  Id: iron_leggings
+  Display: "&fエリートディフェンダーレギンス"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Legs:
+      ArmorToughness: 16 ADD 
+      Armor: 28 ADD 
+      Health: 5 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
+
+Azuriter_エリートディフェンスB:
+  Id: iron_boots
+  Display: "&fエリートディフェンダーブーツ"
+  Lore:
+  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Feet:
+      ArmorToughness: 16 ADD 
+      Armor: 24 ADD 
+      Health: 5 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
+
+Azuriter_シリーズエンド1H:
+  Id: diamond_helmet
+  Display: "&fシリーズエンド・I・ヘルメット"
+  Lore:
+  - "&f攻撃や被弾でBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Head:
+      ArmorToughness: 25 ADD 
+      Armor: 32 ADD
+      Health: 8 ADD
+      Damage: 2 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing 
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+
+Azuriter_シリーズエンド1C:
+  Id: diamond_chestplate
+  Display: "&fシリーズエンド・I・チェストプレート"
+  Lore:
+  - "&f攻撃や被弾でBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Chest:
+      ArmorToughness: 25 ADD 
+      Armor: 32 ADD 
+      Health: 8 ADD
+      Damage: 2 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing 
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
+
+Azuriter_シリーズエンド1L:
+  Id: diamond_leggings
+  Display: "&fシリーズエンド・I・レギンス"
+  Lore:
+  - "&f攻撃や被弾でBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Legs:
+      ArmorToughness: 25 ADD 
+      Armor: 32 ADD 
+      Health: 8 ADD
+      Damage: 2 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing 
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
+
+Azuriter_シリーズエンド1B:
+  Id: diamond_boots
+  Display: "&fシリーズエンド・I・ブーツ"
+  Lore:
+  - "&f攻撃や被弾でBuff効果が得られる。"
+  - "&fFullセットで追加効果と、性能が上昇する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Feet:
+      ArmorToughness: 25 ADD 
+      Armor: 32 ADD 
+      Health: 8 ADD
+      Damage: 2 ADD
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing
+  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill

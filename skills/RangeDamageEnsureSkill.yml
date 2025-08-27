@@ -1,0 +1,12 @@
+Azuriter_RangeWeaponDamageEnsure_Skills:
+  Cooldown: 5
+  Conditions:
+  - (wearing{s=HAND;i=Azuriter_RangeWeaponDamageEnsure} || wearing{s=OFFHAND;i=Azuriter_RangeWeaponDamageEnsure})
+  - matCooldown{m=AMETHYST_SHARD} false 
+  Skills:
+  - setMaterialCooldown{m=AMETHYST_SHARD;d=100} @self
+  - takeitem{a=1;i=Azuriter_RangeWeaponDamageEnsure} @self
+  - setVar{k=caster.shot_ct;a="0";t=INTEGER} @self
+  - message{m="&aダメージ減衰をクリアしました。"} @self
+  - sound{s=item.ominous_bottle.dispose;p=0.6;audience=caster} @self
+  - aura{n=Azuriter_RangeWeaponDamageEnsure;t=1200;i=10;rd=true;oe=[ - message{m="&c威力減衰無効化の効果が切れた。"} @self ]} @self

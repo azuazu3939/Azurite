@@ -1,0 +1,11 @@
+Azuriter_トラベラーソード_Kill:
+  Cooldown: 0.5
+  Conditions:
+  - (wearing{s=HAND;i=Azuriter_トラベラーソード} || wearing{s=HAND;i=Azuriter_ハイトラベラーソード})
+  Skills:
+  - sound{s=entity.zombie_villager.cure;p=1.414;v=0.5;audience=caster} @self
+  - potion{t=HASTE;d=300;l=<caster.var.kill_travel|0>;p=false} @self
+  - setVar{k=caster.kill_travel;a="<caster.var.kill_travel|0> + 1";t=INTEGER} @self
+  - delay 80
+  - setVar{k=caster.kill_travel;a="<caster.var.kill_travel|0> - 1";t=INTEGER} @self
+  - setVar{k=caster.kill_travel;a="0";t=INTEGER} @self ?varrange{k=caster.kill_travel;r=<0}

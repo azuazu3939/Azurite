@@ -1,0 +1,6 @@
+Azuriter_ビギナーF:
+  Id: cooked_beef
+  Display: "&fビギナーフード"
+  ItemUpdater:
+    Version: 1
+  Group: 'Food'

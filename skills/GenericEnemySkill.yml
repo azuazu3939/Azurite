@@ -1,0 +1,209 @@
+#Usage  
+#<skill.shield_break>が高いほど、ダウンは早い。
+#@Param / INTEGER: <skill.down_tick> / INTEGER: <skill.shield_break> / FLOAT: <skill.heal_percent>
+Generic_Enemy_MCLove32_EnterCombat:
+  Conditions:
+  - incombat
+  - hasTag{t=START} false
+  - hasTag{t=DOWN} castinstead Generic_Enemy_MCLove32_NEXT
+  Skills:
+  - addtag{t=START} @self
+  - setVar{n=skill.point;a="8";t=INTEGER} @self
+  - setVar{n=skill.multiple;a="10";t=INTEGER} @self
+  - setVar{n=skill.shield_point;a="<skill.var.point> * <skill.var.multiple>";t=INTEGER} @self
+  - setVar{n=skill.shield;a="0";t=INTEGER} @self
+  - setVar{n=skill.downTick;a="<skill.down_tick>";t=INTEGER} @self
+  - skill:Generic_Enemy_MCLove32_EnterCombat_Damaged{break=<skill.shield_break>} @self
+  - skill:Generic_Enemy_MCLove32_EnterCombat_Process_EnterCombat @self
+  - delay 1200
+  - healpercent{m=<skill.heal_percent>} @self
+  - removetag{t=START} @self
+  - skill:Generic_Enemy_MCLove32_EnterCombat @self
+
+#
+Generic_Enemy_MCLove32_EnterCombat_Damaged:
+  Skills:
+  - setVar{var=skill.dmg;val="0";t=FLOAT} @self
+  - setVar{var=skill.break;val="<caster.mhp> / <skill.break>";t=FLOAT} @self
+  - auraRemove{n=Generic_Enemy_MCLove32_Damaged} @self
+  - ondamaged{auraName=Generic_Enemy_MCLove32_Damaged;d=1200;
+      oh=[
+        - setVar{var=skill.dmg;val="<skill.var.dmg> + <skill.var.damage-amount>";t=FLOAT} @self
+        - setVar{var=skill.temp;val="<skill.var.break> - <skill.var.dmg>";t=FLOAT} @self
+        - skill:Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak @self
+      ]} @self
+
+#
+Generic_Enemy_MCLove32_EnterCombat_DamagedAndBreak:
+  Conditions:
+  - varrange{var=skill.temp;val=<0} true
+  Skills:
+  - setVar{var=skill.dmg;val="<skill.var.dmg> - <skill.var.break>";t=FLOAT} @self
+  - auraRemove{n=Generic_Enemy_MCLove32_Aura<skill.var.shield>} @self
+  - auraRemove{n=Generic_Enemy_MCLove32_Damaged} ?varrange{k=skill.shield;r=7} #変更時追加入力必須
+  - setVar{n=skill.shield;a="<skill.var.shield> + 1";t=INTEGER} @self
+  - skill:Generic_Enemy_MCLove32_Down @self
+
+#
+Generic_Enemy_MCLove32_EnterCombat_Process_EnterCombat:
+  Skills:
+  - setVar{n=skill.count;a="0";t=INTEGER} @self
+  - skill:Generic_Enemy_MCLove32_EnterCombat_Process{repeat=<skill.var.point>;repeati=0} @self
+
+#
+Generic_Enemy_MCLove32_EnterCombat_Process:
+  Skills:
+  - setVar{n=skill.count_point;a="<skill.var.count> * <skill.var.multiple>";t=INTEGER} @self
+  - auraRemove{n=Generic_Enemy_MCLove32_Aura<skill.var.count>} @self
+  - o{
+      i=1;vr=0;hr=0;hp=false;hnp=false;mr=24;d=1200;r=3;oy=2;p=<skill.var.shield_point>;sp=<skill.var.count_point>;
+      b=ITEM;mat=DIAMOND;enchanted=true;rd=true;
+      auraName=Generic_Enemy_MCLove32_Aura<skill.var.count>} @self
+  - setVar{n=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
+
+#
+Generic_Enemy_MCLove32_Down:
+  Conditions:
+  - hasAura{n=Generic_Enemy_MCLove32_Aura7} false
+  Skills:
+  - addtag{t=DOWN} @self
+  - sound{s=item.shield.break;v=3;p=0} @self
+  - potion{t=GLOWING;d=<skill.var.downTick>;l=0;or=true} @self
+  - ondamaged{n=Generic_Enemy_MCLove32_Down;damagemod="ENTITY_ATTACK 1.5";t=<skill.var.downTick>;i=1} @self
+  - stun{t=<skill.var.downTick>} @self
+  - delay <skill.var.downTick>
+  - removetag{t=DOWN} @self
+  - removetag{t=START} @self
+  - sound{s=block.anvil.use;v=3;p=2} @self
+  - skill:Generic_Enemy_MCLove32_NEXT @self
+
+#
+Generic_Enemy_MCLove32_NEXT:
+  Skills:
+  - delay 20
+  - skill:Generic_Enemy_MCLove32_EnterCombat @self
+
+#@Param / FLOAT: <skill.var.dmg>
+Generic_Enemy_MCLove32_BUFF:
+  Skills:
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura0} #<skill.var.point>の数の分だけ生成する
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura1}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura2}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura3}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura4}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura5}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura6}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.05";t=FLOAT} @self ?hasAura{n=Generic_Enemy_MCLove32_Aura7}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.2";t=FLOAT} @self ?hasTag{t=MIDDLE_HEALTH}
+  - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.25";t=FLOAT} @self ?hasTag{t=LOW_HEALTH}
+
+#Usage  
+#Skills:
+#- skill:Generic_Enemy_MCLove32_DAMAGED @self ~onDamaged
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDamaged =50%
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDeath 
+#など、HP条件などは適宜変えて使用すること。
+Generic_Enemy_MCLove32_DAMAGED:
+  Skills: 
+  - setVar{k=skill.name;a="<target.uuid>";t=STRING} @trigger
+  - setVar{k=caster.<skill.var.name>;a="<caster.var.<skill.var.name>|0> + <skill.var.damage-amount>";t=FLOAT} @self
+
+#Usage  
+#Skills:
+#- skill:Generic_Enemy_MCLove32_DAMAGED @self ~onDamaged
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDamaged =50%
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDeath 
+#など、HP条件などは適宜変えて使用すること。
+Generic_Enemy_MCLove32_DAMAGED_Player:
+  TriggerConditions:
+  - isplayer true 
+  Skills: 
+  - setVar{k=skill.name;a="<target.uuid>";t=STRING} @trigger
+  - setVar{k=caster.<skill.var.name>;a="<caster.var.<skill.var.name>|0> + <skill.var.damage-amount>";t=FLOAT} @self
+
+#Usage  
+#Skills:
+#- skill:Generic_Enemy_MCLove32_DAMAGED @self ~onDamaged
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDamaged =50%
+#- skill:Generic_Enemy_MCLove32_SHOW_RANKING ~onDeath 
+#など、HP条件などは適宜変えて使用すること。
+#---------------------------------------------------------------
+#@Param / INTEGER: <skill.lim> / INTEGER: <skill.range> / STRING: <skill.do>
+Generic_Enemy_MCLove32_SHOW_RANKING:
+  Cooldown: 1
+  Skills:
+  - setVar{k=skill.ranking;a="1";t=INTEGER} @self 
+  - setVar{k=skill.range;a="<skill.range>";t=INTEGER} @self
+  - message{m="&f&l[討伐戦] &f&l<caster.name>&r &6&lランキング"} @PIR{r=<skill.range>}
+  - sound{s=ui.toast.challenge_complete;sc=PLAYERS;v=0.15} @PIR{r=<skill.range>}
+  - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo;cat=true;do=<skill.do>} @World{sort=HIGHEST_THREAT;limit=<skill.lim>}
+  - delay 8
+  - sound{s=ui.toast.in;sc=PLAYERS} @PIR{r=<skill.range>}
+  - delay 15
+  - sound{s=ui.toast.out;sc=PLAYERS} @PIR{r=<skill.range>}
+
+#
+Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
+  Skills:
+  - setVar{k=skill.name;a="<caster.uuid>";t=STRING} @self
+  - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return;cat=true;do=<skill.do>} @trigger
+
+#
+Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
+  Skills:
+  - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @self
+  - setVar{k=skill.entity;a="<target.name>";t=STRING} @UniqueIdentifier{u=<skill.var.name>}
+  - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.entity> &f&lスコア &b<skill.var.dmg>"} @PIR{r=<skill.var.range>} ?!varrange{k=skill.dmg;r=0}
+  - setVar{k=skill.ranking;a="1 + <skill.var.ranking>";t=INTEGER} @self ?!varrange{k=skill.dmg;r=0}
+  - vskill{s=<skill.do>;f=false} @UniqueIdentifier{u=<skill.var.name>} ?!varrange{k=skill.dmg;r=0}
+
+Generic_ターゲットランダムプレイヤー_MCLove32:
+  Conditions:
+  - incombat
+  Skills:
+  - setTarget @TTP{sort=RANDOM;limit=1} ?targets{a=>0}
+
+#設定可能なパラメータ (s_name、s_repeat、s_repeat_i)
+Generic_onGroundトリガースキル_MCLove32:
+  Skills:
+  - setVar{k=skill.name;a="<skill.s_name>";t=STRING} @self
+  - setVar{k=skill.repeat_c;a="<skill.s_repeat>";t=STRING} @self
+  - setVar{k=skill.repeat_i_c;a="<skill.s_repeat_i>";t=STRING} @self
+
+  - setVar{k=skill.repeat;a="0";t=INTEGER} @self
+  - setVar{k=skill.repeat_i;a="0";t=INTEGER} @self
+  - setVar{k=skill.repeat;a="<skill.s_repeat>";t=INTEGER} @self ?!varequals{k=skill.repeat_c;v="[Undefined]"}
+  - setVar{k=skill.repeat_i;a="<skill.s_repeat_i>";t=INTEGER} @self ?!varequals{k=skill.repeat_i_c;v="[Undefined]"}
+  
+  - skill:Generic_onGroundトリガースキル_MCLove32_Process @self ?!varequals{k=skill.name;v="[Undefined]"}
+
+Generic_onGroundトリガースキル_MCLove32_Process:
+  Conditions:
+  - onGround{onfail=Generic_onGroundトリガースキル_MCLove32_NO}
+  Skills:
+  - vskill{s=<skill.var.name>;repeat=<skill.var.repeat>;repeati=<skill.var.repeat_i>} @self
+
+Generic_onGroundトリガースキル_MCLove32_NO:
+  Skills:
+  - delay 1
+  - skill:Generic_onGroundトリガースキル_MCLove32_Process @self
+
+Azuriter_Enemy_RaidBoss_操作:
+  Cooldown: 1
+  Skills:
+  - setVar{k=skill.repeat;a="19";t=INTEGER} @self
+  - skill{s=Azuriter_Enemy_RaidBoss_操作_Repeat;repeat=<skill.var.repeat>;repeati=1} @self
+
+Azuriter_Enemy_RaidBoss_操作_Repeat:
+  Skills:
+  - setVar{k=skill.<skill.var.itr>;a="<caster.var.<skill.var.itr>>";t=STRING} @self
+  - skill{s=Azuriter_Enemy_RaidBoss_操作_Repeat_Message;count=<skill.var.itr>} @trigger ?!varequals{k=skill.<skill.var.itr>;v="[Undefined]"} ?varset{k=caster.<skill.var.itr>}
+
+Azuriter_Enemy_RaidBoss_操作_Repeat_Message:
+  Skills:
+  - message{m=""}
+  - setVar{k=skill.temp;a="<skill.var.<skill.count>>";t=STRING} @self
+  - setVar{k=skill.msg;a="raid_boss_skill<skill.count>";t=STRING} @self
+  - jsonmessage{m="[{'text':'&6<skill.count>. &fスキル &a<skill.var.temp> &fを実行する。','clickEvent':{'action':'run_command','value':'/mm signal <caster.uuid> <skill.var.msg>'}}]"}
+  
+

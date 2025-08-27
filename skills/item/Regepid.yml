@@ -1,0 +1,54 @@
+Azuriter_リジピド_R1_Skills:
+  Cooldown: 90
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_リジピド} true
+  - hasMana{a=>60;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=DIAMOND_SHOVEL} false
+  Skills:
+  - setMaterialCooldown{m=DIAMOND_SHOVEL;d=1800} 
+  - setVar{k=skill.heal_regen;a="10 + <skill.var.heal_regen|0>";t=INTEGER} @self
+  - modifyMana{a=-60} @self 
+  - skill{s=Azuriter_リジピド_Skill_Multi} @self
+  - delay 10
+  - skill{s=Azuriter_リジピド_R1_Skill_Regen} @self
+  - sound{s=block.brewing_stand.brew;v=1.5;sc=MASTER} @self
+  - sound{s=block.note_block.harp;p=1.414;v=1.5;sc=PLAYERS} @self
+  - e:pr{p=dust;c=#00ff33;a=3;size=4;vs=0.05;hs=0.1;r=5;pts=16;d=true;dir=0,2,0;s=2} @PIR{r=20}
+  - message{m="<caster.name>から継続回復支援をもらった！"} @PIR{r=20}
+
+Azuriter_リジピド_L1_Skills:
+  Cooldown: 0.2
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_リジピド} true
+  - hasMana{a=>5;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  Skills:
+  - modifyMana{a=-10} @self
+  - aura{ms=30;rd=true;t=120;i=10;n=Azuriter_リジピドスタック;bt=true;bartimertext="&eリジェンスタック <skill.var.aura-stacks>";bartimercolor=PINK;mc=true;
+    oe=[
+      - message{m="&cリジェンスタックの効果が切れた"} @self
+    ]} @self 
+
+Azuriter_リジピド_Skill_Multi:
+  Conditions:
+  - hasAura{n=Azuriter_リジピドスタック} true
+  Skills:
+  - addVar{k=skill.heal_regen;a=3} @self
+  - auraRemove{n=Azuriter_リジピドスタック;s=1} @self 
+  - delay 0
+  - skill{s=Azuriter_リジピド_Skill_Multi} @self
+
+Azuriter_リジピド_R1_Skill_Regen:
+  Conditions:
+  - varrange{k=skill.heal_regen;a=>0}
+  Skills:
+  - addVar{k=skill.heal_regen;a=-1} @self
+  - delay 20
+  - heal{a=2} @self
+  - heal{a=2} @PIR{r=20}
+  - skill{s=Azuriter_リジピド_R1_Skill_Regen;delay=0} @self

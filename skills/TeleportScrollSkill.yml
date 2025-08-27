@@ -1,0 +1,44 @@
+Azuriter_テレポートスクロール_Field1_Spawn:
+  Cooldown: 10
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_テレポートスクロール_Field1_Spawn}
+  - matCooldown{m=Azuriter_テレポートスクロール_Field1_Spawn} false 
+  - hasTag{t=NO_TELEPORT} false 
+  Skills:
+  - setMaterialCooldown{m=PAPER;d=200} @self
+  - potion{t=SLOWNESS;d=60;l=50;p=false;i=false} @self
+  - sound{s=entity.experience_orb.pickup;sc=PLAYERS;audience=caster} @self
+  - aura{ms=60;n=Azuriter_テレポートスクロール_Field1_Spawn_Cast;i=10;mc=true;rd=true} @self
+  - skill{s=Azuriter_テレポートスクロール_Field1_Spawn_Cast;delay=1} @self
+
+Azuriter_テレポートスクロール_Field1_Spawn_Cast:
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_テレポートスクロール_Field1_Spawn} orelsecast Azuriter_テレポートスクロール_Field1_Spawn_Cast_Fail
+  - hasAura{n=Azuriter_テレポートスクロール_Field1_Spawn_Cast} orelsecast Azuriter_テレポートスクロール_Field1_Spawn_Cast_Fail
+  - hasTag{t=NO_TELEPORT} false 
+  - hasAuraStacks{n=Azuriter_テレポートスクロール_Field1_Spawn_Cast;s=>59} castinstead Azuriter_テレポートスクロール_Field1_Spawn_Cast_Success
+  Skills:
+  - sound{s=entity.experience_orb.pickup;sc=PLAYERS;v=0.05;p=0.5;audience=caster} @self
+  - aura{ms=60;n=Azuriter_テレポートスクロール_Field1_Spawn_Cast;i=10;mc=true;rd=true} @self
+  - delay 1
+  - skill{s=Azuriter_テレポートスクロール_Field1_Spawn_Cast} @self
+
+Azuriter_テレポートスクロール_Field1_Spawn_Cast_Success:
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_テレポートスクロール_Field1_Spawn} orelsecast Azuriter_テレポートスクロール_Field1_Spawn_Cast_Fail
+  - hasAura{n=Azuriter_テレポートスクロール_Field1_Spawn_Cast} orelsecast Azuriter_テレポートスクロール_Field1_Spawn_Cast_Fail
+  - hasTag{t=NO_TELEPORT} false 
+  Skills:
+  - takeitem{i=Azuriter_テレポートスクロール_Field1_Spawn;a=1} @self 
+  - auraRemove{n=Azuriter_テレポートスクロール_Field1_Spawn_Cast} @self
+  - sound{s=entity.player.levelup;p=2;sc=PLAYERS;audience=caster} @self
+  - delay 15
+  - sound{s=entity.enderman.teleport;sc=PLAYERS;audience=caster} @self
+  - delay 1
+  - teleport{r=3} @Location{x=23.5;y=80;z=-3.5;w=Field1;pitch=0;yaw=<random.float.-180to180>}
+  - message{m="&a始まりの丘にテレポートしました。"} @self
+
+Azuriter_テレポートスクロール_Field1_Spawn_Cast_Fail:
+  Skills:
+  - message{m="&cテレポートに失敗しました。"} @self 
+  - message{m="&cキャスト中に、アクションを行うと失敗します。"} @self

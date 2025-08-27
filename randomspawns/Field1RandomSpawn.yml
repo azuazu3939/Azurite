@@ -1,0 +1,99 @@
+Azuriter_Neutral_Zombie_Spawn:
+  Type: Azuriter_Neutral_Zombie
+  Worlds: Field1
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.2
+  Cooldown: 0.2
+  Priority: 10
+  Conditions:
+  - mobsinworld{a=<500} true 
+  - containerRegion{r=Azuriter_Neutral_Zombie} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie;amount=<3;radius=24} true
+
+Azuriter_Big_Zombie_Spawn:
+  Type: Azuriter_Big_Zombie
+  Worlds: Field1
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.1
+  Cooldown: 30
+  Priority: 1
+  Conditions:
+  - mobsinworld{a=<500} true 
+  - containerRegion{r=Azuriter_Neutral_Zombie} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<24;radius=32} true
+  - mobsInRadius{types=Azuriter_Big_Zombie;amount=<1;radius=24} true
+
+Azuriter_High_Zombie_Spawn:
+  Type: Azuriter_High_Zombie
+  Worlds: Field1
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.05
+  Cooldown: 1
+  Priority: 10
+  Conditions:
+  - mobsinworld{a=<500} true 
+  - containerRegion{r=Azuriter_High_Zombie} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<10;radius=32} true
+  - mobsInRadius{types=Azuriter_High_Zombie;amount=<3;radius=32} true
+
+Azuriter_Elite_Zombie_Spawn:
+  Type: Azuriter_Elite_Zombie
+  Worlds: Field1
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.025
+  Cooldown: 30
+  Priority: 1
+  Conditions:
+  - mobsinworld{a=<500} true 
+  - containerRegion{r=Azuriter_High_Zombie} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
+  - mobsInRadius{types=Azuriter_Elite_Zombie;amount=<1;radius=32} true
+
+Azuriter_Warrior_Zombie_Spawn:
+  Type: Azuriter_Warrior_Zombie
+  Worlds: Field1
+  Action: ADD 
+  PositionType: LAND
+  Cooldown: 2
+  Chance: 0.01
+  Priority: 20
+  Conditions:
+  - mobsinworld{a=<500} true 
+  - containerRegion{r=Azuriter_Warrior_Zombie} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<16;radius=32} true
+  - mobsInRadius{types=Azuriter_Warrior_Zombie;amount=<2;radius=24} true
+
+Azuriter_letthelater_Spawn:
+  Type: Azuriter_letthelater
+  Worlds: Field1
+  Action: ADD
+  #Cooldown: 2
+  PositionType: LAND
+  Chance: 0.125
+  Priority: 10
+  Conditions:
+  - mobsinworld{a=<500} true 
+  - containerRegion{r=Azuriter_letthelater} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
+  - mobsInRadius{types=Azuriter_letthelater;amount=<2;radius=24} true
+  - mobsInRadius{types=Azuriter_Boss_Feldos;amount=>0;radius=48} false
+
+Azuriter_Altwolf_Spawn:
+  Type: Azuriter_Altwolf
+  Worlds: Field1
+  Action: ADD
+  #Cooldown: 0.2
+  PositionType: LAND
+  Chance: 0.125
+  Priority: 10
+  Conditions:
+  - mobsinworld{a=<500} true 
+  - containerRegion{r=Azuriter_Altwolf} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
+  - mobsInRadius{types=Azuriter_Altwolf;amount=<2;radius=24} true
+  - mobsInRadius{types=Azuriter_Boss_Wedler;amount=>0;radius=48} false

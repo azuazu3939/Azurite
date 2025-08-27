@@ -1,0 +1,25 @@
+Azuriter_CombatGift_G1:
+  Id: chest
+  Display: "&e戦闘ギフト&f - &bG1"
+  Lore:
+  - "&f使用することで、戦闘に関連する"
+  - "&fアイテムを入手できる。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Group: 'Gift'
+  Skills:
+  - skill{s=Azuriter_CombatGift_G1_Skill} @self ~onUse 
+  - skill{s=Azuriter_CombatGift_G1_Skill} @self ~onSwing 
+
+Azuriter_CombatGift_G1_Ticket:
+  Id: paper
+  Display: "&f戦闘ギフトG1引き換え"
+  Lore:
+  - "&f集めることでギフトトレードNPCから天井交換できる。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Group: 'Util'

@@ -1,0 +1,14 @@
+Azuriter_レットザレーター_Skills:
+  Cooldown: 5
+  Skills:
+  - setVar{k=skill.time;a="24";t=INTEGER} @self
+  - stun{f=false;t=100}
+  - projectile{
+    ot=[
+      - setVar{k=skill.time;a="<skill.var.time> - 1";t=INTEGER} @self
+      - delay <skill.var.time>
+      - e:blockMask{b=RED_TERRACOTTA;d=60;r=2.5} @origin
+      - damage{a="<caster.damage> + 4";delay=80} @PlayersNearOrigin{r=2.5}
+      - sound{s=item.trident.riptide_1;p=2;sc=PLAYERS;v=0.25;delay=78} @origin 
+    ];
+    v=24;i=1;hp=false;se=false;mr=16;d=20;tyo=1} @forward{lockpitch=true}

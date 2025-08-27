@@ -1,0 +1,10 @@
+Azuriter_Azuriter_パラライズワールド_Skills:
+  Cooldown: 15
+  Conditions:
+  - wearing{s=HAND;m=Azuriter_パラライズワールド} true
+  - matCooldown{m=DIAMOND_SHOVEL} false 
+  Skills:
+  - sound{s=entity.elder_guardian.curse;v=1.5;audience=caster} @self
+  - potion{t=SLOWNESS;l=3;d=150;p=false} @EIR{r=16;ignore=players}
+  - potion{t=WEAKNESS;l=1;d=150;p=false} @EIR{r=16;ignore=players}
+  - setMaterialCooldown{m=DIAMOND_SHOVEL;d=300} @self

@@ -1,0 +1,31 @@
+Azuriter_ビギナーソード_R1_Skills:
+  Cooldown: 4
+  Conditions:
+  - wearing{m=Azuriter_ビギナーソード;s=HAND} true
+  - hasMana{a=>100;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=WOODEN_SWORD} false 
+  Skills:
+  - modifyMana{a=-100} @self 
+  - setMaterialCooldown{m=WOODEN_SWORD;d=80} @self
+  - setVar{k=skill.count;a="0";t=INTEGER} @self
+  - ondamaged{t=18;n=step_avoid;rd=true;oh=[ - sound{s=entity.arrow.hit_player;v=0.5} @self - skill{s=Azuriter_StepAvoid} @self ];ce=true} @self
+  - projectile{
+    ot=[
+      - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
+      - lunge{v=1.2;vy="(-0.125 * <skill.var.count>) + 0.5"} @self
+      - ondamaged{n=fall_canceller;t=100;damagemod="FALL 0";rd=true} @self
+      - delay 2
+      - auraRemove{n=fall_canceller} @self ?onGround
+    ];
+    os=[
+      - lunge{v=5;vy=0.25} @self
+      - sound{s=entity.wither.shoot;sc=PLAYERS;audience=caster} @self 
+    ];
+    oe=[
+      - auraRemove{n=fall_canceller} @self ?onGround
+    ];
+    i=2;hp=false;hnp=false;sb=false;se=false;tyo=2;g=1;mr=12;vr=1;hr=1;v=1;d=80} @forward{lockpitch=true} ?!crouching 
+  #projectileで行ったが廃止

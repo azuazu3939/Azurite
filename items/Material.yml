@@ -1,0 +1,198 @@
+Azuriter_粗悪な装備片:
+  Id: leather
+  Display: "&f粗悪な装備片"
+  Lore:
+  - "&fField1の始まりの丘などで、入手可能なアイテム。"
+  - "&f名もなき冒険者たちの遺品。"
+  - "&f質も量も足りないが、集めれば使えるだろう。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_バラケタ装備片:
+  Id: leather
+  Display: "&fバラケタ装備片"
+  Lore:
+  - "&fField1の始まりの丘などで、入手可能なアイテム。"
+  - "&f名もなき冒険者たちの遺品。"
+  - "&f集めればまだまだ使えるだろう。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+  Enchantments:
+  - UNBREAKING 1
+
+Azuriter_白マテリア:
+  Id: white_dye
+  Display: "&f白マテリア"
+  Lore:
+  - "&fField1の始まりの丘などで、入手可能なアイテム。"
+  - "&f名もなき冒険者たちの遺品。"
+  - "&f物体の正常化を促進する。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_鉄片:
+  Id: iron_ingot
+  Display: "&f鉄片"
+  Lore:
+  - "&fField1の始まりの丘などで、入手可能なアイテム。"
+  - "&f名もなき冒険者たちの遺品。"
+  - "&f比較的強度が良い。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_加工鉄片:
+  Id: iron_ingot
+  Display: "&f加工鉄片"
+  Lore:
+  - "&fField1の始まりの丘などで、入手可能なアイテム。"
+  - "&f名もなき冒険者たちの遺品。"
+  - "&fこれは良いものだ!"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+  Enchantments:
+  - UNBREAKING 2
+
+Azuriter_ハイソール:
+  Id: blaze_powder
+  Display: "&fハイソール"
+  Lore:
+  - "&fField1の始まりの丘などで、入手可能なアイテム。"
+  - "&f名もなき冒険者たちの遺品。"
+  - "&f時が経てど、失われぬ強い心力。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_黒マテリア:
+  Id: black_dye
+  Display: "&f黒マテリア"
+  Lore:
+  - "&fField1の始まりの丘などで、入手可能なアイテム。"
+  - "&f名もなき冒険者たちの遺品。"
+  - "&f物体の安定性を促進する。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_Feldos_Summon_Paper:
+  Id: paper
+  Display: "&fフェルドスの召喚紙"
+  Lore:
+  - "&f紙には16と書かれている…"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_シリーズエンド1Material:
+  Id: diamond
+  Display: "&fシリーズエンド・I・マテリア"
+  Lore:
+  - "&f魂の情熱をもって、丹精に練り上げた代物。"
+  - "&f素材屋から入手可能。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_Wedler_Summon_Paper:
+  Id: paper
+  Display: "&fウィデラーの召喚紙"
+  Lore:
+  - "&f紙には16と書かれている…"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_Altwolf_牙:
+  Id: ghast_tear
+  Display: "&fアルトゥルフの牙"
+  Lore:
+  - "&fField1のウィデラーの住処などで、入手可能なアイテム。"
+  - "&f希少性がある。"
+  Enchantments:
+  - SHARPNESS 1
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_Altwolf_粗皮:
+  Id: leather
+  Display: "&fアルトゥルフの粗皮"
+  Lore:
+  - "&fField1のウィデラーの住処などで、入手可能なアイテム。"
+  - "&f耐久性が良い。"
+  Enchantments:
+  - UNBREAKING 3
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_風核:
+  Id: wind_charge
+  Display: "&f風核"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_風牙狼の骨:
+  Id: bone
+  Display: "&f風牙狼の骨"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_風牙狼の牙:
+  Id: bone_meal
+  Display: "&f風牙狼の牙"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_風牙狼の皮:
+  Id: leather
+  Display: "&f風牙狼の皮"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_炎核:
+  Id: fire_charge
+  Display: "&f炎核"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_焔獣の炎牙:
+  Id: blaze_rod
+  Display: "&f焔獣の炎牙"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_焔獣の炎殻:
+  Id: blaze_powder
+  Display: "&f焔獣の炎殻"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_焔獣の太骨:
+  Id: bone
+  Display: "&f焔獣の太骨"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_スクラップ:
+  Id: gunpowder
+  Display: "&fスクラップ"
+  Lore:
+  - "&f素材売却する際に手に入るモノ。"
+  - "&f数を集めて、リサイクル"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
