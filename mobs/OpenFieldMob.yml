@@ -63,7 +63,7 @@ Azuriter_Boss_Feldos:
   Display: "<#c20a0a>&l焔獣フェルドス&R"
   Type: hoglin
   Health: 15650
-  Armor: 105
+  Armor: 130
   Damage: 20
   Drops:
   - money 30to50 1
@@ -95,7 +95,7 @@ Azuriter_Boss_Feldos:
     Color: WHITE
     Style: SEGMENTED_12
   Skills:
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=105} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=130} @self ~onSpawn
   - setVar{k=caster.1;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1";t=STRING} @self ~onSpawn 
   - setVar{k=caster.2;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2";t=STRING} @self ~onSpawn 
   - setVar{k=caster.3;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3";t=STRING} @self ~onSpawn 
@@ -136,7 +136,7 @@ Azuriter_Boss_Wedler:
   Display: "<#15d455>&l風牙狼ウィデラー&R"
   Type: wolf
   Health: 14695
-  Armor: 120
+  Armor: 150
   Damage: 18
   Drops:
   - money 30to50 1
@@ -167,7 +167,7 @@ Azuriter_Boss_Wedler:
     Color: WHITE
     Style: SEGMENTED_12
   Skills:
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=120} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=150} @self ~onSpawn
   - setVar{k=caster.1;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1";t=STRING} @self ~onSpawn 
   - setVar{k=caster.2;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2";t=STRING} @self ~onSpawn 
   - setVar{k=caster.3;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_3";t=STRING} @self ~onSpawn 
@@ -177,7 +177,7 @@ Azuriter_Boss_Wedler:
   - setVar{k=caster.7;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7";t=STRING} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
-  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=140;shield_break=70;heal_percent=0.03} @self ~onEntercombat
+  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=180;shield_break=70;heal_percent=0.03} @self ~onEntercombat
   - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK @T ~onEntercombat
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
