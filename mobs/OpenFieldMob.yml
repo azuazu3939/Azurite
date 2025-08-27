@@ -131,7 +131,6 @@ Azuriter_Boss_Feldos:
   - message{m="<trigger.name>が、OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill4
   - message{m="<trigger.name>が、OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill5
 
-
 Azuriter_Boss_Wedler:
   Template: Azuriter_Enemy_RaidBoss_Base
   Display: "<#15d455>&l風牙狼ウィデラー&R"
