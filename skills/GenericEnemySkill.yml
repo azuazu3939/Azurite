@@ -148,6 +148,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING:
   - setVar{k=skill.range;a="<skill.range>";t=INTEGER} @self
   - message{m="&f&l[討伐戦] &f&l<caster.name>&r &6&lランキング"} @PIR{r=<skill.range>}
   - sound{s=ui.toast.challenge_complete;sc=PLAYERS;v=0.15} @PIR{r=<skill.range>}
+  - setVar{k=caster.ranking_count;a="20";t=INTEGER} @self
   - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo;cat=true;do=<skill.do>} @World
   - delay 8
   - sound{s=ui.toast.in;sc=PLAYERS} @PIR{r=<skill.range>}
@@ -158,6 +159,9 @@ Generic_Enemy_MCLove32_SHOW_RANKING:
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
   Skills:
   - setVar{k=skill.name;a="<caster.uuid>";t=STRING} @self
+  - setVar{k=skill.ct;a="<target.var.ranking_count>";t=INTEGER} @trigger 
+  - setVar{k=target.ranking_count;a="<target.var.ranking_count> - 1";t=INTEGER} @trigger 
+  - delay <skill.var.ct>
   - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return;cat=true;do=<skill.do>} @trigger
 
 #
