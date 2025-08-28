@@ -224,18 +224,18 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10:
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10_Run:
   Cooldown: 5
   Skills:
-  - setVar{k=skill.entity1;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.1>}
-  - setVar{k=skill.entity2;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.2>}
-  - setVar{k=skill.entity3;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.3>}
-  - setVar{k=skill.entity4;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.4>}
-  - setVar{k=skill.entity5;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.5>}
-  - setVar{k=skill.entity6;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.6>}
-  - setVar{k=skill.entity7;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.7>}
-  - setVar{k=skill.entity8;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.8>}
-  - setVar{k=skill.entity9;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.9>}
-  - setVar{k=skill.entity10;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.10>}
+  - setVar{k=skill.entity1;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.1>} 
+  - setVar{k=skill.entity2;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.2>} ?!vareq{n=caster.1;v="<caster.var.2>"}
+  - setVar{k=skill.entity3;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.3>} ?!vareq{n=caster.2;v="<caster.var.3>"}
+  - setVar{k=skill.entity4;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.4>} ?!vareq{n=caster.3;v="<caster.var.4>"}
+  - setVar{k=skill.entity5;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.5>} ?!vareq{n=caster.4;v="<caster.var.5>"}
+  - setVar{k=skill.entity6;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.6>} ?!vareq{n=caster.5;v="<caster.var.6>"}
+  - setVar{k=skill.entity7;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.7>} ?!vareq{n=caster.6;v="<caster.var.7>"}
+  - setVar{k=skill.entity8;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.8>} ?!vareq{n=caster.7;v="<caster.var.8>"}
+  - setVar{k=skill.entity9;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.9>} ?!vareq{n=caster.8;v="<caster.var.9>"}
+  - setVar{k=skill.entity10;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.10>} ?!vareq{n=caster.9;v="<caster.var.10>"}
   - message{m="&a&l1位 &6&l<skill.var.entity1> &f&lスコア &b<caster.var.01>"} @PIR{r=<skill.var.range>} ?varisset{k=skill.entity1}
-  - message{m="&a&l2位 &6&l<skill.var.entity2> &f&lスコア &b<caster.var.02>"} @PIR{r=<skill.var.range>} ?varisset{k=skill.entity2}
+  - message{m="&a&l2位 &6&l<skill.var.entity2> &f&lスコア &b<caster.var.02>"} @PIR{r=<skill.var.range>} ?varisset{k=skill.entity2} 
   - message{m="&a&l3位 &6&l<skill.var.entity3> &f&lスコア &b<caster.var.03>"} @PIR{r=<skill.var.range>} ?varisset{k=skill.entity3}
   - message{m="&a&l4位 &6&l<skill.var.entity4> &f&lスコア &b<caster.var.04>"} @PIR{r=<skill.var.range>} ?varisset{k=skill.entity4}
   - message{m="&a&l5位 &6&l<skill.var.entity5> &f&lスコア &b<caster.var.05>"} @PIR{r=<skill.var.range>} ?varisset{k=skill.entity5} 
