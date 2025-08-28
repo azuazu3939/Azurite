@@ -162,7 +162,7 @@ Azuriter_Boss_Wedler:
   - float
   BossBar:
     Enabled: true
-    Title: <caster.name> <caster.hp> <caster.mhp>
+    Title: <caster.name>
     Range: 32
     Color: WHITE
     Style: SEGMENTED_12
