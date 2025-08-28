@@ -103,7 +103,7 @@ Azuriter_Boss_Feldos:
   - setVar{k=caster.5;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5";t=STRING} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
-  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=240;shield_break=1200;heal_percent=0.05} @self ~onEntercombat
+  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=240;shield_break=600;heal_percent=0.05} @self ~onEntercombat
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK @T ~onEntercombat
   
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
@@ -177,7 +177,7 @@ Azuriter_Boss_Wedler:
   - setVar{k=caster.7;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7";t=STRING} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
-  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=180;shield_break=1000;heal_percent=0.03} @self ~onEntercombat
+  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=180;shield_break=500;heal_percent=0.03} @self ~onEntercombat
   - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK @T ~onEntercombat
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
