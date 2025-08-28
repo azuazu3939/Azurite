@@ -64,7 +64,13 @@ Azuriter_Utilityオフハンド2:
   Id: yellow_dye
   Display: "&e汎用のハイシャード"
   ItemUpdater:
-    Version: 1
+    Version: 2
+  Lore:
+  - "&faaa"
+  - "&fbbb"
+  - "&fccc"
+  - "&fddd"
+  - "&feee"
   Attributes:
     OffHand:
       KnockbackResistance: 0.25 ADD
