@@ -169,7 +169,6 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
 # 
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10:
   Skills:
-  - delay 1
   - setVar{k=skill.sub1;a="<caster.var.01|0> - <skill.var.dmg|0>";t=FLOAT} @self
   - setVar{k=caster.01;a="<skill.var.dmg|0>";t=FLOAT} @self ?varrange{k=skill.sub1;r=<0}
   - setVar{k=caster.91;a="<skill.var.name|b1>";t=STRING} @self ?varrange{k=skill.sub1;r=<0}
