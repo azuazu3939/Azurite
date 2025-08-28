@@ -144,11 +144,10 @@ Generic_Enemy_MCLove32_DAMAGED_Player:
 Generic_Enemy_MCLove32_SHOW_RANKING:
   Cooldown: 1
   Skills:
-  - setVar{k=skill.ranking;a="1";t=INTEGER} @self 
   - setVar{k=skill.range;a="<skill.range>";t=INTEGER} @self
   - message{m="&f&l[討伐戦] &f&l<caster.name>&r &6&lランキング"} @PIR{r=<skill.range>}
   - sound{s=ui.toast.challenge_complete;sc=PLAYERS;v=0.15} @PIR{r=<skill.range>}
-  - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo;cat=true;do=<skill.do>} @World
+  - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo;cat=true;do=<skill.do>} @PlayersInWorld{sort=HIGHEST_THREAT} 
   - delay 8
   - sound{s=ui.toast.in;sc=PLAYERS} @PIR{r=<skill.range>}
   - delay 15
@@ -164,6 +163,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   Skills:
   - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @self
+  - message{m="<skill.var.dmg> テスト"} @world
   - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10} @self ?!varrange{k=skill.dmg;r=0}
   - vskill{s=<skill.do>;f=false} @UniqueIdentifier{u=<skill.var.name>} ?!varrange{k=skill.dmg;r=0}
  
