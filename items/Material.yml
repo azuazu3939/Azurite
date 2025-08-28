@@ -90,7 +90,7 @@ Azuriter_Feldos_Summon_Paper:
 
 Azuriter_シリーズエンド1Material:
   Id: diamond
-  Display: "&fシリーズエンド・I・マテリア"
+  Display: "&aシリーズエンド・I・マテリア"
   Lore:
   - "&f魂の情熱をもって、丹精に練り上げた代物。"
   - "&f素材屋から入手可能。"
@@ -133,7 +133,7 @@ Azuriter_Altwolf_粗皮:
 
 Azuriter_風核:
   Id: wind_charge
-  Display: "&1風核"
+  Display: "&9風核"
   ItemUpdater:
     Version: 1
   Group: 'Material'

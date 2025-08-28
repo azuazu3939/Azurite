@@ -142,7 +142,7 @@ Azuriter_ハイハルバード:
 
 Azuriter_ステップソード:
   Id: stone_sword
-  Display: "&1ステップソード"
+  Display: "&9ステップソード"
   ItemUpdater:
     Version: 1
   Lore:
@@ -213,7 +213,7 @@ Azuriter_ハイスモールソード:
 
 Azuriter_ステップライズソード:
   Id: diamond_sword
-  Display: "&1ステップライズソード"
+  Display: "&9ステップライズソード"
   ItemUpdater:
     Version: 1
   Lore:
@@ -232,7 +232,7 @@ Azuriter_ステップライズソード:
 
 Azuriter_ステップダッシュソード:
   Id: diamond_sword
-  Display: "&1ステップダッシュソード"
+  Display: "&9ステップダッシュソード"
   ItemUpdater:
     Version: 1
   Lore:
@@ -251,7 +251,7 @@ Azuriter_ステップダッシュソード:
 
 Azuriter_ステップアベンジソード:
   Id: golden_sword
-  Display: "&1ステップアベンジソード"
+  Display: "&9ステップアベンジソード"
   ItemUpdater:
     Version: 1
   Lore:
