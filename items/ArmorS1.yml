@@ -52,6 +52,7 @@ Azuriter_トラベラーH:
   Display: "&fトラベラーヘルメット"
   Options:
     Unbreakable: true
+    Color: 90,184,73
   ItemUpdater:
     Version: 1
   Attributes:
@@ -70,6 +71,7 @@ Azuriter_トラベラーC:
   Display: "&fトラベラーチェストプレート"
   Options:
     Unbreakable: true
+    Color: 90,184,73
   ItemUpdater:
     Version: 1
   Attributes:
@@ -83,6 +85,7 @@ Azuriter_トラベラーL:
   Display: "&fトラベラーレギンス"
   Options:
     Unbreakable: true
+    Color: 90,184,73
   ItemUpdater:
     Version: 1
   Attributes:
@@ -96,6 +99,7 @@ Azuriter_トラベラーB:
   Display: "&fトラベラーブーツ"
   Options:
     Unbreakable: true
+    Color: 90,184,73
   ItemUpdater:
     Version: 1
   Attributes:
@@ -112,6 +116,7 @@ Azuriter_ディフェンスH:
   - "&fFullセットで追加効果と、性能が上昇する。"
   Options:
     Unbreakable: true
+    Color: 28,30,137
   ItemUpdater:
     Version: 1
   Attributes:
@@ -135,6 +140,7 @@ Azuriter_ディフェンスC:
   - "&fFullセットで追加効果と、性能が上昇する。"
   Options:
     Unbreakable: true
+    Color: 28,30,137
   ItemUpdater:
     Version: 1
   Attributes:
@@ -154,6 +160,7 @@ Azuriter_ディフェンスL:
   - "&fFullセットで追加効果と、性能が上昇する。"
   Options:
     Unbreakable: true
+    Color: 28,30,137
   ItemUpdater:
     Version: 1
   Attributes:
@@ -173,6 +180,7 @@ Azuriter_ディフェンスB:
   - "&fFullセットで追加効果と、性能が上昇する。"
   Options:
     Unbreakable: true
+    Color: 28,30,137
   ItemUpdater:
     Version: 1
   Attributes:
@@ -192,6 +200,7 @@ Azuriter_アタッカーH:
   - "&fFullセットで追加効果と、性能が上昇する。"
   Options:
     Unbreakable: true
+    Color: 228,32,32
   ItemUpdater:
     Version: 1
   Attributes:
@@ -215,6 +224,7 @@ Azuriter_アタッカーC:
   - "&fFullセットで追加効果と、性能が上昇する。"
   Options:
     Unbreakable: true
+    Color: 228,32,32
   ItemUpdater:
     Version: 1
   Attributes:
@@ -234,6 +244,7 @@ Azuriter_アタッカーL:
   - "&fFullセットで追加効果と、性能が上昇する。"
   Options:
     Unbreakable: true
+    Color: 228,32,32
   ItemUpdater:
     Version: 1
   Attributes:
@@ -253,6 +264,7 @@ Azuriter_アタッカーB:
   - "&fFullセットで追加効果と、性能が上昇する。"
   Options:
     Unbreakable: true
+    Color: 228,32,32
   ItemUpdater:
     Version: 1
   Attributes:
@@ -269,6 +281,7 @@ Azuriter_ハイトラベラーH:
   Display: "&fハイトラベラーヘルメット"
   Options:
     Unbreakable: true
+    Color: 81,209,96
   ItemUpdater:
     Version: 1
   Attributes:
@@ -289,6 +302,7 @@ Azuriter_ハイトラベラーC:
   Display: "&fハイトラベラーチェストプレート"
   Options:
     Unbreakable: true
+    Color: 81,209,96
   ItemUpdater:
     Version: 1
   Attributes:
@@ -304,6 +318,7 @@ Azuriter_ハイトラベラーL:
   Display: "&fハイトラベラーレギンス"
   Options:
     Unbreakable: true
+    Color: 81,209,96
   ItemUpdater:
     Version: 1
   Attributes:
@@ -319,6 +334,7 @@ Azuriter_ハイトラベラーB:
   Display: "&fハイトラベラーブーツ"
   Options:
     Unbreakable: true
+    Color: 81,209,96
   ItemUpdater:
     Version: 1
   Attributes:
@@ -565,7 +581,7 @@ Azuriter_エリートディフェンスB:
 
 Azuriter_シリーズエンド1H:
   Id: diamond_helmet
-  Display: "&fシリーズエンド・I・ヘルメット"
+  Display: "&aシリーズエンド・I・ヘルメット"
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"
@@ -591,7 +607,7 @@ Azuriter_シリーズエンド1H:
 
 Azuriter_シリーズエンド1C:
   Id: diamond_chestplate
-  Display: "&fシリーズエンド・I・チェストプレート"
+  Display: "&aシリーズエンド・I・チェストプレート"
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"
@@ -613,7 +629,7 @@ Azuriter_シリーズエンド1C:
 
 Azuriter_シリーズエンド1L:
   Id: diamond_leggings
-  Display: "&fシリーズエンド・I・レギンス"
+  Display: "&aシリーズエンド・I・レギンス"
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"
@@ -635,7 +651,7 @@ Azuriter_シリーズエンド1L:
 
 Azuriter_シリーズエンド1B:
   Id: diamond_boots
-  Display: "&fシリーズエンド・I・ブーツ"
+  Display: "&aシリーズエンド・I・ブーツ"
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"

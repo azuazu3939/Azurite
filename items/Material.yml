@@ -24,7 +24,7 @@ Azuriter_バラケタ装備片:
 
 Azuriter_白マテリア:
   Id: white_dye
-  Display: "&f白マテリア"
+  Display: "&a白マテリア"
   Lore:
   - "&fField1の始まりの丘などで、入手可能なアイテム。"
   - "&f名もなき冒険者たちの遺品。"
@@ -70,7 +70,7 @@ Azuriter_ハイソール:
 
 Azuriter_黒マテリア:
   Id: black_dye
-  Display: "&f黒マテリア"
+  Display: "&a黒マテリア"
   Lore:
   - "&fField1の始まりの丘などで、入手可能なアイテム。"
   - "&f名もなき冒険者たちの遺品。"
@@ -133,7 +133,7 @@ Azuriter_Altwolf_粗皮:
 
 Azuriter_風核:
   Id: wind_charge
-  Display: "&f風核"
+  Display: "&1風核"
   ItemUpdater:
     Version: 1
   Group: 'Material'
@@ -163,7 +163,7 @@ Azuriter_風牙狼の皮:
 
 Azuriter_炎核:
   Id: fire_charge
-  Display: "&f炎核"
+  Display: "&1炎核"
   ItemUpdater:
     Version: 1
   Group: 'Material'

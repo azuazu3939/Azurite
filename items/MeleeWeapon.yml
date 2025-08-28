@@ -41,7 +41,7 @@ Azuriter_トラベラーソード:
 
 Azuriter_ハイトラベラーソード:
   Id: golden_sword
-  Display: "&fハイトラベラーソード"
+  Display: "&aハイトラベラーソード"
   Lore:
   - "&f持っている間、自身の移動速度を上昇し、"
   - "&f近くの敵の移動速度を下げる。"
@@ -84,7 +84,7 @@ Azuriter_トマホーク:
 
 Azuriter_ハイトマホーク:
   Id: golden_axe
-  Display: "&fハイトマホーク"
+  Display: "&aハイトマホーク"
   Lore:
   - "&f敵を切り上げ、鈍足を付与する。"
   - "&fまた、敵を倒すと攻撃力上昇を付与する。"
@@ -123,7 +123,7 @@ Azuriter_ハルバード:
 
 Azuriter_ハイハルバード:
   Id: iron_axe
-  Display: "&fハイハルバード"
+  Display: "&aハイハルバード"
   Lore:
   - "&f敵を切り倒し、斧を暴発させることで"
   - "&f周辺へダメージを与える。"
@@ -142,7 +142,7 @@ Azuriter_ハイハルバード:
 
 Azuriter_ステップソード:
   Id: stone_sword
-  Display: "&fステップソード"
+  Display: "&1ステップソード"
   ItemUpdater:
     Version: 1
   Lore:
@@ -213,7 +213,7 @@ Azuriter_ハイスモールソード:
 
 Azuriter_ステップライズソード:
   Id: diamond_sword
-  Display: "&fステップライズソード"
+  Display: "&1ステップライズソード"
   ItemUpdater:
     Version: 1
   Lore:
@@ -232,7 +232,7 @@ Azuriter_ステップライズソード:
 
 Azuriter_ステップダッシュソード:
   Id: diamond_sword
-  Display: "&fステップダッシュソード"
+  Display: "&1ステップダッシュソード"
   ItemUpdater:
     Version: 1
   Lore:
@@ -251,7 +251,7 @@ Azuriter_ステップダッシュソード:
 
 Azuriter_ステップアベンジソード:
   Id: golden_sword
-  Display: "&fステップアベンジソード"
+  Display: "&1ステップアベンジソード"
   ItemUpdater:
     Version: 1
   Lore:

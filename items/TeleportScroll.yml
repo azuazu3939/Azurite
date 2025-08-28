@@ -1,6 +1,6 @@
 Azuriter_テレポートスクロール_Field1_Spawn:
   Id: paper
-  Display: "&fテレポート[始まりの丘]"
+  Display: "&6テレポート[始まりの丘]"
   Options:
     Unbreakable: true
   ItemUpdater:

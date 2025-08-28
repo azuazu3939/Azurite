@@ -2,7 +2,7 @@
 
 Azuriter_パラライズワールド:
   Id: diamond_shovel
-  Display: "&fパラライズワールド"
+  Display: "&1パラライズワールド"
   Lore:
   - "&fField1の始まりの丘などで、入手可能なアイテム。"
   - "&f周囲の敵を鈍化、弱体化させる。"
@@ -19,7 +19,7 @@ Azuriter_パラライズワールド:
 
 Azuriter_ヒラル:
   Id: wooden_shovel
-  Display: "&fヒラル"
+  Display: "&aヒラル"
   Lore:
   - "&fマナを40消費し、自身と周囲のHPを回復させる。"
   - "&fSwingすることで、マナを10消費し次のHP回復スキルの"
@@ -35,7 +35,7 @@ Azuriter_ヒラル:
 
 Azuriter_ハイヒラル:
   Id: stone_shovel
-  Display: "&fハイヒラル"
+  Display: "&aハイヒラル"
   Lore:
   - "&fマナを100消費し、自身と周囲のHPを回復させる。"
   - "&fSwingすることで、マナを30消費し次のHP回復スキルの"
@@ -51,7 +51,7 @@ Azuriter_ハイヒラル:
 
 Azuriter_ランピド:
   Id: iron_shovel
-  Display: "&fランピド"
+  Display: "&aランピド"
   Lore:
   - "&fマナを60消費し、自身と周囲の移動速度を向上させる。"
   - "&fSwingすることで、マナを10消費しストックし、"
@@ -67,7 +67,7 @@ Azuriter_ランピド:
 
 Azuriter_リジピド:
   Id: diamond_shovel
-  Display: "&fリジピド"
+  Display: "&aリジピド"
   Lore:
   - "&fマナを80消費し、自身と周囲の継続回復効果を向上させる。"
   - "&fSwingすることで、マナを10消費し次の継続回復効果スキルの"
@@ -83,7 +83,7 @@ Azuriter_リジピド:
 
 Azuriter_マナフル:
   Id: netherite_shovel
-  Display: "&fマナフル"
+  Display: "&aマナフル"
   Lore:
   - "&fマナを20消費し、自身と周囲のマナを回復させる。"
   - "&fSwingすることで、マナを10消費し次のマナ回復スキルの"
