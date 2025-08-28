@@ -137,6 +137,8 @@ Azuriter_風核:
   ItemUpdater:
     Version: 1
   Group: 'Material'
+  Skills:
+  - cancelEvent{sync=true} @self ~onInteract 
 
 Azuriter_風牙狼の骨:
   Id: bone
