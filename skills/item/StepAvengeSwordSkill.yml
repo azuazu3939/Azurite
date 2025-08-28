@@ -1,0 +1,14 @@
+Azuriter_ステップアベンジソード_R1_Skills:
+  Cooldown: 1.5
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_ステップアベンジソード}
+  - hasMana{a=>40;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=GOLDEN_SWORD} false 
+  Skills:
+  - modifyMana{a=-40} @self 
+  - setMaterialCooldown{m=GOLDEN_SWORD;d=30} @self
+  - ondamaged{t=12;n=step_avoid;rd=true;oh=[ - sound{s=entity.arrow.hit_player;v=0.5} @self - skill{s=Azuriter_StepAvoid} @self ];ce=true;os=[ - setVar{k=skill.damageStepAvoid;a="<caster.damage>";t=FLOAT} @self ]} @self
+  - sound{s=block.trial_spawner.spawn_item;p=2;audience=caster;sc=PLAYERS} @self

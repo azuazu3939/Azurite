@@ -5,6 +5,7 @@ Azuriter_StepAvoid:
   - skill{s=Azuriter_StepAvoid_BeginnerSword} @self
   - skill{s=Azuriter_StepAvoid_StepRiseSword} @self
   - skill{s=Azuriter_StepAvoid_StepDashSword} @self
+  - skill{s=Azuriter_StepAvoid_StepAvengeSword} @self
 
 Azuriter_StepAvoid_StepSword:
   Conditions:
@@ -117,3 +118,17 @@ Azuriter_StepAvoid_StepDashSword:
   - damage{a="<skill.var.damage>";pi=true;ii=true} @EIR{r=8;ignore=players}
   - sound{s=entity.ender_dragon.flap;p=2;sc=PLAYERS;audience=caster} @self
   - sound{s=entity.player.attack.sweep;p=0;sc=PLAYERS;audience=caster} @self
+
+Azuriter_StepAvoid_StepAvengeSword:
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_ステップアベンジソード}
+  Skills:
+  - modifyMana{a=30} @self
+  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> * 3 + 15";t=FLOAT} @self
+  - sound{s=block.note_block.chime;p=1.68;audience=caster}
+  - sound{s=block.note_block.chime;p=1.26;audience=caster;delay=2}
+  - sound{s=block.note_block.chime;v=0.9;p=1.68;audience=caster;delay=4}
+  - sound{s=block.note_block.chime;v=0.9;p=1.26;audience=caster;delay=6}
+  - sound{s=block.note_block.chime;v=0.3;p=1.68;audience=caster;delay=8}
+  - damage{a="<skill.var.damage>";pi=true;ii=true;delay=15} @trigger 
+  - sound{s=item.trident.thunder;p=2;v=2.5;audience=caster;sc=PLAYERS;delay=15} @self

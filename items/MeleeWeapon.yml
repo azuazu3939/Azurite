@@ -247,4 +247,22 @@ Azuriter_ステップダッシュソード:
       Damage: 36 ADD
   Group: 'Melee-Weapon'
   Skills:
-  - skill{s=Azuriter_ステップダッシュソード_R1_Skills} @self ~onUse 
+  - skill{s=Azuriter_ステップダッシュソード_R1_Skills} @self ~onUse
+
+Azuriter_ステップアベンジソード:
+  Id: golden_sword
+  Display: "&fステップアベンジソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&fマナを40消費し、回避待機状態にする。"
+  - "&f回避すると対象に攻撃を行う。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 28 ADD
+      AttackSpeed: -0.5 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+  Skills:
+  - skill{s=Azuriter_ステップアベンジソード_R1_Skills} @self ~onUse 
