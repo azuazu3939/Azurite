@@ -142,49 +142,49 @@ Azuriter_風核:
 
 Azuriter_風牙狼の骨:
   Id: bone
-  Display: "&f風牙狼の骨"
+  Display: "&a風牙狼の骨"
   ItemUpdater:
     Version: 1
   Group: 'Material'
 
 Azuriter_風牙狼の牙:
   Id: bone_meal
-  Display: "&f風牙狼の牙"
+  Display: "&a風牙狼の牙"
   ItemUpdater:
     Version: 1
   Group: 'Material'
 
 Azuriter_風牙狼の皮:
   Id: leather
-  Display: "&f風牙狼の皮"
+  Display: "&a風牙狼の皮"
   ItemUpdater:
     Version: 1
   Group: 'Material'
 
 Azuriter_炎核:
   Id: fire_charge
-  Display: "&1炎核"
+  Display: "&9炎核"
   ItemUpdater:
     Version: 1
   Group: 'Material'
 
 Azuriter_焔獣の炎牙:
   Id: blaze_rod
-  Display: "&f焔獣の炎牙"
+  Display: "&a焔獣の炎牙"
   ItemUpdater:
     Version: 1
   Group: 'Material'
 
 Azuriter_焔獣の炎殻:
   Id: blaze_powder
-  Display: "&f焔獣の炎殻"
+  Display: "&a焔獣の炎殻"
   ItemUpdater:
     Version: 1
   Group: 'Material'
 
 Azuriter_焔獣の太骨:
   Id: bone
-  Display: "&f焔獣の太骨"
+  Display: "&a焔獣の太骨"
   ItemUpdater:
     Version: 1
   Group: 'Material'
