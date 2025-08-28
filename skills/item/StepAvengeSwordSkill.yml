@@ -10,5 +10,7 @@ Azuriter_ステップアベンジソード_R1_Skills:
   Skills:
   - modifyMana{a=-40} @self 
   - setMaterialCooldown{m=GOLDEN_SWORD;d=30} @self
+  - potion{t=SLOWNESS;l=5;d=10;p=false} @self
+  - potion{t=SLOW_FALLING;l=5;d=10;p=false} @self
   - ondamaged{t=12;n=step_avoid;rd=true;oh=[ - sound{s=entity.arrow.hit_player;v=0.5} @self - skill{s=Azuriter_StepAvoid} @self ];ce=true;os=[ - setVar{k=skill.damageStepAvoid;a="<caster.damage>";t=FLOAT} @self ]} @self
   - sound{s=block.trial_spawner.spawn_item;p=2;audience=caster;sc=PLAYERS} @self
