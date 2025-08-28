@@ -10,7 +10,7 @@ Azuriter_ハルバード_A1_Skills:
 Azuriter_ハルバード_Explode:
   Skills:
   - setVar{k=caster.Halberd;a="0";t=INTEGER} @self
-  - setVar{k=skill.damageHalberd;a="<caster.damage>";t=FLOAT} @self
+  - setVar{k=skill.damageHalberd;a="<caster.damage> * 1.25";t=FLOAT} @self
   - delay 10
   - projectile{
     ot=[
@@ -18,7 +18,7 @@ Azuriter_ハルバード_Explode:
     ];
     oh=[
       - aura{n=Azuriter_ハルバード_Explode;t=20;i=10} 
-      - damage{a="<skill.var.damageHalberd> + 24";pi=true;ii=true}
+      - damage{a="<skill.var.damageHalberd> + 12";pi=true;ii=true}
     ];
     os=[
       - sound{s=entity.generic.explode;p=0.5;v=0.1;audience=nearby} @self

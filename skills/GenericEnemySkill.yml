@@ -119,6 +119,9 @@ Generic_Enemy_MCLove32_DAMAGED_Player:
   - isplayer true 
   Skills: 
   - setVar{k=skill.name;a="<target.uuid>";t=STRING} @trigger
+  - setVar{k=skill.one;a="<caster.mhp> / 100";t=INTEGER} @self 
+  - threat{mode=ADD;amount=<skill.var.one>;delay=1} @T 
+  - threat{mode=DELETE} @TTP ?!varset{name=caster.<skill.var.name>}
   - setVar{k=caster.<skill.var.name>;a="<caster.var.<skill.var.name>|0> + <skill.var.damage-amount>";t=FLOAT} @self
 
 #Usage  
@@ -153,7 +156,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   Skills:
   - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @self
   - setVar{k=skill.entity;a="<target.name>";t=STRING} @UniqueIdentifier{u=<skill.var.name>}
-  - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.entity> &f&lスコア &b<skill.var.dmg>"} @PIR{r=<skill.var.range>} ?!varrange{k=skill.dmg;r=0}
+  - message{m="&a&l<skill.var.ranking>位 &6&l<skill.var.entity> &f&lスコア &d<target.threat> &f&l総ダメージ &b<skill.var.dmg>"} @PIR{r=<skill.var.range>} ?!varrange{k=skill.dmg;r=0}
   - setVar{k=skill.ranking;a="1 + <skill.var.ranking>";t=INTEGER} @self ?!varrange{k=skill.dmg;r=0}
   - vskill{s=<skill.do>;f=false} @UniqueIdentifier{u=<skill.var.name>} ?!varrange{k=skill.dmg;r=0}
 
