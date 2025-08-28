@@ -124,14 +124,14 @@ Azuriter_StepAvoid_StepAvengeSword:
   - wearing{s=HAND;i=Azuriter_ステップアベンジソード}
   Skills:
   - modifyMana{a=30} @self
-  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> * 3 + 15";t=FLOAT} @self
+  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> * 2.5 + 15";t=FLOAT} @self
   - sound{s=block.note_block.chime;p=1.68;audience=caster}
   - sound{s=block.note_block.chime;p=1.26;audience=caster;delay=2}
   - sound{s=block.note_block.chime;v=0.9;p=1.68;audience=caster;delay=4}
   - sound{s=block.note_block.chime;v=0.9;p=1.26;audience=caster;delay=6}
   - sound{s=block.note_block.chime;v=0.3;p=1.68;audience=caster;delay=8}
-  - damage{a="<skill.var.damage>";pi=true;ii=true;delay=15} @trigger 
-  - sound{s=item.trident.thunder;p=2;v=2.5;audience=caster;sc=PLAYERS;delay=15} @self
+  - damage{a="<skill.var.damage>";pi=true;ii=true;delay=15;repeat=1;repeati=2} @trigger 
+  - sound{s=item.trident.thunder;p=2;v=1;audience=caster;sc=PLAYERS;delay=15;repeat=1;repeati=2} @self
   - setVar{k=skill.count;a="0";t=INTEGER} @self
   - projectile{
     ot=[
