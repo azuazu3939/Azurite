@@ -28,7 +28,7 @@ Generic_Enemy_MCLove32_EnterCombat_Damaged_Count:
   - setVar{k=caster.target_amount;a="0";t=INTEGER} @self
   - sudoskill{
     s=[
-      - setVar{k=caster.target_amount;a="<caster.var.target_amount> + 1";t=INTEGER} @trigger
+      - setVar{k=target.target_amount;a="<target.var.target_amount|0> + 1";t=INTEGER} @trigger
       - message{m="失敗"} @trigger
     ];cat=true} @TTP
 
