@@ -38,7 +38,7 @@ Azuriter_リジピド_Skill_Multi:
   Conditions:
   - hasAura{n=Azuriter_リジピドスタック} true
   Skills:
-  - addVar{k=skill.heal_regen;a=3} @self
+  - setVar{k=skill.heal_regen;a="3 + <skill.var.heal_regen|0>";t=INTEGER} @self
   - auraRemove{n=Azuriter_リジピドスタック;s=1} @self 
   - delay 0
   - skill{s=Azuriter_リジピド_Skill_Multi} @self
