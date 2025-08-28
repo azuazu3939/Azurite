@@ -138,7 +138,7 @@ Azuriter_風核:
     Version: 1
   Group: 'Material'
   Skills:
-  - cancelEvent{sync=true} @self ~onInteract 
+  - cancelEvent{sync=true} @self ~onUse
 
 Azuriter_風牙狼の骨:
   Id: bone
