@@ -11,9 +11,8 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK:
     OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3,
     OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4,
     OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5;
-    fbs=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_0;
-    repeat=1;repeati=20} @self
-  - delay <random.200to240>
+    fbs=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_0} @self
+  - delay <random.120to200>
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK @T
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_0:
