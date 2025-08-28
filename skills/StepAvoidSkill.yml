@@ -132,3 +132,13 @@ Azuriter_StepAvoid_StepAvengeSword:
   - sound{s=block.note_block.chime;v=0.3;p=1.68;audience=caster;delay=8}
   - damage{a="<skill.var.damage>";pi=true;ii=true;delay=15} @trigger 
   - sound{s=item.trident.thunder;p=2;v=2.5;audience=caster;sc=PLAYERS;delay=15} @self
+  - setVar{k=skill.count;a="0";t=INTEGER} @self
+  - projectile{
+    ot=[
+      - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
+      - lunge{v=1;vy="(-0.15 * <skill.var.count>) + 0.75"} @self
+    ];
+    os=[
+      - lunge{v=2.75;vy=0.25} @self
+    ];
+    i=2;hp=false;hnp=false;sb=false;se=false;tyo=2;g=1;mr=10;vr=1;hr=1;v=1;d=20} @forward{lockpitch=true} ?!crouching 
