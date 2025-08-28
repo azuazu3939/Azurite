@@ -36,7 +36,7 @@ Generic_Enemy_MCLove32_EnterCombat_Damaged_Count:
 Generic_Enemy_MCLove32_EnterCombat_Damaged:
   Skills:
   - setVar{var=skill.dmg;val="0";t=FLOAT} @self
-  - setVar{var=skill.break;val="<caster.mhp> * <caster.var.target_amount> * <skill.break> / 100000";t=FLOAT} @self
+  - setVar{var=skill.break;val="<caster.mhp> * <caster.var.target_amount> * <skill.break> / 10000";t=FLOAT} @self
   - auraRemove{n=Generic_Enemy_MCLove32_Damaged} @self
   - ondamaged{auraName=Generic_Enemy_MCLove32_Damaged;d=1200;
       oh=[
