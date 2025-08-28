@@ -176,48 +176,48 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10:
   - delay 1
   - setVar{k=skill.sub2;a="<caster.var.02|0> - <skill.var.dmg>";t=INTEGER} @self
   - setVar{k=skill.test2;a="<caster.var.01|0> - <caster.var.02|0>";t=INTEGER} @self
-  - setVar{k=caster.02;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub2;r=<0} ?!varrange{k=skill.test2;r=<0}
-  - setVar{k=caster.2;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub2;r=<0} ?!varrange{k=skill.test2;r=<0}
+  - setVar{k=caster.02;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub2;r=<0} ?varrange{k=skill.test2;r=>0}
+  - setVar{k=caster.2;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub2;r=<0} ?varrange{k=skill.test2;r=>0}
   - delay 1
   - setVar{k=skill.sub3;a="<caster.var.03|0> - <skill.var.dmg>";t=INTEGER} @self
   - setVar{k=skill.test3;a="<caster.var.02|0> - <caster.var.03|0>";t=INTEGER} @self
-  - setVar{k=caster.03;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub3;r=<0} ?!varrange{k=skill.test3;r=<0}
-  - setVar{k=caster.3;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub3;r=<0} ?!varrange{k=skill.test3;r=<0}
+  - setVar{k=caster.03;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub3;r=<0} ?varrange{k=skill.test3;r=>0}
+  - setVar{k=caster.3;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub3;r=<0} ?varrange{k=skill.test3;r=>0}
   - delay 1
   - setVar{k=skill.sub4;a="<caster.var.04|0> - <skill.var.dmg>";t=INTEGER} @self
   - setVar{k=skill.test4;a="<caster.var.03|0> - <caster.var.04|0>";t=INTEGER} @self
-  - setVar{k=caster.04;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub4;r=<0} ?!varrange{k=skill.test4;r=<0}
-  - setVar{k=caster.4;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub4;r=<0} ?!varrange{k=skill.test4;r=<0}
+  - setVar{k=caster.04;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub4;r=<0} ?varrange{k=skill.test4;r=>0}
+  - setVar{k=caster.4;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub4;r=<0} ?varrange{k=skill.test4;r=>0}
   - delay 1
   - setVar{k=skill.sub5;a="<caster.var.05|0> - <skill.var.dmg>";t=INTEGER} @self
   - setVar{k=skill.test5;a="<caster.var.04|0> - <caster.var.05|0>";t=INTEGER} @self
-  - setVar{k=caster.05;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub5;r=<0} ?!varrange{k=skill.test5;r=<0}
-  - setVar{k=caster.5;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub5;r=<0} ?!varrange{k=skill.test5;r=<0}
+  - setVar{k=caster.05;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub5;r=<0} ?varrange{k=skill.test5;r=>0}
+  - setVar{k=caster.5;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub5;r=<0} ?varrange{k=skill.test5;r=>0}
   - delay 1
   - setVar{k=skill.sub6;a="<caster.var.06|0> - <skill.var.dmg>";t=INTEGER} @self
   - setVar{k=skill.test6;a="<caster.var.05|0> - <caster.var.06|0>";t=INTEGER} @self
-  - setVar{k=caster.06;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub6;r=<0} ?!varrange{k=skill.test6;r=<0}
-  - setVar{k=caster.6;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub6;r=<0} ?!varrange{k=skill.test6;r=<0}
+  - setVar{k=caster.06;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub6;r=<0} ?varrange{k=skill.test6;r=>0}
+  - setVar{k=caster.6;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub6;r=<0} ?varrange{k=skill.test6;r=>0}
   - delay 1
   - setVar{k=skill.sub7;a="<caster.var.07|0> - <skill.var.dmg>";t=INTEGER} @self
   - setVar{k=skill.test7;a="<caster.var.06|0> - <caster.var.07|0>";t=INTEGER} @self
-  - setVar{k=caster.07;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub7;r=<0} ?!varrange{k=skill.test7;r=<0}
-  - setVar{k=caster.7;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub7;r=<0} ?!varrange{k=skill.test7;r=<0}
+  - setVar{k=caster.07;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub7;r=<0} ?varrange{k=skill.test7;r=>0}
+  - setVar{k=caster.7;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub7;r=<0} ?varrange{k=skill.test7;r=>0}
   - delay 1
   - setVar{k=skill.sub8;a="<caster.var.08|0> - <skill.var.dmg>";t=INTEGER} @self
   - setVar{k=skill.test8;a="<caster.var.07|0> - <caster.var.08|0>";t=INTEGER} @self
-  - setVar{k=caster.08;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub8;r=<0} ?!varrange{k=skill.test8;r=<0}
-  - setVar{k=caster.8;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub8;r=<0} ?!varrange{k=skill.test8;r=<0}
+  - setVar{k=caster.08;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub8;r=<0} ?varrange{k=skill.test8;r=>0}
+  - setVar{k=caster.8;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub8;r=<0} ?varrange{k=skill.test8;r=>0}
   - delay 1
   - setVar{k=skill.sub9;a="<caster.var.09|0> - <skill.var.dmg>";t=INTEGER} @self
   - setVar{k=skill.test9;a="<caster.var.08|0> - <caster.var.09|0>";t=INTEGER} @self
-  - setVar{k=caster.09;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub9;r=<0} ?!varrange{k=skill.test9;r=<0}
-  - setVar{k=caster.9;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub9;r=<0} ?!varrange{k=skill.test9;r=<0}
+  - setVar{k=caster.09;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub9;r=<0} ?varrange{k=skill.test9;r=>0}
+  - setVar{k=caster.9;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub9;r=<0} ?varrange{k=skill.test9;r=>0}
   - delay 1
   - setVar{k=skill.sub10;a="<caster.var.010|0> - <skill.var.dmg>";t=INTEGER} @self
   - setVar{k=skill.test10;a="<caster.var.09|0> - <caster.var.010|0>";t=INTEGER} @self
-  - setVar{k=caster.010;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub10;r=<0} ?!varrange{k=skill.test10;r=<0}
-  - setVar{k=caster.10;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub10;r=<0} ?!varrange{k=skill.test10;r=<0}
+  - setVar{k=caster.010;a="<skill.var.dmg>";t=INTEGER} @self ?varrange{k=skill.sub10;r=<0} ?varrange{k=skill.test10;r=>0}
+  - setVar{k=caster.10;a="<skill.var.name>";t=STRING} @self ?varrange{k=skill.sub10;r=<0} ?varrange{k=skill.test10;r=>0}
   - delay 1
   - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10_Run} @self
 
