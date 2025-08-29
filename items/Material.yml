@@ -2,7 +2,6 @@ Azuriter_粗悪な装備片:
   Id: leather
   Display: "&f粗悪な装備片"
   Lore:
-  - "&fField1の始まりの丘などで、入手可能なアイテム。"
   - "&f名もなき冒険者たちの遺品。"
   - "&f質も量も足りないが、集めれば使えるだろう。"
   ItemUpdater:
@@ -13,7 +12,6 @@ Azuriter_バラケタ装備片:
   Id: leather
   Display: "&fバラケタ装備片"
   Lore:
-  - "&fField1の始まりの丘などで、入手可能なアイテム。"
   - "&f名もなき冒険者たちの遺品。"
   - "&f集めればまだまだ使えるだろう。"
   ItemUpdater:
@@ -26,9 +24,9 @@ Azuriter_白マテリア:
   Id: white_dye
   Display: "&a白マテリア"
   Lore:
-  - "&fField1の始まりの丘などで、入手可能なアイテム。"
   - "&f名もなき冒険者たちの遺品。"
   - "&f物体の正常化を促進する。"
+  - "&f影ある場所に影あり。"
   ItemUpdater:
     Version: 1
   Group: 'Material'
@@ -37,7 +35,6 @@ Azuriter_鉄片:
   Id: iron_ingot
   Display: "&f鉄片"
   Lore:
-  - "&fField1の始まりの丘などで、入手可能なアイテム。"
   - "&f名もなき冒険者たちの遺品。"
   - "&f比較的強度が良い。"
   ItemUpdater:
@@ -48,7 +45,6 @@ Azuriter_加工鉄片:
   Id: iron_ingot
   Display: "&f加工鉄片"
   Lore:
-  - "&fField1の始まりの丘などで、入手可能なアイテム。"
   - "&f名もなき冒険者たちの遺品。"
   - "&fこれは良いものだ!"
   ItemUpdater:
@@ -61,7 +57,6 @@ Azuriter_ハイソール:
   Id: blaze_powder
   Display: "&fハイソール"
   Lore:
-  - "&fField1の始まりの丘などで、入手可能なアイテム。"
   - "&f名もなき冒険者たちの遺品。"
   - "&f時が経てど、失われぬ強い心力。"
   ItemUpdater:
@@ -72,9 +67,9 @@ Azuriter_黒マテリア:
   Id: black_dye
   Display: "&a黒マテリア"
   Lore:
-  - "&fField1の始まりの丘などで、入手可能なアイテム。"
   - "&f名もなき冒険者たちの遺品。"
   - "&f物体の安定性を促進する。"
+  - "&f光ある場所に影あり。"
   ItemUpdater:
     Version: 1
   Group: 'Material'

@@ -1,6 +1,6 @@
 Azuriter_L_マジカルH:
   Id: leather_helmet
-  Display: "&fマジカルヘルメット &f&lL1"
+  Display: "&aマジカルヘルメット &f&lL1"
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -24,7 +24,7 @@ Azuriter_L_マジカルH:
 
 Azuriter_L_マジカルC:
   Id: leather_chestplate
-  Display: "&fマジカルチェストプレート &f&lL1"
+  Display: "&aマジカルチェストプレート &f&lL1"
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -44,7 +44,7 @@ Azuriter_L_マジカルC:
 
 Azuriter_L_マジカルL:
   Id: leather_leggings
-  Display: "&fマジカルレギンス &f&lL1"
+  Display: "&aマジカルレギンス &f&lL1"
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -64,7 +64,7 @@ Azuriter_L_マジカルL:
 
 Azuriter_L_マジカルB:
   Id: leather_boots
-  Display: "&fマジカルブーツ &f&lL1"
+  Display: "&aマジカルブーツ &f&lL1"
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -84,7 +84,7 @@ Azuriter_L_マジカルB:
 
 Azuriter_L_ピュアマジカルH:
   Id: leather_helmet
-  Display: "&fピュアマジカルヘルメット &f&lL1"
+  Display: "&aピュアマジカルヘルメット &f&lL1"
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -109,7 +109,7 @@ Azuriter_L_ピュアマジカルH:
 
 Azuriter_L_ピュアマジカルC:
   Id: leather_chestplate
-  Display: "&fピュアマジカルチェストプレート &f&lL1"
+  Display: "&aピュアマジカルチェストプレート &f&lL1"
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -130,7 +130,7 @@ Azuriter_L_ピュアマジカルC:
 
 Azuriter_L_ピュアマジカルL:
   Id: leather_leggings
-  Display: "&fピュアマジカルレギンス &f&lL1"
+  Display: "&aピュアマジカルレギンス &f&lL1"
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -151,7 +151,7 @@ Azuriter_L_ピュアマジカルL:
 
 Azuriter_L_ピュアマジカルB:
   Id: leather_boots
-  Display: "&fピュアマジカルブーツ &f&lL1"
+  Display: "&aピュアマジカルブーツ &f&lL1"
   Options:
     Unbreakable: true
     Color: 215,55,255
