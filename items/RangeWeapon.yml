@@ -1,0 +1,21 @@
+Azuriter_カーブショットボウ:
+  Id: bow
+  Display: "&aカーブショットボウ"
+  Options:
+    Unbreakable: true
+  Lore:
+  - "&f曲射の乱れ撃ちを行う。"
+  - "&fhit時、マナを回復する。"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    MainHand:
+      Damage: 24 ADD 
+      Armor: -25 ADD
+      ArmorToughness: -25 ADD 
+      Health: -0.2 MULTIPLY_BASE
+      MovementSpeed: 0.4 MULTIPLY_BASE
+  Group: 'Range-Weapon'
+  Skills:
+  - skill{s=Azuriter_カーブショットボウ_Skills} @self ~onUse
+  - cancelEvent{sync=true} @self ~onUse
