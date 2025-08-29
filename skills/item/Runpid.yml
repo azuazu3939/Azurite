@@ -15,8 +15,10 @@ Azuriter_ランピド_R1_Skills:
   - delay 10
   - potion{t=SPEED;d=600;l=<skill.var.speed>;p=false} @self
   - potion{t=SPEED;d=600;l=<skill.var.speed>;p=false} @PIR{r=20}
-  - sound{s=block.brewing_stand.brew;v=1.5;sc=MASTER} @self
-  - sound{s=block.note_block.pling;p=1.414;v=1.5;sc=PLAYERS} @self
+  - sound{s=entity.evoker.cast_spell;v=0.6;sc=AMBIENT} @self
+  - sound{s=entity.illusioner.prepare_blindness;v=1;p=2;sc=AMBIENT;delay=4} @self
+  - sound{s=block.trial_spawner.about_to_spawn_item;v=0.4;p=2;sc=AMBIENT;delay=4} @self
+  - sound{s=entity.breeze.charge;v=0.4;p=0.5;sc=AMBIENT;delay=4} @self
   - e:pr{p=dust;c=#d4fff5;a=3;size=4;vs=0.05;hs=0.1;r=5;pts=16;d=true;dir=0,2,0;s=2} @PIR{r=20}
   - message{m="<caster.name>から移動速度支援をもらった！"} @PIR{r=20}
 

@@ -17,8 +17,10 @@ Azuriter_マナフル_R1_Skills:
   - modifyMana{a="<skill.var.mana_regen>"} @PIR{r=20}
   - modifyMana{a=0.05;m=true} @self
   - modifyMana{a=0.05;m=true} @PIR{r=20}
-  - sound{s=block.brewing_stand.brew;v=1.5;sc=MASTER} @self
-  - sound{s=block.note_block.harp;p=1.414;v=1.5;sc=PLAYERS} @self
+  - sound{s=entity.evoker.cast_spell;v=0.6;sc=AMBIENT} @self
+  - sound{s=item.trident.return;v=1;p=0;sc=AMBIENT;delay=4} @self
+  - sound{s=block.enchantment_table.use;v=1;p=2;sc=AMBIENT;delay=4} @self
+  - sound{s=entity.illusioner.prepare_mirror;v=1;p=1;sc=AMBIENT;delay=4} @self
   - e:pr{p=dust;c=#006aff;a=3;size=4;vs=0.05;hs=0.1;r=5;pts=16;d=true;dir=0,2,0;s=2} @PIR{r=20}
   - message{m="<caster.name>からマナ支援をもらった！"} @PIR{r=20}
 
