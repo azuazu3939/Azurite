@@ -67,7 +67,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
 
 Azuriter_ファイアバレットボウ_Skills_Shot_Get:
   Conditions:
-  - varrange{k=caster.bullet_bow_fire;r=>49} true
+  - varrange{k=caster.bullet_bow_fire;r=>29} true
   Skills:
   - setVar{k=caster.bullet_bow_fire;a="0";t=INTEGER} @self
   - setVar{k=caster.bullet_bow_get;a="<caster.var.bullet_bow_get|0> + <random.3to5>";t=INTEGER} @self
