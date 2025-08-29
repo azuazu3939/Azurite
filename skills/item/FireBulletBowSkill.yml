@@ -24,8 +24,8 @@ Azuriter_ファイアバレットボウ_Skills:
   - setVar{k=skill.damage;a="<skill.var.damage> * 0.98";t=FLOAT;repeat=<caster.var.shot_ct|0>;repeati=0} @self ?!hasAura{n=Azuriter_RangeWeaponDamageEnsure}
   - delay 2
   - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=0} @self
-  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=30} @self
-  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=-30} @self
+  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=60} @self
+  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=-60} @self
   - delay 600
   - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> - 1";t=INTEGER} @self
   - setVar{k=caster.shot_ct;a="0";t=INTEGER} @self ?varrange{k=caster.shot_ct;r=<0}
@@ -62,7 +62,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - isMythicMob true
       - hasAura{n="Azuriter_ファイアバレットボウ_Skills_Shot<caster.var.shot_ct|0>"} false
     ];
-    v=12;in=18;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;b=ARROW;se=false;vo=0.3;mr=36;ho=<skill.ho>} @TL
+    v=18;in=18;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;b=ARROW;se=false;vo=0.3;mr=36;ho=<skill.ho>;sfo=3} @TL
 
 Azuriter_ファイアバレットボウ_Skills_Shot_Get:
   Conditions:
