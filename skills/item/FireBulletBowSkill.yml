@@ -64,7 +64,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
         os=[
           - sound{s=entity.generic.explode;p=2;v=0.25} @origin 
         ];
-        v=24;i=1;vr=2;hr=2;se=false;hp=false;hnp=true;sfo=2;mr=16;cd=1} @ringAroundOrigin{r=16;p=12} 0.2
+        v=24;i=1;vr=2;hr=2;se=false;hp=false;hnp=true;sfo=2;mr=16;cd=1;origin=@targeted} @ringAroundOrigin{r=16;p=12} 0.2
     ];
     c=[
       - isliving true
