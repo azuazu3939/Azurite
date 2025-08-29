@@ -46,6 +46,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.95} @self 
       - e:p{p=flame;a=1;audience=caster} @origin 0.35
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.05} @self 
+      - modifyMana{a=1} @self
     ];
     oh=[
       - aura{n="Azuriter_ファイアバレットボウ_Skills_Shot<caster.var.shot_ct|0>";t=20;i=10}
@@ -88,6 +89,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot_Run:
     ];
     oh=[
       - damage{a="<caster.damage> * 2";pi=true;ii=true}
+      - modifyMana{a=5} @self
     ];
     c=[
       - isMythicMob true 
