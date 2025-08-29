@@ -39,12 +39,12 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - sound{s=entity.arrow.shoot;audience=caster} @self
       - sound{s=entity.arrow.shoot;audience=caster;v=0.75;p=2} @self
       - sound{s=entity.arrow.shoot;audience=caster;p=0.8} @self
-      - sound{s=block.bell.use;p=2;v=0.45;audience=caster;delay=1} @self
+      - sound{s=block.bell.use;p=2;v=0.15;audience=caster} @self
     ];
     ot=[
-      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.9} @self 
+      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.95} @self 
       - e:p{p=flame;a=1;audience=caster} @origin
-      - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
+      - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.05} @self 
     ];
     oh=[
       - aura{n="Azuriter_ファイアバレットボウ_Skills_Shot<caster.var.shot_ct|0>";t=20;i=10}
@@ -61,7 +61,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - isMythicMob true
       - hasAura{n="Azuriter_ファイアバレットボウ_Skills_Shot<caster.var.shot_ct|0>"} false
     ];
-    v=10;in=15;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;b=ARROW;se=false;vo=0.3;mr=36;ho=<skill.ho>} @TL
+    v=12;in=18;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;b=ARROW;se=false;vo=0.3;mr=36;ho=<skill.ho>} @TL
 
 Azuriter_ファイアバレットボウ_Skills_Shot_Get:
   Conditions:
