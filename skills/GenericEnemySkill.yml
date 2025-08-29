@@ -479,21 +479,21 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10_Run:
   - delay 1
   - setVar{k=skill.entity2;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.92>} ?!vareq{n=caster.91;v="<caster.var.92|aa>"} 
   - delay 1
-  - setVar{k=skill.entity3;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.93>} ?!vareq{n=caster.92;v="<caster.var.93|aa>"}
+  - setVar{k=skill.entity3;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.93>} ?!vareq{n=caster.92;v="<caster.var.93|aa>"} ?!vareq{n=caster.91;v="<caster.var.93|aa>"} 
   - delay 1
-  - setVar{k=skill.entity4;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.94>} ?!vareq{n=caster.93;v="<caster.var.94|aa>"}
+  - setVar{k=skill.entity4;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.94>} ?!vareq{n=caster.93;v="<caster.var.94|aa>"} ?!vareq{n=caster.92;v="<caster.var.94|aa>"}  ?!vareq{n=caster.91;v="<caster.var.94|aa>"} 
   - delay 1
-  - setVar{k=skill.entity5;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.95>} ?!vareq{n=caster.94;v="<caster.var.95|aa>"}
+  - setVar{k=skill.entity5;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.95>} ?!vareq{n=caster.94;v="<caster.var.95|aa>"} ?!vareq{n=caster.93;v="<caster.var.95|aa>"} ?!vareq{n=caster.92;v="<caster.var.95|aa>"}  ?!vareq{n=caster.91;v="<caster.var.95|aa>"}
   - delay 1
-  - setVar{k=skill.entity6;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.96>} ?!vareq{n=caster.95;v="<caster.var.96|aa>"}
+  - setVar{k=skill.entity6;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.96>} ?!vareq{n=caster.95;v="<caster.var.96|aa>"} ?!vareq{n=caster.94;v="<caster.var.96|aa>"} ?!vareq{n=caster.93;v="<caster.var.96|aa>"} ?!vareq{n=caster.92;v="<caster.var.96|aa>"}  ?!vareq{n=caster.91;v="<caster.var.96|aa>"}
   - delay 1
-  - setVar{k=skill.entity7;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.97>} ?!vareq{n=caster.96;v="<caster.var.97|aa>"}
+  - setVar{k=skill.entity7;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.97>} ?!vareq{n=caster.96;v="<caster.var.97|aa>"} ?!vareq{n=caster.95;v="<caster.var.97|aa>"} ?!vareq{n=caster.94;v="<caster.var.97|aa>"} ?!vareq{n=caster.93;v="<caster.var.97|aa>"} ?!vareq{n=caster.92;v="<caster.var.97|aa>"}  ?!vareq{n=caster.91;v="<caster.var.97|aa>"}
   - delay 1
-  - setVar{k=skill.entity8;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.98>} ?!vareq{n=caster.97;v="<caster.var.98|aa>"}
+  - setVar{k=skill.entity8;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.98>} ?!vareq{n=caster.97;v="<caster.var.98|aa>"} ?!vareq{n=caster.96;v="<caster.var.98|aa>"} ?!vareq{n=caster.95;v="<caster.var.98|aa>"} ?!vareq{n=caster.94;v="<caster.var.98|aa>"} ?!vareq{n=caster.93;v="<caster.var.98|aa>"} ?!vareq{n=caster.92;v="<caster.var.98|aa>"}  ?!vareq{n=caster.91;v="<caster.var.98|aa>"}
   - delay 1
-  - setVar{k=skill.entity9;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.99>} ?!vareq{n=caster.98;v="<caster.var.99|aa>"}
+  - setVar{k=skill.entity9;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.99>} ?!vareq{n=caster.98;v="<caster.var.99|aa>"} ?!vareq{n=caster.97;v="<caster.var.99|aa>"} ?!vareq{n=caster.96;v="<caster.var.99|aa>"} ?!vareq{n=caster.95;v="<caster.var.99|aa>"} ?!vareq{n=caster.94;v="<caster.var.99|aa>"} ?!vareq{n=caster.93;v="<caster.var.99|aa>"} ?!vareq{n=caster.92;v="<caster.var.99|aa>"}  ?!vareq{n=caster.91;v="<caster.var.99|aa>"}
   - delay 1
-  - setVar{k=skill.entity10;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.910>} ?!vareq{n=caster.99;v="<caster.var.910|aa>"}
+  - setVar{k=skill.entity10;a="<target.name>";t=STRING} @UniqueIdentifier{u=<caster.var.910>} ?!vareq{n=caster.99;v="<caster.var.910|aa>"} !vareq{n=caster.98;v="<caster.var.910|aa>"} ?!vareq{n=caster.97;v="<caster.var.910|aa>"} ?!vareq{n=caster.96;v="<caster.var.910|aa>"} ?!vareq{n=caster.95;v="<caster.var.910|aa>"} ?!vareq{n=caster.94;v="<caster.var.910|aa>"} ?!vareq{n=caster.93;v="<caster.var.910|aa>"} ?!vareq{n=caster.92;v="<caster.var.910|aa>"}  ?!vareq{n=caster.91;v="<caster.var.910|aa>"}
   - delay 1
   - message{m="&a&l1位 &6&l<skill.var.entity1> &f&lスコア &b<caster.var.01>"} @PIR{r=<skill.var.range>} ?varisset{k=skill.entity1}
   - message{m="&a&l2位 &6&l<skill.var.entity2> &f&lスコア &b<caster.var.02>"} @PIR{r=<skill.var.range>} ?varisset{k=skill.entity2} 
