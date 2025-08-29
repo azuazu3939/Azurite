@@ -30,7 +30,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - sound{s=block.bell.use;p=2;v=0.45;audience=caster;delay=1} @self
     ];
     ot=[
-      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.95;delay=8} @self 
+      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.95;delay=2} @self 
       - e:p{p=flame;a=1;audience=caster} @origin 
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
     ];
