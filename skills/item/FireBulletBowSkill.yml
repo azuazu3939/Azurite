@@ -64,4 +64,4 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - isMythicMob true
       - hasAura{n="Azuriter_ファイアバレットボウ_Skills_Shot<caster.var.shot_ct|0>"} false
     ];
-    v=20;in=16;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;b=ARROW;se=false;vo=0.314;mr=36} @TL
+    v=24;in=16;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;b=ARROW;se=false;vo=0.285;mr=36} @TL
