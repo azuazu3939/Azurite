@@ -36,10 +36,11 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
   - missile{
     os=[
       - setVar{k=caster.bullet_bow_get;a="0";t=INTEGER} @self ?!varisset{k=caster.bullet_bow_get}
-      - sound{s=entity.arrow.shoot;audience=caster} @self
-      - sound{s=entity.arrow.shoot;audience=caster;v=0.75;p=2} @self
-      - sound{s=entity.arrow.shoot;audience=caster;p=0.8} @self
-      - sound{s=block.bell.use;p=2;v=0.15;audience=caster} @self
+      - sound{s=entity.arrow.shoot;audience=caster;sc=PLAYERS} @self
+      - sound{s=entity.arrow.shoot;audience=caster;sc=PLAYERS;v=0.75;p=2} @self
+      - sound{s=entity.arrow.shoot;audience=caster;sc=PLAYERS;p=0.8} @self
+      - sound{s=block.bell.use;p=2;v=0.15;audience=castersc=PLAYERS} @self
+      - sound{s=block.trial_spawner.about_to_spawn_item;p=2;v=1;sc=PLAYERS} @self
     ];
     ot=[
       - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.95} @self 
@@ -65,7 +66,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
 
 Azuriter_ファイアバレットボウ_Skills_Shot_Get:
   Conditions:
-  - varrange{k=bullet_bow_fire;r=>9} true
+  - varrange{k=caster.bullet_bow_fire;r=>9} true
   Skills:
   - setVar{k=caster.bullet_bow_fire;a="0";t=INTEGER} @self
   - setVar{k=caster.bullet_bow_get;a="<caster.var.bullet_bow_get|0> + <random.3to5>";t=INTEGER} @self
