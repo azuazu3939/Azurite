@@ -30,7 +30,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - sound{s=block.bell.use;p=2;v=0.45;audience=caster;delay=1} @self
     ];
     ot=[
-      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.95;delay=2} @self 
+      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.95} @self 
       - e:p{p=flame;a=1;audience=caster} @origin 
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
     ];
@@ -64,4 +64,4 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - isMythicMob true
       - hasAura{n="Azuriter_ファイアバレットボウ_Skills_Shot<caster.var.shot_ct|0>"} false
     ];
-    v=24;in=16;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;b=ARROW;se=false;vo=0.285;mr=36} @TL
+    v=24;in=12;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;b=ARROW;se=false;vo=0.285;mr=36} @TL
