@@ -19,3 +19,22 @@ Azuriter_カーブショットボウ:
   Skills:
   - skill{s=Azuriter_カーブショットボウ_Skills} @self ~onUse
   - cancelEvent{sync=true} @self ~onUse
+
+Azuriter_ファイアバレットボウ:
+  Id: bow
+  Display: "&9ファイアバレットボウ"
+  Options:
+    Unbreakable: true
+  Lore:
+  - "&fマナを20消費し、1発放つ。"
+  - "&f特定条件で、hit周囲の範囲ダメを引き起こす。"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    MainHand:
+      Damage: 36 ADD 
+      MovementSpeed: 0.25 MULTIPLY_BASE
+  Group: 'Range-Weapon'
+  Skills:
+  - skill{s=Azuriter_ファイアバレットボウ_Skills} @self ~onUse
+  - cancelEvent{sync=true} @self ~onUse
