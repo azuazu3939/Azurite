@@ -1,0 +1,66 @@
+Azuriter_ファイアバレットボウ_Skills:
+  Cooldown: 0.2
+  Conditions:
+  - wearing{s=HAND;s=Azuriter_ファイアバレットボウ}
+  - hasMana{a=>20;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=BOW} false 
+  Skills:
+  - setMaterialCooldown{m=BOW;d=10} @self
+  - modifyMana{a=-20} @self 
+  - setVar{k=skill.damage;a="<caster.damage> * 1.35";t=FLOAT} @self
+  - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> + 1";t=INTEGER} @self
+  - setVar{k=skill.damage;a="<skill.var.damage> * 0.98";t=FLOAT;repeat=<caster.var.shot_ct|0>;repeati=0} @self ?!hasAura{n=Azuriter_RangeWeaponDamageEnsure}
+  - delay 2
+  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot} @self
+  - delay 400
+  - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> - 1";t=INTEGER} @self
+  - setVar{k=caster.shot_ct;a="0";t=INTEGER} @self ?varrange{k=caster.shot_ct;r=<0}
+
+
+Azuriter_ファイアバレットボウ_Skills_Shot:
+  Skills:
+  - projectile{
+    os=[
+      - sound{s=entity.arrow.shoot;audience=caster} @self
+      - sound{s=entity.arrow.shoot;audience=caster;v=0.75;p=2} @self
+      - sound{s=entity.arrow.shoot;audience=caster;p=0.8} @self
+      - sound{s=block.bell.use;p=2;v=0.45;audience=caster;delay=1} @self
+    ];
+    ot=[
+      - e:p{p=flame;a=1;audience=caster} @origin 
+      - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
+    ];
+    oh=[
+      - aura{n="Azuriter_ファイアバレットボウ_Skills_Shot<caster.var.shot_ct|0>";t=20;i=10}
+      - damage{a=<skill.var.damage>;pi=true;ii=true} 
+      - e:p{p=crit;a=10;vs=0.5;hs=0.5;audience=caster}
+      - sound{s=entity.arrow.hit;audience=caster}
+      - sound{s=entity.arrow.hit_player;audience=caster;v=0.75} @self
+      - setVar{k=target.booooms;a="<target.var.booooms|0> + 1";t=INTEGER}
+      - projectile{
+        ot=[
+          - e:p{p=explosion;a=1} @origin 
+        ];
+        oh=[
+          - damage{a="<caster.damage> * 1.25";pi=true;ii=true}
+        ];
+        c=[
+          - isMythicMob true 
+          - isliving true
+        ];
+        os=[
+          - sound{s=entity.generic.explode;p=2;v=0.25} @origin 
+        ];
+        v=24;i=1;vr=2;hr=2;se=false;hp=false;hnp=true;sfo=2;mr=16} @ringAroundOrigin{r=16;p=12} ?varrange{k=target.booooms;r=5}
+      - setVar{k=target.booooms;a="0";t=INTEGER} ?varrange{k=target.booooms;r=5}
+    ];
+    c=[
+      - isliving true
+      - isMythicMob true
+      - hasAura{n="Azuriter_ファイアバレットボウ_Skills_Shot<caster.var.shot_ct|0>"} false
+    ];
+    v=10;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;
+    b=ARROW} @forward{f=30;lockpitch=true}
