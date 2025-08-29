@@ -137,7 +137,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3_Meteor:
 
 #溜めて突進
 OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
-  Cooldown: 15
+  Cooldown: 30
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
