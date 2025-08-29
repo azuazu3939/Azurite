@@ -139,6 +139,7 @@ Azuriter_風核:
   Group: 'Material'
   Skills:
   - cancelEvent{sync=true} @self ~onUse
+  - cancelEvent{sync=true} @self ~onRightclick 
 
 Azuriter_風牙狼の骨:
   Id: bone
@@ -153,6 +154,9 @@ Azuriter_風牙狼の牙:
   ItemUpdater:
     Version: 1
   Group: 'Material'
+  Skills:
+  - cancelEvent{sync=true} @self ~onUse
+  - cancelEvent{sync=true} @self ~onRightclick 
 
 Azuriter_風牙狼の皮:
   Id: leather
