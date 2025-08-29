@@ -506,16 +506,16 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10_Run:
   - message{m="&a&l9位 &6&l<skill.var.entity9> &f&lスコア &b<caster.var.09>"} @PIR{r=<skill.var.range>} ?varisset{k=skill.entity9} 
   - message{m="&a&l10位 &6&l<skill.var.entity10> &f&lスコア &b<caster.var.010>"} @PIR{r=<skill.var.range>} ?varisset{k=skill.entity10}
 
-  - vskill{s=<skill.do>;f=false} @playerByName{n=<skill.var.entity1>} ?varisset{k=skill.entity1}
-  - vskill{s=<skill.do>;f=false} @playerByName{n=<skill.var.entity2>} ?varisset{k=skill.entity2}
-  - vskill{s=<skill.do>;f=false} @playerByName{n=<skill.var.entity3>} ?varisset{k=skill.entity3}
-  - vskill{s=<skill.do>;f=false} @playerByName{n=<skill.var.entity4>} ?varisset{k=skill.entity4}
-  - vskill{s=<skill.do>;f=false} @playerByName{n=<skill.var.entity5>} ?varisset{k=skill.entity5}
-  - vskill{s=<skill.do>;f=false} @playerByName{n=<skill.var.entity6>} ?varisset{k=skill.entity6}
-  - vskill{s=<skill.do>;f=false} @playerByName{n=<skill.var.entity7>} ?varisset{k=skill.entity7}
-  - vskill{s=<skill.do>;f=false} @playerByName{n=<skill.var.entity8>} ?varisset{k=skill.entity8}
-  - vskill{s=<skill.do>;f=false} @playerByName{n=<skill.var.entity9>} ?varisset{k=skill.entity9}
-  - vskill{s=<skill.do>;f=false} @playerByName{n=<skill.var.entity10>} ?varisset{k=skill.entity10}
+  - vskill{s=<skill.do>;f=false;repeat=4;repeati=1} @playerByName{n=<skill.var.entity1>} ?varisset{k=skill.entity1}
+  - vskill{s=<skill.do>;f=false;repeat=3;repeati=1} @playerByName{n=<skill.var.entity2>} ?varisset{k=skill.entity2}
+  - vskill{s=<skill.do>;f=false;repeat=2;repeati=1} @playerByName{n=<skill.var.entity3>} ?varisset{k=skill.entity3}
+  - vskill{s=<skill.do>;f=false;repeat=1;repeati=1} @playerByName{n=<skill.var.entity4>} ?varisset{k=skill.entity4}
+  - vskill{s=<skill.do>;f=false;repeat=1;repeati=1} @playerByName{n=<skill.var.entity5>} ?varisset{k=skill.entity5}
+  - vskill{s=<skill.do>;f=false;repeat=0;repeati=1} @playerByName{n=<skill.var.entity6>} ?varisset{k=skill.entity6}
+  - vskill{s=<skill.do>;f=false;repeat=0;repeati=1} @playerByName{n=<skill.var.entity7>} ?varisset{k=skill.entity7}
+  - vskill{s=<skill.do>;f=false;repeat=0;repeati=1} @playerByName{n=<skill.var.entity8>} ?varisset{k=skill.entity8}
+  - vskill{s=<skill.do>;f=false;repeat=0;repeati=1} @playerByName{n=<skill.var.entity9>} ?varisset{k=skill.entity9}
+  - vskill{s=<skill.do>;f=false;repeat=0;repeati=1} @playerByName{n=<skill.var.entity10>} ?varisset{k=skill.entity10}
 
 
 Generic_ターゲットランダムプレイヤー_MCLove32:

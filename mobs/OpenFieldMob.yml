@@ -62,7 +62,7 @@ Azuriter_Boss_Feldos:
   Template: Azuriter_Enemy_RaidBoss_Base
   Display: "<#c20a0a>&l焔獣フェルドス&R"
   Type: hoglin
-  Health: 15650
+  Health: 21650
   Armor: 130
   Damage: 20
   Drops:
@@ -115,10 +115,10 @@ Azuriter_Boss_Feldos:
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=48;do="OpenField_Enemy_焔獣フェルドス_MCLove32_HighDrop"} @self ~onDeath 
   - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_ステップソード 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlgo <target.name> Azuriter_炎核 1 0.05";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
-  - cmd{c="mlgo <target.name> Azuriter_焔獣の炎牙 1 0.15";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
-  - cmd{c="mlgo <target.name> Azuriter_焔獣の炎殻 1 0.4";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlgo <target.name> Azuriter_焔獣の太骨 1 0.25";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_炎核 1 0.2";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_焔獣の炎牙 1 0.35";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_焔獣の炎殻 1 0.7";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_焔獣の太骨 1 0.5";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
 
   - skill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1} @self ~onSignal:raid_boss_skill1
   - skill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2} @self ~onSignal:raid_boss_skill2
@@ -135,7 +135,7 @@ Azuriter_Boss_Wedler:
   Template: Azuriter_Enemy_RaidBoss_Base
   Display: "<#15d455>&l風牙狼ウィデラー&R"
   Type: wolf
-  Health: 14695
+  Health: 18695
   Armor: 140
   Damage: 18
   Drops:
@@ -189,10 +189,10 @@ Azuriter_Boss_Wedler:
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=48;do="OpenField_Enemy_風牙狼ウィデラー_MCLove32_HighDrop"} @self ~onDeath 
   - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_ステップソード 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlgo <target.name> Azuriter_風核 1 0.05";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
-  - cmd{c="mlgo <target.name> Azuriter_風牙狼の骨 1 0.25";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
-  - cmd{c="mlgo <target.name> Azuriter_風牙狼の牙 1 0.15";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlgo <target.name> Azuriter_風牙狼の皮 1 0.4";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_風核 1 0.2";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_風牙狼の骨 1 0.5";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_風牙狼の牙 1 0.35";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_風牙狼の皮 1 0.7";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
 
   - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1} @self ~onSignal:raid_boss_skill1
   - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2} @self ~onSignal:raid_boss_skill2
