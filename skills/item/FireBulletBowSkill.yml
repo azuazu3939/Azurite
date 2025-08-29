@@ -19,12 +19,14 @@ Azuriter_ファイアバレットボウ_Skills:
       - modifyMana{a=0.1;m=true;delay=3} @self ?!varrange{k=skill.aura_regen;r=<20}
       - modifyMana{a=0.1;m=true;delay=4} @self ?!varrange{k=skill.aura_regen;r=<25}
     ];mc=true} @self
-  - setVar{k=skill.damage;a="<caster.damage> * 1.35";t=FLOAT} @self
+  - setVar{k=skill.damage;a="<caster.damage> * 1.5";t=FLOAT} @self
   - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> + 1";t=INTEGER} @self
   - setVar{k=skill.damage;a="<skill.var.damage> * 0.98";t=FLOAT;repeat=<caster.var.shot_ct|0>;repeati=0} @self ?!hasAura{n=Azuriter_RangeWeaponDamageEnsure}
   - delay 2
-  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot} @self
-  - delay 400
+  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=0} @self
+  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=30} @self
+  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=-30} @self
+  - delay 600
   - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> - 1";t=INTEGER} @self
   - setVar{k=caster.shot_ct;a="0";t=INTEGER} @self ?varrange{k=caster.shot_ct;r=<0}
 
@@ -33,14 +35,15 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
   Skills:
   - missile{
     os=[
+      - setVar{k=caster.bullet_bow_get;a="0";t=INTEGER} @self ?!varisset{k=caster.bullet_bow_get}
       - sound{s=entity.arrow.shoot;audience=caster} @self
       - sound{s=entity.arrow.shoot;audience=caster;v=0.75;p=2} @self
       - sound{s=entity.arrow.shoot;audience=caster;p=0.8} @self
       - sound{s=block.bell.use;p=2;v=0.45;audience=caster;delay=1} @self
     ];
     ot=[
-      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.95} @self 
-      - e:p{p=flame;a=1;audience=caster} @origin 
+      - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.9} @self 
+      - e:p{p=flame;a=1;audience=caster} @origin
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
     ];
     oh=[
@@ -49,26 +52,47 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - e:p{p=crit_magic;a=10;vs=0.5;hs=0.5;audience=caster}
       - sound{s=entity.arrow.hit;audience=caster}
       - sound{s=entity.arrow.hit_player;audience=caster;v=0.75} @self
-
-      - projectile{
-        ot=[
-          - e:p{p=explosion;a=1} @origin 
-        ];
-        oh=[
-          - damage{a="<caster.damage> * 1.25";pi=true;ii=true}
-        ];
-        c=[
-          - isMythicMob true 
-          - isliving true
-        ];
-        os=[
-          - sound{s=entity.generic.explode;p=2;v=0.25} @origin 
-        ];
-        v=24;i=1;vr=2;hr=2;se=false;hp=false;hnp=true;sfo=2;mr=16;cd=1;origin=@targeted;fo=true;tyo=1} @ringAroundOrigin{r=16;p=12} 0.35
+      - setVar{k=caster.bullet_bow_fire;a="<caster.var.bullet_bow_fire|0> + 1";t=INTEGER} @self
+      - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot_Get} @self
+      - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot_Run}
     ];
     c=[
       - isliving true
       - isMythicMob true
       - hasAura{n="Azuriter_ファイアバレットボウ_Skills_Shot<caster.var.shot_ct|0>"} false
     ];
-    v=24;in=12;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;b=ARROW;se=false;vo=0.285;mr=36} @TL
+    v=10;in=15;vr=2.5;hr=2.5;hp=false;hnp=true;i=1;mr=36;b=ARROW;se=false;vo=0.3;mr=36;ho=<skill.ho>} @TL
+
+Azuriter_ファイアバレットボウ_Skills_Shot_Get:
+  Conditions:
+  - varrange{k=bullet_bow_fire;r=>9} true
+  Skills:
+  - setVar{k=caster.bullet_bow_fire;a="0";t=INTEGER} @self
+  - setVar{k=caster.bullet_bow_get;a="<caster.var.bullet_bow_get|0> + <random.3to5>";t=INTEGER} @self
+  - setVar{k=caster.bullet_bow_get;a="10";t=INTEGER} @self ?varrange{k=caster.bullet_bow_get;r=>10}
+
+Azuriter_ファイアバレットボウ_Skills_Shot_Run: 
+  Cooldown: 1
+  Conditions:
+  - varrange{k=caster.bullet_bow_get;r=>0}
+  Skills:
+  - setVar{k=caster.bullet_bow_get;a="<caster.var.bullet_bow_get> - 1";t=INTEGER} @self
+  - sound{s=entity.allay.item_given;audience=caster;p=2;sc=PLAYERS} @self
+  - sound{s=block.trial_spawner.about_to_spawn_item;p=2;v=0.75;sc=PLAYERS} @self
+  - delay 5
+  - projectile{
+    ot=[
+      - e:p{p=explosion;a=1;audience=caster} @origin 
+      - e:p{p=flame;a=5;ys=0.5;hs=0.5;s=0.75;audience=caster} @origin 
+    ];
+    oh=[
+      - damage{a="<caster.damage> * 2";pi=true;ii=true}
+    ];
+    c=[
+      - isMythicMob true 
+      - isliving true
+    ];
+    os=[
+      - sound{s=entity.generic.explode;p=2;v=0.25} @origin 
+    ];
+    v=24;i=5;vr=2;hr=3;se=false;hp=false;hnp=true;sfo=2;mr=12;origin=@targeted;fo=true;tyo=1} @ringAroundOrigin{r=16;p=16} 

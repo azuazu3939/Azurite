@@ -54,7 +54,7 @@ Azuriter_StepAvoid_BeginnerSword:
   - wearing{s=HAND;i=Azuriter_ビギナーソード}
   Skills:
   - modifyMana{a=70} @self 
-  - modifyMana{a=0.1;m=true;delay=10} @self 
+  - modifyMana{a=0.2;m=true;delay=10} @self 
   - sound{s=block.note_block.chime;p=1.68;audience=caster}
   - sound{s=block.note_block.chime;p=1.26;delay=2;audience=caster}
   - sound{s=block.note_block.chime;v=0.9;p=1.68;delay=4;audience=caster}
