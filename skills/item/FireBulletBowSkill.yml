@@ -24,8 +24,8 @@ Azuriter_ファイアバレットボウ_Skills:
   - setVar{k=skill.damage;a="<skill.var.damage> * 0.98";t=FLOAT;repeat=<caster.var.shot_ct|0>;repeati=0} @self ?!hasAura{n=Azuriter_RangeWeaponDamageEnsure}
   - delay 2
   - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=0} @self
-  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=60} @self
-  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=-60} @self
+  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=45} @self
+  - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=-45} @self
   - delay 600
   - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> - 1";t=INTEGER} @self
   - setVar{k=caster.shot_ct;a="0";t=INTEGER} @self ?varrange{k=caster.shot_ct;r=<0}
@@ -97,4 +97,4 @@ Azuriter_ファイアバレットボウ_Skills_Shot_Run:
       - sound{s=entity.generic.explode;p=2;v=0.25} @origin 
       - e:p{p=cloud;audience=caster;a=5;ys=1;hs=2;s=1.25} @origin
     ];
-    v=24;i=10;vr=2;hr=3;se=false;hp=false;hnp=true;sfo=2;mr=12;origin=@targeted;fo=true;tyo=1} @ringAroundOrigin{r=16;p=16} 
+    v=16;i=8;vr=2;hr=3;se=false;hp=false;hnp=true;sfo=2;mr=12;origin=@targeted;fo=true;tyo=1} @ringAroundOrigin{r=16;p=16} 
