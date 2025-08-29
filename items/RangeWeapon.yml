@@ -26,7 +26,7 @@ Azuriter_ファイアバレットボウ:
   Options:
     Unbreakable: true
   Lore:
-  - "&fマナを20消費し、1発放つ。"
+  - "&fマナを20消費し、3発放つ。"
   - "&f特定条件で、hit周囲の範囲ダメを引き起こす。"
   ItemUpdater:
     Version: 1
