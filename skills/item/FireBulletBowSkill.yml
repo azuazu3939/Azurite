@@ -12,8 +12,12 @@ Azuriter_ファイアバレットボウ_Skills:
   - modifyMana{a=-20} @self
   - aura{ms=100;i=10;t=30;rd=true;n=Azuriter_ファイアバレットボウ;
     oe=[ 
-      - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 10";t=INTEGER} @self
-      - modifyMana{a=<skill.var.aura_regen>} @self
+      - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks>";t=INTEGER} @self
+      - modifyMana{a=0.1} @self ?!varrange{k=skill.aura_regen;r=<5}
+      - modifyMana{a=0.1} @self ?!varrange{k=skill.aura_regen;r=<10}
+      - modifyMana{a=0.1} @self ?!varrange{k=skill.aura_regen;r=<15}
+      - modifyMana{a=0.1} @self ?!varrange{k=skill.aura_regen;r=<20}
+      - modifyMana{a=0.1} @self ?!varrange{k=skill.aura_regen;r=<25}
     ];mc=true} @self
   - setVar{k=skill.damage;a="<caster.damage> * 1.35";t=FLOAT} @self
   - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> + 1";t=INTEGER} @self
