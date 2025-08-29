@@ -6,9 +6,9 @@ Azuriter_L_マジカルH:
     Color: 215,55,255
   Attributes:
     Head:
-      ArmorToughness: 8 ADD 
-      Armor: 16 ADD
-      Health: 3 ADD
+      ArmorToughness: 10 ADD 
+      Armor: 18 ADD
+      Health: 4 ADD
   Group: 'Loot-Armor'
   Enchantments:
   - FIRE_PROTECTION 7
@@ -30,9 +30,9 @@ Azuriter_L_マジカルC:
     Color: 215,55,255
   Attributes:
     Chest:
-      ArmorToughness: 8 ADD 
-      Armor: 16 ADD
-      Health: 3 ADD
+      ArmorToughness: 10 ADD 
+      Armor: 18 ADD
+      Health: 4 ADD
   Group: 'Loot-Armor'
   Enchantments:
   - FIRE_PROTECTION 7
@@ -50,9 +50,9 @@ Azuriter_L_マジカルL:
     Color: 215,55,255
   Attributes:
     Legs:
-      ArmorToughness: 8 ADD 
-      Armor: 16 ADD
-      Health: 3 ADD
+      ArmorToughness: 10 ADD 
+      Armor: 18 ADD
+      Health: 4 ADD
   Group: 'Loot-Armor'
   Enchantments:
   - FIRE_PROTECTION 7
@@ -70,9 +70,9 @@ Azuriter_L_マジカルB:
     Color: 215,55,255
   Attributes:
     Feet:
-      ArmorToughness: 8 ADD 
-      Armor: 16 ADD
-      Health: 3 ADD
+      ArmorToughness: 10 ADD 
+      Armor: 18 ADD
+      Health: 4 ADD
   Group: 'Loot-Armor'
   Enchantments:
   - FIRE_PROTECTION 7
@@ -90,9 +90,10 @@ Azuriter_L_ピュアマジカルH:
     Color: 215,55,255
   Attributes:
     Head:
-      ArmorToughness: 8 ADD 
-      Armor: 16 ADD
-      Health: 3 ADD
+      ArmorToughness: 20 ADD 
+      Armor: 36 ADD
+      Health: 8 ADD
+      Damage: 1.5
   Group: 'Loot-Armor'
   NBT:
     PublicBukkitValues:
@@ -114,10 +115,10 @@ Azuriter_L_ピュアマジカルC:
     Color: 215,55,255
   Attributes:
     Chest:
-      ArmorToughness: 16 ADD 
-      Armor: 32 ADD
-      Health: 6 ADD
-      Damage: 2
+      ArmorToughness: 20 ADD 
+      Armor: 36 ADD
+      Health: 8 ADD
+      Damage: 1.5
   Group: 'Loot-Armor'
   NBT:
     PublicBukkitValues:
@@ -135,10 +136,10 @@ Azuriter_L_ピュアマジカルL:
     Color: 215,55,255
   Attributes:
     Legs:
-      ArmorToughness: 16 ADD 
-      Armor: 32 ADD
-      Health: 6 ADD
-      Damage: 2
+      ArmorToughness: 20 ADD 
+      Armor: 36 ADD
+      Health: 8 ADD
+      Damage: 1.5
   Group: 'Loot-Armor'
   NBT:
     PublicBukkitValues:
@@ -156,10 +157,10 @@ Azuriter_L_ピュアマジカルB:
     Color: 215,55,255
   Attributes:
     Feet:
-      ArmorToughness: 16 ADD 
-      Armor: 32 ADD
-      Health: 6 ADD
-      Damage: 2
+      ArmorToughness: 20 ADD 
+      Armor: 36 ADD
+      Health: 8 ADD
+      Damage: 1.5
   Group: 'Loot-Armor'
   NBT:
     PublicBukkitValues:
