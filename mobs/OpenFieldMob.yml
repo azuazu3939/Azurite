@@ -63,7 +63,7 @@ Azuriter_Boss_Feldos:
   Display: "<#c20a0a>&l焔獣フェルドス&R"
   Type: hoglin
   Health: 21650
-  Armor: 130
+  Armor: 140
   Damage: 20
   Drops:
   - money 30to50 1
@@ -95,7 +95,7 @@ Azuriter_Boss_Feldos:
     Color: WHITE
     Style: SEGMENTED_12
   Skills:
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=130} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=140} @self ~onSpawn
   - setVar{k=caster.1;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1";t=STRING} @self ~onSpawn 
   - setVar{k=caster.2;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2";t=STRING} @self ~onSpawn 
   - setVar{k=caster.3;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3";t=STRING} @self ~onSpawn 
@@ -103,13 +103,13 @@ Azuriter_Boss_Feldos:
   - setVar{k=caster.5;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5";t=STRING} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
-  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=240;shield_break=1500;heal_percent=0.05} @self ~onEntercombat
+  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=240;shield_break=1800;heal_percent=0.05} @self ~onEntercombat
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK @T ~onEntercombat
   
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
 
-  - potion{t=STRENGTH;l=1;d=9999999;p=false} ~onDamaged =70%
-  - potion{t=STRENGTH;l=2;d=9999999;p=false} ~onDamaged =40%
+  - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} ~onDamaged =70%
+  - potion{t=STRENGTH;l=4;d=9999999;p=false;or=true} ~onDamaged =40%
   - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
 
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=48;do="OpenField_Enemy_焔獣フェルドス_MCLove32_HighDrop"} @self ~onDeath 
@@ -136,7 +136,7 @@ Azuriter_Boss_Wedler:
   Display: "<#15d455>&l風牙狼ウィデラー&R"
   Type: wolf
   Health: 18695
-  Armor: 140
+  Armor: 150
   Damage: 18
   Drops:
   - money 30to50 1
@@ -167,7 +167,7 @@ Azuriter_Boss_Wedler:
     Color: WHITE
     Style: SEGMENTED_12
   Skills:
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=140} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=150} @self ~onSpawn
   - setVar{k=caster.1;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1";t=STRING} @self ~onSpawn 
   - setVar{k=caster.2;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2";t=STRING} @self ~onSpawn 
   - setVar{k=caster.3;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_3";t=STRING} @self ~onSpawn 
@@ -177,13 +177,13 @@ Azuriter_Boss_Wedler:
   - setVar{k=caster.7;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7";t=STRING} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
-  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=180;shield_break=1250;heal_percent=0.03} @self ~onEntercombat
+  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=180;shield_break=1500;heal_percent=0.03} @self ~onEntercombat
   - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK @T ~onEntercombat
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
 
-  - potion{t=STRENGTH;l=1;d=9999999;p=false} ~onDamaged =70%
-  - potion{t=STRENGTH;l=2;d=9999999;p=false} ~onDamaged =40%
+  - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} ~onDamaged =70%
+  - potion{t=STRENGTH;l=4;d=9999999;p=false;or=true} ~onDamaged =40%
   - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
 
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=48;do="OpenField_Enemy_風牙狼ウィデラー_MCLove32_HighDrop"} @self ~onDeath 
