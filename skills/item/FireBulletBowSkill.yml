@@ -8,7 +8,7 @@ Azuriter_ファイアバレットボウ_Skills:
     ]}
   - matCooldown{m=BOW} false 
   Skills:
-  - setMaterialCooldown{m=BOW;d=10} @self
+  - setMaterialCooldown{m=BOW;d=4} @self
   - modifyMana{a=-20} @self 
   - setVar{k=skill.damage;a="<caster.damage> * 1.35";t=FLOAT} @self
   - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> + 1";t=INTEGER} @self
