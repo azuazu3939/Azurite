@@ -36,10 +36,10 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
   - missile{
     os=[
       - setVar{k=caster.bullet_bow_get;a="0";t=INTEGER} @self ?!varisset{k=caster.bullet_bow_get}
-      - sound{s=entity.arrow.shoot;audience=caster;sc=PLAYERS;delay=4} @self
-      - sound{s=entity.arrow.shoot;audience=caster;sc=PLAYERS;v=0.75;p=2;delay=4} @self
-      - sound{s=entity.arrow.shoot;audience=caster;sc=PLAYERS;p=0.8;delay=4} @self
-      - sound{s=block.bell.use;p=2;v=0.15;audience=caster;sc=PLAYERS;delay=3} @self
+      - sound{s=entity.arrow.shoot;audience=caster;sc=PLAYERS;delay=8} @self
+      - sound{s=entity.arrow.shoot;audience=caster;sc=PLAYERS;v=0.75;p=2;delay=8} @self
+      - sound{s=entity.arrow.shoot;audience=caster;sc=PLAYERS;p=0.8;delay=8} @self
+      - sound{s=block.bell.use;p=2;v=0.1;audience=caster;sc=PLAYERS;delay=6} @self
       - sound{s=block.trial_spawner.about_to_spawn_item;p=2;v=1;sc=PLAYERS} @self
     ];
     ot=[
