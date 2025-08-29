@@ -34,8 +34,8 @@ Azuriter_Utilityオフハンド1:
   Group: 'OffHand'
   NBT:
     PublicBukkitValues:
-      az:max_mana: "50"
-      az:mana_regen: "0.5"
+      az:max_mana: "100"
+      az:mana_regen: "1"
 
 Azuriter_Attackオフハンド2:
   Id: red_dye
@@ -74,4 +74,4 @@ Azuriter_Utilityオフハンド2:
   NBT:
     PublicBukkitValues:
       az:max_mana: "100"
-      az:mana_regen: "1"
+      az:mana_regen: "2"
