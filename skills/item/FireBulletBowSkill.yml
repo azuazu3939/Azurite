@@ -66,7 +66,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
 
 Azuriter_ファイアバレットボウ_Skills_Shot_Get:
   Conditions:
-  - varrange{k=caster.bullet_bow_fire;r=>9} true
+  - varrange{k=caster.bullet_bow_fire;r=>49} true
   Skills:
   - setVar{k=caster.bullet_bow_fire;a="0";t=INTEGER} @self
   - setVar{k=caster.bullet_bow_get;a="<caster.var.bullet_bow_get|0> + <random.3to5>";t=INTEGER} @self
@@ -84,7 +84,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot_Run:
   - projectile{
     ot=[
       - e:p{p=explosion;a=1;audience=caster} @origin 
-      - e:p{p=flame;a=5;ys=0.5;hs=0.5;s=0.75;audience=caster} @origin 
+      - e:p{p=flame;a=4;ys=0.5;hs=0.5;s=0.75;audience=caster} @origin 
     ];
     oh=[
       - damage{a="<caster.damage> * 2";pi=true;ii=true}
@@ -97,4 +97,4 @@ Azuriter_ファイアバレットボウ_Skills_Shot_Run:
       - sound{s=entity.generic.explode;p=2;v=0.25} @origin 
       - e:p{p=cloud;audience=caster;a=5;ys=1;hs=2;s=1.25} @origin
     ];
-    v=24;i=5;vr=2;hr=3;se=false;hp=false;hnp=true;sfo=2;mr=12;origin=@targeted;fo=true;tyo=1} @ringAroundOrigin{r=16;p=16} 
+    v=24;i=10;vr=2;hr=3;se=false;hp=false;hnp=true;sfo=2;mr=12;origin=@targeted;fo=true;tyo=1} @ringAroundOrigin{r=16;p=16} 
