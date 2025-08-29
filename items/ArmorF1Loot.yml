@@ -1,0 +1,170 @@
+Azuriter_L_マジカルH:
+  Id: leather_helmet
+  Display: "&fマジカルヘルメット &f&lL1"
+  Options:
+    Unbreakable: true
+    Color: 215,55,255
+  Attributes:
+    Head:
+      ArmorToughness: 8 ADD 
+      Armor: 16 ADD
+      Health: 3 ADD
+  Group: 'Loot-Armor'
+  Enchantments:
+  - FIRE_PROTECTION 7
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "50"
+      az:mana_regen: "1"
+  Skills:
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn
+  - skill{s=Azuriter_HealthColor} @self ~onSwing 
+
+Azuriter_L_マジカルC:
+  Id: leather_chestplate
+  Display: "&fマジカルチェストプレート &f&lL1"
+  Options:
+    Unbreakable: true
+    Color: 215,55,255
+  Attributes:
+    Chest:
+      ArmorToughness: 8 ADD 
+      Armor: 16 ADD
+      Health: 3 ADD
+  Group: 'Loot-Armor'
+  Enchantments:
+  - FIRE_PROTECTION 7
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "50"
+      az:mana_regen: "1"
+  Skills:
+
+Azuriter_L_マジカルL:
+  Id: leather_leggings
+  Display: "&fマジカルレギンス &f&lL1"
+  Options:
+    Unbreakable: true
+    Color: 215,55,255
+  Attributes:
+    Legs:
+      ArmorToughness: 8 ADD 
+      Armor: 16 ADD
+      Health: 3 ADD
+  Group: 'Loot-Armor'
+  Enchantments:
+  - FIRE_PROTECTION 7
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "50"
+      az:mana_regen: "1"
+  Skills:
+
+Azuriter_L_マジカルB:
+  Id: leather_boots
+  Display: "&fマジカルブーツ &f&lL1"
+  Options:
+    Unbreakable: true
+    Color: 215,55,255
+  Attributes:
+    Feet:
+      ArmorToughness: 8 ADD 
+      Armor: 16 ADD
+      Health: 3 ADD
+  Group: 'Loot-Armor'
+  Enchantments:
+  - FIRE_PROTECTION 7
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "50"
+      az:mana_regen: "1"
+  Skills:
+
+Azuriter_L_ピュアマジカルH:
+  Id: leather_helmet
+  Display: "&fピュアマジカルヘルメット &f&lL1"
+  Options:
+    Unbreakable: true
+    Color: 215,55,255
+  Attributes:
+    Head:
+      ArmorToughness: 8 ADD 
+      Armor: 16 ADD
+      Health: 3 ADD
+  Group: 'Loot-Armor'
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "75"
+      az:mana_regen: "1.25"
+  Skills:
+  - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
+  - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn
+  - skill{s=Azuriter_HealthColor} @self ~onSwing 
+
+Azuriter_L_ピュアマジカルC:
+  Id: leather_chestplate
+  Display: "&fピュアマジカルチェストプレート &f&lL1"
+  Options:
+    Unbreakable: true
+    Color: 215,55,255
+  Attributes:
+    Chest:
+      ArmorToughness: 16 ADD 
+      Armor: 32 ADD
+      Health: 6 ADD
+      Damage: 2
+  Group: 'Loot-Armor'
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "75"
+      az:mana_regen: "1.25"
+  Skills:
+  - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
+  - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
+
+Azuriter_L_ピュアマジカルL:
+  Id: leather_leggings
+  Display: "&fピュアマジカルレギンス &f&lL1"
+  Options:
+    Unbreakable: true
+    Color: 215,55,255
+  Attributes:
+    Legs:
+      ArmorToughness: 16 ADD 
+      Armor: 32 ADD
+      Health: 6 ADD
+      Damage: 2
+  Group: 'Loot-Armor'
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "75"
+      az:mana_regen: "1.25"
+  Skills:
+  - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
+  - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
+
+Azuriter_L_ピュアマジカルB:
+  Id: leather_boots
+  Display: "&fピュアマジカルブーツ &f&lL1"
+  Options:
+    Unbreakable: true
+    Color: 215,55,255
+  Attributes:
+    Feet:
+      ArmorToughness: 16 ADD 
+      Armor: 32 ADD
+      Health: 6 ADD
+      Damage: 2
+  Group: 'Loot-Armor'
+  NBT:
+    PublicBukkitValues:
+      az:max_mana: "75"
+      az:mana_regen: "1.25"
+  Skills:
+  - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
+  - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill

@@ -119,6 +119,11 @@ Azuriter_Boss_Feldos:
   - cmd{c="mlgo <target.name> Azuriter_焔獣の炎牙 1 0.35";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
   - cmd{c="mlgo <target.name> Azuriter_焔獣の炎殻 1 0.7";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_焔獣の太骨 1 0.5";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルH 1 0.005"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルC 1 0.005"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルL 1 0.005"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルB 1 0.005"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.03"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
 
   - skill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1} @self ~onSignal:raid_boss_skill1
   - skill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2} @self ~onSignal:raid_boss_skill2
@@ -193,6 +198,11 @@ Azuriter_Boss_Wedler:
   - cmd{c="mlgo <target.name> Azuriter_風牙狼の骨 1 0.5";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
   - cmd{c="mlgo <target.name> Azuriter_風牙狼の牙 1 0.35";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_風牙狼の皮 1 0.7";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルH 1 0.005"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルC 1 0.005"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルL 1 0.005"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルB 1 0.005"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.03"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
 
   - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1} @self ~onSignal:raid_boss_skill1
   - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2} @self ~onSignal:raid_boss_skill2

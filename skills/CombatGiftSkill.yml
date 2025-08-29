@@ -1,0 +1,28 @@
+Azuriter_CombatGift_G1_Skill:
+  Cooldown: 0.4
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_CombatGift_G1}
+  Skills:
+  - takeitem{a=1;i=Azuriter_CombatGift_G1} @self 
+  - sound{s=block.note_block.pling;p=2;sc=PLAYERS;audience=caster} @self
+  - sound{s=entity.firework_rocket.blast;sc=PLAYERS;audience=caster} @self
+  - setVar{k=skill.get_chance;a="<random.1to16>";t=INTEGER} @self
+  - cmd{c="mlg <caster.name> Azuriter_CombatGift_G1_Ticket <random.4to10> 1"} @self ?varrange{k=skill.get_chance;r=<11}
+  - cmd{c="mlg <caster.name> Azuriter_ヒラル 1 0.2"} @self ?varrange{k=skill.get_chance;r=11}
+  - cmd{c="mlg <caster.name> Azuriter_ハイヒラル 1 0.2"} @self ?varrange{k=skill.get_chance;r=12}
+  - cmd{c="mlg <caster.name> Azuriter_マナフル 1 0.2"} @self ?varrange{k=skill.get_chance;r=13}
+  - cmd{c="mlg <caster.name> Azuriter_リジピド 1 0.2"} @self ?varrange{k=skill.get_chance;r=14}
+  - cmd{c="mlg <caster.name> Azuriter_ランピド 1 0.2"} @self ?varrange{k=skill.get_chance;r=15}
+  - cmd{c="mlg <caster.name> Azuriter_ステップソード 1 0.05"} @self ?varrange{k=skill.get_chance;r=16}
+  - cmd{c="mlg <caster.name> Azuriter_CombatGift_G1_Ticket <random.1to3> 1"} @self
+  - cmd{c="mlg <caster.name> Azuriter_ビギナーF <random.8to16> 1"} @self
+  - cmd{c="mlg <caster.name> Azuriter_鉄片 <random.1to7> 0.25"} @self
+  - cmd{c="mlg <caster.name> Azuriter_黒マテリア <random.1to3> 0.25"} @self
+  - cmd{c="mlg <caster.name> Azuriter_ハイソール <random.1to7> 0.25"} @self
+  - cmd{c="mlg <caster.name> Azuriter_パラライズワールド 1 0.01"} @self
+  - cmd{c="mlg <caster.name> Azuriter_粗悪な装備片 <random.1to7> 0.25"} @self
+  - cmd{c="mlg <caster.name> Azuriter_白マテリア <random.1to3> 0.25"} @self
+  - cmd{c="mlg <caster.name> Azuriter_バラケタ装備片 <random.1to2> 0.15"} @self
+  - cmd{c="mlg <caster.name> Azuriter_加工鉄片 <random.1to2> 0.15"} @self
+  - currencygive{amount=100} @self
+  - message{m="&e100Mine &fを獲得しました。"}

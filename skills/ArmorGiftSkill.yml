@@ -1,0 +1,27 @@
+Azuriter_ArmorGift_G1_Skill:
+  Cooldown: 0.4
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_ArmorGift_G1}
+  Skills:
+  - takeitem{a=1;i=Azuriter_ArmorGift_G1} @self 
+  - sound{s=block.note_block.pling;p=2;sc=PLAYERS;audience=caster} @self
+  - sound{s=entity.firework_rocket.blast;sc=PLAYERS;audience=caster} @self
+  - setVar{k=skill.get_chance;a="<random.1to24>";t=INTEGER} @self
+  - cmd{c="mlg <caster.name> Azuriter_ArmorGift_G1_Ticket <random.6to16> 1"} @self ?varrange{k=skill.get_chance;r=<13}
+
+  - cmd{c="mlg <caster.name> Azuriter_L_ピュアマジカルH 1 1"} @self ?varrange{k=skill.get_chance;r=13}
+  - cmd{c="mlg <caster.name> Azuriter_L_ピュアマジカルC 1 1"} @self ?varrange{k=skill.get_chance;r=14}
+  - cmd{c="mlg <caster.name> Azuriter_L_ピュアマジカルL 1 1"} @self ?varrange{k=skill.get_chance;r=15}
+  - cmd{c="mlg <caster.name> Azuriter_L_ピュアマジカルB 1 1"} @self ?varrange{k=skill.get_chance;r=16}
+  
+  - cmd{c="mlg <caster.name> Azuriter_L_マジカルH 1 1"} @self ?varrange{k=skill.get_chance;r=17}
+  - cmd{c="mlg <caster.name> Azuriter_L_マジカルH 1 1"} @self ?varrange{k=skill.get_chance;r=18}
+  - cmd{c="mlg <caster.name> Azuriter_L_マジカルC 1 1"} @self ?varrange{k=skill.get_chance;r=19}
+  - cmd{c="mlg <caster.name> Azuriter_L_マジカルC 1 1"} @self ?varrange{k=skill.get_chance;r=20}
+  - cmd{c="mlg <caster.name> Azuriter_L_マジカルL 1 1"} @self ?varrange{k=skill.get_chance;r=21}
+  - cmd{c="mlg <caster.name> Azuriter_L_マジカルL 1 1"} @self ?varrange{k=skill.get_chance;r=22}
+  - cmd{c="mlg <caster.name> Azuriter_L_マジカルB 1 1"} @self ?varrange{k=skill.get_chance;r=23}
+  - cmd{c="mlg <caster.name> Azuriter_L_マジカルB 1 1"} @self ?varrange{k=skill.get_chance;r=24}
+
+  - currencygive{amount=1000} @self
+  - message{m="&e1000Mine &fを獲得しました。"}
