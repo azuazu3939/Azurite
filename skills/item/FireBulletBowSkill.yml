@@ -36,7 +36,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
     oh=[
       - aura{n="Azuriter_ファイアバレットボウ_Skills_Shot<caster.var.shot_ct|0>";t=20;i=10}
       - damage{a=<skill.var.damage>;pi=true;ii=true} 
-      - e:p{p=crit_maigc;a=10;vs=0.5;hs=0.5;audience=caster}
+      - e:p{p=crit_magic;a=10;vs=0.5;hs=0.5;audience=caster}
       - sound{s=entity.arrow.hit;audience=caster}
       - sound{s=entity.arrow.hit_player;audience=caster;v=0.75} @self
       - setVar{k=target.boms;a="<target.var.boms|0> + 1";t=INTEGER}
