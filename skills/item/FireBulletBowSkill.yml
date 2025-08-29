@@ -49,7 +49,6 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - e:p{p=crit_magic;a=10;vs=0.5;hs=0.5;audience=caster}
       - sound{s=entity.arrow.hit;audience=caster}
       - sound{s=entity.arrow.hit_player;audience=caster;v=0.75} @self
-      - setVar{k=target.boms;a="<target.var.boms|0> + 1";t=INTEGER}
 
       - projectile{
         ot=[
@@ -65,8 +64,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
         os=[
           - sound{s=entity.generic.explode;p=2;v=0.25} @origin 
         ];
-        v=24;i=1;vr=2;hr=2;se=false;hp=false;hnp=true;sfo=2;mr=16} @ringAroundOrigin{r=16;p=12} ?varrange{k=target.boms;r=5}
-      - setVar{k=target.boms;a="0";t=INTEGER} ?varrange{k=target.boms;r=5}
+        v=24;i=1;vr=2;hr=2;se=false;hp=false;hnp=true;sfo=2;mr=16;cd=1} @ringAroundOrigin{r=16;p=12} 0.2
     ];
     c=[
       - isliving true
