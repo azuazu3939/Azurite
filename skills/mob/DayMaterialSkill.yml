@@ -5,21 +5,21 @@ Azuriter_DayMaterial_Day:
   Skills:
   - glow{buffname=DayMaterial_Day;rd=true;t=9999999;i=60;c=YELLOW;
     ot=[  
-      - potion{t=SPEED;l=2;d=80;p=false} @self 
-      - potion{t=STRENGTH;l=1;d=80;p=false} @self 
-      - potion{t=RESISTANCE;l=1;d=80;p=false} @self 
-      - removeAura{n=DayMaterial_Day} @self ?!day 
+      - potion{t=SPEED;l=2;d=100;p=false} @self 
+      - potion{t=STRENGTH;l=1;d=100;p=false} @self 
+      - potion{t=RESISTANCE;l=1;d=100;p=false} @self 
+      - remove @self ?!day 
     ]} @self
 
 Azuriter_DayMaterial_NoDay:
   Cooldown: 1
   Skills:
-  - glow{buffname=DayMaterial_NoDay;rd=true;t=9999999;i=60;c=DARK_PURPLE;
+  - glow{buffname=DayMaterial_NoDay;rd=true;t=9999999;i=60;color=DARK_PURPLE;
     ot=[ 
-      - potion{t=SPEED;l=2;d=80;p=false} @self 
-      - potion{t=STRENGTH;l=1;d=80;p=false} @self 
-      - potion{t=RESISTANCE;l=1;d=80;p=false} @self
-      - removeAura{n=DayMaterial_NoDay} @self ?day 
+      - potion{t=SPEED;l=2;d=100;p=false} @self 
+      - potion{t=STRENGTH;l=1;d=100;p=false} @self 
+      - potion{t=RESISTANCE;l=1;d=100;p=false} @self
+      - remove @self ?day 
      ]} @self
 
 Azuriter_DayMaterial_Day_Drop:
