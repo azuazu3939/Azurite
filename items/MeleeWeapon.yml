@@ -142,7 +142,26 @@ Azuriter_ハイハルバード:
 
 Azuriter_ステップソード:
   Id: stone_sword
-  Display: "&9ステップソード"
+  Display: "&aステップソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&fマナを80消費し、わずかに前進する。"
+  - "&f回避判定がわずかにあり、"
+  - "&f回避するとカウンターを行う。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 20 ADD 
+      AttackSpeed: -0.3 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+  Skills:
+  - skill{s=Azuriter_ステップソード_R1_Skills} @self ~onUse
+
+Azuriter_ハイステップソード:
+  Id: iron_sword
+  Display: "&9ハイステップソード"
   ItemUpdater:
     Version: 1
   Lore:
@@ -153,11 +172,10 @@ Azuriter_ステップソード:
     Unbreakable: true
   Attributes:
     MainHand:
-      Damage: 28 ADD 
-      AttackSpeed: -0.3 MULTIPLY_BASE
+      Damage: 28 ADD
   Group: 'Melee-Weapon'
   Skills:
-  - skill{s=Azuriter_ステップソード_R1_Skills} @self ~onUse
+  - skill{s=Azuriter_ハイステップソード_R1_Skills} @self ~onUse
 
 Azuriter_ノーマルソード:
   Id: stone_sword
