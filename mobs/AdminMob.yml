@@ -38,7 +38,6 @@ Azuriter_Admin_Mob_1:
   Skills:
   - healpercent{m=1} @self ~onDamaged 
   - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
-  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
