@@ -211,7 +211,7 @@ Azuriter_タレットレーザー_骨:
   Group: 'Material'
 
 Azuriter_タレットレーザー_頭:
-  Id: skelton_skull
+  Id: skeleton_skull
   Display: "&fレットザレーターの骨"
   Lore:
   - "&fField1のフェルドスの住処などで、"
