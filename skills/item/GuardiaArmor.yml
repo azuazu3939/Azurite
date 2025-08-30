@@ -16,4 +16,5 @@ Azuriter_ガーディア_Full:
 Azuriter_ガーディア_Hate:
   Cooldown: 1
   Skills:
-  - threat{m=ADD;a=300} @trigger 
+  - setTarget @trigger 
+  - threat{m=add;a=500} @trigger 
