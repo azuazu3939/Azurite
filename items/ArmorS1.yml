@@ -416,7 +416,7 @@ Azuriter_スカウトB:
   Group: 'Armor'
 
 Azuriter_エリートアタッカーH:
-  Id: iron_helmet
+  Id: golden_helmet
   Display: "&fエリートアタッカーヘルメット"
   Lore:
   - "&f装着し、敵を倒すとことでBuff効果が得られる。"
@@ -440,7 +440,7 @@ Azuriter_エリートアタッカーH:
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
 
 Azuriter_エリートアタッカーC:
-  Id: iron_chestplate
+  Id: golden_chestplate
   Display: "&fエリートアタッカーチェストプレート"
   Lore:
   - "&f装着し、敵を倒すとことでBuff効果が得られる。"
@@ -460,7 +460,7 @@ Azuriter_エリートアタッカーC:
   - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
 
 Azuriter_エリートアタッカーL:
-  Id: iron_leggings
+  Id: golden_leggings
   Display: "&fエリートアタッカーレギンス"
   Lore:
   - "&f装着し、敵を倒すとことでBuff効果が得られる。"
@@ -480,7 +480,7 @@ Azuriter_エリートアタッカーL:
   - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
 
 Azuriter_エリートアタッカーB:
-  Id: iron_boots
+  Id: golden_boots
   Display: "&fエリートアタッカーブーツ"
   Lore:
   - "&f装着し、敵を倒すとことでBuff効果が得られる。"
