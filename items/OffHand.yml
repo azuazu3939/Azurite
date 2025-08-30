@@ -44,8 +44,8 @@ Azuriter_Attackオフハンド2:
     Version: 1
   Attributes:
     OffHand:
-      Damage: 8 ADD 
-      AttackSpeed: 0.4 MULTIPLY_BASE 
+      Damage: 6 ADD 
+      AttackSpeed: 0.3 MULTIPLY_BASE 
   Group: 'OffHand'
 
 Azuriter_Defenceオフハンド2:
@@ -55,9 +55,9 @@ Azuriter_Defenceオフハンド2:
     Version: 1
   Attributes:
     OffHand:
-      Armor: 24 ADD 
-      ArmorToughness: 16 ADD
-      Health: 12 ADD 
+      Armor: 20 ADD 
+      ArmorToughness: 15 ADD
+      Health: 10 ADD 
   Group: 'OffHand'
 
 Azuriter_Utilityオフハンド2:

@@ -106,8 +106,8 @@ Azuriter_Altwolf_牙:
   Id: ghast_tear
   Display: "&fアルトゥルフの牙"
   Lore:
-  - "&fField1のウィデラーの住処などで、入手可能なアイテム。"
-  - "&f希少性がある。"
+  - "&fField1のウィデラーの住処などで、"
+  - "&f入手可能なアイテム、希少性がある。"
   Enchantments:
   - SHARPNESS 1
   ItemUpdater:
@@ -118,8 +118,8 @@ Azuriter_Altwolf_粗皮:
   Id: leather
   Display: "&fアルトゥルフの粗皮"
   Lore:
-  - "&fField1のウィデラーの住処などで、入手可能なアイテム。"
-  - "&f耐久性が良い。"
+  - "&fField1のウィデラーの住処などで、"
+  - "&f入手可能なアイテム、耐久性が良い。"
   Enchantments:
   - UNBREAKING 3
   ItemUpdater:
@@ -194,6 +194,30 @@ Azuriter_スクラップ:
   Lore:
   - "&f素材売却する際に手に入るモノ。"
   - "&f数を集めて、リサイクル"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_タレットレーザー_骨:
+  Id: bone_block
+  Display: "&fレットザレーターの骨"
+  Lore:
+  - "&fField1のフェルドスの住処などで、"
+  - "&f入手可能なアイテム、耐久性が良い。"
+  Enchantments:
+  - UNBREAKING 3
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_タレットレーザー_頭:
+  Id: skelton_skull
+  Display: "&fレットザレーターの骨"
+  Lore:
+  - "&fField1のフェルドスの住処などで、"
+  - "&f入手可能なアイテム、希少性がある。"
+  Enchantments:
+  - MENDING 1
   ItemUpdater:
     Version: 1
   Group: 'Material'

@@ -197,6 +197,8 @@ Azuriter_letthelater:
   - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
   - cmd{c="mlgo <target.name> Azuriter_Feldos_Summon_Paper 1 0.1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_タレットレーザー_骨 1 0.3"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_タレットレーザー_頭 1 0.03"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=30} @self ~onSpawn 
   - attribute{attr=GENERIC_ARMOR;a=40} @self ~onSpawn ?!day
   - attribute{attr=GENERIC_ARMOR;a=25} @self ~onSpawn ?day
