@@ -9,10 +9,7 @@ Azuriter_パラライズワールド:
   Options:
     Unbreakable: true
   ItemUpdater:
-    Version: 2
-  Attributes:
-    MainHand:
-      AttackSpeed: 5 MULTIPLY_BASE
+    Version: 1
   Group: 'Weapon'
   Skills:
   - skill{s=Azuriter_Azuriter_パラライズワールド_Skills} @self ~onUse 
