@@ -1,3 +1,21 @@
+Azuriter_Admin_Mob_DamageTest:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 1
+  Faction: Admin
+  Options:
+    Silent: true
+  Skills:
+  - healpercent{m=1} @self ~onDamaged 
+  - message{m="<skill.var.damage-amount>"} @PIR{r=16} ~onDamaged 
+  BossBar:
+    Enabled: true
+    Title: "<caster.name> <caster.hp> <caster.mhp>"
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_10
+
+
 Azuriter_Admin_Mob_1:
   Template: Azuriter_Enemy_Base
   Health: 999999999

@@ -14,6 +14,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK:
     fbs=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_0} @self
   - sound{s=entity.blaze.burn;p=0;v=0.25} @self
   - ignite{d=100} @PIR{r=5}
+  - potion{t=WEAKNESS;l=0;d=400} @self ?raining 
   - delay 160
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK @T
 
