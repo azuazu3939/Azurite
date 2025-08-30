@@ -1,11 +1,12 @@
 Azuriter_フルタンク_Skills:
   Cooldown: 30
   Conditions:
-  - wearing{s=HAND;i=Azuriter_リジピド} true
+  - wearing{s=HAND;i=Azuriter_フルタンク} true
   - hasMana{a=>200;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]}
+  - matCooldown{m=BELL} false 
   Skills:
   - modifyMana{a=-200} @self
   - setMaterialCooldown{m=BELL;d=600} @self
