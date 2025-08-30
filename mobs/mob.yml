@@ -156,7 +156,7 @@ Azuriter_Elite_Zombie:
   - cmd{c="mlgo <target.name> Azuriter_ハイソール 1 1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_CombatGift_G1 1 0.15"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_CombatGift_G1 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true - hasAuraStacks{n=Azuriter_Player_EnterCombat;s=>500} true ]} ~onDeath
-  - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.0005"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.0008"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=60} @self ~onSpawn 
   - attribute{attr=GENERIC_ARMOR;a=60} @self ~onSpawn ?!day
   - attribute{attr=GENERIC_ARMOR;a=40} @self ~onSpawn ?day
