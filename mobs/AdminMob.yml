@@ -5,8 +5,13 @@ Azuriter_Admin_Mob_DamageTest:
   Faction: Admin
   Options:
     Silent: true
+    PreventVanillaDamage: true 
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   - message{m="<skill.var.damage-amount>"} @PIR{r=16} ~onDamaged 
   AITargetSelectors:
   - clear
@@ -27,8 +32,13 @@ Azuriter_Admin_Mob_1:
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -41,8 +51,12 @@ Azuriter_Admin_Mob_5:
   Health: 999999999
   Damage: 5
   Faction: Admin
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
@@ -58,8 +72,12 @@ Azuriter_Admin_Mob_10:
   Health: 999999999
   Damage: 10
   Faction: Admin
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
@@ -75,8 +93,12 @@ Azuriter_Admin_Mob_20:
   Health: 999999999
   Damage: 20
   Faction: Admin
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
@@ -92,8 +114,12 @@ Azuriter_Admin_Mob_40:
   Health: 999999999
   Damage: 40
   Faction: Admin
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
@@ -109,8 +135,12 @@ Azuriter_Admin_Mob_60:
   Health: 999999999
   Damage: 60
   Faction: Admin
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
@@ -126,8 +156,12 @@ Azuriter_Admin_Mob_80:
   Health: 999999999
   Damage: 80
   Faction: Admin
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
@@ -143,8 +177,12 @@ Azuriter_Admin_Mob_100:
   Health: 999999999
   Damage: 100
   Faction: Admin
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
@@ -160,8 +198,12 @@ Azuriter_Admin_Mob_120:
   Health: 999999999
   Damage: 100
   Faction: Admin
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
@@ -177,8 +219,12 @@ Azuriter_Admin_Mob_140:
   Health: 999999999
   Damage: 100
   Faction: Admin
+  Options:
+    Silent: true
+    PreventVanillaDamage: true 
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
