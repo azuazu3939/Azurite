@@ -40,7 +40,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - sound{s=entity.arrow.shoot;audience=caster;sc=AMBIENT;v=0.75;p=2;delay=5} @self
       - sound{s=entity.arrow.shoot;audience=caster;sc=AMBIENT;p=0.8;delay=5} @self
       - sound{s=block.bell.use;p=2;v=0.1;audience=caster;sc=AMBIENT;delay=4} @self
-      - sound{s=block.trial_spawner.about_to_spawn_item;p=2;v=1;sc=AMBIENT} @self
+      - sound{s=block.trial_spawner.about_to_spawn_item;p=2;v=1;sc=AMBIENT;audience=caster} @self
     ];
     ot=[
       - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.95} @self 
