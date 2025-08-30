@@ -10,11 +10,14 @@ Azuriter_ガーディア_Full:
   - sudoskill{s=Azuriter_ガーディア_Hate;cat=true} @trigger 
   - potion{t=RESISTANCE;l=0;d=600;p=false} @self
   - potion{t=REGENERATION;l=1;d=600;p=false} @self
+  - ondamaged{n=Azuriter_ガーディア_Full;
+    oh=[
+      - damage{a="<skill.var.damage-amount> * 0.4";origin=@trigger;pi=true;ii=true} @self
+    ];m=0.6;c=5;t=200;rd=true} @PIR{r=24}
   - heal{a=5} @self
-  - damage{a="<caster.damage> * 4";pi=true;ii=true} @trigger
 
 Azuriter_ガーディア_Hate:
   Cooldown: 1
   Skills:
   - setTarget @trigger 
-  - threat{m=add;a=500} @trigger 
+  - threat{m=add;a=3000} @trigger 
