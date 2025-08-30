@@ -3,12 +3,12 @@ Azuriter_DayMaterial_Day:
   Conditions:
   - day orelsecast Azuriter_DayMaterial_NoDay
   Skills:
-  - glow{buffname=DayMaterial_Day;rd=true;t=9999999;i=60;c=YELLOW;ot=[ - removeAura{n=DayMaterial_Day} @self ?!day ]} @self
+  - glow{buffname=DayMaterial_Day;rd=true;t=9999999;i=60;c=YELLOW;ot=[ - removeAura{n=DayMaterial_Day} @self ?!day - potion{t=SPEED;l=1;d=80;p=false} @self - potion{t=STRENGTH;l=1;d=80;p=false} @self - potion{t=RESISTANCE;l=0;d=80;p=false} @self ]} @self
 
 Azuriter_DayMaterial_NoDay:
   Cooldown: 1
   Skills:
-  - glow{buffname=DayMaterial_NoDay;rd=true;t=9999999;i=60;c=DARK_PURPLE;ot=[ - removeAura{n=DayMaterial_NoDay} @self ?day ]} @self
+  - glow{buffname=DayMaterial_NoDay;rd=true;t=9999999;i=60;c=DARK_PURPLE;ot=[ - removeAura{n=DayMaterial_NoDay} @self ?day - potion{t=SPEED;l=1;d=80;p=false} @self - potion{t=STRENGTH;l=1;d=80;p=false} @self - potion{t=RESISTANCE;l=0;d=80;p=false} @self ]} @self
 
 Azuriter_DayMaterial_Day_Drop:
   Skills:
