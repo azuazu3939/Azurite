@@ -108,9 +108,8 @@ Azuriter_Boss_Feldos:
   
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
 
-  - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =70%
-  - potion{t=STRENGTH;l=2;d=9999999;p=false;or=true} @self ~onDamaged =40%
-  - potion{t=STRENGTH;l=3;d=9999999;p=false;or=true} @self ~onDamaged =10%
+  - potion{t=STRENGTH;l=0;d=9999999;p=false;or=true} @self ~onDamaged =70%
+  - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =40%
   - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
 
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=48;do="OpenField_Enemy_焔獣フェルドス_MCLove32_HighDrop"} @self ~onDeath 
@@ -184,9 +183,8 @@ Azuriter_Boss_Wedler:
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
 
-  - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =70%
-  - potion{t=STRENGTH;l=2;d=9999999;p=false;or=true} @self ~onDamaged =40%
-  - potion{t=STRENGTH;l=3;d=9999999;p=false;or=true} @self ~onDamaged =10%
+  - potion{t=STRENGTH;l=0;d=9999999;p=false;or=true} @self ~onDamaged =70%
+  - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =40%
   - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
 
   - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=48;do="OpenField_Enemy_風牙狼ウィデラー_MCLove32_HighDrop"} @self ~onDeath 
