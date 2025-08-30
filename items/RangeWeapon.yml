@@ -33,7 +33,8 @@ Azuriter_ファイアバレットボウ:
   Attributes:
     MainHand:
       Damage: 36 ADD 
-      MovementSpeed: 0.25 MULTIPLY_BASE
+      MovementSpeed: 0.4 MULTIPLY_BASE
+      Health: -0.2 MULTIPLY_BASE
   Group: 'Range-Weapon'
   Skills:
   - skill{s=Azuriter_ファイアバレットボウ_Skills} @self ~onUse

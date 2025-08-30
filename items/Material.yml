@@ -212,7 +212,7 @@ Azuriter_タレットレーザー_骨:
 
 Azuriter_タレットレーザー_頭:
   Id: skeleton_skull
-  Display: "&fレットザレーターの骨"
+  Display: "&fレットザレーターの頭骨"
   Lore:
   - "&fField1のフェルドスの住処などで、"
   - "&f入手可能なアイテム、希少性がある。"
