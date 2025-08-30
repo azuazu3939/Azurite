@@ -26,7 +26,7 @@ Azuriter_白マテリア:
   Lore:
   - "&f名もなき冒険者たちの遺品。"
   - "&f物体の正常化を促進する。"
-  - "&f影ある場所に影あり。"
+  - "&f影ある場所に光あり。"
   ItemUpdater:
     Version: 1
   Group: 'Material'

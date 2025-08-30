@@ -1,0 +1,19 @@
+Azuriter_DayMaterial_Day:
+  Cooldown: 1
+  Conditions:
+  - day orelsecast Azuriter_DayMaterial_NoDay
+  Skills:
+  - glow{buffname=DayMaterial_Day;rd=true;t=9999999;i=60;c=YELLOW;ot=[ - removeAura{n=DayMaterial_Day} @self ?!day ]} @self
+
+Azuriter_DayMaterial_NoDay:
+  Cooldown: 1
+  Skills:
+  - glow{buffname=DayMaterial_NoDay;rd=true;t=9999999;i=60;c=DARK_PURPLE;ot=[ - removeAura{n=DayMaterial_NoDay} @self ?day ]} @self
+
+Azuriter_DayMaterial_Day_Drop:
+  Skills:
+  - cmd{c="mlg <target.name> Azuriter_黒マテリア 1 1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ?hasAura{n=DayMaterial_Day}
+
+Azuriter_DayMaterial_NoDay_Drop:
+  Skills:
+  - cmd{c="mlg <target.name> Azuriter_白マテリア 1 1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ?hasAura{n=DayMaterial_NoDay}

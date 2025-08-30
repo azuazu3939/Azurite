@@ -21,7 +21,7 @@ Azuriter_ファイアバレットボウ_Skills:
     ];mc=true} @self
   - setVar{k=skill.damage;a="<caster.damage> * 1.5";t=FLOAT} @self
   - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> + 1";t=INTEGER} @self
-  - setVar{k=skill.damage;a="<skill.var.damage> * 0.98";t=FLOAT;repeat=<caster.var.shot_ct|0>;repeati=0} @self ?!hasAura{n=Azuriter_RangeWeaponDamageEnsure}
+  - setVar{k=skill.damage;a="<skill.var.damage> * 0.99";t=FLOAT;repeat=<caster.var.shot_ct|0>;repeati=0} @self ?!hasAura{n=Azuriter_RangeWeaponDamageEnsure}
   - delay 2
   - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=0} @self
   - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot;ho=45} @self

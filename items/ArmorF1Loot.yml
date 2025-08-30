@@ -18,6 +18,9 @@ Azuriter_L_マジカルH:
       az:max_mana: "50"
       az:mana_regen: "1"
   Skills:
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onKill 
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
@@ -43,6 +46,9 @@ Azuriter_L_マジカルC:
       az:max_mana: "50"
       az:mana_regen: "1"
   Skills:
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onKill 
 
 Azuriter_L_マジカルL:
   Id: leather_leggings
@@ -64,6 +70,9 @@ Azuriter_L_マジカルL:
       az:max_mana: "50"
       az:mana_regen: "1"
   Skills:
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onKill 
 
 Azuriter_L_マジカルB:
   Id: leather_boots
@@ -85,6 +94,9 @@ Azuriter_L_マジカルB:
       az:max_mana: "50"
       az:mana_regen: "1"
   Skills:
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
+  - skill{s=Azuriter_L_マジカル_Skills} @self ~onKill 
 
 Azuriter_L_ピュアマジカルH:
   Id: leather_helmet
@@ -106,6 +118,9 @@ Azuriter_L_ピュアマジカルH:
   Skills:
   - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
   - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing 
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill 
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
@@ -131,6 +146,9 @@ Azuriter_L_ピュアマジカルC:
   Skills:
   - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
   - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing 
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill 
 
 Azuriter_L_ピュアマジカルL:
   Id: leather_leggings
@@ -152,6 +170,9 @@ Azuriter_L_ピュアマジカルL:
   Skills:
   - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
   - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing 
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill 
 
 Azuriter_L_ピュアマジカルB:
   Id: leather_boots
@@ -173,3 +194,6 @@ Azuriter_L_ピュアマジカルB:
   Skills:
   - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
   - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged 
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing 
+  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill 
