@@ -1,0 +1,10 @@
+Azuriter_Defenceオフハンド: 
+  Cooldown: 1
+  Conditions:
+  - equipslot{s=OffHAND}
+  Skills:
+  - sudoskill{s=Azuriter_Defenceオフハンド_HATE;cat=true} @trigger 
+
+Azuriter_Defenceオフハンド_HATE:
+  Skills:
+  - threat{m=ADD;a=50} @trigger 

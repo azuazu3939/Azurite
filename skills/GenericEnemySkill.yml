@@ -567,4 +567,6 @@ Azuriter_Enemy_RaidBoss_操作_Repeat_Message:
   - setVar{k=skill.msg;a="raid_boss_skill<skill.count>";t=STRING} @self
   - jsonmessage{m="[{'text':'&6<skill.count>. &fスキル &a<skill.var.temp> &fを実行する。','clickEvent':{'action':'run_command','value':'/mm signal <caster.uuid> <skill.var.msg>'}}]"}
   
-
+Azuriter_Enemy_RaidBoss_Base_Heal:
+  Skills:
+  - healpercent{m=1} @self ?!incombat 

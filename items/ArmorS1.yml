@@ -670,3 +670,96 @@ Azuriter_シリーズエンド1B:
   - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged 
   - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing
   - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
+
+Azuriter_ガーディアH:
+  Id: netherite_helmet
+  Display: "&aガーディア・ヘルメット"
+  Lore:
+  - "&fフルセットで被弾時に、"
+  - "&f対象からのヘイト値を増加する。"
+  - "&f時折被ダメを無効化する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Head:
+      ArmorToughness: 36
+      Armor: 45
+      Health: 12.5
+      KnockbackResistance: 0.25
+      AttackSpeed: -0.125 MULTIPLY_BASE
+      MovementSpeed: -0.1 MULTIPLY_BASE
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+  - skill{s=Azuriter_HealthColor} @self ~onSwing
+  - skill{s=Azuriter_ガーディア_Full} @self ~onDamaged 
+
+Azuriter_ガーディアC:
+  Id: netherite_chestplate
+  Display: "&aガーディア・チェストプレート"
+  Lore:
+  - "&fフルセットで被弾時に、"
+  - "&f対象からのヘイト値を増加する。"
+  - "&f時折被ダメを無効化する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Chest:
+      ArmorToughness: 36
+      Armor: 45
+      Health: 12.5
+      KnockbackResistance: 0.25
+      AttackSpeed: -0.125 MULTIPLY_BASE
+      MovementSpeed: -0.1 MULTIPLY_BASE
+  Group: 'Armor'
+  Skills:
+
+Azuriter_ガーディアL:
+  Id: netherite_leggings
+  Display: "&aガーディア・レギンス"
+  Lore:
+  - "&fフルセットで被弾時に、"
+  - "&f対象からのヘイト値を増加する。"
+  - "&f時折被ダメを無効化する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Legs:
+      ArmorToughness: 36
+      Armor: 45
+      Health: 12.5
+      KnockbackResistance: 0.25
+      AttackSpeed: -0.125 MULTIPLY_BASE
+      MovementSpeed: -0.1 MULTIPLY_BASE
+  Group: 'Armor'
+  Skills:
+
+Azuriter_ガーディアB:
+  Id: netherite_boots
+  Display: "&aガーディア・ブーツ"
+  Lore:
+  - "&fフルセットで被弾時に、"
+  - "&f対象からのヘイト値を増加する。"
+  - "&f時折被ダメを無効化する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Feet:
+      ArmorToughness: 36
+      Armor: 45
+      Health: 12.5
+      KnockbackResistance: 0.25
+      AttackSpeed: -0.125 MULTIPLY_BASE
+      MovementSpeed: -0.1 MULTIPLY_BASE
+  Group: 'Armor'
+  Skills:

@@ -96,6 +96,7 @@ Azuriter_StepAvoid_BeginnerSword:
   Skills:
   - modifyMana{a=80} @self 
   - modifyMana{a=0.2;m=true;delay=10} @self 
+  - healpercent{m=0.05} @self
   - sound{s=block.note_block.chime;p=1.68;audience=caster}
   - sound{s=block.note_block.chime;p=1.26;delay=2;audience=caster}
   - sound{s=block.note_block.chime;v=0.9;p=1.68;delay=4;audience=caster}

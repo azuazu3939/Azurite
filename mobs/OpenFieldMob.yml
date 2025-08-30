@@ -52,7 +52,7 @@ Azuriter_Enemy_RaidBoss_Base:
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
   - removetag{t=DOWN} @self ~onDropcombat
-  - healpercent{m=1} @self ~onDropcombat
+  - skill{s=Azuriter_Enemy_RaidBoss_Base_Heal} @self ~onDropcombat 
 
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
   - addtag{t=LOW_HEALTH} @self ~onDamaged =40%

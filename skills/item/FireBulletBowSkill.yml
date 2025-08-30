@@ -36,11 +36,8 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
   - missile{
     os=[
       - setVar{k=caster.bullet_bow_get;a="0";t=INTEGER} @self ?!varisset{k=caster.bullet_bow_get}
-      - sound{s=entity.arrow.shoot;audience=caster;sc=AMBIENT;delay=5} @self
-      - sound{s=entity.arrow.shoot;audience=caster;sc=AMBIENT;v=0.75;p=2;delay=5} @self
-      - sound{s=entity.arrow.shoot;audience=caster;sc=AMBIENT;p=0.8;delay=5} @self
-      - sound{s=block.bell.use;p=2;v=0.1;audience=caster;sc=AMBIENT;delay=4} @self
-      - sound{s=block.trial_spawner.about_to_spawn_item;p=2;v=1;sc=AMBIENT;audience=caster} @self
+      - sound{s=entity.zombie.infect;v=1;p=1;audience=caster;sc=AMBIENT} @self
+      - sound{s=entity.breeze.jump;v=1;p=2;audience=caster;sc=AMBIENT} @self
     ];
     ot=[
       - modifyprojectile{t=INERTIA;a=MULTIPLY;v=0.95} @self 
@@ -52,8 +49,6 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
       - modifyMana{a=2} @self
       - damage{a=<skill.var.damage>;pi=true;ii=true} 
       - e:p{p=crit_magic;a=10;vs=0.5;hs=0.5;audience=caster}
-      - sound{s=entity.arrow.hit;audience=caster}
-      - sound{s=entity.arrow.hit_player;audience=caster;v=0.75} @self
       - setVar{k=caster.bullet_bow_fire;a="<caster.var.bullet_bow_fire|0> + 1";t=INTEGER} @self
       - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot_Get} @self
       - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot_Run}
@@ -96,7 +91,11 @@ Azuriter_ファイアバレットボウ_Skills_Shot_Run:
       - isliving true
     ];
     os=[
-      - sound{s=entity.generic.explode;p=2;v=0.25;audience=caster;sc=AMBIENT} @origin 
+      - sound{s=item.trident.hit_ground;v=0.4;p=1;audience=caster;sc=AMBIENT} @self
+      - sound{s=entity.puffer_fish.blow_out;v=1;p=0.5;audience=caster;sc=AMBIENT} @self
+      - sound{s=entity.generic.extinguish_fire;v=1;p=2;audience=caster;sc=AMBIENT;delay=3} @self
+      - sound{s=entity.generic.explode;v=0.3;p=2;audience=caster;sc=AMBIENT;delay=3} @self
+      - sound{s=entity.zombie.infect;v=1;p=2;audience=caster;sc=AMBIENT;delay=3} @self
       - e:p{p=cloud;audience=caster;a=5;ys=1;hs=2;s=1.25} @origin
     ];
     v=16;i=8;vr=2;hr=3;se=false;hp=false;hnp=true;sfo=2;mr=12;origin=@targeted;fo=true;tyo=1} @ringAroundOrigin{r=16;p=16} 

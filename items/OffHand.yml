@@ -20,6 +20,8 @@ Azuriter_Defenceオフハンド1:
       ArmorToughness: 8 ADD
       Health: 6 ADD 
   Group: 'OffHand'
+  Skills:
+  - skill{s=Azuriter_Defenceオフハンド} @self ~onDamaged 
 
 Azuriter_Utilityオフハンド1:
   Id: yellow_dye
@@ -59,6 +61,8 @@ Azuriter_Defenceオフハンド2:
       ArmorToughness: 15 ADD
       Health: 10 ADD 
   Group: 'OffHand'
+  Skills:
+  - skill{s=Azuriter_Defenceオフハンド} @self ~onDamaged 
 
 Azuriter_Utilityオフハンド2:
   Id: yellow_dye
