@@ -89,9 +89,9 @@ Azuriter_Warrior_Zombie:
   - cmd{c="mlgo <target.name> Azuriter_鉄片 <random.1to3> 0.5"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
   - cmd{c="mlgo <target.name> Azuriter_鉄片 <random.4to8> 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_黒マテリア 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath ?day
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
   - skill{s=Azuriter_DayMaterial_Day} @self ~onSpawn 0.15
   - skill{s=Azuriter_DayMaterial_Day_Drop} @self ~onDeath 
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
   - skill{s=Azuriter_DayMaterial_Remove} @self ~onDeath 
   - attribute{attr=GENERIC_ARMOR;a=35} @self ~onSpawn ?!day
   - attribute{attr=GENERIC_ARMOR;a=15} @self ~onSpawn ?day
@@ -127,9 +127,9 @@ Azuriter_High_Zombie:
   - cmd{c="mlgo <target.name> Azuriter_鉄片 <random.4to8> 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_ハイソール 1 0.1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_黒マテリア 1 0.02"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath ?day
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=40} @self ~onSpawn 
   - skill{s=Azuriter_DayMaterial_Day} @self ~onSpawn 0.1
   - skill{s=Azuriter_DayMaterial_Day_Drop} @self ~onDeath 
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=40} @self ~onSpawn 
   - skill{s=Azuriter_DayMaterial_Remove} @self ~onDeath 
   - attribute{attr=GENERIC_ARMOR;a=50} @self ~onSpawn ?!day
   - attribute{attr=GENERIC_ARMOR;a=30} @self ~onSpawn ?day
