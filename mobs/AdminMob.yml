@@ -8,6 +8,9 @@ Azuriter_Admin_Mob_DamageTest:
   Skills:
   - healpercent{m=1} @self ~onDamaged 
   - message{m="<skill.var.damage-amount>"} @PIR{r=16} ~onDamaged 
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -21,6 +24,9 @@ Azuriter_Admin_Mob_1:
   Health: 999999999
   Damage: 1
   Faction: Admin
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   Skills:
   - healpercent{m=1} @self ~onDamaged 
   BossBar:
@@ -37,6 +43,9 @@ Azuriter_Admin_Mob_5:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -51,6 +60,9 @@ Azuriter_Admin_Mob_10:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -65,6 +77,9 @@ Azuriter_Admin_Mob_20:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -79,6 +94,9 @@ Azuriter_Admin_Mob_40:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -93,6 +111,9 @@ Azuriter_Admin_Mob_60:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -107,6 +128,9 @@ Azuriter_Admin_Mob_80:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -121,6 +145,9 @@ Azuriter_Admin_Mob_100:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -135,6 +162,9 @@ Azuriter_Admin_Mob_120:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -149,6 +179,9 @@ Azuriter_Admin_Mob_140:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged 
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -163,6 +196,9 @@ Azuriter_Admin_Mob_160:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -177,6 +213,9 @@ Azuriter_Admin_Mob_180:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
@@ -191,6 +230,9 @@ Azuriter_Admin_Mob_280:
   Faction: Admin
   Skills:
   - healpercent{m=1} @self ~onDamaged
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
