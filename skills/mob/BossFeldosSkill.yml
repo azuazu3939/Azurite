@@ -48,7 +48,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process:
       - setProjectileDirection{m=0.2} @TL ?!hasTag{t=TAG}
     ];
     oh=[
-      - damage{a="<skill.var.dmg> * 1.6";pi=true;ii=true;e=RED}
+      - damage{a="<skill.var.dmg> * 1.25";pi=true;ii=true;e=RED}
     ];
     oe=[
       - removetag{t=ATTACK} @self
@@ -70,7 +70,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1_Process_Finish_Projectil
       - sound{s=entity.zoglin.step;v=1.25;cd=0.05} @self
     ];
     oh=[
-      - damage{a="<skill.var.dmg> * 1.5";pi=true;ii=true;e=RED}
+      - damage{a="<skill.var.dmg> * 0.75";pi=true;ii=true;e=RED}
     ];
     v=10;i=1;g=0.5;sfo=2;syo=1;tyo=5;mr=12;c=[ - samefaction false ];vr=1.5;hr=1.5;
     ho=<skill.ho>;b=DISPLAY;mat=MAGMA_BLOCK;ps=1;rs=1;ys=1;scale=1,1,1} @forward
@@ -160,7 +160,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
       - sound{s=entity.hoglin.attack;p=0;sc=PLAYERS} @self 
       - sound{s=entity.wither.break_block;sc=PLAYERS} @targeted{c=[ - hasAura{n=step_avoid} false ]}
       - stun{t=2;f=true} 
-      - damage{a="<skill.var.dmg> * 2.5";pi=true;ii=true;e=RED} 
+      - damage{a="<skill.var.dmg> * 2.25";pi=true;ii=true;e=RED} 
       - delay 5
       - sound{s=entity.wither.break_block;sc=PLAYERS} @targeted{c=[ - hasAura{n=step_avoid} false ]}
       - delay 2
