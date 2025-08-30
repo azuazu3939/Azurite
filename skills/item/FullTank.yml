@@ -1,15 +1,15 @@
 Azuriter_フルタンク_Skills:
-  Cooldown: 30
+  Cooldown: 20
   Conditions:
   - wearing{s=HAND;i=Azuriter_フルタンク} true
-  - hasMana{a=>200;
+  - hasMana{a=>300;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]}
   - matCooldown{m=BELL} false 
   Skills:
-  - modifyMana{a=-200} @self
-  - setMaterialCooldown{m=BELL;d=600} @self
+  - modifyMana{a=-300} @self
+  - setMaterialCooldown{m=BELL;d=400} @self
   - healpercent{m=0.2} @self
   - potion{t=RESISTANCE;l=1;d=300;p=false} @self
   - potion{t=WEAKNESS;l=9;d=300;p=false} @self
