@@ -693,6 +693,8 @@ Azuriter_ガーディアH:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
   - skill{s=Azuriter_HealthColor} @self ~onSwing
   - skill{s=Azuriter_ガーディア_Full} @self ~onDamaged 
+  - skill{s=Azuriter_ガーディア_Full} @self ~onSwing
+  - skill{s=Azuriter_ガーディア_Full} @self ~onKill
 
 Azuriter_ガーディアC:
   Id: netherite_chestplate
