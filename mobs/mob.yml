@@ -4,7 +4,7 @@ Azuriter_Light_Entity:
   Type: BLOCK_DISPLAY
   DisplayOptions:
     Block: light
-    ViewRange: 0.5
+    ViewRange: 1
     ShadowStrength: 0
     BlockLight: 15
     SkyLight: 15
