@@ -69,11 +69,11 @@ Azuriter_Utilityオフハンド2:
     Version: 1
   Attributes:
     OffHand:
-      KnockbackResistance: 0.25 ADD
-      MovementSpeed: 0.25 MULTIPLY_BASE
-      SafeFallDistance: 5 ADD
+      KnockbackResistance: 0.2 ADD
+      MovementSpeed: 0.2 MULTIPLY_BASE
+      SafeFallDistance: 3.5 ADD
   Group: 'OffHand'
   NBT:
     PublicBukkitValues:
-      az:max_mana: "100"
-      az:mana_regen: "5"
+      az:max_mana: "150"
+      az:mana_regen: "3"

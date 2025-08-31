@@ -212,8 +212,8 @@ Azuriter_L_ガーディアH:
     Version: 1
   Attributes:
     Head:
-      ArmorToughness: 35
-      Armor: 42
+      ArmorToughness: 32
+      Armor: 40
       Health: 10
       KnockbackResistance: 0.25
       MovementSpeed: -0.125 MULTIPLY_BASE
@@ -241,8 +241,8 @@ Azuriter_L_ガーディアC:
     Version: 1
   Attributes:
     Chest:
-      ArmorToughness: 35
-      Armor: 42
+      ArmorToughness: 32
+      Armor: 40
       Health: 10
       KnockbackResistance: 0.25
       MovementSpeed: -0.125 MULTIPLY_BASE
@@ -261,8 +261,8 @@ Azuriter_L_ガーディアL:
     Version: 1
   Attributes:
     Legs:
-      ArmorToughness: 35
-      Armor: 42
+      ArmorToughness: 32
+      Armor: 40
       Health: 10
       KnockbackResistance: 0.25
       MovementSpeed: -0.125 MULTIPLY_BASE
@@ -281,8 +281,8 @@ Azuriter_L_ガーディアB:
     Version: 1
   Attributes:
     Feet:
-      ArmorToughness: 35
-      Armor: 42
+      ArmorToughness: 32
+      Armor: 40
       Health: 10
       KnockbackResistance: 0.25
       MovementSpeed: -0.125 MULTIPLY_BASE
