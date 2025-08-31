@@ -1,3 +1,15 @@
+Azuriter_Light_Entity_Spawn:
+  Type: Azuriter_Light_Entity
+  Worlds: Field1
+  Action: ADD 
+  PositionType: LAND
+  Chance: 0.05
+  Cooldown: 2
+  Priority: 1
+  Conditions:
+  - mobsinworld{a=<200} true 
+  - mobsInRadius{types=Azuriter_Light_Entity;amount=<3;radius=32} true
+
 Azuriter_Neutral_Zombie_Spawn:
   Type: Azuriter_Neutral_Zombie
   Worlds: Field1
@@ -7,7 +19,7 @@ Azuriter_Neutral_Zombie_Spawn:
   Cooldown: 0.2
   Priority: 10
   Conditions:
-  - mobsinworld{a=<500} true 
+  - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_Neutral_Zombie} true
   - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
   - mobsInRadius{types=Azuriter_Neutral_Zombie;amount=<3;radius=24} true
@@ -21,7 +33,7 @@ Azuriter_Big_Zombie_Spawn:
   Cooldown: 30
   Priority: 1
   Conditions:
-  - mobsinworld{a=<500} true 
+  - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_Neutral_Zombie} true
   - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<24;radius=32} true
   - mobsInRadius{types=Azuriter_Big_Zombie;amount=<1;radius=24} true
@@ -35,7 +47,7 @@ Azuriter_High_Zombie_Spawn:
   Cooldown: 1
   Priority: 10
   Conditions:
-  - mobsinworld{a=<500} true 
+  - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_High_Zombie} true
   - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<10;radius=32} true
   - mobsInRadius{types=Azuriter_High_Zombie;amount=<3;radius=32} true
@@ -49,7 +61,7 @@ Azuriter_Elite_Zombie_Spawn:
   Cooldown: 30
   Priority: 1
   Conditions:
-  - mobsinworld{a=<500} true 
+  - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_High_Zombie} true
   - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
   - mobsInRadius{types=Azuriter_Elite_Zombie;amount=<1;radius=32} true
@@ -63,7 +75,7 @@ Azuriter_Warrior_Zombie_Spawn:
   Chance: 0.01
   Priority: 20
   Conditions:
-  - mobsinworld{a=<500} true 
+  - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_Warrior_Zombie} true
   - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<16;radius=32} true
   - mobsInRadius{types=Azuriter_Warrior_Zombie;amount=<2;radius=24} true
@@ -77,7 +89,7 @@ Azuriter_letthelater_Spawn:
   Chance: 0.125
   Priority: 10
   Conditions:
-  - mobsinworld{a=<500} true 
+  - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_letthelater} true
   - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
   - mobsInRadius{types=Azuriter_letthelater;amount=<2;radius=24} true
@@ -92,7 +104,7 @@ Azuriter_Altwolf_Spawn:
   Chance: 0.125
   Priority: 10
   Conditions:
-  - mobsinworld{a=<500} true 
+  - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_Altwolf} true
   - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
   - mobsInRadius{types=Azuriter_Altwolf;amount=<2;radius=24} true

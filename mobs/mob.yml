@@ -1,3 +1,16 @@
+Azuriter_Light_Entity:
+  Template: Azuriter_Enemy_Base
+  Display: ""
+  Type: BLOCK_DISPLAY
+  DisplayOptions:
+    Block: light
+    ViewRange: 0.5
+    ShadowStrength: 0
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 2,1,2
+
+
 Azuriter_Neutral_Zombie:
   Template: Azuriter_Enemy_Base
   Display: "&fゾンビ"
