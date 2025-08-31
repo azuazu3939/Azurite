@@ -21,7 +21,6 @@ Azuriter_Defenceオフハンド1:
       Health: 6 ADD 
   Group: 'OffHand'
   Skills:
-  - skill{s=Azuriter_Defenceオフハンド} @self ~onDamaged 
 
 Azuriter_Utilityオフハンド1:
   Id: yellow_dye
@@ -62,7 +61,6 @@ Azuriter_Defenceオフハンド2:
       Health: 10 ADD 
   Group: 'OffHand'
   Skills:
-  - skill{s=Azuriter_Defenceオフハンド} @self ~onDamaged 
 
 Azuriter_Utilityオフハンド2:
   Id: yellow_dye
