@@ -3,16 +3,16 @@ Azuriter_シリーズエンド1_Skills:
   Conditions:
   - (wearing{s=HEAD;i=Azuriter_シリーズエンド1H} && wearing{s=CHEST;i=Azuriter_シリーズエンド1C} && wearing{s=LEGS;i=Azuriter_シリーズエンド1L} && wearing{s=FEET;i=Azuriter_シリーズエンド1B}) castinstead Azuriter_シリーズエンド1_Full
   Skills:
-  - potion{t=SPEED;d=500;l=0;p=false;or=true} @self
-  - potion{t=STRENGTH;d=500;l=0;p=false;or=true} @self
-  - potion{t=REGENERATION;d=500;l=0;p=false;or=true} @self
+  - potion{t=SPEED;d=500;l=0;p=false} @self
+  - potion{t=STRENGTH;d=500;l=0;p=false} @self
+  - potion{t=REGENERATION;d=500;l=0;p=false} @self
 
 Azuriter_シリーズエンド1_Full:
   Cooldown: 10
   Skills:
-  - potion{t=ABSORPTION;d=500;l=1;p=false;or=true} @self
-  - potion{t=SPEED;d=500;l=0;p=false;or=true} @self
-  - potion{t=RESISTANCE;d=500;l=0;p=false;or=true} @self
-  - potion{t=STRENGTH;d=500;l=2;p=false;or=true} @self
-  - potion{t=HASTE;l=0;d=500;p=false;or=true}
-  - potion{t=REGENERATION;d=500;l=1;p=false;or=true} @self
+  - potion{t=ABSORPTION;d=500;l=1;p=false} @self
+  - potion{t=SPEED;d=500;l=0;p=false} @self
+  - potion{t=RESISTANCE;d=500;l=0;p=false} @self
+  - potion{t=STRENGTH;d=500;l=2;p=false} @self
+  - potion{t=HASTE;l=0;d=500;p=false}
+  - potion{t=REGENERATION;d=500;l=1;p=false} @self
