@@ -8,9 +8,8 @@ Azuriter_L_ガーディア_Full:
   Skills:
   - cancelEvent{sync=true} @self 0.15
   - potion{t=RESISTANCE;l=0;d=600;p=false} @self
-  - potion{t=REGENERATION;l=1;d=600;p=false} @self
-  - potion{t=SPEED;l=6;d=600;p=false} @self
-  - heal{a=6} @self
+  - potion{t=REGENERATION;l=2;d=600;p=false} @self
+  - potion{t=SPEED;l=9;d=600;p=false} @self
   
 Azuriter_L_ガーディア_Full_Damage:
   Cooldown: 1
