@@ -276,3 +276,8 @@ Azuriter_L_ガーディアB:
       MovementSpeed: -0.125 MULTIPLY_BASE
   Group: 'Armor'
   Skills:
+  - sudoskill{
+    s=[
+      - threat{m=top} @self
+      - message{m="<targe.name>"} @self
+    ];cat=true} @trigger  ~onDamaged 
