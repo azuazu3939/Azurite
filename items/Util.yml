@@ -14,17 +14,23 @@ Azuriter_RangeWeaponDamageEnsure:
 
 Azuriter_BackPack3:
   Id: paper
-  Display: "&f臨時バックパック"
+  Display: "&fバックパック3"
   Lore: []
   ItemUpdater:
     Version: 1
   Group: 'Util'
   Type: BAG
   Inventory:
-    Title: "&f臨時バックパック"
+    Title: "&fバックパック3"
     Size: 27
     SaveOnItemUpdate: true
     PreventBagNesting: true
+    Sounds:
+      Open: "block.ender_chest.open"
+      Close: "block.ender_chest.close"
+      Pickup: "entity.chicken.egg"
+      Volume: 1
+      Pitch: 1
     AutoPickup:
       Enabled: false
       CollectWhenHeld: false
