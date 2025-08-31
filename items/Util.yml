@@ -15,7 +15,8 @@ Azuriter_RangeWeaponDamageEnsure:
 Azuriter_BackPack3:
   Id: chest
   Display: "&6バックパック &7- &a3"
-  Lore: []
+  Lore: 
+  - "&f右クリで開けるバックパック。"
   ItemUpdater:
     Version: 1
   Group: 'Util'
