@@ -1,0 +1,154 @@
+Azuriter_Boss_Feldos:
+  Template: Azuriter_Enemy_RaidBoss_Base
+  Display: "<#c20a0a>&l焔獣フェルドス&R"
+  Type: hoglin
+  Health: 21650
+  Armor: 140
+  Damage: 20
+  Drops:
+  - money 30to50 1
+  Options:
+    Silent: true 
+    Scale: 3
+    MovementSpeed: 0.25
+    KnockbackResistance: 1
+    MaxCombatDistance: 20
+    FollowRange: 10
+    Adult: true
+    ImmuneToZombification: true
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  - gotoowner
+  - moveTowardsTarget
+  - float
+  BossBar:
+    Enabled: true
+    Title: <caster.name>
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_12
+  Skills:
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=140} @self ~onSpawn
+  - attribute{attr=WAYPOINT_TRANSMIT_RANGE;a=256} @self ~onSpawn
+  - setVar{k=caster.1;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1";t=STRING} @self ~onSpawn 
+  - setVar{k=caster.2;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2";t=STRING} @self ~onSpawn 
+  - setVar{k=caster.3;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3";t=STRING} @self ~onSpawn 
+  - setVar{k=caster.4;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4";t=STRING} @self ~onSpawn 
+  - setVar{k=caster.5;a="OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5";t=STRING} @self ~onSpawn 
+
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
+  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=240;shield_break=1800;heal_percent=0.05} @self ~onEntercombat
+  - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK @T ~onEntercombat
+  
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
+
+  - potion{t=STRENGTH;l=0;d=9999999;p=false;or=true} @self ~onDamaged =70%
+  - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =40%
+  - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
+
+  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=48;do="OpenField_Enemy_焔獣フェルドス_MCLove32_HighDrop"} @self ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_炎核 1 0.2";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_焔獣の炎牙 1 0.35";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_焔獣の炎殻 1 0.7";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_焔獣の太骨 1 0.5";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+
+  - skill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1} @self ~onSignal:raid_boss_skill1
+  - skill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2} @self ~onSignal:raid_boss_skill2
+  - skill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3} @self ~onSignal:raid_boss_skill3
+  - skill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4} @self ~onSignal:raid_boss_skill4
+  - skill{s=OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5} @self ~onSignal:raid_boss_skill5
+  - message{m="<trigger.name>が、OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_1を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill1
+  - message{m="<trigger.name>が、OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_2を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill2
+  - message{m="<trigger.name>が、OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_3を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill3
+  - message{m="<trigger.name>が、OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill4
+  - message{m="<trigger.name>が、OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill5
+
+Azuriter_Boss_Wedler:
+  Template: Azuriter_Enemy_RaidBoss_Base
+  Display: "<#15d455>&l風牙狼ウィデラー&R"
+  Type: wolf
+  Health: 18695
+  Armor: 150
+  Damage: 18
+  Drops:
+  - money 30to50 1
+  Options:
+    Variant: black
+    Silent: true 
+    Scale: 3.5
+    MovementSpeed: 0.275
+    KnockbackResistance: 1
+    MaxCombatDistance: 20
+    FollowRange: 10
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  - gotoowner
+  - moveTowardsTarget
+  - float
+  BossBar:
+    Enabled: true
+    Title: <caster.name>
+    Range: 32
+    Color: WHITE
+    Style: SEGMENTED_12
+  Skills:
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=150} @self ~onSpawn
+  - attribute{attr=WAYPOINT_TRANSMIT_RANGE;a=256} @self ~onSpawn
+  - setVar{k=caster.1;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1";t=STRING} @self ~onSpawn 
+  - setVar{k=caster.2;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2";t=STRING} @self ~onSpawn 
+  - setVar{k=caster.3;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_3";t=STRING} @self ~onSpawn 
+  - setVar{k=caster.4;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_4";t=STRING} @self ~onSpawn
+  - setVar{k=caster.5;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_5";t=STRING} @self ~onSpawn 
+  - setVar{k=caster.6;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6";t=STRING} @self ~onSpawn 
+  - setVar{k=caster.7;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7";t=STRING} @self ~onSpawn 
+
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
+  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=180;shield_break=1500;heal_percent=0.03} @self ~onEntercombat
+  - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK @T ~onEntercombat
+
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
+
+  - potion{t=STRENGTH;l=0;d=9999999;p=false;or=true} @self ~onDamaged =70%
+  - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =40%
+  - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged 
+
+  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=48;do="OpenField_Enemy_風牙狼ウィデラー_MCLove32_HighDrop"} @self ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_風核 1 0.2";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_風牙狼の骨 1 0.5";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_風牙狼の牙 1 0.35";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_風牙狼の皮 1 0.7";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+
+  - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1} @self ~onSignal:raid_boss_skill1
+  - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2} @self ~onSignal:raid_boss_skill2
+  - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_3} @self ~onSignal:raid_boss_skill3
+  - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_4} @self ~onSignal:raid_boss_skill4
+  - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_5} @self ~onSignal:raid_boss_skill5
+  - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6} @self ~onSignal:raid_boss_skill6
+  - skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7} @self ~onSignal:raid_boss_skill7
+  - message{m="<trigger.name>が、OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill1
+  - message{m="<trigger.name>が、OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill2
+  - message{m="<trigger.name>が、OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_3を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill3
+  - message{m="<trigger.name>が、OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_4を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill4
+  - message{m="<trigger.name>が、OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_5を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill5
+  - message{m="<trigger.name>が、OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_6を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill6
+  - message{m="<trigger.name>が、OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill7

@@ -1,0 +1,243 @@
+Azuriter_Neutral_Zombie:
+  Template: Azuriter_Enemy_Base
+  Display: "&fゾンビ"
+  Health: 20
+  Damage: 5
+  Drops:
+  - money 1to4 0.2
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Options:
+    MaxCombatDistance: 48
+    FollowRange: 16
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropcombat 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} {c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_粗悪な装備片 <random.1to3> 0.4"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_粗悪な装備片 <random.4to8> 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_白マテリア 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath ?!day
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=10} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR;a=20} @self ~onSpawn ?!day
+  - attribute{attr=GENERIC_ARMOR;a=10} @self ~onSpawn ?day
+  - skill{s=Azuriter_DayMaterial_Remove} @self ~onDeath 
+  - skill{s=Azuriter_DayMaterial_NoDay} @self ~onSpawn 0.1
+  - skill{s=Azuriter_DayMaterial_NoDay_Drop} @self ~onDeath 
+  - potion{t=STRENGTH;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
+  - potion{t=SPEED;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
+
+Azuriter_Big_Zombie:
+  Template: Azuriter_Enemy_Base
+  Display: "&f大きなゾンビ"
+  Health: 250
+  Damage: 5
+  Drops:
+  - money 1to5
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Equipment:
+  - LEATHER_HELMET{color=RED} HEAD
+  Options:
+    MaxCombatDistance: 48
+    MovementSpeed: 0.25
+    Scale: 2
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8} @self ~onDropcombat 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.002"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_バラケタ装備片 1 0.5"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_CombatGift_G1 1 0.1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_白マテリア 1 0.5"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath ?!day
+  - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=15} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR;a=25} @self ~onSpawn ?!day
+  - attribute{attr=GENERIC_ARMOR;a=15} @self ~onSpawn ?day
+  - skill{s=Azuriter_DayMaterial_NoDay} @self ~onSpawn 0.15
+  - skill{s=Azuriter_DayMaterial_NoDay_Drop} @self ~onDeath 
+  - skill{s=Azuriter_DayMaterial_Remove} @self ~onDeath 
+  - potion{t=STRENGTH;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
+  - potion{t=SPEED;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
+  - potion{t=SPEED;d=99999999;l=1;p=true;a=true} @EIR{r=20;ignore=players} ~onEntercombat 
+  - potion{t=WEAKNESS;d=100;l=0;p=false} @trigger ~onAttack 
+  - cmd{c="mlgo <target.name> Azuriter_CombatGift_G1 1 0.03"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true - hasAuraStacks{n=Azuriter_Player_EnterCombat;s=>500} true ]} ~onDeath
+
+Azuriter_Warrior_Zombie:
+  Template: Azuriter_Enemy_Base
+  Display: "&f戦士ゾンビ"
+  Health: 125
+  Damage: 7
+  Drops:
+  - money 4to8 0.6
+  Equipment:
+  - IRON_HELMET HEAD
+  - LEATHER_CHESTPLATE CHEST
+  - WOODEN_SWORD HAND
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Options:
+    MaxCombatDistance: 48
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8} @self ~onDropcombat 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_鉄片 <random.1to3> 0.5"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_鉄片 <random.4to8> 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_黒マテリア 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath ?day
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
+  - skill{s=Azuriter_DayMaterial_Day} @self ~onSpawn 0.15
+  - skill{s=Azuriter_DayMaterial_Day_Drop} @self ~onDeath 
+  - skill{s=Azuriter_DayMaterial_Remove} @self ~onDeath 
+  - attribute{attr=GENERIC_ARMOR;a=35} @self ~onSpawn ?!day
+  - attribute{attr=GENERIC_ARMOR;a=15} @self ~onSpawn ?day
+  - potion{t=STRENGTH;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
+  - potion{t=SPEED;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
+  - skill{s=Azuriter_Warrior_Zombie_Skills} @self ~onEntercombat 
+
+Azuriter_High_Zombie:
+  Template: Azuriter_Enemy_Base
+  Type: baby_zombie
+  Display: "&fハイゾンビ"
+  Health: 50
+  Damage: 7
+  Equipment:
+  - IRON_HELMET HEAD
+  - WOODEN_AXE HAND
+  Drops:
+  - money 3to6 0.5
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Options:
+    MaxCombatDistance: 48
+    FollowRange: 12
+    Scale: 2
+    MovementSpeed: 0.275
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropcombat 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_鉄片 <random.1to3> 0.3"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_鉄片 <random.4to8> 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイソール 1 0.1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_黒マテリア 1 0.02"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath ?day
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=40} @self ~onSpawn 
+  - skill{s=Azuriter_DayMaterial_Day} @self ~onSpawn 0.1
+  - skill{s=Azuriter_DayMaterial_Day_Drop} @self ~onDeath 
+  - skill{s=Azuriter_DayMaterial_Remove} @self ~onDeath 
+  - attribute{attr=GENERIC_ARMOR;a=50} @self ~onSpawn ?!day
+  - attribute{attr=GENERIC_ARMOR;a=30} @self ~onSpawn ?day
+  - potion{t=STRENGTH;d=99999999;l=1;p=true;a=true} @self ~onSpawn ?!day
+
+Azuriter_Elite_Zombie:
+  Template: Azuriter_Enemy_Base
+  Display: "&fエリートゾンビ"
+  Health: 600
+  Damage: 12
+  Drops:
+  - money 15to40
+  Equipment:
+  - IRON_HELMET HEAD
+  - IRON_CHESTPLATE CHEST
+  - IRON_LEGGINGS LEGS 
+  - IRON_BOOTS FEET
+  - IRON_SWORD HAND
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Options:
+    MaxCombatDistance: 48
+    FollowRange: 12
+    KnockbackResistance: 1
+    Scale: 2
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropcombat 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.002"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_鉄片 <random.1to5> 1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_加工鉄片 1 0.5"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_鉄片 <random.8to14> 0.4"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_黒マテリア 1 1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath ?day
+  - cmd{c="mlgo <target.name> Azuriter_ハイソール 1 1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_CombatGift_G1 1 0.15"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_CombatGift_G1 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true - hasAuraStacks{n=Azuriter_Player_EnterCombat;s=>500} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=60} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR;a=60} @self ~onSpawn ?!day
+  - attribute{attr=GENERIC_ARMOR;a=40} @self ~onSpawn ?day
+  - potion{t=STRENGTH;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
+  - potion{t=SPEED;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
+  - skill{s=Azuriter_Elite_Zombie_Skills} @self ~onEntercombat 
+
+Azuriter_letthelater:
+  Template: Azuriter_Enemy_Abstract_Generic
+  Type: skeleton
+  Display: "&fレットザレーター"
+  Health: 100
+  Damage: 10
+  Equipment:
+  - DIAMOND_HELMET HEAD
+  - BOW HAND
+  Drops:
+  - money 5to8 0.4
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Options:
+    MaxCombatDistance: 48
+    FollowRange: 12
+    Scale: 0.75
+    MovementSpeed: 0.05
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropcombat 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_Feldos_Summon_Paper 1 0.1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_タレットレーザー_骨 1 0.3"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_タレットレーザー_頭 1 0.03"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=30} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR;a=40} @self ~onSpawn ?!day
+  - attribute{attr=GENERIC_ARMOR;a=25} @self ~onSpawn ?day
+  - potion{t=STRENGTH;d=99999999;l=1;p=true;a=true} @self ~onSpawn ?!day
+  - cancelEvent{sync=true} @self ~onShoot 
+  - skill{s=Azuriter_レットザレーター_Skills} @self ~onShoot 
+
+Azuriter_Altwolf:
+  Template: Azuriter_Enemy_Base
+  Type: wolf
+  Display: "&fアルトゥルフ"
+  Health: 85
+  Damage: 12
+  Drops:
+  - money 3to5 0.75
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Options:
+    MaxCombatDistance: 48
+    Scale: 1.5
+    KnockbackResistance: 0.8
+    MovementSpeed: 0.225
+    AttackSpeed: 20
+    NoDamageTicks: 0
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8} @self ~onDropcombat 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_Wedler_Summon_Paper 1 0.1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_Altwolf_牙 1 0.03"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_Altwolf_粗皮 1 0.3"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=75} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR;a=75} @self ~onSpawn ?!day
+  - attribute{attr=GENERIC_ARMOR;a=50} @self ~onSpawn ?day
+  - potion{t=STRENGTH;d=99999999;l=1;p=true;a=true} @self ~onSpawn ?day
+  - potion{t=SPEED;d=99999999;l=1;p=true;a=true} @self ~onSpawn ?day
