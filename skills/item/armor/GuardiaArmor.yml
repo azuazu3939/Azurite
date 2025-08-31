@@ -22,4 +22,25 @@ Azuriter_L_ガーディア_Full_Damage:
   - sudoskill{
     s=[
       - threat{m=top} @self
+      - threat{m=add;a=5000;delay=1} @self
     ];cat=true} @trigger
+  - potion{t=RESISTANCE;l=1;d=200;p=false} @PIR{r=32}
+  - setVar{k=caster.tank_job;a="<caster.var.tank_job|0> + 1";t=INTEGER} @self
+  - skill{s=Azuriter_L_ガーディア_Full_Counter} @self
+
+Azuriter_L_ガーディア_Full_Counter:
+  Conditions:
+  - wearing{s=HEAD;i=Azuriter_L_ガーディアH}
+  - wearing{s=CHEST;i=Azuriter_L_ガーディアC}
+  - wearing{s=LEGS;i=Azuriter_L_ガーディアL}
+  - wearing{s=FEET;i=Azuriter_L_ガーディアB}
+  - varrange{k=caster.tank_job;r=>4}
+  - hasMana{a=>200;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  Skills:
+  - setVar{k=caster.tank_job;a="0";t=INTEGER} @self
+  - modifyMana{a=-200} @self 
+  - damage{a="<caster.damage> * 2";pi=true;ii=true;repeat=4;repeati=2} @trigger 
+  - e:p{p=explosion_emitter;s=2;a=5;ys=2;hs=2;audience=caster;repeat=4;repeati=2} @trigger

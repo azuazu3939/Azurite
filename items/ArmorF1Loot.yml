@@ -203,6 +203,7 @@ Azuriter_L_ガーディアH:
   Display: "&aガーディア・ヘルメット &f&lL1"
   Lore: 
   - "&fFullSetでタンク本来の性能を発揮する。"
+  - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -230,6 +231,7 @@ Azuriter_L_ガーディアC:
   Display: "&aガーディア・チェストプレート &f&lL1"
   Lore: 
   - "&fFullSetでタンク本来の性能を発揮する。"
+  - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -249,6 +251,7 @@ Azuriter_L_ガーディアL:
   Display: "&aガーディア・レギンス"
   Lore: 
   - "&fFullSetでタンク本来の性能を発揮する。"
+  - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -268,6 +271,7 @@ Azuriter_L_ガーディアB:
   Display: "&aガーディア・ブーツ &f&lL1"
   Lore: 
   - "&fFullSetでタンク本来の性能を発揮する。"
+  - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
   Options:
     Unbreakable: true
   ItemUpdater:
