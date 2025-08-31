@@ -44,3 +44,4 @@ Azuriter_L_ガーディア_Full_Counter:
   - modifyMana{a=-200} @self 
   - damage{a="<caster.damage> * 2";pi=true;ii=true;repeat=4;repeati=2} @trigger 
   - e:p{p=explosion_emitter;s=2;a=5;ys=2;hs=2;audience=caster;repeat=4;repeati=2} @trigger
+  - sound{s=item.totem.use;v=0.25;audience=caster;sc=AMBIENT} @self
