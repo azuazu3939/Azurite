@@ -305,15 +305,7 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_HighDrop:
   - cmd{c="mlg <target.name> Azuriter_焔獣の炎殻 1 0.3";delay=20} 
   - cmd{c="mlg <target.name> Azuriter_焔獣の炎牙 1 0.1";delay=20} 
   - cmd{c="mlg <target.name> Azuriter_炎核 1 0.05";delay=20}
-  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルH 1 0.0025";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルC 1 0.0025";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルL 1 0.0025";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlg <target.name> Azuriter_L_ピュアマジカルB 1 0.0025";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlg <target.name> Azuriter_L_マジカルH 1 0.0025";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlg <target.name> Azuriter_L_マジカルC 1 0.0025";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlg <target.name> Azuriter_L_マジカルL 1 0.0025";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlg <target.name> Azuriter_L_マジカルB 1 0.0025";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.025"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - sound{s=ui.toast.challenge_complete;p=2;sc=PLAYERS;v=0.15}
 
 OpenField_Enemy_Boss_MCLove32_Remove:

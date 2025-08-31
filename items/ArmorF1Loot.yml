@@ -197,3 +197,82 @@ Azuriter_L_ピュアマジカルB:
   - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged 
   - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing 
   - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill 
+
+Azuriter_ガーディアH:
+  Id: netherite_helmet
+  Display: "&aガーディア・ヘルメット"
+  Lore: []
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Head:
+      ArmorToughness: 35
+      Armor: 42
+      Health: 10
+      KnockbackResistance: 0.25
+      MovementSpeed: -0.125 MULTIPLY_BASE
+  Group: 'Armor'
+  Skills:
+  - skill{s=Azuriter_HealthColor} @self ~onDamaged
+  - skill{s=Azuriter_HealthColor} @self ~onHeal
+  - skill{s=Azuriter_HealthColor} @self ~onRespawn 
+  - skill{s=Azuriter_HealthColor} @self ~onSwing
+  - skill{s=Azuriter_ガーディア_Full} @self ~onDamaged 
+  - skill{s=Azuriter_ガーディア_Full} @self ~onSwing
+  - skill{s=Azuriter_ガーディア_Full} @self ~onKill
+
+Azuriter_ガーディアC:
+  Id: netherite_chestplate
+  Display: "&aガーディア・チェストプレート"
+  Lore: []
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Chest:
+      ArmorToughness: 35
+      Armor: 42
+      Health: 10
+      KnockbackResistance: 0.25
+      MovementSpeed: -0.125 MULTIPLY_BASE
+  Group: 'Armor'
+  Skills:
+
+Azuriter_ガーディアL:
+  Id: netherite_leggings
+  Display: "&aガーディア・レギンス"
+  Lore: []
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Legs:
+      ArmorToughness: 35
+      Armor: 42
+      Health: 10
+      KnockbackResistance: 0.25
+      MovementSpeed: -0.125 MULTIPLY_BASE
+  Group: 'Armor'
+  Skills:
+
+Azuriter_ガーディアB:
+  Id: netherite_boots
+  Display: "&aガーディア・ブーツ"
+  Lore: []
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    Feet:
+      ArmorToughness: 35
+      Armor: 42
+      Health: 10
+      KnockbackResistance: 0.25
+      MovementSpeed: -0.125 MULTIPLY_BASE
+  Group: 'Armor'
+  Skills:
