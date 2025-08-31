@@ -11,3 +11,16 @@ Azuriter_L_ガーディア_Full:
   - potion{t=REGENERATION;l=1;d=600;p=false} @self
   - potion{t=SPEED;l=6;d=600;p=false} @self
   - heal{a=6} @self
+  
+Azuriter_L_ガーディア_Full_Damage:
+  Cooldown: 1
+  Conditions:
+  - wearing{s=HEAD;i=Azuriter_L_ガーディアH}
+  - wearing{s=CHEST;i=Azuriter_L_ガーディアC}
+  - wearing{s=LEGS;i=Azuriter_L_ガーディアL}
+  - wearing{s=FEET;i=Azuriter_L_ガーディアB}
+  Skills:
+  - sudoskill{
+    s=[
+      - threat{m=top} @self
+    ];cat=true} @trigger

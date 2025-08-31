@@ -201,7 +201,8 @@ Azuriter_L_ピュアマジカルB:
 Azuriter_L_ガーディアH:
   Id: netherite_helmet
   Display: "&aガーディア・ヘルメット &f&lL1"
-  Lore: []
+  Lore: 
+  - "&fFullSetでタンク本来の性能を発揮する。"
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -222,11 +223,13 @@ Azuriter_L_ガーディアH:
   - skill{s=Azuriter_L_ガーディア_Full} @self ~onDamaged 
   - skill{s=Azuriter_L_ガーディア_Full} @self ~onSwing
   - skill{s=Azuriter_L_ガーディア_Full} @self ~onKill
+  - skill{s=Azuriter_L_ガーディア_Full_Damage} @self ~onDamaged 
 
 Azuriter_L_ガーディアC:
   Id: netherite_chestplate
   Display: "&aガーディア・チェストプレート &f&lL1"
-  Lore: []
+  Lore: 
+  - "&fFullSetでタンク本来の性能を発揮する。"
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -244,7 +247,8 @@ Azuriter_L_ガーディアC:
 Azuriter_L_ガーディアL:
   Id: netherite_leggings
   Display: "&aガーディア・レギンス"
-  Lore: []
+  Lore: 
+  - "&fFullSetでタンク本来の性能を発揮する。"
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -262,7 +266,8 @@ Azuriter_L_ガーディアL:
 Azuriter_L_ガーディアB:
   Id: netherite_boots
   Display: "&aガーディア・ブーツ &f&lL1"
-  Lore: []
+  Lore: 
+  - "&fFullSetでタンク本来の性能を発揮する。"
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -276,9 +281,3 @@ Azuriter_L_ガーディアB:
       MovementSpeed: -0.125 MULTIPLY_BASE
   Group: 'Armor'
   Skills:
-  - sudoskill{
-    s=[
-      - threat{m=top} @self
-      - message{m="<target.name> <caster.name>"} @self
-      - message{m="<trigger.name>"} @PIR{r=32}
-    ];cat=true} @trigger  ~onDamaged 
