@@ -279,5 +279,5 @@ Azuriter_L_ガーディアB:
   - sudoskill{
     s=[
       - threat{m=top} @self
-      - message{m="<targe.name>"} @self
+      - message{m="<targe.name> <caster.name>"} @self
     ];cat=true} @trigger  ~onDamaged 
