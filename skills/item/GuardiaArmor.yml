@@ -1,5 +1,5 @@
 Azuriter_ガーディア_Full:
-  Cooldown: 2
+  Cooldown: 5
   Conditions:
   - wearing{s=HEAD;i=Azuriter_ガーディアH}
   - wearing{s=CHEST;i=Azuriter_ガーディアC}
@@ -7,17 +7,7 @@ Azuriter_ガーディア_Full:
   - wearing{s=FEET;i=Azuriter_ガーディアB}
   Skills:
   - cancelEvent{sync=true} @self 0.15
-  - sudoskill{s=Azuriter_ガーディア_Hate;cat=true} @trigger 
   - potion{t=RESISTANCE;l=0;d=600;p=false} @self
   - potion{t=REGENERATION;l=1;d=600;p=false} @self
-  - ondamaged{n=Azuriter_ガーディア_Full;
-    oh=[
-      - damage{a="<skill.var.damage-amount> * 0.4";origin=@trigger;pi=true;ii=true} @self
-    ];m=0.6;c=5;t=200;rd=true} @PIR{r=24}
-  - heal{a=5} @self
-
-Azuriter_ガーディア_Hate:
-  Cooldown: 1
-  Skills:
-  - setTarget @trigger 
-  - threat{m=add;a=3000} @trigger 
+  - potion{t=SPEED;l=6;d=600;p=false} @self
+  - heal{a=6} @self
