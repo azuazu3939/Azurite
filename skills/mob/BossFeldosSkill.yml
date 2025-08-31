@@ -167,7 +167,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4:
     oh=[
       - sound{s=entity.hoglin.attack;p=0;sc=PLAYERS} @self 
       - sound{s=entity.wither.break_block;sc=PLAYERS} @targeted{c=[ - hasAura{n=step_avoid} false ]}
-      - stun{t=2;f=true} 
       - damage{a="<skill.var.dmg> * 2.25";pi=true;ii=true;e=RED} 
       - delay 5
       - sound{s=entity.wither.break_block;sc=PLAYERS} @targeted{c=[ - hasAura{n=step_avoid} false ]}
@@ -219,7 +218,6 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_4_Extend:
     oh=[
       - sound{s=entity.hoglin.attack;p=0;sc=PLAYERS} @self 
       - sound{s=entity.wither.break_block;sc=PLAYERS} @targeted{c=[ - hasAura{n=step_avoid} false ]}
-      - stun{t=2;f=true} 
       - damage{a="<skill.var.dmg> * 1.5";pi=true;ii=true;e=RED} 
       - delay 5
       - sound{s=entity.wither.break_block;sc=PLAYERS} @targeted{c=[ - hasAura{n=step_avoid} false ]}
