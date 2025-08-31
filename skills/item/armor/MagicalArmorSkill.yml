@@ -19,3 +19,17 @@ Azuriter_L_ピュアマジカル_Skills:
   Skills:
   - potion{t=RESISTANCE;l=0;d=500;p=false} @self
   - heal{a=6} @self
+
+Azuriter_L_ピュアマジカル_Damaged:
+  Cooldown: 1
+  Conditions:
+  - (wearing{s=HEAD;i=Azuriter_L_ピュアマジカルH} || wearing{s=CHEST;i=Azuriter_L_ピュアマジカルC} || wearing{s=LEGS;i=Azuriter_L_ピュアマジカルL} || wearing{s=FEET;i=Azuriter_L_ピュアマジカルB}) true 
+  Skills:
+  - modifyMana{a=5} @self
+
+Azuriter_L_ピュアマジカル_Kill:
+  Cooldown: 0.5
+  Conditions:
+  - (wearing{s=HEAD;i=Azuriter_L_ピュアマジカルH} || wearing{s=CHEST;i=Azuriter_L_ピュアマジカルC} || wearing{s=LEGS;i=Azuriter_L_ピュアマジカルL} || wearing{s=FEET;i=Azuriter_L_ピュアマジカルB}) true 
+  Skills:
+  - modifyMana{a=10} @self

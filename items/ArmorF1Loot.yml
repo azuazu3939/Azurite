@@ -25,6 +25,7 @@ Azuriter_L_マジカルH:
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
+  - skill{s=Azuriter_HealthColor} @self ~onJoin 
 
 Azuriter_L_マジカルC:
   Id: leather_chestplate
@@ -125,6 +126,7 @@ Azuriter_L_ピュアマジカルH:
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
+  - skill{s=Azuriter_HealthColor} @self ~onJoin 
 
 Azuriter_L_ピュアマジカルC:
   Id: leather_chestplate
@@ -221,6 +223,7 @@ Azuriter_L_ガーディアH:
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
   - skill{s=Azuriter_HealthColor} @self ~onSwing
+  - skill{s=Azuriter_HealthColor} @self ~onJoin 
   - skill{s=Azuriter_L_ガーディア_Full} @self ~onDamaged 
   - skill{s=Azuriter_L_ガーディア_Full} @self ~onSwing
   - skill{s=Azuriter_L_ガーディア_Full} @self ~onKill
