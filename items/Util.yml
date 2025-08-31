@@ -13,15 +13,15 @@ Azuriter_RangeWeaponDamageEnsure:
   - skill{s=Azuriter_RangeWeaponDamageEnsure_Skills} @self ~onUse
 
 Azuriter_BackPack3:
-  Id: paper
-  Display: "&fバックパック3"
+  Id: chest
+  Display: "&6バックパック &7- &a3"
   Lore: []
   ItemUpdater:
     Version: 1
   Group: 'Util'
   Type: BAG
   Inventory:
-    Title: "&fバックパック3"
+    Title: "&6バックパック &7- &a3"
     Size: 27
     SaveOnItemUpdate: true
     PreventBagNesting: true
