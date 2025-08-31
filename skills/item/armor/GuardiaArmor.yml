@@ -18,6 +18,7 @@ Azuriter_L_ガーディア_Full_Damage:
   - wearing{s=CHEST;i=Azuriter_L_ガーディアC}
   - wearing{s=LEGS;i=Azuriter_L_ガーディアL}
   - wearing{s=FEET;i=Azuriter_L_ガーディアB}
+  - damagecause{cause=ENTITY_ATTACK}
   Skills:
   - sudoskill{
     s=[
