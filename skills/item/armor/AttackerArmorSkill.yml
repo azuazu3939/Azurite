@@ -1,0 +1,14 @@
+Azuriter_アタッカー_Skills:
+  Cooldown: 1
+  Conditions:
+  - (wearing{s=HEAD;i=Azuriter_アタッカーH} && wearing{s=CHEST;i=Azuriter_アタッカーC} && wearing{s=LEGS;i=Azuriter_アタッカーL} && wearing{s=FEET;i=Azuriter_アタッカーB} || 
+    wearing{s=HEAD;i=Azuriter_エリートアタッカーH} && wearing{s=CHEST;i=Azuriter_エリートアタッカーC} && wearing{s=LEGS;i=Azuriter_エリートアタッカーL} && wearing{s=FEET;i=Azuriter_エリートアタッカーB}
+    ) castinstead Azuriter_アタッカー_Full
+  Skills:
+  - potion{t=STRENGTH;d=60;l=0;p=false} @self
+
+Azuriter_アタッカー_Full:
+  Cooldown: 1
+  Skills:
+  - potion{t=STRENGTH;d=100;l=1;p=false} @self
+  - potion{t=RESISTANCE;d=100;l=0;p=false} @self

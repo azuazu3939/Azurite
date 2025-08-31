@@ -1,0 +1,15 @@
+Azuriter_ステップダッシュソード_R1_Skills:
+  Cooldown: 10
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_ステップダッシュソード}
+  - hasMana{a=>100;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=DIAMOND_SWORD} false 
+  Skills:
+  - modifyMana{a=-100} @self 
+  - setMaterialCooldown{m=DIAMOND_SWORD;d=200} @self
+  - ondamaged{t=12;n=step_avoid;rd=true;oh=[ - sound{s=entity.arrow.hit_player;v=0.5} @self - skill{s=Azuriter_StepAvoid} @self ];ce=true;os=[ - setVar{k=skill.damageStepAvoid;a="<caster.damage>";t=FLOAT} @self ]} @self
+  - sound{s=entity.player.attack.sweep;sc=PLAYERS;audience=caster} @self
+  - potion{t=SPEED;l=8;d=12;p=false} @self

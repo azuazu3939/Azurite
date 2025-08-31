@@ -1,0 +1,28 @@
+Azuriter_ステップライズソード_R1_Skills:
+  Cooldown: 10
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_ステップライズソード}
+  - hasMana{a=>100;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=DIAMOND_SWORD} false 
+  Skills:
+  - modifyMana{a=-100} @self 
+  - setMaterialCooldown{m=DIAMOND_SWORD;d=200} @self
+  - sound{s=entity.ender_dragon.flap;p=2;sc=PLAYERS;audience=caster} @self
+  - sound{s=entity.player.attack.sweep;p=0;sc=PLAYERS;audience=caster} @self
+  - ondamaged{n=fall_canceller;t=100;damagemod="FALL 0";rd=true} @self
+  - lunge{v=0.5;vy=0.5} @self
+  - ondamaged{t=12;n=step_avoid;rd=true;oh=[ - sound{s=entity.arrow.hit_player;v=0.5} @self - skill{s=Azuriter_StepAvoid;delay=4} @self ];ce=true;os=[ - setVar{k=skill.damageStepAvoid;a="<caster.damage>";t=FLOAT} @self ]} @self
+  - delay 4
+  - lunge{v=2;vy=1} @self
+  - sound{s=entity.wither.shoot;p=2;v=0.2;audience=caster;sc=PLAYERS} @self
+  - delay 4
+  - lunge{v=1.5;vy=0.5} @self
+  - delay 4
+  - lunge{v=1;vy=0.5} @self
+  - delay 4
+  - lunge{v=1;vy=-0.5} @self
+  - delay 4
+  - lunge{v=1;vy=-2} @self
