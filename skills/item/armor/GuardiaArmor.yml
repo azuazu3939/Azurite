@@ -29,7 +29,7 @@ Azuriter_L_ガーディア_Full_Damage:
     ];cat=true} @trigger
   - potion{t=RESISTANCE;l=1;d=150;p=false} @PIR{r=32}
   - setVar{k=caster.tank_job;a="<caster.var.tank_job|0> + 1";t=INTEGER} @self
-  - potion{t=STRENGTH;l=2;d=100;p=false} @self
+  - potion{t=STRENGTH;l=1;d=100;p=false} @self
   - skill{s=Azuriter_L_ガーディア_Full_Counter} @self
 
 Azuriter_L_ガーディア_Full_Counter:
