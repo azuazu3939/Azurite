@@ -1,10 +1,10 @@
-Azuriter_ガーディア_Full:
+Azuriter_L_ガーディア_Full:
   Cooldown: 5
   Conditions:
-  - wearing{s=HEAD;i=Azuriter_ガーディアH}
-  - wearing{s=CHEST;i=Azuriter_ガーディアC}
-  - wearing{s=LEGS;i=Azuriter_ガーディアL}
-  - wearing{s=FEET;i=Azuriter_ガーディアB}
+  - wearing{s=HEAD;i=Azuriter_L_ガーディアH}
+  - wearing{s=CHEST;i=Azuriter_L_ガーディアC}
+  - wearing{s=LEGS;i=Azuriter_L_ガーディアL}
+  - wearing{s=FEET;i=Azuriter_L_ガーディアB}
   Skills:
   - cancelEvent{sync=true} @self 0.15
   - potion{t=RESISTANCE;l=0;d=600;p=false} @self

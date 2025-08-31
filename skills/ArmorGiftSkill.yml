@@ -23,10 +23,10 @@ Azuriter_ArmorGift_G1_Skill:
   - cmd{c="mlg <caster.name> Azuriter_L_マジカルB 1 1"} @self ?varrange{k=skill.get_chance;r=11}
   - cmd{c="mlg <caster.name> Azuriter_L_マジカルB 1 1"} @self ?varrange{k=skill.get_chance;r=12}
 
-  - cmd{c="mlg <caster.name> Azuriter_ガーディアH 1 1"} @self ?varrange{k=skill.get_chance;r=13}
-  - cmd{c="mlg <caster.name> Azuriter_ガーディアC 1 1"} @self ?varrange{k=skill.get_chance;r=14}
-  - cmd{c="mlg <caster.name> Azuriter_ガーディアL 1 1"} @self ?varrange{k=skill.get_chance;r=15}
-  - cmd{c="mlg <caster.name> Azuriter_ガーディアB 1 1"} @self ?varrange{k=skill.get_chance;r=16}
+  - cmd{c="mlg <caster.name> Azuriter_L_ガーディアH 1 1"} @self ?varrange{k=skill.get_chance;r=13}
+  - cmd{c="mlg <caster.name> Azuriter_L_ガーディアC 1 1"} @self ?varrange{k=skill.get_chance;r=14}
+  - cmd{c="mlg <caster.name> Azuriter_L_ガーディアL 1 1"} @self ?varrange{k=skill.get_chance;r=15}
+  - cmd{c="mlg <caster.name> Azuriter_L_ガーディアB 1 1"} @self ?varrange{k=skill.get_chance;r=16}
 
   - currencygive{amount=1000} @self
   - message{m="&e1000Mine &fを獲得しました。"}

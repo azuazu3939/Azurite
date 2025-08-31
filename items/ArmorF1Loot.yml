@@ -198,9 +198,9 @@ Azuriter_L_ピュアマジカルB:
   - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing 
   - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill 
 
-Azuriter_ガーディアH:
+Azuriter_L_ガーディアH:
   Id: netherite_helmet
-  Display: "&aガーディア・ヘルメット"
+  Display: "&aガーディア・ヘルメット &f&lL1"
   Lore: []
   Options:
     Unbreakable: true
@@ -219,13 +219,13 @@ Azuriter_ガーディアH:
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
   - skill{s=Azuriter_HealthColor} @self ~onSwing
-  - skill{s=Azuriter_ガーディア_Full} @self ~onDamaged 
-  - skill{s=Azuriter_ガーディア_Full} @self ~onSwing
-  - skill{s=Azuriter_ガーディア_Full} @self ~onKill
+  - skill{s=Azuriter_L_ガーディア_Full} @self ~onDamaged 
+  - skill{s=Azuriter_L_ガーディア_Full} @self ~onSwing
+  - skill{s=Azuriter_L_ガーディア_Full} @self ~onKill
 
-Azuriter_ガーディアC:
+Azuriter_L_ガーディアC:
   Id: netherite_chestplate
-  Display: "&aガーディア・チェストプレート"
+  Display: "&aガーディア・チェストプレート &f&lL1"
   Lore: []
   Options:
     Unbreakable: true
@@ -241,7 +241,7 @@ Azuriter_ガーディアC:
   Group: 'Armor'
   Skills:
 
-Azuriter_ガーディアL:
+Azuriter_L_ガーディアL:
   Id: netherite_leggings
   Display: "&aガーディア・レギンス"
   Lore: []
@@ -259,9 +259,9 @@ Azuriter_ガーディアL:
   Group: 'Armor'
   Skills:
 
-Azuriter_ガーディアB:
+Azuriter_L_ガーディアB:
   Id: netherite_boots
-  Display: "&aガーディア・ブーツ"
+  Display: "&aガーディア・ブーツ &f&lL1"
   Lore: []
   Options:
     Unbreakable: true
