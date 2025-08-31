@@ -1,5 +1,5 @@
 Azuriter_ファイアバレットボウ_Skills:
-  Cooldown: 0.2
+  Cooldown: 0.25
   Conditions:
   - wearing{s=HAND;i=Azuriter_ファイアバレットボウ}
   - hasMana{a=>20;
@@ -8,7 +8,7 @@ Azuriter_ファイアバレットボウ_Skills:
     ]}
   - matCooldown{m=BOW} false 
   Skills:
-  - setMaterialCooldown{m=BOW;d=4} @self
+  - setMaterialCooldown{m=BOW;d=5} @self
   - modifyMana{a=-20} @self
   - aura{ms=100;i=10;t=40;rd=true;n=Azuriter_ファイアバレットボウ;
     oe=[ 
