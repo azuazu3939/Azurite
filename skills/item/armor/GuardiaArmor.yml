@@ -39,6 +39,7 @@ Azuriter_L_ガーディア_Full_Counter:
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]}
+  - targetWithin{d=16}
   Skills:
   - setVar{k=caster.tank_job;a="0";t=INTEGER} @self
   - modifyMana{a=-300} @self 
