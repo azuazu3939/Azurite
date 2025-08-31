@@ -19,6 +19,7 @@ Azuriter_BackPack3:
   ItemUpdater:
     Version: 1
   Group: 'Util'
+  Type: BAG
   Inventory:
     Title: "&f臨時バックパック"
     Size: 27
