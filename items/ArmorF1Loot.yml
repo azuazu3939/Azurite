@@ -251,7 +251,7 @@ Azuriter_L_ガーディアC:
 
 Azuriter_L_ガーディアL:
   Id: netherite_leggings
-  Display: "&aガーディア・レギンス"
+  Display: "&aガーディア・レギンス &f&lL1"
   Lore: 
   - "&fFullSetでタンク本来の性能を発揮する。"
   - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
