@@ -1,15 +1,3 @@
-Azuriter_Light_Entity_Spawn:
-  Type: Azuriter_Light_Entity
-  Worlds: Field1
-  Action: ADD 
-  PositionType: LAND
-  Chance: 0.5
-  Cooldown: 1
-  Priority: 1
-  Conditions:
-  - mobsinworld{a=<200} true 
-  - mobsInRadius{types=Azuriter_Light_Entity;amount=<5;radius=32} true
-
 Azuriter_Neutral_Zombie_Spawn:
   Type: Azuriter_Neutral_Zombie
   Worlds: Field1

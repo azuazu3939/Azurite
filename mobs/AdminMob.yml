@@ -6,20 +6,15 @@ Azuriter_Admin_Mob_DamageTest:
   Options:
     Silent: true
     PreventVanillaDamage: true 
-  Options:
-    Silent: true
-    PreventVanillaDamage: true 
+    NoAI: true
   Skills:
   - healpercent{m=1} @self ~onDamaged 
   - damage{a=<caster.damage>;ii=true;pi=true} @trigger ~onAttack
   - message{m="<skill.var.damage-amount>"} @PIR{r=16} ~onDamaged 
-  AITargetSelectors:
-  - clear
-  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   BossBar:
     Enabled: true
     Title: "<caster.name> <caster.hp> <caster.mhp>"
-    Range: 32
+    Range: 16
     Color: WHITE
     Style: SEGMENTED_10
 

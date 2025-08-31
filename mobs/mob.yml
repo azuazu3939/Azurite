@@ -12,7 +12,6 @@ Azuriter_Light_Entity:
   Skills:
   - remove{delay=600} @self ~onSpawn 
 
-
 Azuriter_Neutral_Zombie:
   Template: Azuriter_Enemy_Base
   Display: "&fゾンビ"
