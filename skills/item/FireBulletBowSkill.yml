@@ -1,5 +1,5 @@
 Azuriter_ファイアバレットボウ_Skills:
-  Cooldown: 0.25
+  Cooldown: 0.2
   Conditions:
   - wearing{s=HAND;i=Azuriter_ファイアバレットボウ}
   - hasMana{a=>20;
