@@ -37,7 +37,7 @@ Azuriter_L_ガーディア_Full_Counter:
   - wearing{s=CHEST;i=Azuriter_L_ガーディアC}
   - wearing{s=LEGS;i=Azuriter_L_ガーディアL}
   - wearing{s=FEET;i=Azuriter_L_ガーディアB}
-  - varrange{k=caster.tank_job;r=>9}
+  - varrange{k=caster.tank_job;r=>11}
   - hasMana{a=>300;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
