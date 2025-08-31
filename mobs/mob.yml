@@ -9,6 +9,8 @@ Azuriter_Light_Entity:
     BlockLight: 15
     SkyLight: 15
     Scale: 2,1,2
+  Skills:
+  - remove{delay=600} @self ~onSpawn 
 
 
 Azuriter_Neutral_Zombie:
