@@ -13,7 +13,7 @@ Azuriter_リジピド_R1_Skills:
   - modifyMana{a=-60} @self 
   - skill{s=Azuriter_リジピド_Skill_Multi} @self
   - delay 10
-  - skill{s=Azuriter_リジピド_R1_Skill_Regen} @self
+  - skill{s=Azuriter_リジピド_R1_Skill_Regen} @self ?varset{k=skill.heal_regen}
   - sound{s=entity.evoker.cast_spell;v=0.6;sc=AMBIENT} @self
   - sound{s=entity.puffer_fish.blow_up;v=0.5;p=0.8;sc=AMBIENT;delay=4} @self
   - sound{s=block.amethyst_block.break;v=1;p=1;sc=AMBIENT;delay=4} @self
@@ -53,4 +53,4 @@ Azuriter_リジピド_R1_Skill_Regen:
   - delay 20
   - heal{a=2} @self
   - heal{a=2} @PIR{r=20}
-  - skill{s=Azuriter_リジピド_R1_Skill_Regen;delay=0} @self
+  - skill{s=Azuriter_リジピド_R1_Skill_Regen;delay=0} @self ?varset{k=skill.heal_regen}
