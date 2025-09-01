@@ -8,6 +8,8 @@ Azuriter_L_マジカル_Skills:
   Skills:
   - potion{t=RESISTANCE;l=0;d=300;p=false} @self
   - potion{t=STRENGTH;l=1;d=300;p=false} @self
+  - potion{t=REGENERATION;l=1;d=300;p=false} @self
+  - potion{t=HASTE;l=0;d=300;p=false} @self
   - heal{a=6} @self
 
 Azuriter_L_ピュアマジカル_Skills:
