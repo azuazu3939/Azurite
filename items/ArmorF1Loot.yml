@@ -296,7 +296,7 @@ Azuriter_L_ヘルシティアH:
   Display: "&aヘルシティア・ヘルメット &f&lL1"
   Lore: 
   - "&fFullSetでヒーラー本来の性能を発揮する。"
-  - "&f"
+  - "&f被弾時に周囲に強力なバフを付与する。"
   Options:
     Color: 55,255,145
     Unbreakable: true
@@ -323,8 +323,8 @@ Azuriter_L_ヘルシティアC:
   Id: leather_chestplate
   Display: "&aヘルシティア・チェストプレート &f&lL1"
   Lore: 
-  - "&fFullSetでタンク本来の性能を発揮する。"
-  - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
+  - "&fFullSetでヒーラー本来の性能を発揮する。"
+  - "&f被弾時に周囲に強力なバフを付与する。"
   Options:
     Color: 55,255,145
     Unbreakable: true
@@ -342,8 +342,8 @@ Azuriter_L_ヘルシティアL:
   Id: leather_leggings
   Display: "&aヘルシティア・レギンス &f&lL1"
   Lore: 
-  - "&fFullSetでタンク本来の性能を発揮する。"
-  - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
+  - "&fFullSetでヒーラー本来の性能を発揮する。"
+  - "&f被弾時に周囲に強力なバフを付与する。"
   Options:
     Color: 55,255,145
     Unbreakable: true
@@ -361,8 +361,8 @@ Azuriter_L_ヘルシティアB:
   Id: leather_boots
   Display: "&aヘルシティア・ブーツ &f&lL1"
   Lore: 
-  - "&fFullSetでタンク本来の性能を発揮する。"
-  - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
+  - "&fFullSetでヒーラー本来の性能を発揮する。"
+  - "&f被弾時に周囲に強力なバフを付与する。"
   Options:
     Color: 55,255,145
     Unbreakable: true
