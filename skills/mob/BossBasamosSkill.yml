@@ -53,7 +53,7 @@ Azuriter_バサモスサンド_Skills:
 
 Azuriter_バサモスサンド_Skill_Orb:
   Skills:
-  - o{r=2;vr=2;hr=1;p=64;sp=12;i=1;t=600;oy=<skill.oy>;
+  - o{r=2;vr=2;hr=1;p=64;sp=12;i=1;t=600;oy=<skill.oy>;n=<random.1to9999999>;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
@@ -75,7 +75,7 @@ Azuriter_バサモスサンド_Summoned_Skills:
 
 Azuriter_バサモスサンド_Summoned_SkillsOrb:
   Skills:
-  - o{r=2;vr=1.5;hr=1;p=48;sp=0;i=1;t=600;oy=<skill.oy>;
+  - o{r=2;vr=1.5;hr=1;p=48;sp=0;i=1;t=600;oy=<skill.oy>;n=<random.1to9999999>;
     ot=[
       - e:p{p=crit;a=2;vs=3;hs=1.5;s=1} @origin 
       - e:p{p=electric_spark;a=1;vs=3;hs=1.5;s=1} @origin 
