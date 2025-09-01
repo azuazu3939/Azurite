@@ -28,15 +28,15 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process:
   Skills:
   - missile{
     ot=[
-      - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
     ];
     oh=[
       - damage{a="<skill.var.dmg>";pi=true;ii=true}
     ];
     oe=[
-      - e:p{p=crit;a=30;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=20;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=30;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=20;vs=3;hs=1.5;s=1} @origin 
     ];
     c=[
       - samefaction false
@@ -55,17 +55,17 @@ Azuriter_バサモスサンド_Skills:
 
 Azuriter_バサモスサンド_Skill_Up_L:
   Skills:
-  - o{r=3;vr=2.5;hr=2;p=48;sp=12;n=Azuriter_バサモスサンド_SkillsUpL;i=1;t=600;hp=true;hnp=false;oy=1.25;
+  - o{r=3;vr=2;hr=1.5;p=48;sp=12;n=Azuriter_バサモスサンド_SkillsUpL;i=1;t=600;hp=true;hnp=false;oy=1.25;
     ot=[
-      - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
     ];
     oh=[
       - damage{a="<caster.damage> * 0.8";pi=true;ii=true}
     ];
     oe=[
-      - e:p{p=crit;a=30;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=20;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=10;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=10;vs=3;hs=1.5;s=1} @origin 
     ];
     conditions=[
       - samefaction false
@@ -74,17 +74,17 @@ Azuriter_バサモスサンド_Skill_Up_L:
 
 Azuriter_バサモスサンド_Skill_Up_R:
   Skills:
-  - o{r=3;vr=2.5;hr=2;p=48;sp=12;n=Azuriter_バサモスサンド_SkillsUpR;reverse=true;i=1;t=600;hp=true;hnp=false;oy=1.25;
+  - o{r=3;vr=2;hr=1.5;p=48;sp=24;n=Azuriter_バサモスサンド_SkillsUpR;reverse=true;i=1;t=600;hp=true;hnp=false;oy=1.25;
     ot=[
-      - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
     ];
     oh=[
       - damage{a="<caster.damage> * 0.8";pi=true;ii=true}
     ];
     oe=[
-      - e:p{p=crit;a=30;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=20;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=10;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=10;vs=3;hs=1.5;s=1} @origin 
     ];
     conditions=[
       - samefaction false
@@ -93,17 +93,17 @@ Azuriter_バサモスサンド_Skill_Up_R:
 
 Azuriter_バサモスサンド_Skill_Down_L:
   Skills:
-  - o{r=3;vr=2.5;hr=2;p=48;sp=36;n=Azuriter_バサモスサンド_SkillsDownL;i=1;t=600;hp=true;hnp=false;oy=-1.25;
+  - o{r=3;vr=2;hr=1.5;p=48;sp=36;n=Azuriter_バサモスサンド_SkillsDownL;i=1;t=600;hp=true;hnp=false;oy=-1.25;
     ot=[
-      - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
     ];
     oh=[
       - damage{a="<caster.damage> * 0.8";pi=true;ii=true}
     ];
     oe=[
-      - e:p{p=crit;a=30;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=20;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=10;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=10;vs=3;hs=1.5;s=1} @origin 
     ];
     conditions=[
       - samefaction false
@@ -112,17 +112,17 @@ Azuriter_バサモスサンド_Skill_Down_L:
 
 Azuriter_バサモスサンド_Skill_Down_R:
   Skills:
-  - o{r=3;vr=2.5;hr=2;p=48;sp=36;n=Azuriter_バサモスサンド_SkillsDownR;i=1;t=600;hp=true;hnp=false;reverse=true;oy=-1.25;
+  - o{r=3;vr=2;hr=1.5;p=48;sp=0;n=Azuriter_バサモスサンド_SkillsDownR;i=1;t=600;hp=true;hnp=false;reverse=true;oy=-1.25;
     ot=[
-      - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
     ];
     oh=[
       - damage{a="<caster.damage> * 0.8";pi=true;ii=true}
     ];
     oe=[
-      - e:p{p=crit;a=30;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=20;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=10;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=10;vs=3;hs=1.5;s=1} @origin 
     ];
     conditions=[
       - samefaction false
@@ -131,38 +131,45 @@ Azuriter_バサモスサンド_Skill_Down_R:
 
 Azuriter_バサモスサンド_Summoned_Skills:
   Skills:
-  - o{r=4;vr=2.5;hr=2;p=48;sp=18;n=Azuriter_Summoned_SkillsR;i=1;t=600;reverse=true
+  - skill{s=Azuriter_バサモスサンド_Summoned_SkillsR} @self
+  - skill{s=Azuriter_バサモスサンド_Summoned_SkillsL} @self
+
+Azuriter_バサモスサンド_Summoned_SkillsR:
+  Skills:
+  - o{r=2;vr=2.5;hr=1.25;p=48;sp=0;n=Azuriter_Summoned_SkillsR;i=1;t=600;reverse=true;
     ot=[
-      - e:p{p=crit;a=2;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=1;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=2;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=1;vs=3;hs=1.5;s=1} @origin 
     ];
     oh=[
       - damage{a="<caster.damage> * 0.5";pi=true;ii=true}
-      - throw{v=3;vy=8}
+      - throw{v=2;vy=4}
     ];
     oe=[
-      - e:p{p=crit;a=30;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=20;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=10;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=10;vs=3;hs=1.5;s=1} @origin 
     ];
     conditions=[
       - samefaction false
     ];
-    b=MOB;mm=Azuriter_バサモスサンド_FinalSummoned;oy=-1} @self
-  
-  - o{r=4;vr=1.5;hr=2;p=48;sp=42;n=Azuriter_Summoned_Skills;i=1;t=600;
+    b=MOB;mm=Azuriter_バサモスサンド_FinalSummoned;oy=-0.5} @self
+
+Azuriter_バサモスサンド_Summoned_SkillsL:
+  Skills:  
+  - o{r=2;vr=1.5;hr=1.25;p=48;sp=24;n=Azuriter_Summoned_SkillsL;i=1;t=600;
     ot=[
-      - e:p{p=crit;a=2;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=1;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=2;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=1;vs=3;hs=1.5;s=1} @origin 
     ];
     oh=[
       - damage{a="<caster.damage> * 0.5";pi=true;ii=true}
-      - throw{v=3;vy=8}
+      - throw{v=2;vy=4}
     ];
     oe=[
-      - e:p{p=crit;a=30;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=20;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=crit;a=10;vs=3;hs=1.5;s=1} @origin 
+      - e:p{p=electric_spark;a=10;vs=3;hs=1.5;s=1} @origin 
     ];
     conditions=[
       - samefaction false
     ];
-    b=MOB;mm=Azuriter_バサモスサンド_FinalSummoned;oy=1} @self
+    b=MOB;mm=Azuriter_バサモスサンド_FinalSummoned;oy=0.5} @self
