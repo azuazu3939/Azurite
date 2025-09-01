@@ -168,7 +168,7 @@ Azuriter_Boss_Basamos:
     MovementSpeed: 0.275
     KnockbackResistance: 1
     MaxCombatDistance: 20
-    FollowRange: 10
+    FollowRange: 16
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -202,7 +202,7 @@ Azuriter_Boss_Basamos:
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=140;shield_break=1050;heal_percent=0.025} @self ~onEntercombat
   - skill:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK @T ~onEntercombat
 
-  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
 
   - potion{t=STRENGTH;l=0;d=9999999;p=false;or=true} @self ~onDamaged =70%
   - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =40%

@@ -5,14 +5,12 @@ Azuriter_バサモスサンド:
   Armor: 200
   Options:
     Silent: true
-    Invisible: false
+    PassthroughDamage: true
     PreventVanillaDamage: true 
   Disguise: FALLING_BLOCK SAND
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=200} @self ~onSpawn 
   - skill{s=Azuriter_バサモスサンド_Skills} @self ~onSpawn 
-  - remove @child ~onDespawn 
-  - remove @child ~onDeath 
 
 Azuriter_バサモスサンド_Summoned:
   Template: Azuriter_Enemy_Base
@@ -21,14 +19,12 @@ Azuriter_バサモスサンド_Summoned:
   Armor: 250
   Options:
     Silent: true
-    Invisible: false
+    PassthroughDamage: true
     PreventVanillaDamage: true 
   Disguise: FALLING_BLOCK SAND
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=250} @self ~onSpawn 
   - skill{s=Azuriter_バサモスサンド_Summoned_Skills} @self ~onSpawn 
-  - remove @child ~onDespawn 
-  - remove @child ~onDeath 
 
 Azuriter_バサモスサンド_FinalSummoned:
   Template: Azuriter_Enemy_Base
@@ -37,7 +33,7 @@ Azuriter_バサモスサンド_FinalSummoned:
   Armor: 250
   Options:
     Silent: true
-    Invisible: false
+    PassthroughDamage: true
     PreventVanillaDamage: true 
   Disguise: FALLING_BLOCK SAND
   Skills:
