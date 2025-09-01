@@ -157,26 +157,27 @@ Generic_Enemy_MCLove32_SHOW_RANKING:
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
   Skills:
   - setVar{k=skill.name;a="<caster.uuid>";t=STRING} @self
+  - setVar{k=caster.dmg;a="<target.var.<skill.var.name>|0>";t=FLOAT} @trigger 
+  - setVar{k=caster.late;a="0";t=INTEGER} @self
+  - setVar{k=caster.wait;a="ceil(<target.mhp> - <caster.var.dmg|0> / 10)";t=FLOAT} @trigger 
+  - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Ab;repeat=14;repeati=0} @self
+  - delay 10
+  - delay <caster.var.late>
   - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return;cat=true;do=<skill.do>} @trigger
 
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   Skills:
   - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @self
-  - setVar{k=skill.late;a="0";t=INTEGER} @self
-  - setVar{k=skill.wait;a="ceil(<caster.mhp> - <skill.var.dmg|0> / 10)";t=FLOAT} @self
-  - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Ab;repeat=14;repeati=0} @self
-  - delay 10
-  - message{m=<skill.var.dmg>;delay=<skill.var.late>} @PIR{r=32}
-  - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10;delay=<skill.var.late>} @self ?!varrange{k=skill.dmg;r=0}
+  - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10} @self ?!varrange{k=skill.dmg;r=0}
 
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Ab:
   Conditions:
-  - varrange{k=skill.wait;r=1} false 
+  - varrange{k=caster.wait;r=1} false 
   Skills:
-  - setVar{k=skill.wait;a="ceil(<skill.var.wait> / 10)";t=FLOAT} @self
-  - setVar{k=skill.late;a="<skill.var.late> + 1";t=INTEGER} @self
+  - setVar{k=caster.wait;a="ceil(<caster.var.wait> / 10)";t=FLOAT} @self
+  - setVar{k=caster.late;a="<caster.var.late> + 1";t=INTEGER} @self
 
 # 
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10:
