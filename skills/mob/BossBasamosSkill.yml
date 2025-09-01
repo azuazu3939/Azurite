@@ -55,7 +55,7 @@ Azuriter_バサモスサンド_Skills:
 
 Azuriter_バサモスサンド_Skill_Up_L:
   Skills:
-  - o{r=3;vr=2;hr=1.5;p=64;sp=12;i=1;t=300;hp=true;hnp=false;oy=1.25;rd=true;cao=true;fo=true;
+  - o{r=3;vr=2;hr=1.5;p=64;sp=12;i=1;t=600;hp=true;hnp=false;oy=1.25;rd=true;cao=true;fo=true;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
@@ -71,7 +71,7 @@ Azuriter_バサモスサンド_Skill_Up_L:
 
 Azuriter_バサモスサンド_Skill_Up_R:
   Skills:
-  - o{r=3;vr=2;hr=1.5;p=64;sp=24;reverse=true;i=1;t=300;hp=true;hnp=false;oy=1.25;rd=true;cao=true;fo=true;
+  - o{r=3;vr=2;hr=1.5;p=64;sp=24;reverse=true;i=1;t=600;hp=true;hnp=false;oy=1.25;rd=true;cao=true;fo=true;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
@@ -87,7 +87,7 @@ Azuriter_バサモスサンド_Skill_Up_R:
 
 Azuriter_バサモスサンド_Skill_Down_L:
   Skills:
-  - o{r=3;vr=2;hr=1.5;p=64;sp=36;i=1;t=300;hp=true;hnp=false;oy=-1.25;rd=true;cao=true;fo=true;
+  - o{r=3;vr=2;hr=1.5;p=64;sp=36;i=1;t=600;hp=true;hnp=false;oy=-1.25;rd=true;cao=true;fo=true;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
@@ -103,7 +103,7 @@ Azuriter_バサモスサンド_Skill_Down_L:
 
 Azuriter_バサモスサンド_Skill_Down_R:
   Skills:
-  - o{r=3;vr=2;hr=1.5;p=64;sp=0;i=1;t=300;hp=true;hnp=false;reverse=true;oy=-1.25;rd=true;cao=true;fo=true;
+  - o{r=3;vr=2;hr=1.5;p=64;sp=0;i=1;t=600;hp=true;hnp=false;reverse=true;oy=-1.25;rd=true;cao=true;fo=true;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
