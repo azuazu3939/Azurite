@@ -1,0 +1,22 @@
+Azuriter_L_ヘルシティア_Full:
+  Cooldown: 5
+  Conditions:
+  - wearing{s=HEAD;i=Azuriter_L_ヘルシティアH}
+  - wearing{s=CHEST;i=Azuriter_L_ヘルシティアC}
+  - wearing{s=LEGS;i=Azuriter_L_ヘルシティアL}
+  - wearing{s=FEET;i=Azuriter_L_ヘルシティアB}
+  Skills:
+  - potion{t=RESISTANCE;l=0;d=600;p=false} @self
+  - potion{t=REGENERATION;l=2;d=600;p=false} @self
+  - potion{t=SPEED;l=1;d=600;p=false} @self
+
+Azuriter_L_ヘルシティア_Full_Healthal:
+  Cooldown: 5
+  Conditions:
+  - wearing{s=HEAD;i=Azuriter_L_ヘルシティアH}
+  - wearing{s=CHEST;i=Azuriter_L_ヘルシティアC}
+  - wearing{s=LEGS;i=Azuriter_L_ヘルシティアL}
+  - wearing{s=FEET;i=Azuriter_L_ヘルシティアB}
+  Skills:
+  - sound{s=block.brewing_stand.brew;audience=caster;sc=AMBIENT;v=0.5} @PIR{r=32}
+  - heal{a=6} @PIR{r=32}
