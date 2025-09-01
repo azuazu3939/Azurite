@@ -41,25 +41,26 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process:
     c=[
       - samefaction false
     ];
-    v=5;i=1;vr=3;hr=2;sfo=0;syo=0;mr=48;d=600;sb=false;se=false;
-    hs=true;hfs=3;huglava=true;in=120;
-    b=MOB;mm=Azuriter_バサモスサンド;byo=0;bfo=0;bk=true} @PIR{r=32;sort=RANDOM}
+    v=3;i=1;vr=3;hr=2;sfo=0;syo=0;mr=48;d=600;sb=false;se=false;
+    hs=true;hfs=2;huglava=true;in=180;
+    b=MOB;mm=Azuriter_バサモスサンド;byo=0;bfo=0;bk=true} @NearestPlayer{r=32}
 
 Azuriter_バサモスサンド_Skills:
   Skills:
   - skill{s=Azuriter_バサモスサンド_Skill_Orb;oy=1;repeat=2;repeati=12;delay=1} @self
+  - delay 1
   - skill{s=Azuriter_バサモスサンド_Skill_Orb;oy=-1;repeat=2;repeati=12;delay=1} @self
   
 
 Azuriter_バサモスサンド_Skill_Orb:
   Skills:
-  - o{r=2;vr=2;hr=1;p=64;sp=12;i=1;t=600;oy=<skill.oy>;n=<random.1to9999999>;
+  - o{r=3;vr=2;hr=1.25;p=100;i=1;t=600;oy=<skill.oy>;n=<random.1to9999999>;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
     ];
     oh=[
-      - damage{a="<caster.damage> * 0.8";pi=true;ii=true}
+      - damage{a=1;pi=true;ii=true}
     ];
     oe=[
       - e:p{p=crit;a=10;vs=3;hs=1.5;s=1} @origin 
@@ -71,17 +72,18 @@ Azuriter_バサモスサンド_Skill_Orb:
 Azuriter_バサモスサンド_Summoned_Skills:
   Skills:
   - skill{s=Azuriter_バサモスサンド_Summoned_SkillsOrb;oy=1;repeat=2;repeati=12;delay=1} @self
+  - delay 1
   - skill{s=Azuriter_バサモスサンド_Summoned_SkillsOrb;oy=-1;repeat=2;repeati=12;delay=1} @self
 
 Azuriter_バサモスサンド_Summoned_SkillsOrb:
   Skills:
-  - o{r=2;vr=1.5;hr=1;p=48;sp=0;i=1;t=600;oy=<skill.oy>;n=<random.1to9999999>;
+  - o{r=3;vr=1.5;hr=1.25;p=100;i=1;t=600;oy=<skill.oy>;n=<random.1to9999999>;
     ot=[
       - e:p{p=crit;a=2;vs=3;hs=1.5;s=1} @origin 
       - e:p{p=electric_spark;a=1;vs=3;hs=1.5;s=1} @origin 
     ];
     oh=[
-      - damage{a="<caster.damage> * 0.5";pi=true;ii=true}
+      - damage{a=1;pi=true;ii=true}
     ];
     oe=[
       - e:p{p=crit;a=10;vs=3;hs=1.5;s=1} @origin 
