@@ -228,7 +228,7 @@ Azuriter_L_ガーディアH:
   - skill{s=Azuriter_L_ガーディア_Full} @self ~onSwing
   - skill{s=Azuriter_L_ガーディア_Full} @self ~onKill
   - skill{s=Azuriter_L_ガーディア_Full} @self ~onJump 
-  - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onHeal
+  - skill{s=Azuriter_L_ガーディア_Full_Damage} @self ~onDamaged 
 
 Azuriter_L_ガーディアC:
   Id: netherite_chestplate
@@ -317,7 +317,7 @@ Azuriter_L_ヘルシティアH:
   - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onDamaged 
   - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onSwing
   - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onKill
-  - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onDamaged 
+  - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onHeal
 
 Azuriter_L_ヘルシティアC:
   Id: leather_chestplate
