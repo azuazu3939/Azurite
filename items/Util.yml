@@ -24,7 +24,7 @@ Azuriter_BackPack3:
   Inventory:
     Title: "&6バックパック &7- &a3"
     Size: 27
-    SaveOnItemUpdate: true
+    SaveOnItemUpdate: false
     PreventBagNesting: true
     Sounds:
       Open: "block.ender_chest.open"
@@ -54,7 +54,7 @@ Azuriter_BackPack6:
   Inventory:
     Title: "&6バックパック &7- &56"
     Size: 54
-    SaveOnItemUpdate: true
+    SaveOnItemUpdate: false
     PreventBagNesting: true
     Sounds:
       Open: "block.ender_chest.open"
