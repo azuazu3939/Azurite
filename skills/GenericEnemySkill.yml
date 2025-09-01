@@ -156,7 +156,8 @@ Generic_Enemy_MCLove32_SHOW_RANKING:
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
   Skills:
-  - setVar{k=caster.dmg;a="<target.var.<caster.uuid>|0>";t=FLOAT} @trigger 
+  - setVar{k=caster.uuid;a="<target.uuid>";t=STRING} @self
+  - setVar{k=caster.dmg;a="<target.var.<caster.var.uuid>|0>";t=FLOAT} @trigger 
   - setVar{k=caster.late;a="0";t=INTEGER} @self
   - setVar{k=caster.wait;a="ceil(<trigger.mhp> - <caster.var.dmg|0> / 10)";t=FLOAT} @self
   - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Ab;repeat=14;repeati=0} @self
