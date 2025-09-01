@@ -1,7 +1,7 @@
 OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK:
-   Conditions:
-   - incombat
-   TargetConditions:
+  Conditions:
+  - incombat
+  TargetConditions:
   - hasAura{n=Azuriter_NoCombat} false 
   - isplayer true 
   Skills:
