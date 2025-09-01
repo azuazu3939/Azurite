@@ -566,7 +566,7 @@ OpenField_Enemy_風牙狼ウィデラー_MCLove32_HighDrop:
   - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.05"}
   - sound{s=ui.toast.challenge_complete;p=2;sc=PLAYERS;v=0.15}
 
-OpenField_Enemy_風牙狼ウィデラー_MCLove32_SpawnDrop:
+Azuriter_Boss_Wedler_SpawnDrop:
   Skills:
   - cmd{c="mlg <target.name> Azuriter_風牙狼の皮 1 0.15";delay=20}
   - cmd{c="mlg <target.name> Azuriter_風牙狼の骨 1 0.1";delay=20} 
