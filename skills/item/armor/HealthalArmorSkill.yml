@@ -20,3 +20,4 @@ Azuriter_L_ヘルシティア_Full_Healthal:
   Skills:
   - sound{s=block.brewing_stand.brew;audience=caster;sc=AMBIENT;v=0.5} @PIR{r=32}
   - heal{a=6} @PIR{r=32}
+  - potion{t=STRENGTH;l=4;d=200;p=false} @PIR{r=32}
