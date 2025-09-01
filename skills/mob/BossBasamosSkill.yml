@@ -47,14 +47,13 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process:
 
 Azuriter_バサモスサンド_Skills:
   Skills:
-  - skill{s=Azuriter_バサモスサンド_Skill_Orb;oy=1;repeat=2;repeati=12;delay=1} @self
-  - delay 1
-  - skill{s=Azuriter_バサモスサンド_Skill_Orb;oy=-1;repeat=2;repeati=12;delay=1} @self
+  - skill{s=Azuriter_バサモスサンド_Skill_Orb;oy=1} @self
+  - skill{s=Azuriter_バサモスサンド_Skill_Orb;oy=-1} @self
   
 
 Azuriter_バサモスサンド_Skill_Orb:
   Skills:
-  - o{r=3;vr=2;hr=1.25;p=100;i=1;t=600;oy=<skill.oy>;n=<random.1to9999999>;
+  - o{r=3;vr=2;hr=1.25;p=100;i=1;t=600;oy=<skill.oy>;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=1} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=1} @origin 
@@ -71,13 +70,12 @@ Azuriter_バサモスサンド_Skill_Orb:
 
 Azuriter_バサモスサンド_Summoned_Skills:
   Skills:
-  - skill{s=Azuriter_バサモスサンド_Summoned_SkillsOrb;oy=1;repeat=2;repeati=12;delay=1} @self
-  - delay 1
-  - skill{s=Azuriter_バサモスサンド_Summoned_SkillsOrb;oy=-1;repeat=2;repeati=12;delay=1} @self
+  - skill{s=Azuriter_バサモスサンド_Summoned_SkillsOrb;oy=1} @self
+  - skill{s=Azuriter_バサモスサンド_Summoned_SkillsOrb;oy=-1} @self
 
 Azuriter_バサモスサンド_Summoned_SkillsOrb:
   Skills:
-  - o{r=3;vr=1.5;hr=1.25;p=100;i=1;t=600;oy=<skill.oy>;n=<random.1to9999999>;
+  - o{r=3;vr=1.5;hr=1.25;p=100;i=1;t=600;oy=<skill.oy>;
     ot=[
       - e:p{p=crit;a=2;vs=3;hs=1.5;s=1} @origin 
       - e:p{p=electric_spark;a=1;vs=3;hs=1.5;s=1} @origin 
