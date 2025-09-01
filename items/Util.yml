@@ -11,3 +11,63 @@ Azuriter_RangeWeaponDamageEnsure:
   Group: 'Util'
   Skills:
   - skill{s=Azuriter_RangeWeaponDamageEnsure_Skills} @self ~onUse
+
+Azuriter_BackPack3:
+  Id: chest
+  Display: "&6バックパック &7- &a3"
+  Lore: 
+  - "&f右クリで開けるバックパック。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Util'
+  Type: BAG
+  Inventory:
+    Title: "&6バックパック &7- &a3"
+    Size: 27
+    SaveOnItemUpdate: false
+    PreventBagNesting: true
+    Sounds:
+      Open: "block.ender_chest.open"
+      Close: "block.ender_chest.close"
+      Pickup: "entity.chicken.egg"
+      Volume: 1
+      Pitch: 1
+    AutoPickup:
+      Enabled: false
+      CollectWhenHeld: false
+      AddToBagStacks: true
+    Notifications:
+      NearlyFull:
+        Enabled: true
+        Threshold: 3
+        Message: "&cもうすぐ満タンです。"
+
+Azuriter_BackPack6:
+  Id: ender_chest
+  Display: "&6バックパック &7- &56"
+  Lore: 
+  - "&f右クリで開けるバックパック。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Util'
+  Type: BAG
+  Inventory:
+    Title: "&6バックパック &7- &56"
+    Size: 54
+    SaveOnItemUpdate: false
+    PreventBagNesting: true
+    Sounds:
+      Open: "block.ender_chest.open"
+      Close: "block.ender_chest.close"
+      Pickup: "entity.chicken.egg"
+      Volume: 1
+      Pitch: 1
+    AutoPickup:
+      Enabled: false
+      CollectWhenHeld: false
+      AddToBagStacks: true
+    Notifications:
+      NearlyFull:
+        Enabled: true
+        Threshold: 3
+        Message: "&cもうすぐ満タンです。"

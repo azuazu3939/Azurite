@@ -200,7 +200,7 @@ Azuriter_Boss_Basamos:
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=140;shield_break=1050;heal_percent=0.025} @self ~onEntercombat
-  - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK @T ~onEntercombat
+  - skill:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK @T ~onEntercombat
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
 
@@ -208,7 +208,7 @@ Azuriter_Boss_Basamos:
   - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =40%
    
   - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged #ranking
-  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=128;do="OpenField_Enemy_風牙狼ウィデラー_MCLove32_HighDrop"} @self ~onDeath #ranking 
+  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=128;do="OpenField_Enemy_咆哮獣バサモス_MCLove32_HighDrop"} @self ~onDeath #ranking 
 
   - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
@@ -217,7 +217,10 @@ Azuriter_Boss_Basamos:
   #- cmd{c="mlgo <target.name> Azuriter_風牙狼の牙 1 0.35";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   #- cmd{c="mlgo <target.name> Azuriter_風牙狼の皮 1 0.7";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
   - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-
+  
+  - remove @child ~onDespawn 
+  - remove @child ~onDeath 
+  
   #- skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1} @self ~onSignal:raid_boss_skill1
   #- skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2} @self ~onSignal:raid_boss_skill2
   #- skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_3} @self ~onSignal:raid_boss_skill3

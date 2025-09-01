@@ -1,0 +1,52 @@
+Azuriter_バサモスサンド:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 20
+  Armor: 200
+  Faction: Admin
+  Options:
+    Silent: true
+    Invisible: true
+    PreventVanillaDamage: true 
+    PassthroughDamage: true
+  Disguise: FALLING_BLOCK SAND
+  Skills:
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=200} @self ~onSpawn 
+  - skill{s=Azuriter_バサモスサンド_Skills} @self ~onSpawn 
+  - remove @child ~onDespawn 
+  - remove @child ~onDeath 
+
+Azuriter_バサモスサンド_Summoned:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 20
+  Armor: 250
+  Faction: Admin
+  Options:
+    Silent: true
+    Invisible: true
+    PreventVanillaDamage: true 
+    PassthroughDamage: true
+  Disguise: FALLING_BLOCK SAND
+  Skills:
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=250} @self ~onSpawn 
+  - skill{s=Azuriter_バサモスサンド_Summoned_Skills} @self ~onSpawn 
+  - remove @child ~onDespawn 
+  - remove @child ~onDeath 
+
+Azuriter_バサモスサンド_FinalSummoned:
+  Template: Azuriter_Enemy_Base
+  Health: 999999999
+  Damage: 20
+  Armor: 250
+  Faction: Admin
+  Options:
+    Silent: true
+    Invisible: true
+    PreventVanillaDamage: true 
+    PassthroughDamage: true
+  Disguise: FALLING_BLOCK SAND
+  Skills:
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=250} @self ~onSpawn 
+  - remove @child ~onDespawn 
+  - remove @child ~onDeath 
