@@ -3,7 +3,6 @@ Azuriter_バサモスサンド:
   Health: 999999999
   Damage: 20
   Armor: 200
-  Faction: Admin
   Options:
     Silent: true
     Invisible: true
@@ -21,7 +20,6 @@ Azuriter_バサモスサンド_Summoned:
   Health: 999999999
   Damage: 20
   Armor: 250
-  Faction: Admin
   Options:
     Silent: true
     Invisible: true
@@ -39,7 +37,6 @@ Azuriter_バサモスサンド_FinalSummoned:
   Health: 999999999
   Damage: 20
   Armor: 250
-  Faction: Admin
   Options:
     Silent: true
     Invisible: true

@@ -47,7 +47,7 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process:
 
 Azuriter_バサモスサンド_Skills:
   Skills:
-  - o{r=3;vr=2.5;hr=2;p=48;sp=0;n=Azuriter_バサモスサンド_SkillsUp;i=1;t=600;
+  - o{r=3;vr=2.5;hr=2;p=48;sp=0;n=Azuriter_バサモスサンド_SkillsUp;i=1;t=600;hp=true;hnp=false;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
@@ -64,7 +64,7 @@ Azuriter_バサモスサンド_Skills:
     ];
     b=MOB;mm=Azuriter_バサモスサンド_Summoned} @selfLocation{y=1.25}
   
-  - o{r=3;vr=2.5;hr=2;p=48;sp=12;n=Azuriter_バサモスサンド_SkillsDownR;reverse=true;i=1;t=600;
+  - o{r=3;vr=2.5;hr=2;p=48;sp=12;n=Azuriter_バサモスサンド_SkillsDownR;reverse=true;i=1;t=600;hp=true;hnp=false;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
@@ -81,7 +81,7 @@ Azuriter_バサモスサンド_Skills:
     ];
     b=MOB;mm=Azuriter_バサモスサンド_Summoned} @selfLocation{y=-1.25}
   
-  - o{r=3;vr=2.5;hr=2;p=48;sp=24;n=Azuriter_バサモスサンド_SkillsUpR;i=1;t=600;reverse=true
+  - o{r=3;vr=2.5;hr=2;p=48;sp=24;n=Azuriter_バサモスサンド_SkillsUpR;i=1;t=600;reverse=true;hp=true;hnp=false;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
@@ -98,7 +98,7 @@ Azuriter_バサモスサンド_Skills:
     ];
     b=MOB;mm=Azuriter_バサモスサンド_Summoned} @selfLocation{y=1.25}
   
-  - o{r=3;vr=2.5;hr=2;p=48;sp=36;n=Azuriter_バサモスサンド_SkillsDown;i=1;t=600;
+  - o{r=3;vr=2.5;hr=2;p=48;sp=36;n=Azuriter_バサモスサンド_SkillsDown;i=1;t=600;hp=true;hnp=false;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
