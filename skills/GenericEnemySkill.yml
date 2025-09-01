@@ -173,6 +173,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10:
   - addtag{t=Top10} @self
   #midle -> down
   - setVar{k=skill.under;a="0";t=INTEGER} @self
+  - message{m="<skill.var.dmg|0>"} @PIR{r=32}
 
   - setVar{k=skill.sub2;a="<caster.var.02|0> - <skill.var.dmg|0>";t=FLOAT} @self
   - setVar{k=skill.test2;a="<caster.var.01|0> - <caster.var.02|0>";t=FLOAT} @self
