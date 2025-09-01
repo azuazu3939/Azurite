@@ -10,7 +10,7 @@ Azuriter_バサモスサンド:
   Disguise: FALLING_BLOCK SAND
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=200} @self ~onSpawn 
-  - skill{s=Azuriter_バサモスサンド_Skills} @self ~onSpawn 
+  - skill{s=Azuriter_バサモスサンド_Skills;delay=1} @self ~onSpawn 
 
 Azuriter_バサモスサンド_Summoned:
   Template: Azuriter_Enemy_Base
@@ -24,7 +24,7 @@ Azuriter_バサモスサンド_Summoned:
   Disguise: FALLING_BLOCK SAND
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=250} @self ~onSpawn 
-  - skill{s=Azuriter_バサモスサンド_Summoned_Skills} @self ~onSpawn 
+  - skill{s=Azuriter_バサモスサンド_Summoned_Skills;delay=1} @self ~onSpawn 
 
 Azuriter_バサモスサンド_FinalSummoned:
   Template: Azuriter_Enemy_Base
