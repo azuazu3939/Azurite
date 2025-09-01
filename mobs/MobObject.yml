@@ -1,40 +1,28 @@
 Azuriter_バサモスサンド:
   Template: Azuriter_Enemy_Base
+  Type: block_display
   Health: 999999999
   Damage: 20
-  Armor: 200
-  Options:
-    Silent: true
-    PassthroughDamage: true
-    PreventVanillaDamage: true 
-  Disguise: FALLING_BLOCK SAND
+  DisplayOptions:
+    Block: sand
   Skills:
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=200} @self ~onSpawn 
-  - skill{s=Azuriter_バサモスサンド_Skills;delay=1} @self ~onSpawn 
+  - skill{s=Azuriter_バサモスサンド_Skills} @self ~onSpawn 
 
 Azuriter_バサモスサンド_Summoned:
   Template: Azuriter_Enemy_Base
+  Type: block_display
   Health: 999999999
   Damage: 20
-  Armor: 250
-  Options:
-    Silent: true
-    PassthroughDamage: true
-    PreventVanillaDamage: true 
-  Disguise: FALLING_BLOCK SAND
+  DisplayOptions:
+    Block: sand
   Skills:
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=250} @self ~onSpawn 
-  - skill{s=Azuriter_バサモスサンド_Summoned_Skills;delay=1} @self ~onSpawn 
+  - skill{s=Azuriter_バサモスサンド_Summoned_Skills} @self ~onSpawn 
 
 Azuriter_バサモスサンド_FinalSummoned:
   Template: Azuriter_Enemy_Base
+  Type: block_display
   Health: 999999999
   Damage: 20
-  Armor: 250
-  Options:
-    Silent: true
-    PassthroughDamage: true
-    PreventVanillaDamage: true 
-  Disguise: FALLING_BLOCK SAND
+  DisplayOptions:
+    Block: sand
   Skills:
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=250} @self ~onSpawn 
