@@ -163,7 +163,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   Skills:
   - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @self
-  - setVar{k=skill.late;a="20";t=INTEGER} @self
+  - setVar{k=skill.late;a="0";t=INTEGER} @self
   - setVar{k=skill.wait;a="ceil(<caster.mhp> - <skill.var.dmg|0> / 10)";t=FLOAT} @self
   - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Ab;repeat=14;repeati=0} @self
   - delay 10
@@ -176,7 +176,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Ab:
   - varrange{k=skill.wait;r=1} false 
   Skills:
   - setVar{k=skill.wait;a="ceil(<skill.var.wait> / 10)";t=FLOAT} @self
-  - setVar{k=skill.late;a="<skill.var.late> - 1";t=INTEGER} @self
+  - setVar{k=skill.late;a="<skill.var.late> + 1";t=INTEGER} @self
 
 # 
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10:
