@@ -317,7 +317,7 @@ Azuriter_L_ヘルシティアH:
   - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onDamaged 
   - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onSwing
   - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onKill
-  - skill{s=Azuriter_L_ヘルシティア_Full_Damage} @self ~onDamaged 
+  - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onDamaged 
 
 Azuriter_L_ヘルシティアC:
   Id: leather_chestplate
