@@ -163,6 +163,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   Skills:
   - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @self
+  - message{m="<skill.var.dmg|0>"} @PIR{r=32}
   - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10} @self ?!varrange{k=skill.dmg;r=0}
  
 # 
