@@ -161,7 +161,6 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
   - setVar{k=caster.late;a="0";t=INTEGER} @self
   - setVar{k=caster.wait;a="ceil(<target.mhp> - <caster.var.dmg|0> / 10)";t=FLOAT} @trigger 
   - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Ab;repeat=14;repeati=0} @self
-  - delay 10
   - delay <caster.var.late>
   - sudoskill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return;cat=true;do=<skill.do>} @trigger
 
@@ -169,7 +168,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   Skills:
   - setVar{k=skill.name;a="<target.var.name>";t=STRING} @trigger 
-  - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @trigger
+  - setVar{k=skill.dmg;a="<caster.var.<skill.var.name>|0>";t=FLOAT} @self
   - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Top10} @self ?!varrange{k=skill.dmg;r=0}
 
 #
