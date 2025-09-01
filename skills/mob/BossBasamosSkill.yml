@@ -47,24 +47,15 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process:
 
 Azuriter_バサモスサンド_Skills:
   Skills:
-  - o{r=3;vr=2.5;hr=2;p=48;sp=0;n=Azuriter_バサモスサンド_SkillsUp;i=1;t=600;hp=true;hnp=false;
-    ot=[
-      - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
-    ];
-    oh=[
-      - damage{a="<skill.var.dmg> * 0.8";pi=true;ii=true}
-    ];
-    oe=[
-      - e:p{p=crit;a=30;vs=3;hs=1.5;s=5} @origin 
-      - e:p{p=electric_spark;a=20;vs=3;hs=1.5;s=5} @origin 
-    ];
-    conditions=[
-      - samefaction false
-    ];
-    b=MOB;mm=Azuriter_バサモスサンド_Summoned} @selfLocation{y=1.25}
+  - meta:Azuriter_バサモスサンド_Skill_Up_L @self
+  - meta:Azuriter_バサモスサンド_Skill_Up_R @self
+  - meta:Azuriter_バサモスサンド_Skill_Down_L @self
+  - meta:Azuriter_バサモスサンド_Skill_Down_R @self
   
-  - o{r=3;vr=2.5;hr=2;p=48;sp=12;n=Azuriter_バサモスサンド_SkillsDownR;reverse=true;i=1;t=600;hp=true;hnp=false;
+
+Azuriter_バサモスサンド_Skill_Up_L:
+  Skills:
+  - o{r=3;vr=2.5;hr=2;p=48;sp=12;n=Azuriter_バサモスサンド_SkillsUpL;reverse=true;i=1;t=600;hp=true;hnp=false;oy=1.25;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
@@ -79,9 +70,11 @@ Azuriter_バサモスサンド_Skills:
     conditions=[
       - samefaction false
     ];
-    b=MOB;mm=Azuriter_バサモスサンド_Summoned} @selfLocation{y=-1.25}
-  
-  - o{r=3;vr=2.5;hr=2;p=48;sp=24;n=Azuriter_バサモスサンド_SkillsUpR;i=1;t=600;reverse=true;hp=true;hnp=false;
+    b=MOB;mm=Azuriter_バサモスサンド_Summoned} @self
+
+Azuriter_バサモスサンド_Skill_Up_R:
+  Skills:
+  - o{r=3;vr=2.5;hr=2;p=48;sp=12;n=Azuriter_バサモスサンド_SkillsUpR;reverse=true;i=1;t=600;hp=true;hnp=false;reverse=true;oy=1.25;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
@@ -96,9 +89,11 @@ Azuriter_バサモスサンド_Skills:
     conditions=[
       - samefaction false
     ];
-    b=MOB;mm=Azuriter_バサモスサンド_Summoned} @selfLocation{y=1.25}
-  
-  - o{r=3;vr=2.5;hr=2;p=48;sp=36;n=Azuriter_バサモスサンド_SkillsDown;i=1;t=600;hp=true;hnp=false;
+    b=MOB;mm=Azuriter_バサモスサンド_Summoned} @self
+
+Azuriter_バサモスサンド_Skill_Down_L:
+  Skills:
+  - o{r=3;vr=2.5;hr=2;p=48;sp=36;n=Azuriter_バサモスサンド_SkillsDownL;i=1;t=600;hp=true;hnp=false;oy=-1.25;
     ot=[
       - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
       - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
@@ -113,7 +108,26 @@ Azuriter_バサモスサンド_Skills:
     conditions=[
       - samefaction false
     ];
-    b=MOB;mm=Azuriter_バサモスサンド_Summoned} @selfLocation{y=-1.25}
+    b=MOB;mm=Azuriter_バサモスサンド_Summoned} @self
+
+Azuriter_バサモスサンド_Skill_Down_R:
+  Skills:
+  - o{r=3;vr=2.5;hr=2;p=48;sp=36;n=Azuriter_バサモスサンド_SkillsDownR;i=1;t=600;hp=true;hnp=false;reverse=true;oy=-1.25;
+    ot=[
+      - e:p{p=crit;a=5;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=electric_spark;a=3;vs=3;hs=1.5;s=5} @origin 
+    ];
+    oh=[
+      - damage{a="<skill.var.dmg> * 0.8";pi=true;ii=true}
+    ];
+    oe=[
+      - e:p{p=crit;a=30;vs=3;hs=1.5;s=5} @origin 
+      - e:p{p=electric_spark;a=20;vs=3;hs=1.5;s=5} @origin 
+    ];
+    conditions=[
+      - samefaction false
+    ];
+    b=MOB;mm=Azuriter_バサモスサンド_Summoned} @self
 
 Azuriter_バサモスサンド_Summoned_Skills:
   Skills:
@@ -133,7 +147,7 @@ Azuriter_バサモスサンド_Summoned_Skills:
     conditions=[
       - samefaction false
     ];
-    b=MOB;mm=Azuriter_バサモスサンド_FinalSummoned} @selfLocation{y=1}
+    b=MOB;mm=Azuriter_バサモスサンド_FinalSummoned;oy=-1} @self
   
   - o{r=4;vr=1.5;hr=2;p=48;sp=42;n=Azuriter_Summoned_Skills;i=1;t=600;
     ot=[
@@ -151,4 +165,4 @@ Azuriter_バサモスサンド_Summoned_Skills:
     conditions=[
       - samefaction false
     ];
-    b=MOB;mm=Azuriter_バサモスサンド_FinalSummoned} @selfLocation{y=-1}
+    b=MOB;mm=Azuriter_バサモスサンド_FinalSummoned;oy=1} @self

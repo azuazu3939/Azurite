@@ -164,7 +164,7 @@ Azuriter_Boss_Basamos:
   - money 30to50 1
   Options:
     Silent: true 
-    Scale: 3.5
+    Scale: 2.5
     MovementSpeed: 0.275
     KnockbackResistance: 1
     MaxCombatDistance: 20
