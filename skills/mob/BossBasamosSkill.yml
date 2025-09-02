@@ -89,7 +89,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - o{
-    r=30;vr=6;hr=2.5;hp=false;d=1200;oy=5;p=360;sp=0;hitself=true;c=1;
+    r=30;vr=6;hr=2.5;hp=false;d=1200;oy=5;p=360;sp=0;hitself=true;c=1;bk=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
     auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T1;
     ot=[
@@ -115,7 +115,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
       - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=32}
     ]} @self
   - o{
-    r=30;vr=6;hr=2.5;hp=false;d=1200;oy=5;p=360;sp=120;hitself=true;c=1;
+    r=30;vr=6;hr=2.5;hp=false;d=1200;oy=5;p=360;sp=120;hitself=true;c=1;bk=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
     auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T2;
     ot=[
@@ -126,7 +126,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
       - e:p{p=heart;a=20;ys=2;hs=3;size=2;s=1}
     ]} @self
   - o{
-    r=30;vr=6;hr=2.5;hp=false;d=1200;oy=5;p=360;sp=240;hitself=true;c=1;
+    r=30;vr=6;hr=2.5;hp=false;d=1200;oy=5;p=360;sp=240;hitself=true;c=1;bk=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
     auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T3;
     ot=[

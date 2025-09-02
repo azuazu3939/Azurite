@@ -35,4 +35,7 @@ Azuriter_バサモスサンド_幻楼1:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=40} @self ~onSpawn
   - remove{delay=1300} @self ~onSpawn 
   - effect:enderbeam{d=1250;y=2.5} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
-  - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath 
+  - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath
+  - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDespawned
+  - remove @EIR{r=3;sort=NEAREST;limit=1;targetvanilla=true} ~onDeath
+  - remove @EIR{r=3;sort=NEAREST;limit=1;targetvanilla=true} ~onDespawned
