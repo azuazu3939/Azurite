@@ -17,7 +17,7 @@ Azuriter_カーブショットボウ:
       MovementSpeed: 0.4 MULTIPLY_BASE
   Group: 'Range-Weapon'
   Skills:
-  - skill{s=Azuriter_カーブショットボウ_Skills} @self ~onUse
+  - skill{s=Azuriter_カーブショットボウ_Skills} @self ~onSwing 
   - cancelEvent{sync=true} @self ~onUse
 
 Azuriter_ファイアバレットボウ:
@@ -26,7 +26,7 @@ Azuriter_ファイアバレットボウ:
   Options:
     Unbreakable: true
   Lore:
-  - "&fマナを20消費し、3発放つ。"
+  - "&fマナを30消費し、3発放つ。"
   - "&f特定条件で、hit周囲の範囲ダメを引き起こす。"
   ItemUpdater:
     Version: 1
@@ -37,5 +37,5 @@ Azuriter_ファイアバレットボウ:
       Health: -0.2 MULTIPLY_BASE
   Group: 'Range-Weapon'
   Skills:
-  - skill{s=Azuriter_ファイアバレットボウ_Skills} @self ~onUse
+  - skill{s=Azuriter_ファイアバレットボウ_Skills} @self ~onSwing 
   - cancelEvent{sync=true} @self ~onUse
