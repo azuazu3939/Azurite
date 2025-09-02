@@ -9,6 +9,7 @@ Azuriter_L_ヘルシティア_Full:
   - potion{t=RESISTANCE;l=0;d=600;p=false} @self
   - potion{t=REGENERATION;l=2;d=600;p=false} @self
   - potion{t=SPEED;l=1;d=600;p=false} @self
+  - potion{t=NIGHT_VISION;l=0;d=500;p=false} @self
 
 Azuriter_L_ヘルシティア_Full_Healthal:
   Cooldown: 5

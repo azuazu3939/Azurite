@@ -31,6 +31,7 @@ Azuriter_L_ガーディア_Full_Damage:
   - setVar{k=caster.tank_job;a="<caster.var.tank_job|0> + 1";t=INTEGER} @self
   - potion{t=STRENGTH;l=1;d=100;p=false} @self
   - skill{s=Azuriter_L_ガーディア_Full_Counter} @self
+  - potion{t=NIGHT_VISION;l=0;d=500;p=false} @self
 
 Azuriter_L_ガーディア_Full_Counter:
   Conditions:

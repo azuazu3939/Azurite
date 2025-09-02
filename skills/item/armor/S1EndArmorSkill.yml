@@ -16,3 +16,4 @@ Azuriter_シリーズエンド1_Full:
   - potion{t=STRENGTH;d=500;l=2;p=false} @self
   - potion{t=HASTE;l=0;d=500;p=false}
   - potion{t=REGENERATION;d=500;l=1;p=false} @self
+  - potion{t=NIGHT_VISION;l=0;d=500;p=false} @self
