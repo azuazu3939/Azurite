@@ -114,7 +114,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
       - e:p{p=cloud;a=70;ys=2.25;hs=12;s=7} 
       - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=32}
     ];
-    conditons=[
+    conditions=[
       - mythicmobtype{t=Azuriter_Boss_Basamos} true
     ]} @self
   - o{
@@ -128,7 +128,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
       - healpercent{m=0.2}
       - e:p{p=heart;a=20;ys=2;hs=3;size=2;s=1}
     ];
-    conditons=[
+    conditions=[
       - mythicmobtype{t=Azuriter_Boss_Basamos} true
     ]} @self
   - o{
@@ -143,7 +143,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
       - potion{t=GLOWING;l=0;d=1200;p=false}
       - e:p{p=crit_magic;a=15;size=2;ys=2;hs=4;repeat=29;repeati=40}
     ];
-    conditons=[
+    conditions=[
       - mythicmobtype{t=Azuriter_Boss_Basamos} true
     ]} @self
   - delay 200
