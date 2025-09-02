@@ -31,6 +31,6 @@ Azuriter_バサモスサンド_幻楼1:
     Glowing: true
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=40} @self ~onSpawn
-  - remove{delay=800} @self ~onSpawn 
-  - e:beam{d=660;tyo=1} @parent ~onSpawn 
+  - remove{delay=1300} @self ~onSpawn 
+  - e:beam{d=1250;tyo=1;delay=1} @trigger ~onSpawn 
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath 
