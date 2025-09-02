@@ -166,6 +166,7 @@ Azuriter_Boss_Basamos:
     Silent: true 
     Scale: 2
     MovementSpeed: 0.25
+    Collidable: false
     KnockbackResistance: 1
     MaxCombatDistance: 32
     FollowRange: 16
