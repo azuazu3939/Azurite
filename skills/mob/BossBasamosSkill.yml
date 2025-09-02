@@ -23,7 +23,7 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1:
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - setVar{k=caster.attackHO;a="0";t=INTEGER} @self
-  - meta{s=OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Run;repeat=11;repeati=30} @self
+  - meta{s=OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Run;repeat=29;repeati=20} @self
   - delay 60
   - removetag{t=ATTACK} @self
 
@@ -32,7 +32,7 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Run:
   - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process1 @forward{lockpitch=true;y=2}
   - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process2 @forward{lockpitch=true;y=2}
   - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3 @forward{lockpitch=true;y=2} 
-  - setVar{k=caster.attackHO;a="<caster.var.attackHO> + 30";t=INTEGER} @self
+  - setVar{k=caster.attackHO;a="<caster.var.attackHO> + 45";t=INTEGER} @self
 
 OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process1:
   Skills:
@@ -47,7 +47,7 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process1:
       - e:p{p=explosion_emitter;a=8;size=2;s=1;ys=1;hs=1} @origin 
     ];
     v=7;i=1;se=false;d=200;syo=2;sfo=3;
-    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho=<caster.var.attackHO>} 
+    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;bmd=true;ho=<caster.var.attackHO>} 
 
 OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process2:
   Skills:
@@ -62,7 +62,7 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process2:
       - e:p{p=explosion_emitter;a=8;size=2;s=1;ys=1;hs=1} @origin 
     ];
     v=7;i=1;se=false;d=200;syo=2;sfo=3;
-    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho="120 + <caster.var.attackHO>"}
+    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;bmd=true;ho="120 + <caster.var.attackHO>"}
 
 OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3:
   Skills:
@@ -77,4 +77,4 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3:
       - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @origin 
     ];
     v=7;i=1;se=false;d=200;syo=2;sfo=3;
-    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho="240 + <caster.var.attackHO>"}
+    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;bmd=true;ho="240 + <caster.var.attackHO>"}
