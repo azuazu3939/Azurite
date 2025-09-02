@@ -15,3 +15,4 @@ Azuriter_バサモスサンド_Bleeze:
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=200} @self ~onSpawn
   - remove{delay=400} @self ~onSpawn 
+  - remove @self ~onDamaged 
