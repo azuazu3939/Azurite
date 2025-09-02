@@ -7,9 +7,9 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK:
   Skills:
   - addtag{t=CHARGE} ?!night 
   - removetag{t=CHARGE} ?night 
-  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2} @self
+  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1} @self
   - delay <random.20to100>
-  - delay 200
+  - delay 600
   - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK} @T
 
 OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1:
