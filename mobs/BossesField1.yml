@@ -96,12 +96,6 @@ Azuriter_Boss_Wedler:
   AITargetSelectors:
   - clear
   - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
-  AIGoalSelectors:
-  - clear
-  - randomstroll
-  - gotoowner
-  - moveTowardsTarget
-  - float
   BossBar:
     Enabled: true
     Title: <caster.name>
