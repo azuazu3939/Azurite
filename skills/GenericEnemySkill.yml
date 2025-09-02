@@ -146,6 +146,7 @@ Generic_Enemy_MCLove32_DAMAGED_Player_PutAdd:
   - setVar{k=skill.tempDMG;a="<skill.var.dmg|0>";t=DOUBLE} @self ?varset{k=caster.rankMap} ?!vareq{k=skill.bool;v="true"} #init
   - subVar{k=caster.rankMap;a="<skill.var.name>"} @self #remove
   - addVar{k=caster.rankMap;a="<skill.var.name>=<skill.var.tempDMG>"} @self
+  - message{m="<caster.var.rankMap>"} @PIR{r=32}
 
 
 #Usage  
@@ -180,6 +181,10 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   - setVar{k=skill.sortList;a="<caster.var.rankMap.keys.values.sortnum.todouble>";t=List} @self ?varset{k=caster.rankMap} #map.values -> toList.sortNum 1...999...?
   - setVar{k=skill.sortBool;a="<caster.var.rankMap.keys.contains.<skill.var.name>.tostring>";t=STRING} @self ?varset{k=caster.rankMap} #contains
   - setVar{k=skill.sortDMG;a="<caster.var.rankMap.get.<skill.var.name>.todouble>";t=DOUBLE} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} #get
+
+  - message{m="&a<skill.var.sortList>"} @PIR{r=32}
+  - message{m="&b<skill.var.sortBool>"} @PIR{r=32}
+  - message{m="&c<skill.var.sortDMG>"} @PIR{r=32}
 
   - setVar{k=skill.size;a="<caster.var.rankMap.keys.size>";t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} #maxSize
   - setVar{k=skill.count;a="0";t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} #count
