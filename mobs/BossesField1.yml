@@ -173,7 +173,11 @@ Azuriter_Boss_Basamos:
   - FALL 0
   AITargetSelectors:
   - clear
-  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  - attacker
+  #- nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  AIGoalSelectors:
+  - clear
+  - moveTowardsTarget 
   BossBar:
     Enabled: true
     Title: <caster.name>
