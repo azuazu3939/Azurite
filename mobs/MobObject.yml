@@ -1,10 +1,11 @@
 Azuriter_バサモスサンド_Bleeze:
   Template: Azuriter_Enemy_Base
-  Type: BREEZE
+  Type: CAMEL
   Health: 999999999
   Damage: 20
   Options:
     MaxCombatDistance: 0
+    Scale: 0.75
     FollowRange: 0
   Skills:
   - remove{delay=400} @self ~onSpawn 
