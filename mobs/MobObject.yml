@@ -11,10 +11,13 @@ Azuriter_バサモスサンド_幻1:
   Options:
     MaxCombatDistance: 48
     PassthroughDamage: false
+    Interactable: true
     Scale: 1
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=50} @self ~onSpawn
-  - remove{delay=600} @self ~onSpawn 
+  - remove{delay=600} @self ~onSpawn
+  - e:p{p=explosion_emitter;a=2;size=0.5;s=1;ys=1;hs=1} @self ~onDespawn 
+  - remove @self ~onInteract 
 
 Azuriter_バサモスサンド_幻楼1:
   Template: Azuriter_Enemy_Base
