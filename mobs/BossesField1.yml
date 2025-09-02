@@ -167,7 +167,7 @@ Azuriter_Boss_Basamos:
     KnockbackResistance: 1
     MaxCombatDistance: 32
     FollowRange: 16
-  Disguise: CAMEL setScale 2
+  Disguise: villager setScale 2
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
