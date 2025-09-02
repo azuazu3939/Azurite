@@ -141,9 +141,9 @@ Generic_Enemy_MCLove32_DAMAGED_Player_Init:
 #
 Generic_Enemy_MCLove32_DAMAGED_Player_PutAdd:
   Skills:
-  - setVar{k=skill.bool;a="<caster.var.rankMap.keys.contains.<skill.var.name>>";t=STRING} @self #contains
-  - setVar{k=skill.tempDMG;a="<caster.var.rankMap.get.<skill.var.name>.todouble> + <skill.var.dmg|0>";t=DOUBLE} @self ?varset{k=caster.rankMap} ?vareq{k=skill.bool;v="true"} #re-init
-  - setVar{k=skill.tempDMG;a="<skill.var.dmg|0>";t=DOUBLE} @self ?varset{k=caster.rankMap} ?!vareq{k=skill.bool;v="true"} #init
+  - setVar{k=skill.bool;a=<caster.var.rankMap.keys.contains.<skill.var.name>>;t=BOOLEAN} @self #contains
+  - setVar{k=skill.tempDMG;a="<caster.var.rankMap.get.<skill.var.name>.todouble> + <skill.var.dmg|0>";t=DOUBLE} @self ?varset{k=caster.rankMap} ?vareq{k=skill.bool;v=true} #re-init
+  - setVar{k=skill.tempDMG;a="<skill.var.dmg|0>";t=DOUBLE} @self ?varset{k=caster.rankMap} ?!vareq{k=skill.bool;v=true} #init
   - addVar{k=caster.rankMap;a="<skill.var.name>=<skill.var.tempDMG>"} @self
   - message{m=<skill.var.bool>} @PIR{r=32}
   - message{m=<skill.var.tempDMG>} @PIR{r=32}
