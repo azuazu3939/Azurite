@@ -219,8 +219,8 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_SortList:
   Skills:
-  - setVar{k=skill.sortL;a="0,<skill.value>";t=LIST} @self ?!varset{k=skill.sortL}
   - addVar{k=skill.sortL;a=<skill.value>} @self ?varset{k=skill.sortL}
+  - setVar{k=skill.sortL;a=<skill.value>;t=LIST} @self ?!varset{k=skill.sortL}
 
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_SortBool:
