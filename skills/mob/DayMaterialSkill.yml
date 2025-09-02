@@ -16,8 +16,7 @@ Azuriter_DayMaterial_Buff:
 
 Azuriter_DayMaterial_Remove:
   Conditions:
-  - (hasAura{n=DayMaterial_NoDay} true && day true || hasAura{n=DayMaterial_Day} true || day false)
-  - day 
+  - (hasAura{n=DayMaterial_NoDay} true && day true || hasAura{n=DayMaterial_Day} true && day false)
   Skills:
   - remove @self
 
