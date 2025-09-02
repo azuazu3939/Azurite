@@ -12,4 +12,4 @@ Azuriter_バサモスサンド_幻1:
     Scale: 1
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=100} @self ~onSpawn
-  - remove{delay=400} @self ~onSpawn 
+  - remove{delay=600} @self ~onSpawn 
