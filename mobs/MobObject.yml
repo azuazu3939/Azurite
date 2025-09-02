@@ -1,0 +1,6 @@
+Azuriter_バサモスサンド:
+  Template: Azuriter_Enemy_Base
+  Type: BREEZE
+  Health: 999999999
+  Damage: 20
+  Skills:

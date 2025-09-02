@@ -22,4 +22,3 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1:
   - addtag{t=ATTACK} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
-  - skill{s=OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process} @self
