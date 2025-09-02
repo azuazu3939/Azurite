@@ -120,6 +120,11 @@ Generic_Enemy_MCLove32_DAMAGED:
   - setVar{k=skill.dmg;a="<skill.var.damage-amount>";t=DOUBLE} @self
   - skill{s=Generic_Enemy_MCLove32_DAMAGED_Player_Init} @self
   - skill{s=Generic_Enemy_MCLove32_DAMAGED_Player_PutAdd} @self
+  - message{m=<caster.var.rankMap>} @PIR{r=32}
+  - delay 5
+  - message{m=<caster.var.rankMap.keys>} @PIR{r=32}
+  - delay 5
+  - message{m=<caster.var.rankMap.values>} @PIR{r=32}
 
 #Usage  
 #Skills:
@@ -146,7 +151,6 @@ Generic_Enemy_MCLove32_DAMAGED_Player_PutAdd:
   - setVar{k=skill.tempDMG;a="<skill.var.dmg|0>";t=DOUBLE} @self ?varset{k=caster.rankMap} ?!vareq{k=skill.bool;v="true"} #init
   - subVar{k=caster.rankMap;a="<skill.var.name>"} @self #remove
   - addVar{k=caster.rankMap;a="<skill.var.name>=<skill.var.tempDMG>"} @self
-
 
 #Usage  
 #Skills:
