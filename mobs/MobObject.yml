@@ -1,7 +1,8 @@
 Azuriter_バサモスサンド_幻1:
   Template: Azuriter_Enemy_Base
+  Display: "<#dac469>&l幻&R"
   Type: CAMEL
-  Health: 80
+  Health: 40
   Damage: 20
   Armor: 100
   DamageModifiers:
