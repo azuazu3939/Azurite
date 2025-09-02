@@ -89,11 +89,11 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - o{
-    r=15;vr=1;hr=1.25;hp=false;hnp=true;d=600;i=1;oy=3;p=360;sp=0;hitself=true;c=1;
+    r=15;vr=1;hr=1.25;hp=false;hnp=true;d=600;oy=3;p=360;sp=0;hitself=true;c=1;
     b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
     auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T1;
     ot=[
-      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025} @self
+      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
     ];
     oh=[
       - e:p{p=cloud;a=20;ys=1;hs=2;s=2} 
@@ -115,22 +115,22 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
       - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=32}
     ]} @self
   - o{
-    r=15;vr=1;hr=1.25;hp=false;hnp=true;d=600;i=1;oy=3;p=360;sp=120;hitself=true;c=1;
+    r=15;vr=1;hr=1.25;hp=false;hnp=true;d=600;oy=3;p=360;sp=120;hitself=true;c=1;
     b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
     auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T2;
     ot=[
-      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025} @self
+      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
     ];
     oh=[
       - healpercent{m=0.2}
       - e:p{p=heart;a=20;ys=2;hs=3;size=2;s=1}
     ]} @self
   - o{
-    r=15;vr=1;hr=1.25;hp=false;hnp=true;d=600;i=1;oy=3;p=360;sp=240;hitself=true;c=1;
+    r=15;vr=1;hr=1.25;hp=false;hnp=true;d=600;oy=3;p=360;sp=240;hitself=true;c=1;
     b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
     auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T3;
     ot=[
-      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025} @self
+      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
     ];
     oh=[
       - potion{t=RESISTANCE;l=1;d=1200;p=false} 
