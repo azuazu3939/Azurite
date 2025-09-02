@@ -153,9 +153,7 @@ Generic_Enemy_MCLove32_DAMAGED_Player_PutAdd:
 #
 Generic_Enemy_MCLove32_Foreach:
   Skills:
-  - setVar{k=skill.bool;a="true";t=STRING} @self ?vareq{v=skill.name;v="<skill.key>"}
-  - message{m=<skill.key>} @PIR{r=32}
-  - message{m=<skill.var.name>} @PIR{r=32}
+  - setVar{k=skill.bool;a="true";t=STRING} @self ?vareq{k=skill.name;v="<skill.key>"}
 
 #Usage  
 #Skills:
