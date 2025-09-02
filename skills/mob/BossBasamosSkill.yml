@@ -27,11 +27,11 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1:
 OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Run:
   Skills:
   - setVar{k=skill.basamos;a="<skill.var.basamos|0> + 4";t=INTEGER} @self
-  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process{ho="<skill.var.basamos>"}
-  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process{ho="<skill.var.basamos> + 120"}
-  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process{ho="<skill.var.basamos> + 240"} 
+  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process1{ho=<skill.var.basamos>}
+  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process2{ho=<skill.var.basamos>}
+  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3{ho=<skill.var.basamos>} 
 
-OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process:
+OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process1:
   Skills:
   - projectile{
     ot=[
@@ -44,4 +44,34 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process:
       - e:p{p=explosion_emitter;a=8;size=2;s=1;ys=1;hs=1} @origin 
     ];
     v=4;i=1;se=false;d=200;
-    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho=<skill.ho>} @TL
+    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho="<skill.ho> + 0"} @TL
+
+OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process2:
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=cloud;a=2;ys=1;hs=0.25} @origin 
+    ];
+    oh=[
+      - damage{a="<skill.var.dmg>";pi=true;ii=true}
+    ];
+    oe=[
+      - e:p{p=explosion_emitter;a=8;size=2;s=1;ys=1;hs=1} @origin 
+    ];
+    v=4;i=1;se=false;d=200;
+    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho="<skill.ho> + 120"} @TL
+
+OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3:
+  Skills:
+  - projectile{
+    ot=[
+      - e:p{p=cloud;a=2;ys=1;hs=0.25} @origin 
+    ];
+    oh=[
+      - damage{a="<skill.var.dmg>";pi=true;ii=true}
+    ];
+    oe=[
+      - e:p{p=explosion_emitter;a=4;size=2;s=1;ys=1;hs=1} @origin 
+    ];
+    v=4;i=1;se=false;d=200;
+    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho="<skill.ho> + 240"} @TL
