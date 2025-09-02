@@ -94,6 +94,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
     auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T1;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
+      - delay 2
       - removeaura{n=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T1} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻楼1;r=2;amount=0}
     ];
     oh=[
@@ -121,6 +122,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
     auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T2;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
+      - delay 2
       - removeaura{n=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T2} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻楼1;r=2;amount=0}
     ];
     oh=[
@@ -133,6 +135,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
     auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T3;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
+      - delay 2
       - removeaura{n=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T3} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻楼1;r=2;amount=0}
     ];
     oh=[
