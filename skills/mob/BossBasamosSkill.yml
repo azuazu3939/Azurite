@@ -9,11 +9,79 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK:
   - removetag{t=CHARGE} ?night 
   - randomskill{s=
     OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1,
-    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2,
-    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3;
-    fbs=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1} @self
+    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2;
+    fbs=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_0;
+    repeat=2;repeati=10} @self
   - delay <random.150to220>
   - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK} @T
+
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_0:
+  Cooldown: 15
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  Skills:
+  - addtag{t=ATTACK} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
+  - skill:Generic_Enemy_MCLove32_BUFF @self
+  - o{
+    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=0;hitself=true;c=1;
+    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
+    auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T1;
+    ot=[
+      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
+      - delay 2
+      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T1} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=0}
+    ];
+    oh=[
+      - e:p{p=cloud;a=50;ys=1;hs=2;s=1} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=12}
+      - delay 2
+      - e:p{p=cloud;a=80;ys=1.25;hs=4;s=1} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=16}
+      - delay 2
+      - e:p{p=cloud;a=120;ys=1.5;hs=6;s=1} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=20}
+      - delay 2
+      - e:p{p=cloud;a=180;ys=1.75;hs=8;s=1} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=24}
+      - delay 2
+      - e:p{p=cloud;a=250;ys=2;hs=10;s=1} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=28}
+      - delay 2
+      - e:p{p=cloud;a=350;ys=2.25;hs=12;s=1} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=32}
+    ]} @self
+  - o{
+    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=120;hitself=true;c=1;
+    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
+    auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T2;
+    ot=[
+      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
+      - delay 2
+      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T2} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=0}
+    ];
+    oh=[
+      - healpercent{m=0.2}
+      - e:p{p=heart;a=20;ys=2;hs=3;size=2;s=1}
+    ]} @self
+  - o{
+    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=240;hitself=true;c=1;
+    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
+    auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T3;
+    ot=[
+      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
+      - delay 2
+      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T3} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=0}
+    ];
+    oh=[
+      - potion{t=RESISTANCE;l=1;d=1200;p=false} 
+      - potion{t=GLOWING;l=0;d=1200;p=false}
+      - e:p{p=crit_magic;a=15;size=2;ys=2;hs=4;repeat=29;repeati=40}
+    ]} @self
+  - delay 200
+  - removetag{t=ATTACK} @self
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1:
   Cooldown: 1
@@ -82,74 +150,6 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process3:
     ho="240 + <caster.var.attackHO>"}
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
-  Cooldown: 25
-  Conditions:
-  - incombat
-  - hasTag{t=DOWN} false
-  - hasTag{t=ATTACK} false 
-  Skills:
-  - addtag{t=ATTACK} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
-  - skill:Generic_Enemy_MCLove32_BUFF @self
-  - o{
-    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=0;hitself=true;c=1;
-    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
-    auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T1;
-    ot=[
-      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
-      - delay 2
-      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T1} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=0}
-    ];
-    oh=[
-      - e:p{p=cloud;a=50;ys=1;hs=2;s=1} 
-      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=12}
-      - delay 2
-      - e:p{p=cloud;a=80;ys=1.25;hs=4;s=1} 
-      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=16}
-      - delay 2
-      - e:p{p=cloud;a=120;ys=1.5;hs=6;s=1} 
-      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=20}
-      - delay 2
-      - e:p{p=cloud;a=180;ys=1.75;hs=8;s=1} 
-      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=24}
-      - delay 2
-      - e:p{p=cloud;a=250;ys=2;hs=10;s=1} 
-      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=28}
-      - delay 2
-      - e:p{p=cloud;a=350;ys=2.25;hs=12;s=1} 
-      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=32}
-    ]} @self
-  - o{
-    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=120;hitself=true;c=1;
-    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
-    auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T2;
-    ot=[
-      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
-      - delay 2
-      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T2} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=0}
-    ];
-    oh=[
-      - healpercent{m=0.2}
-      - e:p{p=heart;a=20;ys=2;hs=3;size=2;s=1}
-    ]} @self
-  - o{
-    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=240;hitself=true;c=1;
-    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
-    auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T3;
-    ot=[
-      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
-      - delay 2
-      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T3} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=0}
-    ];
-    oh=[
-      - potion{t=RESISTANCE;l=1;d=1200;p=false} 
-      - potion{t=GLOWING;l=0;d=1200;p=false}
-      - e:p{p=crit_magic;a=15;size=2;ys=2;hs=4;repeat=29;repeati=40}
-    ]} @self
-  - delay 200
-  - removetag{t=ATTACK} @self
-
-OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3:
   Cooldown: 3
   Conditions:
   - incombat
