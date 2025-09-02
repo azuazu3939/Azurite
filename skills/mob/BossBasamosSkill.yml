@@ -21,7 +21,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1:
   - setVar{var=skill.dmg;val="(<caster.damage> + 1) / 2";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - setVar{k=caster.attackHO;a="0";t=INTEGER} @self
-  - meta{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run;repeat=44;repeati=20} @self
+  - meta{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run;repeat=59;repeati=10} @self
 
 OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run:
   Skills:
