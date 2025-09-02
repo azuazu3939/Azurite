@@ -72,7 +72,7 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3:
       - damage{a="<skill.var.dmg>";pi=true;ii=true}
     ];
     oe=[
-      - e:p{p=explosion_emitter;a=4;size=2;s=1;ys=1;hs=1} @origin 
+      - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @origin 
     ];
     v=7;i=1;se=false;d=200;syo=2;sfo=3;
     b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho="240 + <caster.var.attackHO>"}

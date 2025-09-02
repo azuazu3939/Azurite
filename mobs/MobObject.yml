@@ -5,7 +5,7 @@ Azuriter_バサモスサンド_Bleeze:
   Damage: 20
   Options:
     MaxCombatDistance: 0
-    Scale: 0.75
+    Scale: 1
     Collidable: false
     FollowRange: 0
   Skills:

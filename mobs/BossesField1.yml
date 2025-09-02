@@ -156,7 +156,7 @@ Azuriter_Boss_Wedler:
 Azuriter_Boss_Basamos:
   Template: Azuriter_Enemy_RaidBoss_Base
   Display: "<#dac469>&l咆哮獣バサモス&R"
-  Type: CAMEL
+  Type: zombie
   Health: 23745
   Armor: 135
   Damage: 17
@@ -164,12 +164,12 @@ Azuriter_Boss_Basamos:
   - money 30to50 1
   Options:
     Silent: true 
-    Scale: 2
-    MovementSpeed: 0.175
+    MovementSpeed: 0.25
     Collidable: false
     KnockbackResistance: 1
     MaxCombatDistance: 32
     FollowRange: 16
+  Disguise: CAMEL setScale 2
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
