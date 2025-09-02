@@ -30,11 +30,12 @@ Azuriter_バサモスサンド_幻楼1:
     MaxCombatDistance: 48
     PassthroughDamage: false
     Despawn: CHUNK
+    LockPitch: true
     Scale: 2
     Glowing: true
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=120} @self ~onSpawn
-  - remove{delay=1300} @self ~onSpawn 
   - e:pl{p=crit_magic;ys=0.25;hs=0.25;a=2;size=1;repeat=599;repeati=2;tyo=3.25;syo=2.75} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDespawn 
+  - message{m="<skill.var.damage-amount>"} @PIR{r=32} ~onDamaged 
