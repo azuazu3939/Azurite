@@ -32,7 +32,7 @@ Azuriter_ファイアバレットボウ:
     Version: 1
   Attributes:
     MainHand:
-      Damage: 36 ADD 
+      Damage: 32 ADD 
       MovementSpeed: 0.4 MULTIPLY_BASE
       Health: -0.2 MULTIPLY_BASE
   Group: 'Range-Weapon'
