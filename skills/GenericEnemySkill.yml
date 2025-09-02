@@ -122,9 +122,9 @@ Generic_Enemy_MCLove32_DAMAGED:
   - skill{s=Generic_Enemy_MCLove32_DAMAGED_Player_PutAdd} @self
   - message{m=<caster.var.rankMap>} @PIR{r=32}
   - delay 5
-  - message{m=<caster.var.rankMap.keys>} @PIR{r=32}
+  - message{m=<caster.var.rankMap.value>} @PIR{r=32}
   - delay 5
-  - message{m=<caster.var.rankMap.values>} @PIR{r=32}
+  - message{m=<caster.var.rankMap.size>} @PIR{r=32}
 
 #Usage  
 #Skills:
