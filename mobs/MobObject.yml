@@ -1,9 +1,9 @@
-Azuriter_バサモスサンド_Bleeze:
+Azuriter_バサモスサンド_幻1:
   Template: Azuriter_Enemy_Base
   Type: CAMEL
-  Health: 999999999
+  Health: 80
   Damage: 20
-  Armor: 130
+  Armor: 100
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -11,6 +11,5 @@ Azuriter_バサモスサンド_Bleeze:
     MaxCombatDistance: 48
     Scale: 1
   Skills:
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=130} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=100} @self ~onSpawn
   - remove{delay=400} @self ~onSpawn 
-  - remove @self ~onDamaged 

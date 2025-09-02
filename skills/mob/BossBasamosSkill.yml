@@ -7,7 +7,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK:
   Skills:
   - addtag{t=CHARGE} ?!night 
   - removetag{t=CHARGE} ?night 
-  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1} @self
+  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2} @self
   - delay <random.20to100>
   - delay 200
   - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK} @T
@@ -17,21 +17,17 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1:
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
-  - hasTag{t=ATTACK} false 
   Skills:
-  - addtag{t=ATTACK} @self
-  - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
+  - setVar{var=skill.dmg;val="(<caster.damage> + 1) / 2";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - setVar{k=caster.attackHO;a="0";t=INTEGER} @self
   - meta{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run;repeat=29;repeati=20} @self
-  - delay 60
-  - removetag{t=ATTACK} @self
 
 OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run:
   Skills:
-  - meta:OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process1 @forward{lockpitch=true;y=2}
-  - meta:OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process2 @forward{lockpitch=true;y=2}
-  - meta:OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process3 @forward{lockpitch=true;y=2} 
+  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process1;f=true} @forward{lockpitch=true;y=2}
+  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process2;f=true} @forward{lockpitch=true;y=2}
+  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process3;f=true} @forward{lockpitch=true;y=2} 
   - setVar{k=caster.attackHO;a="<caster.var.attackHO> + 45";t=INTEGER} @self
 
 OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process1:
@@ -40,13 +36,14 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process1:
     ot=[
       - e:p{p=cloud;a=2;ys=1;hs=0.25} @origin 
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
+      - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self
     ];
     oe=[
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
       - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=4}
     ];
     v=5;i=1;d=200;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=32;
-    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;bmd=true;
+    b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho=<caster.var.attackHO>} 
 
 OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process2:
@@ -55,13 +52,14 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process2:
     ot=[
       - e:p{p=cloud;a=2;ys=1;hs=0.25} @origin 
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
+      - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self
     ];
     oe=[
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
       - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=4}
     ];
     v=5;i=1;d=200;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=32;
-    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;bmd=true;
+    b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho="120 + <caster.var.attackHO>"}
 
 OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process3:
@@ -70,11 +68,23 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process3:
     ot=[
       - e:p{p=cloud;a=2;ys=1;hs=0.25} @origin 
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
+      - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self
     ];
     oe=[
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
       - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=4}
     ];
     v=5;i=1;d=200;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=32;
-    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;bmd=true;
+    b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho="240 + <caster.var.attackHO>"}
+
+OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
+  Cooldown: 1
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  Skills:
+  - addtag{t=ATTACK} @self
+  - delay 200
+  - removetag{t=ATTACK} @self
