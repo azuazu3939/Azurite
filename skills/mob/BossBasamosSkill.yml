@@ -27,6 +27,8 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1:
   - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process2{repeat=29;repeati=4} @forward{lockpitch=true;y=2}
   - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3{repeat=29;repeati=4} @forward{lockpitch=true;y=2} 
   - meta{s=OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Run;repeat=29;repeati=4} @self
+  - delay 120
+  - removetag{t=ATTACK} @self
 
 OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Run:
   Skills:

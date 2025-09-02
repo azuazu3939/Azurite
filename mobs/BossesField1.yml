@@ -156,7 +156,6 @@ Azuriter_Boss_Wedler:
 Azuriter_Boss_Basamos:
   Template: Azuriter_Enemy_RaidBoss_Base
   Display: "<#dac469>&l咆哮獣バサモス&R"
-  Type: zombie
   Health: 23745
   Armor: 135
   Damage: 17
@@ -165,7 +164,6 @@ Azuriter_Boss_Basamos:
   Options:
     Silent: true 
     MovementSpeed: 0.25
-    Collidable: false
     KnockbackResistance: 1
     MaxCombatDistance: 32
     FollowRange: 16
@@ -218,9 +216,7 @@ Azuriter_Boss_Basamos:
   #- cmd{c="mlgo <target.name> Azuriter_風牙狼の牙 1 0.35";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   #- cmd{c="mlgo <target.name> Azuriter_風牙狼の皮 1 0.7";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
   - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  
-  - remove @child ~onDespawn 
-  - remove @child ~onDeath 
+
   
   #- skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1} @self ~onSignal:raid_boss_skill1
   #- skill{s=OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2} @self ~onSignal:raid_boss_skill2

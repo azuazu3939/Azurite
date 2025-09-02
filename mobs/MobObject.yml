@@ -6,7 +6,6 @@ Azuriter_バサモスサンド_Bleeze:
   Options:
     MaxCombatDistance: 0
     Scale: 1
-    Collidable: false
     FollowRange: 0
   Skills:
   - remove{delay=400} @self ~onSpawn 
