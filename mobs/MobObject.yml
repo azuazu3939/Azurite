@@ -34,6 +34,6 @@ Azuriter_バサモスサンド_幻楼1:
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=100} @self ~onSpawn
   - remove{delay=1300} @self ~onSpawn 
-  - effect:enderbeam{d=1250;y=2.5} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
+  - e:pl{p=crit_magic;ys=0.25;hs=0.25;a=2;size=2;repeat=599;repeati=2} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath
   - damage{a=1} @EIR{r=3;sort=NEAREST;limit=1;ignore=self;l=false} ~onDeath
