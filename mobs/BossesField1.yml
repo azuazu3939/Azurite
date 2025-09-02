@@ -156,9 +156,9 @@ Azuriter_Boss_Wedler:
 Azuriter_Boss_Basamos:
   Template: Azuriter_Enemy_RaidBoss_Base_Attack
   Display: "<#dac469>&l咆哮獣バサモス&R"
-  Health: 23745
+  Health: 24745
   Armor: 135
-  Damage: 17
+  Damage: 19
   Drops:
   - money 30to50 1
   Options:
