@@ -27,10 +27,10 @@ Azuriter_バサモスサンド_幻楼1:
   - FALL 0
   Options:
     MaxCombatDistance: 48
-    Scale: 1.5
+    Scale: 2
     Glowing: true
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=40} @self ~onSpawn
   - remove{delay=1300} @self ~onSpawn 
-  - e:beam{d=1250;tyo=1;delay=1} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
+  - effect:enderbeam{d=1250;y=3} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath 
