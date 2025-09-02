@@ -4,6 +4,9 @@ Azuriter_バサモスサンド_Bleeze:
   Health: 999999999
   Damage: 20
   Armor: 200
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
   Options:
     MaxCombatDistance: 32
     PassthroughDamage: true
