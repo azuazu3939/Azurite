@@ -184,7 +184,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   - message{m="n3"} @PIR{r=32}
   - delay 10
   - foreachvalue{s=Generic_Enemy_MCLove32_SHOW_RANKING_SortList;v=<caster.var.rankMap>} @self ?varset{k=caster.rankMap} 
-  - setVar{k=skill.sortList;a=<skill.var.sortL.sortnum.tostring>;t=LIST} @self ?varset{k=caster.rankMap} 
+  - setVar{k=skill.sortList;a=<skill.var.sortL.sortnum>;t=LIST} @self ?varset{k=caster.rankMap} 
 
   - message{m="n2"} @PIR{r=32}
   - delay 10
@@ -219,7 +219,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_SortList:
   Skills:
-  - setVar{k=skill.sortL;v=<skill.value>;t=LIST} @self ?!varset{k=skill.sortL}
+  - setVar{k=skill.sortL;a="0,<skill.value>";t=LIST} @self ?!varset{k=skill.sortL}
   - addVar{k=skill.sortL;a=<skill.value>} @self ?varset{k=skill.sortL}
 
 #
