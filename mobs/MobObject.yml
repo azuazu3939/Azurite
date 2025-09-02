@@ -1,6 +1,6 @@
 Azuriter_バサモスサンド_幻1:
   Template: Azuriter_Enemy_Base
-  Display: "<#dac469>&l幻&R"
+  Display: "<#dac469>&l幻体&R"
   Type: CAMEL
   Health: 60
   Damage: 20
@@ -19,9 +19,9 @@ Azuriter_バサモスサンド_幻1:
   - e:p{p=explosion_emitter;a=2;size=0.5;s=1;ys=1;hs=1} @self ~onDespawn 
   - remove @self ~onInteract 
 
-Azuriter_バサモスサンド_幻楼1:
+Azuriter_バサモスサンド_幻想1:
   Template: Azuriter_Enemy_Base
-  Display: "<#dac469>&l幻楼&R"
+  Display: "<#dac469>&l幻想体&R"
   Type: CAMEL
   Health: 3000
   Damage: 20

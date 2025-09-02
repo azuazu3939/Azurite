@@ -1,4 +1,4 @@
-OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK:
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK:
   Conditions:
   - incombat
   TargetConditions:
@@ -7,12 +7,15 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK:
   Skills:
   - addtag{t=CHARGE} ?!night 
   - removetag{t=CHARGE} ?night 
-  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2} @self
-  - delay <random.20to100>
-  - delay 600
-  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK} @T
+  - randomskill{s=
+    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1,
+    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2,
+    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3;
+    fbs=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1} @self
+  - delay <random.150to220>
+  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK} @T
 
-OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1:
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1:
   Cooldown: 1
   Conditions:
   - incombat
@@ -21,16 +24,16 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1:
   - setVar{var=skill.dmg;val="(<caster.damage> + 1) / 2";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - setVar{k=caster.attackHO;a="0";t=INTEGER} @self
-  - meta{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run;repeat=9;repeati=10} @self
+  - meta{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Run;repeat=9;repeati=10} @self
 
-OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run:
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Run:
   Skills:
-  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process1;f=true} @forward{lockpitch=true;y=2}
-  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process2;f=true} @forward{lockpitch=true;y=2}
-  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process3;f=true} @forward{lockpitch=true;y=2} 
+  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process1;f=true} @forward{lockpitch=true;y=2}
+  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process2;f=true} @forward{lockpitch=true;y=2}
+  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process3;f=true} @forward{lockpitch=true;y=2} 
   - setVar{k=caster.attackHO;a="<caster.var.attackHO> + 20";t=INTEGER} @self
 
-OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process1:
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process1:
   Skills:
   - projectile{
     ot=[
@@ -46,7 +49,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process1:
     b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho=<caster.var.attackHO>} 
 
-OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process2:
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process2:
   Skills:
   - projectile{
     ot=[
@@ -62,7 +65,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process2:
     b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho="120 + <caster.var.attackHO>"}
 
-OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process3:
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process3:
   Skills:
   - projectile{
     ot=[
@@ -78,7 +81,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process3:
     b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho="240 + <caster.var.attackHO>"}
 
-OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
   Cooldown: 25
   Conditions:
   - incombat
@@ -90,12 +93,12 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - o{
     r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=0;hitself=true;c=1;
-    b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
-    auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T1;
+    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
+    auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T1;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
       - delay 2
-      - removeaura{n=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T1} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻楼1;r=2;amount=0}
+      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T1} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=0}
     ];
     oh=[
       - e:p{p=cloud;a=50;ys=1;hs=2;s=1} 
@@ -118,12 +121,12 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
     ]} @self
   - o{
     r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=120;hitself=true;c=1;
-    b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
-    auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T2;
+    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
+    auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T2;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
       - delay 2
-      - removeaura{n=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T2} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻楼1;r=2;amount=0}
+      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T2} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=0}
     ];
     oh=[
       - healpercent{m=0.2}
@@ -131,12 +134,12 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
     ]} @self
   - o{
     r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=240;hitself=true;c=1;
-    b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
-    auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T3;
+    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
+    auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T3;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
       - delay 2
-      - removeaura{n=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T3} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻楼1;r=2;amount=0}
+      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T3} @self ?mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=0}
     ];
     oh=[
       - potion{t=RESISTANCE;l=1;d=1200;p=false} 
@@ -144,4 +147,32 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
       - e:p{p=crit_magic;a=15;size=2;ys=2;hs=4;repeat=29;repeati=40}
     ]} @self
   - delay 200
+  - removetag{t=ATTACK} @self
+
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3:
+  Cooldown: 3
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  Skills:
+  - addtag{t=ATTACK} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
+  - skill:Generic_Enemy_MCLove32_BUFF @self
+  - look{fp=true;repeat=24;repeati=1} @T
+  - projectile{
+    ot=[
+      - e:p{p=explosion;a=1;size=1.5;delay=2} @origin 
+    ];
+    os=[
+      - modifyprojectile{t=VELOCITY;a=SET;v=25;delay=35} @self
+    ];
+    oe=[
+      - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=5}
+      - throw{v=15;yv=4} @PNO{r=5}
+      - e:p{p=explosion_huge;a=1} @origin
+    ];
+    b=DISPLAY;mat=RED_SANDSTONE;rs=1;ps=1;ys=1;syo=3.5;tyo=2;
+    v=0.1;i=2;vr=1;hr=1} @T
+  - delay 75
   - removetag{t=ATTACK} @self

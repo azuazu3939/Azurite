@@ -9,7 +9,7 @@ Azuriter_L_ガーディア_Full:
   - cancelEvent{sync=true} @self 0.15
   - potion{t=RESISTANCE;l=0;d=600;p=false} @self
   - potion{t=REGENERATION;l=1;d=600;p=false} @self
-  - potion{t=SPEED;l=9;d=600;p=false} @self
+  - potion{t=SPEED;l=5;d=600;p=false} @self
   
 Azuriter_L_ガーディア_Full_Damage:
   Cooldown: 0.5
@@ -25,7 +25,6 @@ Azuriter_L_ガーディア_Full_Damage:
   - sudoskill{
     s=[
       - threat{m=add;a="<caster.damage> * 20"} @trigger 
-      - message{m="<target.threat>"} @trigger{}
     ];cat=true} @trigger
   - potion{t=RESISTANCE;l=1;d=150;p=false} @PIR{r=32}
   - setVar{k=caster.tank_job;a="<caster.var.tank_job|0> + 1";t=INTEGER} @self
