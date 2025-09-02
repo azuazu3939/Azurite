@@ -12,7 +12,7 @@ Azuriter_Boss_Feldos:
     Scale: 3
     MovementSpeed: 0.25
     KnockbackResistance: 1
-    MaxCombatDistance: 20
+    MaxCombatDistance: 32
     FollowRange: 10
     Adult: true
     ImmuneToZombification: true
@@ -88,7 +88,7 @@ Azuriter_Boss_Wedler:
     Scale: 3.5
     MovementSpeed: 0.275
     KnockbackResistance: 1
-    MaxCombatDistance: 20
+    MaxCombatDistance: 32
     FollowRange: 10
   DamageModifiers:
   - SUFFOCATION 0
@@ -164,10 +164,10 @@ Azuriter_Boss_Basamos:
   - money 30to50 1
   Options:
     Silent: true 
-    Scale: 2.5
-    MovementSpeed: 0.275
+    Scale: 2
+    MovementSpeed: 0.225
     KnockbackResistance: 1
-    MaxCombatDistance: 20
+    MaxCombatDistance: 32
     FollowRange: 16
   DamageModifiers:
   - SUFFOCATION 0
