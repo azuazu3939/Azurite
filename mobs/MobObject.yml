@@ -20,9 +20,9 @@ Azuriter_バサモスサンド_幻楼1:
   Template: Azuriter_Enemy_Base
   Display: "<#dac469>&l幻楼&R"
   Type: CAMEL
-  Health: 1200
+  Health: 3000
   Damage: 20
-  Armor: 100
+  Armor: 120
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -32,8 +32,8 @@ Azuriter_バサモスサンド_幻楼1:
     Scale: 2
     Glowing: true
   Skills:
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=100} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=120} @self ~onSpawn
   - remove{delay=1300} @self ~onSpawn 
   - e:pl{p=crit_magic;ys=0.25;hs=0.25;a=2;size=1;repeat=599;repeati=2;tyo=3.25;syo=2.75} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath
-  - damage{a=1} @EIR{r=3;sort=NEAREST;limit=1;ignore=self;l=false} ~onDeath
+  - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDespawn 
