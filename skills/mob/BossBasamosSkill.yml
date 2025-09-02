@@ -21,14 +21,14 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1:
   - setVar{var=skill.dmg;val="(<caster.damage> + 1) / 2";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - setVar{k=caster.attackHO;a="0";t=INTEGER} @self
-  - meta{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run;repeat=29;repeati=20} @self
+  - meta{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run;repeat=44;repeati=20} @self
 
 OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run:
   Skills:
   - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process1;f=true} @forward{lockpitch=true;y=2}
   - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process2;f=true} @forward{lockpitch=true;y=2}
   - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process3;f=true} @forward{lockpitch=true;y=2} 
-  - setVar{k=caster.attackHO;a="<caster.var.attackHO> + 45";t=INTEGER} @self
+  - setVar{k=caster.attackHO;a="<caster.var.attackHO> + 20";t=INTEGER} @self
 
 OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process1:
   Skills:
