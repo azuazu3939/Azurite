@@ -24,8 +24,9 @@ Azuriter_L_ガーディア_Full_Damage:
   Skills:
   - sudoskill{
     s=[
-      - threat{m=top} @self
-      - threat{m=add;a=5000;delay=1} @self
+      - threat{m=add;a=5000} @self
+      - message{m="a"} @self
+      - message{m="b"} @trigger 
     ];cat=true} @trigger
   - potion{t=RESISTANCE;l=1;d=150;p=false} @PIR{r=32}
   - setVar{k=caster.tank_job;a="<caster.var.tank_job|0> + 1";t=INTEGER} @self
