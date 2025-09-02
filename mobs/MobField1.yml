@@ -21,9 +21,7 @@ Azuriter_Neutral_Zombie:
   - cmd{c="mlgo <target.name> Azuriter_白マテリア 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath ?!day
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=10} @self ~onSpawn 
   - attribute{attr=GENERIC_ARMOR;a=20} @self ~onSpawn ?!day
-  - attribute{attr=GENERIC_ARMOR;a=10} @self ~onSpawn ?day
-  - skill{s=Azuriter_DayMaterial_Remove} @self ~onSpawn
-  - skill{s=Azuriter_DayMaterial_Remove} @self ~onEntercombat    
+  - attribute{attr=GENERIC_ARMOR;a=10} @self ~onSpawn ?day  
   - skill{s=Azuriter_DayMaterial_NoDay} @self ~onSpawn 0.1
   - skill{s=Azuriter_DayMaterial_NoDay_Drop} @self ~onDeath 
   - potion{t=STRENGTH;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
@@ -58,9 +56,7 @@ Azuriter_Big_Zombie:
   - attribute{attr=GENERIC_ARMOR;a=25} @self ~onSpawn ?!day
   - attribute{attr=GENERIC_ARMOR;a=15} @self ~onSpawn ?day
   - skill{s=Azuriter_DayMaterial_NoDay} @self ~onSpawn 0.15
-  - skill{s=Azuriter_DayMaterial_NoDay_Drop} @self ~onDeath 
-  - skill{s=Azuriter_DayMaterial_Remove} @self ~onSpawn
-  - skill{s=Azuriter_DayMaterial_Remove} @self ~onEntercombat     
+  - skill{s=Azuriter_DayMaterial_NoDay_Drop} @self ~onDeath    
   - potion{t=STRENGTH;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
   - potion{t=SPEED;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
   - potion{t=SPEED;d=99999999;l=1;p=true;a=true} @EIR{r=20;ignore=players} ~onEntercombat 
@@ -132,9 +128,7 @@ Azuriter_High_Zombie:
   - cmd{c="mlgo <target.name> Azuriter_黒マテリア 1 0.02"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath ?day
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=40} @self ~onSpawn 
   - skill{s=Azuriter_DayMaterial_Day} @self ~onSpawn 0.1
-  - skill{s=Azuriter_DayMaterial_Day_Drop} @self ~onDeath 
-  - skill{s=Azuriter_DayMaterial_Remove} @self ~onSpawn
-  - skill{s=Azuriter_DayMaterial_Remove} @self ~onEntercombat   
+  - skill{s=Azuriter_DayMaterial_Day_Drop} @self ~onDeath  
   - attribute{attr=GENERIC_ARMOR;a=50} @self ~onSpawn ?!day
   - attribute{attr=GENERIC_ARMOR;a=30} @self ~onSpawn ?day
   - potion{t=STRENGTH;d=99999999;l=1;p=true;a=true} @self ~onSpawn ?!day
