@@ -22,14 +22,13 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1:
   - addtag{t=ATTACK} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
-  - meta{s=OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Run;repeat=29;repeati=4} @self
+  - meta{s=OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Run} @self
 
 OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Run:
   Skills:
-  - setVar{k=skill.basamos;a="<skill.var.basamos|0> + 4";t=INTEGER} @self
-  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process1{ho=<skill.var.basamos>}
-  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process2{ho=<skill.var.basamos>}
-  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3{ho=<skill.var.basamos>} 
+  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process1
+  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process2
+  - meta:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3 
 
 OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process1:
   Skills:
@@ -43,8 +42,8 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process1:
     oe=[
       - e:p{p=explosion_emitter;a=8;size=2;s=1;ys=1;hs=1} @origin 
     ];
-    v=4;i=1;se=false;d=200;
-    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho="<skill.ho> + 0"} @self
+    v=7;i=1;se=false;d=200;syo=0;sfo=1;
+    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho=0} @forward{lockpitch=true}
 
 OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process2:
   Skills:
@@ -58,8 +57,8 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process2:
     oe=[
       - e:p{p=explosion_emitter;a=8;size=2;s=1;ys=1;hs=1} @origin 
     ];
-    v=4;i=1;se=false;d=200;
-    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho="<skill.ho> + 120"} @self
+    v=7;i=1;se=false;d=200;syo=0;sfo=1;
+    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho=120} @forward{lockpitch=true}
 
 OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3:
   Skills:
@@ -73,5 +72,5 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process3:
     oe=[
       - e:p{p=explosion_emitter;a=4;size=2;s=1;ys=1;hs=1} @origin 
     ];
-    v=4;i=1;se=false;d=200;
-    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho="<skill.ho> + 240"} @self
+    v=7;i=1;se=false;d=200;syo=0;sfo=1;
+    b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho=240} @forward{lockpitch=true}
