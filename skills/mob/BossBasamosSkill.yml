@@ -113,6 +113,9 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
       - delay 2
       - e:p{p=cloud;a=350;ys=2.25;hs=12;s=1} 
       - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=32}
+    ];
+    stpcond=[
+      - mobsnearorigin{type=Azuriter_バサモスサンド_幻楼1;r=2;amount=0} true
     ]} @self
   - o{
     r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=120;hitself=true;c=1;
@@ -124,6 +127,9 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
     oh=[
       - healpercent{m=0.2}
       - e:p{p=heart;a=20;ys=2;hs=3;size=2;s=1}
+    ];
+    stpcond=[
+      - mobsnearorigin{type=Azuriter_バサモスサンド_幻楼1;r=2;amount=0} true
     ]} @self
   - o{
     r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=240;hitself=true;c=1;
@@ -131,11 +137,15 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
     auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T3;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
+      - 
     ];
     oh=[
       - potion{t=RESISTANCE;l=1;d=1200;p=false} 
       - potion{t=GLOWING;l=0;d=1200;p=false}
       - e:p{p=crit_magic;a=15;size=2;ys=2;hs=4;repeat=29;repeati=40}
+    ];
+    stpcond=[
+      - mobsnearorigin{type=Azuriter_バサモスサンド_幻楼1;r=2;amount=0} true
     ]} @self
   - delay 200
   - removetag{t=ATTACK} @self
