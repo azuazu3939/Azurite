@@ -177,16 +177,32 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   Skills:
-  - setVar{k=skill.sortList;a="<caster.var.rankMap.keys.values.sortnum>";t=List} @self ?varset{k=caster.rankMap} #map.values -> toList.sortNum 1...999...?
+  - setVar{k=skill.sortList;a="<caster.var.rankMap.keys.values.sortnum.todouble>";t=List} @self ?varset{k=caster.rankMap} #map.values -> toList.sortNum 1...999...?
   - setVar{k=skill.sortBool;a="<caster.var.rankMap.keys.contains.<skill.var.name>.tostring>";t=STRING} @self ?varset{k=caster.rankMap} #contains
   - setVar{k=skill.sortDMG;a="<caster.var.rankMap.get.<skill.var.name>.todouble>";t=DOUBLE} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} #get
-  - setVar{k=skill.sortRank;a="<skill.var.sortList.indexof.<skill.var.sortDMG>>";t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} #rank
+
+  - setVar{k=skill.size;a="<caster.var.rankMap.keys.size>";t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} #maxSize
+  - setVar{k=skill.count;a="0";t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} #count
+  - setVar{k=skill.value;a="0";t=STRING} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} #count rank
+  
+  - skill{s=Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Ranking} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} 
+  - setVar{k=skill.sortRank;a="<skill.var.sortList.indexof.<skill.var.count>>";t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} #rank
+
   - setVar{k=skill.delay;a="10 + <skill.var.sortRank>";t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} ?!varrange{k=skill.sortRank;r=>10} #delay
   - setVar{k=skill.player;a="<target.name>";t=STRING} @UniqueIdentifier{u=<skill.var.name>} ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} ?!varrange{k=skill.sortRank;r=>10} #playerName
   - delay <skill.var.delay|1>
   - message{m="&a&l<skill.var.sortRank>位 &6&l<skill.var.player> &f&lスコア &b<skill.var.sortDMG>"} @PIR{r=<skill.var.range>} ?varset{k=skill.player} ?varset{k=skill.delay} #msg
   - setVar{k=skill.reward;a="10 - <skill.var.sortRank>";t=INTEGER} @self
   - vskill{s=<skill.do>;f=false;repeat=<skill.var.reward>;repeati=1} @playerByName{n=<skill.var.player>} ?varset{k=skill.player} ?varset{k=skill.delay} #reward
+
+#
+Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return_Ranking:
+  Conditions:
+  - varrange{k=skill.count;r=<skill.var.size>} false 
+  - vareq{k=skill.value;v="<skill.var.sortDMG>"} false 
+  Skills:
+  - setVar{k=skill.value;a="<skill.var.sortList.get.<skill.var.count>.tostring>";t=STRING} @self
+  - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"}
 
 Generic_ターゲットランダムプレイヤー_MCLove32:
   Conditions:
