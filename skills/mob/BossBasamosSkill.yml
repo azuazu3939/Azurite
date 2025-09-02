@@ -7,7 +7,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK:
   Skills:
   - addtag{t=CHARGE} ?!night 
   - removetag{t=CHARGE} ?night 
-  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1} @self
+  - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2} @self
   - delay <random.20to100>
   - delay 600
   - skill{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK} @T
@@ -21,7 +21,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1:
   - setVar{var=skill.dmg;val="(<caster.damage> + 1) / 2";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - setVar{k=caster.attackHO;a="0";t=INTEGER} @self
-  - meta{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run;repeat=59;repeati=10} @self
+  - meta{s=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run;repeat=9;repeati=10} @self
 
 OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Run:
   Skills:
@@ -36,7 +36,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process1:
     ot=[
       - e:p{p=cloud;a=2;ys=1;hs=0.25} @origin 
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
-      - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self
+      - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.015";t=FLOAT} @self
     ];
     oe=[
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
@@ -52,7 +52,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process2:
     ot=[
       - e:p{p=cloud;a=2;ys=1;hs=0.25} @origin 
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
-      - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self
+      - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.015";t=FLOAT} @self
     ];
     oe=[
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
@@ -68,7 +68,7 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process3:
     ot=[
       - e:p{p=cloud;a=2;ys=1;hs=0.25} @origin 
       - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025} @self 
-      - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.025";t=FLOAT} @self
+      - setVar{var=skill.dmg;val="<skill.var.dmg> * 1.015";t=FLOAT} @self
     ];
     oe=[
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
@@ -79,12 +79,63 @@ OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_1_Process3:
     ho="240 + <caster.var.attackHO>"}
 
 OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2:
-  Cooldown: 1
+  Cooldown: 30
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
   - hasTag{t=ATTACK} false 
   Skills:
   - addtag{t=ATTACK} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
+  - skill:Generic_Enemy_MCLove32_BUFF @self
+  - o{
+    r=15;vr=1;hr=1.25;hp=false;hnp=true;d=600;i=1;oy=3;p=360;sp=0;hitself=true;
+    b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
+    auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T1;
+    ot=[
+      - modifyprojectile{t=RADIUS;a=MULTIPLY;v=0.995} @self
+    ];
+    oh=[
+      - e:p{p=cloud;a=20;ys=1;hs=2;s=2} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=12}
+      - delay 2
+      - e:p{p=cloud;a=30;ys=1.25;hs=4;s=3} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=16}
+      - delay 2
+      - e:p{p=cloud;a=40;ys=1.5;hs=6;s=4} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=20}
+      - delay 2
+      - e:p{p=cloud;a=50;ys=1.75;hs=8;s=5} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=24}
+      - delay 2
+      - e:p{p=cloud;a=60;ys=2;hs=10;s=6} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=28}
+      - delay 2
+      - e:p{p=cloud;a=70;ys=2.25;hs=12;s=7} 
+      - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=32}
+    ]} @self
+  - o{
+    r=15;vr=1;hr=1.25;hp=false;hnp=true;d=600;i=1;oy=3;p=360;sp=120;hitself=true;
+    b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
+    auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T2;
+    ot=[
+      - modifyprojectile{t=RADIUS;a=MULTIPLY;v=0.995} @self
+    ];
+    oh=[
+      - healpercent{m=0.2}
+      - e:p{p=heart;a=20;ys=2;hs=3;size=2;s=1}
+    ]} @self
+  - o{
+    r=15;vr=1;hr=1.25;hp=false;hnp=true;d=600;i=1;oy=3;p=360;sp=240;hitself=true;
+    b=MOB;mm=Azuriter_バサモスサンド_幻楼1;rd=true;
+    auraName=OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK_2T3;
+    ot=[
+      - modifyprojectile{t=RADIUS;a=MULTIPLY;v=0.995} @self
+    ];
+    oh=[
+      - potion{t=RESISTANCE;l=1;d=1200;p=false} 
+      - potion{t=GLOWING;l=0;d=1200;p=false}
+      - e:p{p=crit_magic;a=15;size=2;ys=2;hs=4;repeat=29;repeati=40}
+    ]} @self
   - delay 200
   - removetag{t=ATTACK} @self

@@ -157,8 +157,8 @@ Azuriter_Boss_Basamos:
   Template: Azuriter_Enemy_RaidBoss_Base_Attack
   Display: "<#dac469>&l幻楼獣バサモス&R"
   Health: 24745
-  Armor: 135
-  Damage: 19
+  Armor: 130
+  Damage: 22
   Drops:
   - money 30to50 1
   Options:
@@ -168,7 +168,7 @@ Azuriter_Boss_Basamos:
     MaxCombatDistance: 32
     PreventVanillaDamage: true
     FollowRange: 16
-  Disguise: camel setScale 2
+  Disguise: camel setScale 2.5
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
@@ -186,7 +186,7 @@ Azuriter_Boss_Basamos:
     Color: WHITE
     Style: SEGMENTED_12
   Skills:
-  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=135} @self ~onSpawn
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=130} @self ~onSpawn
   - attribute{attr=WAYPOINT_TRANSMIT_RANGE;a=256} @self ~onSpawn
   #- setVar{k=caster.1;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_1";t=STRING} @self ~onSpawn 
   #- setVar{k=caster.2;a="OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_2";t=STRING} @self ~onSpawn 
