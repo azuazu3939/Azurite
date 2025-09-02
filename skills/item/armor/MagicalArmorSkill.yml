@@ -12,7 +12,6 @@ Azuriter_L_マジカル_Skills:
   - potion{t=HASTE;l=2;d=300;p=false} @self
   - heal{a=6} @self
   - modifyMana{a=75} @self
-  - potion{t=NIGHT_VISION;l=0;d=500;p=false} @self
 
 Azuriter_L_ピュアマジカル_Skills:
   Cooldown: 5
@@ -25,7 +24,6 @@ Azuriter_L_ピュアマジカル_Skills:
   - potion{t=RESISTANCE;l=0;d=500;p=false} @self
   - potion{t=STRENGTH;l=1;d=500;p=false} @self
   - potion{t=REGENERATION;l=0;d=300;p=false} @self
-  - potion{t=NIGHT_VISION;l=0;d=500;p=false} @self
   - heal{a=10} @self
   - modifyMana{a=100} @self
 

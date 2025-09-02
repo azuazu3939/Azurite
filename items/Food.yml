@@ -4,3 +4,14 @@ Azuriter_ビギナーF:
   ItemUpdater:
     Version: 1
   Group: 'Food'
+
+Azuriter_ウルフード:
+  Id: cooked_mutton
+  Display: "&fウルフード"
+  Lore:
+  - "&f夜目に長ける能力を一時的に得る。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Food'
+  Skills:
+  - potion{t=NIGHT_VISION;l=0;d=36000;p=false} @self ~onConsume 
