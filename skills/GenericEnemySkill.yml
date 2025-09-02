@@ -177,7 +177,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo:
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   Skills:
-  - message{m="&a<caster.var.rankMap.values.tolist.sortnum.0.todouble>"} @PIR{r=32}
+  - message{m="&a<caster.var.rankMap.values.formatted>"} @PIR{r=32}
   - setVar{k=skill.sortList;a="<caster.var.rankMap.values.sortnum>";t=List} @self ?varset{k=caster.rankMap} #map.values -> toList.sortNum 1...999...?
   - setVar{k=skill.sortBool;a="<caster.var.rankMap.keys.contains.<skill.var.name>.tostring>";t=STRING} @self ?varset{k=caster.rankMap} #contains
   - setVar{k=skill.sortDMG;a="<caster.var.rankMap.get.<skill.var.name>.todouble>";t=DOUBLE} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"} #get
