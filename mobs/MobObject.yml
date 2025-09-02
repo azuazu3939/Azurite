@@ -29,6 +29,7 @@ Azuriter_バサモスサンド_幻楼1:
   Options:
     MaxCombatDistance: 48
     PassthroughDamage: false
+    Despawn: CHUNK
     Scale: 2
     Glowing: true
   Skills:
