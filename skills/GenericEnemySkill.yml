@@ -187,7 +187,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   - foreachvalue{s=Generic_Enemy_MCLove32_SHOW_RANKING_SortBool;v=<caster.var.rankMap>} @self ?varset{k=caster.rankMap} 
   - setVar{k=skill.sortBool;v="false";t=STRING} @self ?!varset{k=skill.sortBool}
 
-  - setVar{k=skill.sortDMG;a=<caster.var.rankMap.get.<skill.var.name>.todouble>;t=DOUBLE} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"}
+  - setVar{k=skill.sortDMG;a=<caster.var.rankMap.<skill.var.name>.todouble>;t=DOUBLE} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"}
 
   - setVar{k=skill.size;a=<caster.var.rankMap.size>;t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"}
   - setVar{k=skill.count;a=0;t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"}
