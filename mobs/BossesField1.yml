@@ -177,7 +177,7 @@ Azuriter_Boss_Basamos:
   #- nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
   AIGoalSelectors:
   - clear
-  - moveTowardsTarget 
+  - meleeAttack{}
   BossBar:
     Enabled: true
     Title: <caster.name>
