@@ -35,14 +35,13 @@ OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK_1_Process:
   Skills:
   - projectile{
     ot=[
-      - e:p{p=entity_effect;a=3;ys=1;hs=0.25} @origin 
-      - e:p{p=cloud;a=5;ys=1;hs=0.25} @origin 
+      - e:p{p=cloud;a=2;ys=1;hs=0.25} @origin 
     ];
     oh=[
       - damage{a="<skill.var.dmg>";pi=true;ii=true}
     ];
     oe=[
-      - e:p{p=explosion_emitter;a=10;size=2;s=1;ys=1;hs=1} @origin 
+      - e:p{p=explosion_emitter;a=8;size=2;s=1;ys=1;hs=1} @origin 
     ];
     v=4;i=1;se=false;d=200;
     b=MOB;mm=Azuriter_バサモスサンド_Bleeze;ho=<skill.ho>} @TL
