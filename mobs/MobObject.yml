@@ -3,9 +3,12 @@ Azuriter_バサモスサンド_Bleeze:
   Type: CAMEL
   Health: 999999999
   Damage: 20
+  Armor: 200
   Options:
-    MaxCombatDistance: 0
+    MaxCombatDistance: 32
+    PassthroughDamage: true
     Scale: 1
     FollowRange: 0
   Skills:
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=200} @self ~onSpawn
   - remove{delay=400} @self ~onSpawn 
