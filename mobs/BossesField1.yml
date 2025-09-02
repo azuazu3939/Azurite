@@ -154,7 +154,7 @@ Azuriter_Boss_Wedler:
   - message{m="<trigger.name>が、OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK_7を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill7
 
 Azuriter_Boss_Basamos:
-  Template: Azuriter_Enemy_RaidBoss_Base
+  Template: Azuriter_Enemy_RaidBoss_Base_Attack
   Display: "<#dac469>&l咆哮獣バサモス&R"
   Health: 23745
   Armor: 135
@@ -166,8 +166,9 @@ Azuriter_Boss_Basamos:
     MovementSpeed: 0.25
     KnockbackResistance: 1
     MaxCombatDistance: 32
+    PreventVanillaDamage: true
     FollowRange: 16
-  Disguise: villager setScale 2
+  Disguise: camel setScale 2
   DamageModifiers:
   - SUFFOCATION 0
   - FALL 0
