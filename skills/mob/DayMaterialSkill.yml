@@ -4,7 +4,7 @@ Azuriter_DayMaterial_Day:
   - day orelsecast Azuriter_DayMaterial_NoDay
   Skills:
   - glow{t=99999999;i=20;c=YELLOW;cod=false} @self
-  - aura{n=DayMaterial_Day;i=10;
+  - aura{n=DayMaterial_Day;i=10;t=99999999;
     ot=[
       - remove @self ?!day 
     ]} @self
@@ -22,7 +22,7 @@ Azuriter_DayMaterial_NoDay:
   Cooldown: 1
   Skills:
   - glow{t=99999999;i=20;color=DARK_PURPLE;cod=false} @self
-  - aura{n=DayMaterial_NoDay;i=10;
+  - aura{n=DayMaterial_NoDay;i=10;t=99999999;
     ot=[
       - remove @self ?day 
     ]} @self
