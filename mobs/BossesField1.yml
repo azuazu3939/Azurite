@@ -155,7 +155,7 @@ Azuriter_Boss_Wedler:
 
 Azuriter_Boss_Basamos:
   Template: Azuriter_Enemy_RaidBoss_Base_Attack
-  Display: "<#dac469>&l咆哮獣バサモス&R"
+  Display: "<#dac469>&l幻楼獣バサモス&R"
   Health: 24745
   Armor: 135
   Damage: 19
@@ -198,7 +198,7 @@ Azuriter_Boss_Basamos:
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=100;shield_break=1050;heal_percent=0.025} @self ~onEntercombat
-  - skill:OpenField_Enemy_咆哮獣バサモス_MCLove32_ATTACK @T ~onEntercombat
+  - skill:OpenField_Enemy_幻楼獣バサモス_MCLove32_ATTACK @T ~onEntercombat
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
 
@@ -206,7 +206,7 @@ Azuriter_Boss_Basamos:
   - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =40%
    
   - skill:Generic_Enemy_MCLove32_DAMAGED @trigger ~onDamaged #ranking
-  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=128;do="OpenField_Enemy_咆哮獣バサモス_MCLove32_HighDrop"} @self ~onDeath #ranking 
+  - skill:Generic_Enemy_MCLove32_SHOW_RANKING{range=128;do="OpenField_Enemy_幻楼獣バサモス_MCLove32_HighDrop"} @self ~onDeath #ranking 
 
   - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
