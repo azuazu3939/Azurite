@@ -197,6 +197,10 @@ Generic_Enemy_MCLove32_SHOW_RANKING_Sudo_Return:
   - setVar{k=skill.sortRank;a=<skill.var.sortList.indexof.<skill.var.count>>;t=INTEGER} @self ?varset{k=caster.rankMap} ?vareq{k=skill.sortBool;v="true"}
 
   - setVar{k=skill.player;a=<target.name>;t=STRING} @UniqueIdentifier{u=<skill.var.name>} ?varset{k=caster.rankMap} ?!varrange{k=skill.sortRank;r=>10} ?vareq{k=skill.sortBool;v="true"} 
+
+  - message{m="a"} @PIR{r=32}
+  - delay 10
+
   - message{m="&a&l<skill.var.sortRank>位 &6&l<skill.var.player> &f&lスコア &b<skill.var.sortDMG>"} @PIR{r=<skill.var.range>} ?varset{k=skill.player} ?vareq{k=skill.sortBool;v="true"}
   - setVar{k=skill.reward;a="10 - <skill.var.sortRank>";t=INTEGER} @self ?varset{k=skill.player} ?vareq{k=skill.sortBool;v="true"}
   - vskill{s=<skill.do>;f=false;repeat=<skill.var.reward>;repeati=1} @playerByName{n=<skill.var.player>} ?varset{k=skill.player} ?vareq{k=skill.sortBool;v="true"}
