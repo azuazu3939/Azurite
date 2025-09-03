@@ -12,12 +12,12 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK:
     OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2,
     OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3;
     fbs=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_0;
-    repeat=2;repeati=10} @self
-  - delay <random.150to220>
+    repeat=1;repeati=40} @self
+  - delay <random.160to250>
   - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK} @T
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_0:
-  Cooldown: 12
+  Cooldown: 15
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
