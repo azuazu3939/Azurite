@@ -17,7 +17,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK:
   - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK} @T
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_0:
-  Cooldown: 15
+  Cooldown: 200
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
