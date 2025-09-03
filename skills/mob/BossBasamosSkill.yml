@@ -198,6 +198,6 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_4:
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect:
   Skills:
   - setvar{var=skill.x;val="<random.float.-10to10>";t=FLOAT} @self 
-  - setvar{var=skill.y;val="<random.float.-1to5>";t=FLOAT} @self 
+  - setvar{var=skill.y;val="<random.float.2to8>";t=FLOAT} @self 
   - setvar{var=skill.z;val="<random.float.-10to10>";t=FLOAT} @self 
-  - e:p{p=cloud;a=2;s=0.75;y=3;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
+  - e:p{p=cloud;a=20;s=1;size=2;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
