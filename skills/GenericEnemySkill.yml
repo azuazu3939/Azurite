@@ -280,12 +280,13 @@ Azuriter_AreaDamageH:
   - e:blockMask{b=RED_TERRACOTTA;r=<skill.area>;d=<skill.wait>} @selfLocation 
   - e:blockUnmask{r=<skill.noArea>} @selfLocation 
   - setVar{k=skill.addWait;a="<skill.wait> + <skill.addWait>";t=INTEGER} @self
-  - aura{n=Azuriter_NoAreaDamage;t=4;i=10;delay="<skill.var.addWait>";origin=@selfLocation;fo=true} @PIR{r=32}
-  - setVar{k=skill.addWait;a="<skill.var.addWait> + <skill.willDamage>";t=INTEGER} @self
+  - aura{n=Azuriter_NoAreaDamage;t=4;i=10;delay=<skill.var.addWait>;origin=@selfLocation;fo=true} @PIR{r=<skill.area>}
+  - auraRemove{n=Azuriter_NoAreaDamage;delay=<skill.var.addWait>;origin=@selfLocation;fo=true} @PIR{r=<skill.noArea>}
+  - setVar{k=skill.addWait;a="<skill.var.addWait> + <skill.willDamage>";t=INTEGER;delay=<skill.var.addWait>} @self
   - damage{a="<skill.var.dmg> * <skill.damageM>";pi=true;ii=true;delay="<skill.var.addWait>";origin=@selfLocation;fo=true} @PIR{r=<skill.area>;c=[ - hasAura{n=Azuriter_NoAreaDamage} false ]}
 
 Azuriter_AreaDamage:
   Skills:
   - e:blockMask{b=RED_TERRACOTTA;r=<skill.area>;d=<skill.wait>} @selfLocation 
   - setVar{k=skill.addWait;a="<skill.wait> + <skill.addWait>";t=INTEGER} @self
-  - damage{a="<skill.var.dmg> * <skill.damageM>";pi=true;ii=true;delay="<skill.var.addWait>";origin=@selfLocation;fo=true} @PIR{r=<skill.area>}
+  - damage{a="<skill.var.dmg> * <skill.damageM>";pi=true;ii=true;delay=<skill.var.addWait>;origin=@selfLocation;fo=true} @PIR{r=<skill.area>}
