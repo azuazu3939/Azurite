@@ -163,7 +163,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
   - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=39;repeati=1} @self
   - stun{t=100} @self
   - delay 10
-  - skill{s=Azuriter_AreaDamage;area=24;wait=60;damageM=2;addWait=18;willDamage=2} @self
+  - skill{s=Azuriter_AreaDamage;area=24;wait=40;damageM=2;addWait=18;willDamage=2} @self
   - skill{s=Azuriter_AreaDamageH;area=32;noArea=24;wait=20;damageM=2;addWait=18;willDamage=2;delay=60} @self
   - delay 60
   - removetag{t=ATTACK} @self
