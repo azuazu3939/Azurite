@@ -281,10 +281,9 @@ Azuriter_AreaDamageH:
   - removemask{r=<skill.noArea>} @selfLocation 
   - setVar{k=skill.addWait;a="<skill.wait> + <skill.addWait>";t=INTEGER} @self
   - aura{n=Azuriter_NoAreaDamage;t=4;i=10;delay=<skill.var.addWait>;origin=@selfLocation;fo=true;ow=true;ms=99} @PIR{r=<skill.area>}
-  - auraRemove{n=Azuriter_NoAreaDamage;delay="<skill.var.addWait> + 1";origin=@selfLocation;fo=true;s=1} @PIR{r=<skill.noArea>}
-
+  - auraRemove{n=Azuriter_NoAreaDamage;delay=<skill.var.addWait>;origin=@selfLocation;fo=true;s=1} @PIR{r=<skill.noArea>}
   - setVar{k=skill.addWait;a="<skill.var.addWait> + <skill.willDamage>";t=INTEGER;delay=<skill.var.addWait>} @self
-  - damage{a="<skill.var.dmg> * <skill.damageM>";pi=true;ii=true;delay="<skill.var.addWait>";origin=@selfLocation;fo=true} @PIR{r=<skill.area>;c=[ - hasAura{n=Azuriter_NoAreaDamage} false ]}
+  - damage{a="<skill.var.dmg> * <skill.damageM>";pi=true;ii=true;delay="<skill.var.addWait>";origin=@selfLocation;fo=true} @PIR{r=<skill.area>;c=[ - hasAura{n=Azuriter_NoAreaDamage} true ]}
 
 Azuriter_AreaDamage:
   Skills:
