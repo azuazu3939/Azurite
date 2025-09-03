@@ -85,7 +85,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process3:
     ho="240 + <caster.var.attackHO>"}
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
-  Cooldown: 15
+  Cooldown: 30
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
