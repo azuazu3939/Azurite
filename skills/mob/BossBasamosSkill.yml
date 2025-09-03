@@ -160,7 +160,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
   - addtag{t=ATTACK} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
-  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=39;repeati=1} @self
+  #- skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=39;repeati=1} @self
   - stun{t=100} @self
   - delay 10
   - skill{s=Azuriter_AreaDamage;area=24;wait=40;damageM=2;addWait=18;willDamage=2} @self
@@ -178,7 +178,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3:
   - addtag{t=ATTACK} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
-  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=159;repeati=1} @self
+  #- skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=159;repeati=1} @self
   - stun{t=160} @self
   - delay 10
   - skill{s=Azuriter_AreaDamage;area=8;wait=20;damageM=2;addWait=18;willDamage=2} @self
