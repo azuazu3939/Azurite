@@ -57,8 +57,6 @@ Azuriter_バサモスサンド_幻想2:
     PassthroughDamage: false
     LockPitch: true
     Scale: 2
-    Interactable: true
-    Glowing: true
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=120} @self ~onSpawn
   - sound{s=entity.wind_charge.wind_burst;p=0.75;sc=AMBIENT} @self ~onDespawn 
