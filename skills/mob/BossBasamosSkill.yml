@@ -13,8 +13,8 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK:
     OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3,
     OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_4;
     fbs=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1;
-    repeat=1;repeati=40} @self
-  - delay <random.160to250>
+    repeat=1;repeati=60} @self
+  - delay <random.180to260>
   - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK} @T
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1:
