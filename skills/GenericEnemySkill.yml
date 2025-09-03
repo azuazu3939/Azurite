@@ -290,3 +290,10 @@ Azuriter_AreaDamage:
   - e:blockMask{b=RED_TERRACOTTA;r=<skill.area>;d=<skill.wait>} @selfLocation 
   - setVar{k=skill.addWait;a="<skill.wait> + <skill.addWait>";t=INTEGER} @self
   - damage{a="<skill.var.dmg> * <skill.damageM>";pi=true;ii=true;delay=<skill.var.addWait>;origin=@selfLocation;fo=true} @PIR{r=<skill.area>}
+
+Azuriter_Cloud:
+  Skills:
+  - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
+  - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
+  - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
+  - e:p{p=cloud;a=5;s=1;size=2;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}
