@@ -160,12 +160,12 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
   - addtag{t=ATTACK} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
-  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=4;repeati=4} @self
+  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=39;repeati=1} @self
+  - stun{t=100} @self
   - delay 10
-  - stun{t=40} @self
-  - skill{s=Azuriter_AreaDamage;area=32;wait=60;damageM=2;addWait=18;willDamage=2} @self
-  - skill{s=Azuriter_AreaDamageH;area=32;noArea=24;wait=60;damageM=1.8;addWait=18;willDamage=2;delay=30} @self
-  - delay 75
+  - skill{s=Azuriter_AreaDamage;area=24;wait=60;damageM=2;addWait=18;willDamage=2} @self
+  - skill{s=Azuriter_AreaDamageH;area=32;noArea=24;wait=20;damageM=2;addWait=18;willDamage=2;delay=60} @self
+  - delay 60
   - removetag{t=ATTACK} @self
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3:
@@ -178,11 +178,11 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3:
   - addtag{t=ATTACK} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
-  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=9;repeati=4} @self
+  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=159;repeati=1} @self
   - stun{t=160} @self
   - delay 10
   - skill{s=Azuriter_AreaDamage;area=8;wait=20;damageM=2;addWait=18;willDamage=2} @self
-  
+
   - skill{s=Azuriter_AreaDamageH;area=16;noArea=8;wait=20;damageM=2;addWait=18;willDamage=2;delay=40} @self
   
   - skill{s=Azuriter_AreaDamageH;area=24;noArea=16;wait=20;damageM=2;addWait=18;willDamage=2;delay=80} @self
