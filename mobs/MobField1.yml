@@ -90,8 +90,6 @@ Azuriter_Warrior_Zombie:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=20} @self ~onSpawn 
   - skill{s=Azuriter_DayMaterial_Day} @self ~onSpawn 0.15
   - skill{s=Azuriter_DayMaterial_Day_Drop} @self ~onDeath 
-  - skill{s=Azuriter_DayMaterial_Remove} @self ~onSpawn
-  - skill{s=Azuriter_DayMaterial_Remove} @self ~onEntercombat 
   - attribute{attr=GENERIC_ARMOR;a=35} @self ~onSpawn ?!day
   - attribute{attr=GENERIC_ARMOR;a=15} @self ~onSpawn ?day
   - potion{t=STRENGTH;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
