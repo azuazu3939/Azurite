@@ -278,7 +278,7 @@ Azuriter_Enemy_RaidBoss_Base_Heal:
 Azuriter_AreaDamageH:
   Skills:
   - e:blockMask{b=RED_TERRACOTTA;r=<skill.area>;d=<skill.wait>} @selfLocation 
-  - removemask{r=<skill.noArea>} @selfLocation 
+  - removemask{r="<skill.noArea>";delay=0} @selfLocation 
   - setVar{k=skill.addWait;a="<skill.wait> + <skill.addWait>";t=INTEGER} @self
   - aura{n=Azuriter_NoAreaDamage;t=4;i=10;delay=<skill.var.addWait>;origin=@selfLocation;fo=true;ow=true;ms=99} @PIR{r=<skill.area>}
   - auraRemove{n=Azuriter_NoAreaDamage;delay="<skill.var.addWait> + 1";origin=@selfLocation;fo=true;s=1} @PIR{r=<skill.noArea>}
