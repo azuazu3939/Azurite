@@ -9,14 +9,15 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK:
   - removetag{t=CHARGE} ?night 
   - randomskill{s=
     OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1,
-    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2;
+    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2,
+    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3;
     fbs=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_0;
     repeat=2;repeati=10} @self
   - delay <random.150to220>
   - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK} @T
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_0:
-  Cooldown: 15
+  Cooldown: 12
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
@@ -150,7 +151,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process3:
     ho="240 + <caster.var.attackHO>"}
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
-  Cooldown: 3
+  Cooldown: 8
   Conditions:
   - incombat
   - hasTag{t=DOWN} false
@@ -159,20 +160,41 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
   - addtag{t=ATTACK} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
-  - look{fp=true;repeat=24;repeati=1} @T
-  - projectile{
-    ot=[
-      - e:p{p=explosion;a=1;size=1.5;delay=2} @origin 
-    ];
-    os=[
-      - modifyprojectile{t=VELOCITY;a=SET;v=25;delay=35} @self
-    ];
-    oe=[
-      - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=5}
-      - throw{v=15;yv=4} @PNO{r=5}
-      - e:p{p=explosion_huge;a=1} @origin
-    ];
-    b=DISPLAY;mat=RED_SANDSTONE;rs=1;ps=1;ys=1;syo=3.5;tyo=2;
-    v=0.1;i=2;vr=1;hr=1} @T
+  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=4;repeati=4} @self
+  - delay 10
+  - stun{t=40} @self
+  - skill{s=Azuriter_AreaDamage;area=32;wait=60;damageM=2;addWait=18;willDamage=2} @self
+  - skill{s=Azuriter_AreaDamageH;area=32;noArea=24;wait=60;damageM=1.8;addWait=18;willDamage=2;delay=30} @self
   - delay 75
   - removetag{t=ATTACK} @self
+
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3:
+  Cooldown: 16
+  Conditions:
+  - incombat
+  - hasTag{t=DOWN} false
+  - hasTag{t=ATTACK} false 
+  Skills:
+  - addtag{t=ATTACK} @self
+  - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
+  - skill:Generic_Enemy_MCLove32_BUFF @self
+  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect;repeat=9;repeati=4} @self
+  - stun{t=160} @self
+  - delay 10
+  - skill{s=Azuriter_AreaDamage;area=8;wait=40;damageM=2;addWait=18;willDamage=2} @self
+  - skill{s=Azuriter_AreaDamageH;area=16;noArea=8;wait=40;damageM=2;addWait=18;willDamage=2;delay=30} @self
+
+  - skill{s=Azuriter_AreaDamage;area=8;wait=40;damageM=2;addWait=18;willDamage=2;delay=60} @self
+  - skill{s=Azuriter_AreaDamageH;area=24;noArea=16;wait=40;damageM=2;addWait=18;willDamage=2;delay=60} @self
+
+  - skill{s=Azuriter_AreaDamageH;area=16;noArea=8;wait=40;damageM=2;addWait=18;willDamage=2;delay=90} @self
+  - skill{s=Azuriter_AreaDamageH;area=32;noArea=24;wait=40;damageM=2;addWait=18;willDamage=2;delay=90} @self
+  - delay 100
+  - removetag{t=ATTACK} @self
+
+OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2_Effect:
+  Skills:
+  - setvar{var=skill.x;val="<random.float.-5to5>";t=FLOAT} @self 
+  - setvar{var=skill.y;val="<random.float.-5to5>";t=FLOAT} @self 
+  - setvar{var=skill.z;val="<random.float.-5to5>";t=FLOAT} @self 
+  - e:p{p=cloud;a=1;s=0.5;d=true;dr=true;origin=@origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>};fo=true} @origin{x=<skill.var.x>;y=<skill.var.y>;z=<skill.var.z>}

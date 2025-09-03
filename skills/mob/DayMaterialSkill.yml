@@ -14,9 +14,9 @@ Azuriter_DayMaterial_Buff:
   Conditions:
   - (hasAura{n=DayMaterial_NoDay} || hasAura{n=DayMaterial_Day})
   Skills:
-  - potion{t=SPEED;l=2;d=100;p=false} @self 
-  - potion{t=STRENGTH;l=1;d=100;p=false} @self 
-  - potion{t=RESISTANCE;l=1;d=100;p=false} @self 
+  - potion{t=SPEED;l=2;d=100;p=false;a=false} @self 
+  - potion{t=STRENGTH;l=1;d=100;p=false;a=false} @self 
+  - potion{t=RESISTANCE;l=1;d=100;p=false;a=false} @self 
 
 Azuriter_DayMaterial_NoDay:
   Cooldown: 1
