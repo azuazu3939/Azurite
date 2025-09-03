@@ -11,7 +11,6 @@ Azuriter_バサモスサンド_幻1:
   Options:
     MaxCombatDistance: 48
     PassthroughDamage: false
-    Interactable: true
     Scale: 1
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=50} @self ~onSpawn
