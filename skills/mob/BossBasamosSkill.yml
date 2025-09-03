@@ -115,9 +115,10 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
       - setVar{k=skill.basamosAttack2_1;a="0";t=INTEGER} @self
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true} @PIR{r=4}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true} @PNO{r=5}
     ];
     oe=[
+      - sound{s=block.end_gateway.spawn;p=2} @origin 
       - e:p{p=cloud;a=50;ys=1;hs=2;s=1} ?varrange{k=skill.basamosAttack2_1;r=>500}
       - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=12} ?varrange{k=skill.basamosAttack2_1;r=>500}
       - delay 2
@@ -148,9 +149,10 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
       - setVar{k=skill.basamosAttack2_2;a="0";t=INTEGER} @self
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true} @PIR{r=4}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true} @PNO{r=5}
     ];
     oe=[
+      - sound{s=block.end_gateway.spawn;p=2} @origin 
       - healpercent{m=0.2} @self ?varrange{k=skill.basamosAttack2_2;r=>500}
       - e:p{p=heart;a=20;ys=2;hs=3;size=2;s=1} @self ?varrange{k=skill.basamosAttack2_2;r=>500}
     ]} @self
@@ -166,9 +168,10 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
       - setVar{k=skill.basamosAttack2_3;a="0";t=INTEGER} @self
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true} @PIR{r=4}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true} @PNO{r=5}
     ];
     oe=[
+      - sound{s=block.end_gateway.spawn;p=2} @origin 
       - potion{t=RESISTANCE;l=1;d=1200;p=false} @self ?varrange{k=skill.basamosAttack2_3;r=>500} 
       - potion{t=GLOWING;l=0;d=1200;p=false} @self ?varrange{k=skill.basamosAttack2_3;r=>500} 
       - e:p{p=crit_magic;a=15;size=2;ys=2;hs=4;repeat=29;repeati=40} @self ?varrange{k=skill.basamosAttack2_3;r=>500} 
