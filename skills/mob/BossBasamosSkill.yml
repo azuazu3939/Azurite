@@ -47,7 +47,10 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process1:
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
       - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=4}
     ];
-    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;
+    onInteract=[
+      - endprojectile @self
+    ];
+    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;Interactable=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho=<caster.var.attackHO>} 
 
@@ -63,7 +66,10 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process2:
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
       - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=4}
     ];
-    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;
+    onInteract=[
+      - endprojectile @self
+    ];
+    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;Interactable=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho="120 + <caster.var.attackHO>"}
 
@@ -80,7 +86,10 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process3:
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
       - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=4}
     ];
-    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;
+    onInteract=[
+      - endprojectile @self
+    ];
+    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;Interactable=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho="240 + <caster.var.attackHO>"}
 
@@ -95,13 +104,11 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - o{
-    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=0;hitself=true;c=1;
+    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=0;hitself=true;c=1;Interactable=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
     auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T1;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
-      - delay 2
-      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T1} @self ?!mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=1}
     ];
     oh=[
       - e:p{p=cloud;a=50;ys=1;hs=2;s=1} 
@@ -121,33 +128,38 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
       - delay 2
       - e:p{p=cloud;a=350;ys=2.25;hs=12;s=1} 
       - damage{a="<skill.var.dmg> * 2";pi=true;ii=true;delay=2} @PIR{r=32}
+    ];
+    onInteract=[
+      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T1} @self
     ]} @self
   - o{
-    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=120;hitself=true;c=1;
+    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=120;hitself=true;c=1;Interactable=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
     auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T2;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
-      - delay 2
-      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T2} @self ?!mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=1}
     ];
     oh=[
       - healpercent{m=0.2}
       - e:p{p=heart;a=20;ys=2;hs=3;size=2;s=1}
+    ];
+    onInteract=[
+      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T2} @self
     ]} @self
   - o{
-    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=240;hitself=true;c=1;
+    r=15;vr=6;hr=2.5;hp=false;d=600;oy=5;p=360;sp=240;hitself=true;c=1;Interactable=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
     auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T3;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
-      - delay 2
-      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T3} @self ?!mobsnearorigin{type=Azuriter_バサモスサンド_幻想1;r=2;amount=1}
     ];
     oh=[
       - potion{t=RESISTANCE;l=1;d=1200;p=false} 
       - potion{t=GLOWING;l=0;d=1200;p=false}
       - e:p{p=crit_magic;a=15;size=2;ys=2;hs=4;repeat=29;repeati=40}
+    ];
+    onInteract=[
+      - removeaura{n=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T3} @self
     ]} @self
   - delay 200
   - removetag{t=ATTACK} @self

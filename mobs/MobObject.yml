@@ -17,7 +17,6 @@ Azuriter_バサモスサンド_幻1:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=50} @self ~onSpawn
   - remove{delay=600} @self ~onSpawn
   - e:p{p=explosion_emitter;a=2;size=0.5;s=1;ys=1;hs=1} @self ~onDespawn 
-  - remove @self ~onInteract 
 
 Azuriter_バサモスサンド_幻想1:
   Template: Azuriter_Enemy_Base
@@ -41,4 +40,3 @@ Azuriter_バサモスサンド_幻想1:
   - e:pl{p=crit_magic;ys=0.25;hs=0.25;a=2;size=1;repeat=599;repeati=2;tyo=3.25;syo=2.75} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDespawn 
-  - remove @self ~onInteract 
