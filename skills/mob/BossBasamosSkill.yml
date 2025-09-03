@@ -84,7 +84,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process3:
     ];
     oe=[
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
-      - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=4}
+      - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=8}
     ];
     onInteract=[
       - endprojectile @self
@@ -115,7 +115,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
       - setVar{k=skill.basamosAttack2_1;a="0";t=INTEGER} @self
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true} @PNO{r=5}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true} @PNO{r=8}
     ];
     oe=[
       - sound{s=block.end_gateway.spawn;sc=AMBIENT} @origin 
@@ -168,7 +168,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
       - setVar{k=skill.basamosAttack2_3;a="0";t=INTEGER} @self
     ];
     oh=[
-      - damage{a=<skill.var.dmg>;pi=true;ii=true} @PNO{r=5}
+      - damage{a=<skill.var.dmg>;pi=true;ii=true} @PNO{r=8}
     ];
     oe=[
       - sound{s=block.end_gateway.spawn;sc=AMBIENT} @origin 
@@ -193,8 +193,8 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3:
   - delay 10
   - skill{s=Azuriter_AreaDamage;area=24;wait=40;damageM=2;addWait=18;willDamage=2} @self
   - skill{s=Azuriter_AreaDamageH;area=32;noArea=24;wait=20;damageM=2;addWait=18;willDamage=2;delay=60} @self
-  - sound{s=block.end_portal.spawn;p=2;delay=60} @self
-  - sound{s=block.end_portal.spawn;p=2;delay=100} @self
+  - sound{s=block.end_portal.spawn;p=2;delay=60;sc=AMBIENT} @self
+  - sound{s=block.end_portal.spawn;p=2;delay=100;sc=AMBIENT} @self
   - delay 60
   - removetag{t=ATTACK} @self
 
@@ -220,9 +220,9 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_4:
   - skill{s=Azuriter_AreaDamageH;area=32;noArea=24;wait=20;damageM=2;addWait=18;willDamage=2;delay=120} @self
   - skill{s=Azuriter_AreaDamageH;area=16;noArea=8;wait=20;damageM=2;addWait=18;willDamage=2;delay=120} @self
 
-  - sound{s=block.end_portal.spawn;p=2;delay=40} @self
-  - sound{s=block.end_portal.spawn;p=2;delay=80} @self
-  - sound{s=block.end_portal.spawn;p=2;delay=120} @self
-  - sound{s=block.end_portal.spawn;p=2;delay=160} @self
+  - sound{s=block.end_portal.spawn;p=2;delay=40;sc=AMBIENT} @self
+  - sound{s=block.end_portal.spawn;p=2;delay=80;sc=AMBIENT} @self
+  - sound{s=block.end_portal.spawn;p=2;delay=120;sc=AMBIENT} @self
+  - sound{s=block.end_portal.spawn;p=2;delay=160;sc=AMBIENT} @self
   - delay 120
   - removetag{t=ATTACK} @self
