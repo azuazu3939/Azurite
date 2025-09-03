@@ -156,7 +156,7 @@ Azuriter_Boss_Wedler:
 Azuriter_Boss_Basamos:
   Template: Azuriter_Enemy_RaidBoss_Base_Attack
   Display: "<#dac469>&l幻想獣バサモス&R"
-  Health: 24745
+  Health: 26745
   Armor: 130
   Damage: 22
   Drops:
@@ -197,7 +197,7 @@ Azuriter_Boss_Basamos:
   #- setVar{k=caster.7;a="OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_7";t=STRING} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
-  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=100;shield_break=1050;heal_percent=0.025} @self ~onEntercombat
+  - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=80;shield_break=1050;heal_percent=0.03} @self ~onEntercombat
   - skill:OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK @T ~onEntercombat
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat

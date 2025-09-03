@@ -25,6 +25,9 @@ Azuriter_Defenceオフハンド1:
 Azuriter_Utilityオフハンド1:
   Id: yellow_dye
   Display: "&e汎用のシャード"
+  Lore:
+  - "&b最大マナ +100"
+  - "&dマナ回復 +2"
   ItemUpdater:
     Version: 1
   Attributes:
@@ -65,6 +68,9 @@ Azuriter_Defenceオフハンド2:
 Azuriter_Utilityオフハンド2:
   Id: yellow_dye
   Display: "&e汎用のハイシャード"
+  Lore:
+  - "&b最大マナ +150"
+  - "&dマナ回復 +3"
   ItemUpdater:
     Version: 1
   Attributes:
