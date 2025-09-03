@@ -41,3 +41,27 @@ Azuriter_バサモスサンド_幻想1:
   - e:pl{p=crit_magic;ys=0.25;hs=0.25;a=2;size=1;repeat=599;repeati=2;tyo=3.25;syo=2.75} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDespawn 
+
+Azuriter_バサモスサンド_幻想2:
+  Template: Azuriter_Enemy_Base
+  Display: "<#dac469>&l幻想体&R"
+  Type: CAMEL
+  Health: 3000
+  Damage: 20
+  Armor: 120
+  DamageModifiers:
+  - SUFFOCATION 0
+  - FALL 0
+  Options:
+    MaxCombatDistance: 48
+    PassthroughDamage: false
+    LockPitch: true
+    Scale: 2
+    Interactable: true
+    Glowing: true
+  Skills:
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=120} @self ~onSpawn
+  - sound{s=entity.wind_charge.wind_burst;p=0.75;sc=AMBIENT} @self ~onDespawn 
+  - e:pl{p=crit_magic;ys=0.25;hs=0.25;a=1;size=1;repeat=199;repeati=4;tyo=0.5;syo=2.75;delay=1} @owner ~onSpawn 
+  - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath
+  - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDespawn 

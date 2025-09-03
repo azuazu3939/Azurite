@@ -246,7 +246,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
   Skills:
   - o{
     r=30;vr=2;hr=2;hp=false;d=300;oy=3;p=360;sp=0;hitself=true;c=1;hnp=true;
-    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
+    b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
     auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T1;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.1}
@@ -268,7 +268,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
     ]} @ThreatTablePlayers 
   - o{
     r=30;vr=2;hr=2;hp=false;d=300;oy=3;p=360;sp=120;hitself=true;c=1;hnp=true;
-    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
+    b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
     auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T2;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.1}
@@ -290,7 +290,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
     ]} @ThreatTablePlayers 
   - o{
     r=30;vr=2;hr=2;hp=false;d=300;oy=3;p=360;sp=240;hitself=true;c=1;hnp=true;
-    b=MOB;mm=Azuriter_バサモスサンド_幻想1;rd=true;
+    b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
     auraName=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2T3;
     ot=[
       - modifyprojectile{t=RADIUS;a=ADD;v=-0.1}
