@@ -255,3 +255,12 @@ Azuriter_幻想獣の骨:
   ItemUpdater:
     Version: 1
   Group: 'Material'
+
+Azuriter_Basamos_Summon_Paper:
+  Id: paper
+  Display: "&fバサモスの召喚紙"
+  Lore:
+  - "&f紙には16と書かれている…"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
