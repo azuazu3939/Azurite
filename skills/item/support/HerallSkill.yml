@@ -1,0 +1,86 @@
+Azuriter_ヒラル_R1_Skills:
+  Cooldown: 90
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_ヒラル} true
+  - hasMana{a=>40;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=WOODEN_SHOVEL} false
+  Skills:
+  - setMaterialCooldown{m=WOODEN_SHOVEL;d=1800} 
+  - setVar{k=skill.heal;a="1";t=INTEGER} @self
+  - modifyMana{a=-40} @self 
+  - skill{s=Azuriter_ヒラル_Skill_Multi} @self
+  - delay 10
+  - heal{a="<caster.damage> * 0.1 + 4 + 2 * <skill.var.heal>"} @self
+  - heal{a="<caster.damage> * 0.1 + 2 * <skill.var.heal>"} @PIR{r=20}
+  - e:pr{p=dust;c=#ff00d4;a=3;size=4;vs=0.05;hs=0.1;r=5;pts=16;d=true;dir=0,2,0;s=2} @PIR{r=20}
+  - sound{s=block.brewing_stand.brew;v=1.5;sc=MASTER} @self
+  - sound{s=block.note_block.chime;p=1.414;v=1.5;sc=PLAYERS} @self
+  - message{m="<caster.name>から回復支援をもらった！"} @PIR{r=20}
+  - signal{s=support} @self
+
+Azuriter_ヒラル_Skill_Multi:
+  Conditions:
+  - hasAura{n=Azuriter_ヒールスタック} true
+  Skills:
+  - setVar{k=skill.heal;a="<skill.var.heal> + 1";t=INTEGER} @self
+  - auraRemove{n=Azuriter_ヒールスタック;s=1} @self 
+  - delay 0
+  - skill{s=Azuriter_ヒラル_Skill_Multi} @self
+
+Azuriter_ヒラル_L1_Skills:
+  Cooldown: 1.2
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_ヒラル} true
+  - hasMana{a=>10;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  Skills:
+  - modifyMana{a=-10} @self 
+  - aura{ms=10;rd=true;t=120;i=10;n=Azuriter_ヒールスタック;bt=true;bartimertext="&eヒールスタック <skill.var.aura-stacks>";bartimercolor=GREEN;mc=true;
+    oe=[
+      - message{m="&cヒールスタックの効果が切れた"} @self
+    ]} @self
+
+Azuriter_ハイヒラル_R1_Skills:
+  Cooldown: 60
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_ハイヒラル} true
+  - hasMana{a=>100;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=STONE_SHOVEL} false
+  Skills:
+  - setMaterialCooldown{m=STONE_SHOVEL;d=1200} 
+  - setVar{k=skill.heal;a="1";t=INTEGER} @self
+  - modifyMana{a=-100} @self 
+  - skill{s=Azuriter_ヒラル_Skill_Multi} @self
+  - delay 10
+  - heal{a="<caster.damage> * 0.125 + 6 + 2.5 * <skill.var.heal>"} @self
+  - heal{a="<caster.damage> * 0.125 + 3 + 2.5 * <skill.var.heal>"} @PIR{r=20}
+  - e:pr{p=dust;c=#ff00d4;a=3;size=4;vs=0.05;hs=0.1;r=5;pts=16;d=true;dir=0,2,0;s=2} @PIR{r=20}
+  - sound{s=block.brewing_stand.brew;v=1.5;sc=MASTER} @self
+  - sound{s=block.note_block.chime;p=1.414;v=1.5;sc=PLAYERS} @self
+  - message{m="<caster.name>から回復支援をもらった！"} @PIR{r=20}
+  - signal{s=support} @self
+
+
+Azuriter_ハイヒラル_L1_Skills:
+  Cooldown: 2.4
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_ハイヒラル} true
+  - hasMana{a=>30;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  Skills:
+  - modifyMana{a=-30} @self
+  - aura{ms=10;rd=true;t=120;i=10;n=Azuriter_ヒールスタック;bt=true;bartimertext="&eヒールスタック <skill.var.aura-stacks>";bartimercolor=GREEN;mc=true} @self
+  - aura{ms=10;rd=true;t=120;i=10;n=Azuriter_ヒールスタック;bt=true;bartimertext="&eヒールスタック <skill.var.aura-stacks>";bartimercolor=GREEN;mc=true;
+    oe=[
+      - message{m="&cヒールスタックの効果が切れた"} @self
+    ]} @self

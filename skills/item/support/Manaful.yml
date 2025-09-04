@@ -1,0 +1,50 @@
+Azuriter_マナフル_R1_Skills:
+  Cooldown: 60
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_マナフル} true
+  - hasMana{a=>20;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=NETHERITE_SHOVEL} false
+  Skills:
+  - setMaterialCooldown{m=NETHERITE_SHOVEL;d=1200} 
+  - setVar{k=skill.mana_regen;a="0";t=INTEGER} @self
+  - modifyMana{a=-20} @self 
+  - skill{s=Azuriter_マナフル_Skill_Multi} @self
+  - delay 10
+  - modifyMana{a="<skill.var.mana_regen>"} @self
+  - modifyMana{a="<skill.var.mana_regen>"} @PIR{r=20}
+  - modifyMana{a=0.05;m=true} @self
+  - modifyMana{a=0.05;m=true} @PIR{r=20}
+  - sound{s=entity.evoker.cast_spell;v=0.6;sc=AMBIENT} @self
+  - sound{s=item.trident.return;v=1;p=0;sc=AMBIENT;delay=4} @self
+  - sound{s=block.enchantment_table.use;v=1;p=2;sc=AMBIENT;delay=4} @self
+  - sound{s=entity.illusioner.prepare_mirror;v=1;p=1;sc=AMBIENT;delay=4} @self
+  - e:pr{p=dust;c=#006aff;a=3;size=4;vs=0.05;hs=0.1;r=5;pts=16;d=true;dir=0,2,0;s=2} @PIR{r=20}
+  - message{m="<caster.name>からマナ支援をもらった！"} @PIR{r=20}
+  - signal{s=support} @self
+
+Azuriter_マナフル_L1_Skills:
+  Cooldown: 0.2
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_マナフル} true
+  - hasMana{a=>10;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  Skills:
+  - modifyMana{a=-10} @self
+  - aura{ms=20;rd=true;t=120;i=10;n=Azuriter_マナフルスタック;bt=true;bartimertext="&eマナスタック <skill.var.aura-stacks>";bartimercolor=BLUE;mc=true;
+    oe=[
+      - message{m="&cマナスタックの効果が切れた"} @self
+    ]} @self
+
+Azuriter_マナフル_Skill_Multi:
+  Conditions:
+  - hasAura{n=Azuriter_マナフルスタック} true
+  Skills:
+  - setVar{k=skill.mana_regen;a="<skill.var.mana_regen> + 20";t=INTEGER} @self
+  - auraRemove{n=Azuriter_マナフルスタック;s=1} @self 
+  - delay 0
+  - skill{s=Azuriter_マナフル_Skill_Multi} @self

@@ -1,0 +1,57 @@
+Azuriter_リジピド_R1_Skills:
+  Cooldown: 90
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_リジピド} true
+  - hasMana{a=>60;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=DIAMOND_SHOVEL} false
+  Skills:
+  - setMaterialCooldown{m=DIAMOND_SHOVEL;d=1800} 
+  - setVar{k=caster.HealthRegen;a="<caster.var.HealthRegen|0> + 10";t=INTEGER} @self
+  - modifyMana{a=-60} @self 
+  - skill{s=Azuriter_リジピド_Skill_Multi} @self
+  - delay 10
+  - skill{s=Azuriter_リジピド_R1_Skill_Regen} @self ?varset{k=caster.HealthRegen}
+  - sound{s=entity.evoker.cast_spell;v=0.6;sc=AMBIENT} @self
+  - sound{s=entity.puffer_fish.blow_up;v=0.5;p=0.8;sc=AMBIENT;delay=4} @self
+  - sound{s=block.amethyst_block.break;v=1;p=1;sc=AMBIENT;delay=4} @self
+  - sound{s=block.respawn_anchor.charge;v=0.4;p=2;sc=AMBIENT;delay=4} @self
+  - e:pr{p=dust;c=#00ff33;a=3;size=4;vs=0.05;hs=0.1;r=5;pts=16;d=true;dir=0,2,0;s=2} @PIR{r=20}
+  - message{m="<caster.name>から継続回復支援をもらった！"} @PIR{r=20}
+  - signal{s=support} @self
+
+Azuriter_リジピド_L1_Skills:
+  Cooldown: 0.2
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_リジピド} true
+  - hasMana{a=>5;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  Skills:
+  - modifyMana{a=-10} @self
+  - aura{ms=30;rd=true;t=120;i=10;n=Azuriter_リジピドスタック;bt=true;bartimertext="&eリジェンスタック <skill.var.aura-stacks>";bartimercolor=PINK;mc=true;
+    oe=[
+      - message{m="&cリジェンスタックの効果が切れた"} @self
+    ]} @self 
+
+Azuriter_リジピド_Skill_Multi:
+  Conditions:
+  - hasAura{n=Azuriter_リジピドスタック} true
+  Skills:
+  - setVar{k=caster.HealthRegen;a="<caster.var.HealthRegen> + 3";t=INTEGER} @self
+  - auraRemove{n=Azuriter_リジピドスタック;s=1} @self 
+  - delay 0
+  - skill{s=Azuriter_リジピド_Skill_Multi} @self
+
+Azuriter_リジピド_R1_Skill_Regen:
+  Conditions:
+  - varrange{k=caster.HealthRegen;r=>0}
+  Skills:
+  - setVar{k=caster.HealthRegen;a="<caster.var.HealthRegen> - 1";t=INTEGER} @self
+  - delay 19
+  - heal{a=2} @self
+  - heal{a=2} @PIR{r=20}
+  - skill{s=Azuriter_リジピド_R1_Skill_Regen;delay=1} @self ?varset{k=caster.HealthRegen}

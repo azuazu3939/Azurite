@@ -19,5 +19,5 @@ Azuriter_L_ヘルシティア_Full_Healthal:
   - wearing{s=FEET;i=Azuriter_L_ヘルシティアB}
   Skills:
   - sound{s=block.brewing_stand.brew;audience=caster;sc=AMBIENT;v=0.5} @PIR{r=32}
-  - heal{a=6} @PIR{r=32}
-  - potion{t=STRENGTH;l=4;d=200;p=false} @PIR{r=32}
+  - heal{a=10} @PIR{r=32}
+  - potion{t=STRENGTH;l=3;d=600;p=false} @PIR{r=32}
