@@ -240,7 +240,7 @@ Azuriter_幻想獣の皮:
   Group: 'Material'
 
 Azuriter_幻想獣の脂肪:
-  Id: dragon_bleath
+  Id: dragon_breath
   Display: "&a幻想獣の脂肪"
   ItemUpdater:
     Version: 1
