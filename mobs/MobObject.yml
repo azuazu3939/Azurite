@@ -16,7 +16,7 @@ Azuriter_バサモスサンド_幻1:
     Scale: 1
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=50} @self ~onSpawn
-  - remove{delay=600} @self ~onSpawn
+  - remove{delay=800} @self ~onSpawn
   - sound{s=entity.wind_charge.wind_burst;sc=AMBIENT;v=0.75} @self ~onDespawn 
   - e:p{p=explosion_emitter;a=2;size=0.5;s=1;ys=1;hs=1} @self ~onDespawn 
 
@@ -44,6 +44,7 @@ Azuriter_バサモスサンド_幻想1:
   - e:pl{p=crit_magic;ys=0.25;hs=0.25;a=2;size=1;repeat=599;repeati=2;tyo=3.25;syo=2.75} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDespawn 
+  - remove{delay=800} @self ~onSpawn
 
 Azuriter_バサモスサンド_幻想2:
   Template: Azuriter_Enemy_Base
@@ -68,3 +69,4 @@ Azuriter_バサモスサンド_幻想2:
   - e:pl{p=crit_magic;ys=0.25;hs=0.25;a=1;size=1;repeat=199;repeati=2;tyo=0.5;syo=2.75;delay=1;audience=target} @owner ~onSpawn 
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDespawn 
+  - remove{delay=800} @self ~onSpawn

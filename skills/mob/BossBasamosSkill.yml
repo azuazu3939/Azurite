@@ -253,7 +253,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
     ];
     conditions=[
       - (mmType{t=Azuriter_Boss_Basamos} || isplayer)
-    ]} 
+    ]} @self
   - o{
     r=15;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=120;hitself=true;c=1;hnp=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
@@ -271,7 +271,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
     ];
     conditions=[
       - (mmType{t=Azuriter_Boss_Basamos} || isplayer)
-    ]} 
+    ]} @self 
   - o{
     r=15;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=240;hitself=true;c=1;hnp=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
@@ -289,7 +289,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
     ];
     conditions=[
       - (mmType{t=Azuriter_Boss_Basamos} || isplayer)
-    ]}
+    ]} @self
   
 OpenField_Enemy_幻想獣バサモス_MCLove32_HighDrop:
   Skills:
