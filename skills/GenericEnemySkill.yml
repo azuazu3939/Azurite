@@ -192,7 +192,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_LISTING:
 
   - setVar{k=skill.size;a=<caster.var.rankMap.size>;t=INTEGER} @self
   - setVar{k=skill.count;a=0;t=INTEGER} @self
-  - setVar{k=skill.value;a=0;t=STRING} @self
+  - setVar{k=skill.value;a="0";t=STRING} @self
 
   - message{m="d"} @PIR{r=32}
   - delay 2
@@ -214,6 +214,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_SortList:
   - message{m="<skill.value>"} @PIR{r=32}
   - addVar{k=skill.sortL;a=<skill.value>} @self ?varset{k=skill.sortL}
   - setVar{k=skill.sortL;a=<skill.value>;t=LIST} @self ?!varset{k=skill.sortL}
+  - message{m="end"} @PIR{r=32}
 
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_LISTING_RANK:
