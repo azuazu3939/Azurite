@@ -187,9 +187,16 @@ Generic_Enemy_MCLove32_SHOW_RANKING_LISTING:
   - foreachvalue{s=Generic_Enemy_MCLove32_SHOW_RANKING_SortList;v=<caster.var.rankMap>} @self 
   - message{m="c"} @PIR{r=32}
   - delay 1
+  - message{m="1"} @PIR{r=32}
+  - delay 1
   - setVar{k=skill.sortList;a=<skill.var.sortL.sortnum.reverse>;t=LIST} @self 
+  - delay 1
+  - message{m="2"} @PIR{r=32}
+  - delay 1
   - setVar{k=skill.sortDMG;a=<caster.var.rankMap.<skill.key>>;t=DOUBLE} @self
-
+  - delay 1
+  - message{m="3"} @PIR{r=32}
+  - delay 1
   - setVar{k=skill.size;a=<caster.var.rankMap.size>;t=INTEGER} @self
   - setVar{k=skill.count;a="0";t=INTEGER} @self
   - setVar{k=skill.value;a="0";t=STRING} @self
