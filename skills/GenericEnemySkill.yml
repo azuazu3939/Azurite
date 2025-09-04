@@ -188,7 +188,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_LISTING:
   - message{m="c"} @PIR{r=32}
   - delay 1
   - setVar{k=skill.sortList;a=<skill.var.sortL.sortnum.reverse>;t=LIST} @self 
-  - setVar{k=skill.sortDMG;a=<caster.var.rankMap.<skill.key>.todouble>;t=DOUBLE} @self
+  - setVar{k=skill.sortDMG;a=<caster.var.rankMap.<skill.key>>;t=DOUBLE} @self
 
   - setVar{k=skill.size;a=<caster.var.rankMap.size>;t=INTEGER} @self
   - setVar{k=skill.count;a=0;t=INTEGER} @self
