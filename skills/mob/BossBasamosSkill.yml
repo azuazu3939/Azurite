@@ -293,10 +293,10 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
   
 OpenField_Enemy_幻想獣バサモス_MCLove32_HighDrop:
   Skills:
-  - cmd{c="mlg <target.name> Azuriter_幻想獣の骨 1 0.1";delay=20} 
-  - cmd{c="mlg <target.name> Azuriter_幻想獣の皮 1 0.15";delay=20} 
-  - cmd{c="mlg <target.name> Azuriter_幻想獣の脂肪 1 0.05";delay=20} 
-  - cmd{c="mlg <target.name> Azuriter_砂核 1 0.025";delay=20}
+  - cmd{c="mlg <target.name> Azuriter_幻想獣の骨 1 0.1"} 
+  - cmd{c="mlg <target.name> Azuriter_幻想獣の皮 1 0.15"} 
+  - cmd{c="mlg <target.name> Azuriter_幻想獣の脂肪 1 0.05"} 
+  - cmd{c="mlg <target.name> Azuriter_砂核 1 0.025"}
   - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.025"}
   - sound{s=ui.toast.challenge_complete;p=2;sc=PLAYERS;v=0.15}
 

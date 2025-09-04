@@ -301,10 +301,10 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK_5_OnGround:
 
 OpenField_Enemy_焔獣フェルドス_MCLove32_HighDrop:
   Skills:
-  - cmd{c="mlg <target.name> Azuriter_焔獣の太骨 1 0.1";delay=20} 
-  - cmd{c="mlg <target.name> Azuriter_焔獣の炎殻 1 0.15";delay=20} 
-  - cmd{c="mlg <target.name> Azuriter_焔獣の炎牙 1 0.05";delay=20} 
-  - cmd{c="mlg <target.name> Azuriter_炎核 1 0.025";delay=20}
+  - cmd{c="mlg <target.name> Azuriter_焔獣の太骨 1 0.1"} 
+  - cmd{c="mlg <target.name> Azuriter_焔獣の炎殻 1 0.15"} 
+  - cmd{c="mlg <target.name> Azuriter_焔獣の炎牙 1 0.05"} 
+  - cmd{c="mlg <target.name> Azuriter_炎核 1 0.025"}
   - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.025"}
   - sound{s=ui.toast.challenge_complete;p=2;sc=PLAYERS;v=0.15}
 
