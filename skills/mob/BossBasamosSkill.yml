@@ -236,7 +236,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5:
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
   Skills:
   - o{
-    r=30;vr=6;hr=2.5;hp=false;d=600;oy=3;p=360;sp=0;hitself=true;c=1;hnp=true;
+    r=30;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=0;hitself=true;c=1;hnp=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
     auraName=BasamosT1;
     ot=[
@@ -254,7 +254,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
       - (mmType{t=Azuriter_Boss_Basamos} || isplayer)
     ]} 
   - o{
-    r=30;vr=6;hr=2.5;hp=false;d=600;oy=3;p=360;sp=120;hitself=true;c=1;hnp=true;
+    r=30;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=120;hitself=true;c=1;hnp=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
     auraName=BasamosT2;
     ot=[
@@ -272,7 +272,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
       - (mmType{t=Azuriter_Boss_Basamos} || isplayer)
     ]} 
   - o{
-    r=30;vr=6;hr=2.5;hp=false;d=600;oy=3;p=360;sp=240;hitself=true;c=1;hnp=true;
+    r=30;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=240;hitself=true;c=1;hnp=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
     auraName=BasamosT3;
     ot=[
