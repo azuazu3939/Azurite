@@ -165,7 +165,7 @@ Azuriter_Boss_Basamos:
     Silent: true 
     MovementSpeed: 0.25
     KnockbackResistance: 1
-    MaxCombatDistance: 32
+    MaxCombatDistance: 24
     PreventVanillaDamage: true
     FollowRange: 16
   Disguise: camel setScale 2.5
