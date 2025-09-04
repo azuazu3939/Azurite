@@ -188,7 +188,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_LISTING:
   - setVar{k=skill.player;a=<target.name>;t=STRING} @UniqueIdentifier{u=<skill.key>} ?!varrange{k=skill.sortRank;r=>10} 
   - message{m="&a&l<skill.var.sortRank>位 &6&l<skill.var.player> &f&lスコア &b<skill.var.sortDMG>"} @PIR{r=<skill.var.range>} ?varset{k=skill.player}
   - setVar{k=skill.reward;a="10 - <skill.var.sortRank>";t=INTEGER} @self ?varset{k=skill.player}
-  - message{m="<caster.var.sortL.sortnum.reverse.tostring>"} @playerByName{n=<skill.var.player>} ?varset{k=skill.player}
+  - message{m="&a <caster.var.sortL.sortnum.reverse>"} @playerByName{n=<skill.var.player>} ?varset{k=skill.player}
   - vskill{s=<skill.var.do>;repeat=<skill.var.reward>;repeati=1} @playerByName{n=<skill.var.player>} ?varset{k=skill.player}
 
 #
