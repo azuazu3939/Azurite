@@ -200,6 +200,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_SortList:
   - delay 0
   - addVar{k=skill.sortL;a=<skill.value>} @self ?varset{k=skill.sortL}
   - setVar{k=skill.sortL;a=<skill.value>;t=LIST} @self ?!varset{k=skill.sortL}
+  - message{m="<skill.var.sortL>"} @PIR{r=32}
 
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_LISTING_RANK:
