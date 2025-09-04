@@ -229,18 +229,18 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5:
   - addtag{t=ATTACK} @self
   - sound{s=entity.evoker.prepare_summon;v=2;sc=AMBIENT;repeat=2;repeati=10} @self
   - delay 50
-  - sudoskill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer} @TTP{limit=3;sort=RANDOM;c=[ - distance{d=<48} true ]}
+  - sudoskill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer} @TTP{limit=2;sort=RANDOM;c=[ - distance{d=<48} true ]}
   - delay 60
   - removetag{t=ATTACK} @self
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
   Skills:
   - o{
-    r=30;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=0;hitself=true;c=1;hnp=true;
+    r=15;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=0;hitself=true;c=1;hnp=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
     auraName=BasamosT1;
     ot=[
-      - modifyprojectile{t=RADIUS;a=ADD;v=-0.05}
+      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
     ];
     oh=[
       - heal{a=-20}
@@ -254,11 +254,11 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
       - (mmType{t=Azuriter_Boss_Basamos} || isplayer)
     ]} 
   - o{
-    r=30;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=120;hitself=true;c=1;hnp=true;
+    r=15;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=120;hitself=true;c=1;hnp=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
     auraName=BasamosT2;
     ot=[
-      - modifyprojectile{t=RADIUS;a=ADD;v=-0.05}
+      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
     ];
     oh=[
       - heal{a=-20}
@@ -272,11 +272,11 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
       - (mmType{t=Azuriter_Boss_Basamos} || isplayer)
     ]} 
   - o{
-    r=30;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=240;hitself=true;c=1;hnp=true;
+    r=15;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=240;hitself=true;c=1;hnp=true;
     b=MOB;mm=Azuriter_バサモスサンド_幻想2;rd=true;
     auraName=BasamosT3;
     ot=[
-      - modifyprojectile{t=RADIUS;a=ADD;v=-0.05}
+      - modifyprojectile{t=RADIUS;a=ADD;v=-0.025}
     ];
     oh=[
       - heal{a=-20}
