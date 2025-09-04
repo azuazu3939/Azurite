@@ -177,6 +177,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING:
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_LISTING:
   Skills:
+  - delay 0
   - setVar{k=skill.name;a=<skill.key>;t=STRING} @self
 
   - foreachvalue{s=Generic_Enemy_MCLove32_SHOW_RANKING_SortList;v=<caster.var.rankMap>} @self 
