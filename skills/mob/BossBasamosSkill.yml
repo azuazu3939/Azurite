@@ -47,11 +47,8 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process1:
     oe=[
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
       - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=4}
-    ];
-    onInteract=[
-      - endprojectile @self
-    ];
-    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;Interactable=true;
+    ]
+    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;
     b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho=<caster.var.attackHO>} 
 
@@ -66,11 +63,8 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process2:
     oe=[
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
       - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=4}
-    ];
-    onInteract=[
-      - endprojectile @self
-    ];
-    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;Interactable=true;
+    ]
+    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;
     b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho="120 + <caster.var.attackHO>"}
 
@@ -86,11 +80,8 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1_Process3:
     oe=[
       - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @origin 
       - damage{a="<skill.var.dmg>";pi=true;ii=true} @PNO{r=4}
-    ];
-    onInteract=[
-      - endprojectile @self
-    ];
-    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;Interactable=true;
+    ]
+    v=5;i=1;d=400;vr=2.5;r=2.5;bk=true;hs=true;hfs=1;huglava=true;mr=48;sb=false;
     b=MOB;mm=Azuriter_バサモスサンド_幻1;bmd=true;
     ho="240 + <caster.var.attackHO>"}
 
