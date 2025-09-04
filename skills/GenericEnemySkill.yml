@@ -198,15 +198,13 @@ Generic_Enemy_MCLove32_SHOW_RANKING_LISTING:
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_SortList:
   Skills:
-  - delay 0
   - addVar{k=skill.sortL;a=<skill.value>} @self ?varset{k=skill.sortL}
   - setVar{k=skill.sortL;a=<skill.value>;t=LIST} @self ?!varset{k=skill.sortL}
 
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_LISTING_RANK:
   Skills:
-  - delay 0
-  - message{m="<skill.value>あ<skill.var.sortDMG>"} @PIR{r=32}
+  - message{m="&a<skill.value>&fあ&b<skill.var.sortDMG>&fい&c<skill.var.sortL>"} @PIR{r=32}
   - return ?!vareq{k=skill.sortDMG;v="<skill.value>"}
   - addVar{k=skill.count;a=1} @self
 
