@@ -23,7 +23,7 @@ Azuriter_ビッグステーキ:
     Version: 1
   Group: 'Food'
   Skills:
-  - potion{t=SATURATION;d=1200;p=false} @self ~onConsume 
+  - potion{t=SATURATION;d=100;p=false} @self ~onConsume 
   - potion{t=NIGHT_VISION;d=36000;p=false} @self ~onConsume
-  - potion{t=LUCK;d=36000;p=false;l=9} @self ~onConsume 
+  - potion{t=LUCK;d=36000;p=false;l=4} @self ~onConsume 
   - heal{a=6} @self ~onConsume 
