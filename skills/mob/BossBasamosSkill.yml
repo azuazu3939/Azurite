@@ -229,7 +229,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5:
   - addtag{t=ATTACK} @self
   - sound{s=entity.evoker.prepare_summon;v=2;sc=AMBIENT;repeat=2;repeati=10} @self
   - delay 50
-  - sudoskill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer} @TTP{limit=2;sort=RANDOM;c=[ - distance{d=<48} true ]}
+  - sudoskill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer} @TTP{limit=2;sort=RANDOM;c=[ - distance{d=<48} true ];ignore=creative,spectator}
   - delay 60
   - removetag{t=ATTACK} @self
 
