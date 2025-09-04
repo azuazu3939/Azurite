@@ -9,7 +9,7 @@ Azuriter_Neutral_Zombie_Spawn:
   Conditions:
   - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_Neutral_Zombie} true
-  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf,Azuriter_BigCamela;amount=<12;radius=32} true
   - mobsInRadius{types=Azuriter_Neutral_Zombie;amount=<3;radius=24} true
 
 Azuriter_Big_Zombie_Spawn:
@@ -23,7 +23,7 @@ Azuriter_Big_Zombie_Spawn:
   Conditions:
   - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_Neutral_Zombie} true
-  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<24;radius=32} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf,Azuriter_BigCamela;amount=<24;radius=32} true
   - mobsInRadius{types=Azuriter_Big_Zombie;amount=<1;radius=24} true
 
 Azuriter_High_Zombie_Spawn:
@@ -37,7 +37,7 @@ Azuriter_High_Zombie_Spawn:
   Conditions:
   - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_High_Zombie} true
-  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<10;radius=32} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf,Azuriter_BigCamela;amount=<10;radius=32} true
   - mobsInRadius{types=Azuriter_High_Zombie;amount=<3;radius=32} true
 
 Azuriter_Elite_Zombie_Spawn:
@@ -51,7 +51,7 @@ Azuriter_Elite_Zombie_Spawn:
   Conditions:
   - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_High_Zombie} true
-  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf,Azuriter_BigCamela;amount=<12;radius=32} true
   - mobsInRadius{types=Azuriter_Elite_Zombie;amount=<1;radius=32} true
 
 Azuriter_Warrior_Zombie_Spawn:
@@ -65,7 +65,7 @@ Azuriter_Warrior_Zombie_Spawn:
   Conditions:
   - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_Warrior_Zombie} true
-  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<16;radius=32} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf,Azuriter_BigCamela;amount=<16;radius=32} true
   - mobsInRadius{types=Azuriter_Warrior_Zombie;amount=<2;radius=24} true
 
 Azuriter_letthelater_Spawn:
@@ -79,7 +79,7 @@ Azuriter_letthelater_Spawn:
   Conditions:
   - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_letthelater} true
-  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf,Azuriter_BigCamela;amount=<12;radius=32} true
   - mobsInRadius{types=Azuriter_letthelater;amount=<2;radius=24} true
   - mobsInRadius{types=Azuriter_Boss_Feldos;amount=>0;radius=48} false
 
@@ -94,6 +94,21 @@ Azuriter_Altwolf_Spawn:
   Conditions:
   - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_Altwolf} true
-  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf;amount=<12;radius=32} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf,Azuriter_BigCamela;amount=<12;radius=32} true
   - mobsInRadius{types=Azuriter_Altwolf;amount=<2;radius=24} true
   - mobsInRadius{types=Azuriter_Boss_Wedler;amount=>0;radius=48} false
+
+Azuriter_BigCamela_Spawn:
+  Type: Azuriter_BigCamela
+  Worlds: Field1
+  Action: ADD
+  #Cooldown: 0.2
+  PositionType: LAND
+  Chance: 0.125
+  Priority: 10
+  Conditions:
+  - mobsinworld{a=<800} true 
+  - containerRegion{r=Azuriter_BigCamela} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf,Azuriter_BigCamela;amount=<12;radius=32} true
+  - mobsInRadius{types=Azuriter_BigCamela;amount=<2;radius=24} true
+  - mobsInRadius{types=Azuriter_Boss_Basamos;amount=>0;radius=48} false

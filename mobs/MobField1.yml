@@ -237,3 +237,33 @@ Azuriter_Altwolf:
   - attribute{attr=GENERIC_ARMOR;a=50} @self ~onSpawn ?day
   - potion{t=STRENGTH;d=99999999;l=1;p=true;a=true} @self ~onSpawn ?day
   - potion{t=SPEED;d=99999999;l=1;p=true;a=true} @self ~onSpawn ?day
+
+Azuriter_BigCamela:
+  Template: Azuriter_Enemy_Base
+  Type: zombie
+  Display: "&fビッグキャムラ"
+  Health: 150
+  Damage: 16
+  Drops:
+  - money 6to9 0.5
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Options:
+    MaxCombatDistance: 48
+    KnockbackResistance: 0.8
+    MovementSpeed: 0.225
+    AttackSpeed: 20
+    NoDamageTicks: 0
+  Disguise: camel setScale 1.25
+  Skills:
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=8} @self ~onDropcombat 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_Basamos_Summon_Paper 1 0.1"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ビッグな皮 1 0.03"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ビッグな生肉 1 0.3"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=80} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR;a=80} @self ~onSpawn ?!day
+  - attribute{attr=GENERIC_ARMOR;a=50} @self ~onSpawn ?day

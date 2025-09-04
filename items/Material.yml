@@ -264,3 +264,26 @@ Azuriter_Basamos_Summon_Paper:
   ItemUpdater:
     Version: 1
   Group: 'Material'
+
+Azuriter_ビッグな皮:
+  Id: rabbit_hide
+  Display: "&fビッグな皮"
+  Lore:
+  - "&fField1のバサモスの住処などで、"
+  - "&f入手可能なアイテム、柔軟性がある。"
+  Enchantments:
+  - UNBREAKING 1
+  - SILK_TOUCH 1
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_ビッグな生肉:
+  Id: beef
+  Display: "&fビッグな生肉"
+  Lore:
+  - "&fField1のバサモスの住処などで、"
+  - "&f入手可能なアイテム、希少なお肉。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'

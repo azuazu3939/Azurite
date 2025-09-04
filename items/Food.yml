@@ -15,3 +15,13 @@ Azuriter_ウルフード:
   Group: 'Food'
   Skills:
   - potion{t=NIGHT_VISION;l=0;d=36000;p=false} @self ~onConsume 
+
+Azuriter_ビッグステーキ:
+  Id: cooked_beef
+  Display: "&aビッグステーキ"
+  ItemUpdater:
+    Version: 1
+  Group: 'Food'
+  Skills:
+  - potion{t=SATURATION;d=600;p=false} @self ~onConsume 
+  - heal{a=6} @self ~onConsume 
