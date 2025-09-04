@@ -310,11 +310,11 @@ OpenField_Enemy_焔獣フェルドス_MCLove32_HighDrop:
 
 Azuriter_Boss_Feldos_SpawnDrop:
   Skills:
-  - cmd{c="mlg <caster.name> Azuriter_焔獣の太骨 1 0.1"} 
-  - cmd{c="mlg <caster.name> Azuriter_焔獣の炎殻 1 0.15"} 
-  - cmd{c="mlg <caster.name> Azuriter_焔獣の炎牙 1 0.05"} 
-  - cmd{c="mlg <caster.name> Azuriter_炎核 1 0.025"}
-  - cmd{c="mlg <caster.name> Azuriter_ArmorGift_G1 1 0.025"} 
+  - cmd{c="mlg <caster.name> Azuriter_焔獣の太骨 1 0.1"} @self
+  - cmd{c="mlg <caster.name> Azuriter_焔獣の炎殻 1 0.15"} @self 
+  - cmd{c="mlg <caster.name> Azuriter_焔獣の炎牙 1 0.05"} @self 
+  - cmd{c="mlg <caster.name> Azuriter_炎核 1 0.025"} @self
+  - cmd{c="mlg <caster.name> Azuriter_ArmorGift_G1 1 0.025"} @self 
 
 OpenField_Enemy_Boss_MCLove32_Remove:
   Skills:
