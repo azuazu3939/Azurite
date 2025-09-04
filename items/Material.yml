@@ -221,3 +221,37 @@ Azuriter_タレットレーザー_頭:
   ItemUpdater:
     Version: 1
   Group: 'Material'
+
+Azuriter_砂核:
+  Id: honeycomb
+  Display: "&9砂核"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+  Skills:
+  - cancelEvent{sync=true} @self ~onUse
+  - cancelEvent{sync=true} @self ~onRightclick 
+
+Azuriter_幻想獣の皮:
+  Id: rabbit_hide
+  Display: "&a幻想獣の皮"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+
+Azuriter_幻想獣の脂肪:
+  Id: dragon_bleath
+  Display: "&a幻想獣の脂肪"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'
+  Skills:
+  - cancelEvent{sync=true} @self ~onUse
+  - cancelEvent{sync=true} @self ~onRightclick 
+
+Azuriter_幻想獣の骨:
+  Id: bone
+  Display: "&a幻想獣の骨"
+  ItemUpdater:
+    Version: 1
+  Group: 'Material'

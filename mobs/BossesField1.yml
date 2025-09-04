@@ -192,9 +192,7 @@ Azuriter_Boss_Basamos:
   - setVar{k=caster.2;a="OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2";t=STRING} @self ~onSpawn 
   - setVar{k=caster.3;a="OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3";t=STRING} @self ~onSpawn 
   - setVar{k=caster.4;a="OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_4";t=STRING} @self ~onSpawn
-  #- setVar{k=caster.5;a="OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5";t=STRING} @self ~onSpawn 
-  #- setVar{k=caster.6;a="OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_6";t=STRING} @self ~onSpawn 
-  #- setVar{k=caster.7;a="OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_7";t=STRING} @self ~onSpawn 
+  - setVar{k=caster.5;a="OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5";t=STRING} @self ~onSpawn 
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=64} @self ~onEnterCombat
   - skill:Generic_Enemy_MCLove32_EnterCombat{down_tick=80;shield_break=1050;heal_percent=0.03} @self ~onEntercombat
@@ -210,10 +208,10 @@ Azuriter_Boss_Basamos:
 
   - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  #- cmd{c="mlgo <target.name> Azuriter_風核 1 0.2";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
-  #- cmd{c="mlgo <target.name> Azuriter_風牙狼の骨 1 0.5";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
-  #- cmd{c="mlgo <target.name> Azuriter_風牙狼の牙 1 0.35";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  #- cmd{c="mlgo <target.name> Azuriter_風牙狼の皮 1 0.7";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
+  - cmd{c="mlgo <target.name> Azuriter_砂核 1 0.2";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_幻想獣の骨 1 0.5";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - cmd{c="mlgo <target.name> Azuriter_幻想獣の脂肪 1 0.35";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_幻想獣の皮 1 0.7";delay=20} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
   - cmd{c="mlg <target.name> Azuriter_ArmorGift_G1 1 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
 
   
@@ -221,13 +219,9 @@ Azuriter_Boss_Basamos:
   - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2} @self ~onSignal:raid_boss_skill2
   - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3} @self ~onSignal:raid_boss_skill3
   - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_4} @self ~onSignal:raid_boss_skill4
-  #- skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5} @self ~onSignal:raid_boss_skill5
-  #- skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_6} @self ~onSignal:raid_boss_skill6
-  #- skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_7} @self ~onSignal:raid_boss_skill7
+  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5} @self ~onSignal:raid_boss_skill5
   - message{m="<trigger.name>が、OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill1
   - message{m="<trigger.name>が、OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill2
   - message{m="<trigger.name>が、OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill3
   - message{m="<trigger.name>が、OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_4を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill4
-  #- message{m="<trigger.name>が、OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill5
-  #- message{m="<trigger.name>が、OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_6を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill6
-  #- message{m="<trigger.name>が、OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_7を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill7
+  - message{m="<trigger.name>が、OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5を<caster.name>に実行させた。"} @PIR{r=32} ~onSignal:raid_boss_skill5
