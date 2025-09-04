@@ -200,17 +200,14 @@ Generic_Enemy_MCLove32_SHOW_RANKING_SortList:
   - delay 0
   - addVar{k=skill.sortL;a=<skill.value>} @self ?varset{k=skill.sortL}
   - setVar{k=skill.sortL;a=<skill.value>;t=LIST} @self ?!varset{k=skill.sortL}
-  - message{m="<skill.var.sortL>"} @PIR{r=32}
 
 #
 Generic_Enemy_MCLove32_SHOW_RANKING_LISTING_RANK:
-  Conditions:
-  - vareq{k=skill.value;v="<skill.var.sortDMG.tostring>"} false 
   Skills:
   - delay 0
-  - setVar{k=skill.value;a="<skill.value>";t=STRING} @self
-  - message{m="&c<skill.var.sortDMG> aa <skill.var.value>"} @PIR{r=32}
-  - addVar{k=skill.count;a=1} @self
+  - setVar{k=skill.value;a="<skill.value>";t=STRING} @self ?!vareq{k=skill.value;v="<skill.var.sortDMG.tostring>"}
+  - message{m="&c<skill.var.sortDMG> aa <skill.var.value>"} @PIR{r=32} ?!vareq{k=skill.value;v="<skill.var.sortDMG.tostring>"}
+  - addVar{k=skill.count;a=1} @self ?!vareq{k=skill.value;v="<skill.var.sortDMG.tostring>"}
 
 Generic_ターゲットランダムプレイヤー_MCLove32:
   Conditions:
