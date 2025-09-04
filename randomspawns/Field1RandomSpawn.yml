@@ -110,5 +110,5 @@ Azuriter_BigCamela_Spawn:
   - mobsinworld{a=<800} true 
   - containerRegion{r=Azuriter_BigCamela} true
   - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf,Azuriter_BigCamela;amount=<12;radius=32} true
-  - mobsInRadius{types=Azuriter_BigCamela;amount=<2;radius=32} true
+  - mobsInRadius{types=Azuriter_BigCamela;amount=<2;radius=48} true
   - mobsInRadius{types=Azuriter_Boss_Basamos;amount=>0;radius=48} false
