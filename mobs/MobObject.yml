@@ -11,6 +11,7 @@ Azuriter_バサモスサンド_幻1:
   Options:
     MaxCombatDistance: 48
     PassthroughDamage: false
+    Silent: true
     Scale: 1
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=50} @self ~onSpawn
@@ -33,6 +34,7 @@ Azuriter_バサモスサンド_幻想1:
     PassthroughDamage: false
     LockPitch: true
     Scale: 2
+    Silent: true
     Glowing: true
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=120} @self ~onSpawn
@@ -56,6 +58,7 @@ Azuriter_バサモスサンド_幻想2:
     PassthroughDamage: false
     LockPitch: true
     Scale: 2
+    Silent: true
   Skills:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=120} @self ~onSpawn
   - sound{s=entity.wind_charge.wind_burst;p=0.75;sc=AMBIENT} @self ~onDespawn 

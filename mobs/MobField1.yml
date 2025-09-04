@@ -255,6 +255,7 @@ Azuriter_BigCamela:
     MovementSpeed: 0.225
     AttackSpeed: 20
     NoDamageTicks: 0
+    Silent: true
   Disguise: camel setScale 1.25
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
