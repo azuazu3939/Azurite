@@ -189,7 +189,7 @@ Generic_Enemy_MCLove32_SHOW_RANKING_LISTING:
   - setVar{k=skill.value;a=0;t=STRING} @self
 
   - foreachvalue{s=Generic_Enemy_MCLove32_SHOW_RANKING_LISTING_RANK;v=<skill.var.sortList>} @self 
-  - setVar{k=skill.sortRank;a=<skill.var.sortList.indexof.<skill.var.count>>;t=INTEGER} @self
+  - setVar{k=skill.sortRank;a=<skill.var.sortList.indexof.<skill.var.count>.add.1>;t=INTEGER} @self
 
   - setVar{k=skill.player;a=<target.name>;t=STRING} @UniqueIdentifier{u=<skill.key>} ?!varrange{k=skill.sortRank;r=>10} 
 
@@ -205,17 +205,12 @@ Generic_Enemy_MCLove32_SHOW_RANKING_SortList:
   - setVar{k=skill.sortL;a=<skill.value>;t=LIST} @self ?!varset{k=skill.sortL}
 
 #
-Generic_Enemy_MCLove32_SHOW_RANKING_SortBool:
-  Skills:
-  - setVar{k=skill.sortBool;v="true";t=STRING} @self ?varequals{k=skill.name;v="<skill.key>"}
-
-#
 Generic_Enemy_MCLove32_SHOW_RANKING_LISTING_RANK:
   Conditions:
-  - varrange{k=skill.count;r=<skill.var.size>} false 
   - vareq{k=skill.value;v=<skill.var.sortDMG>} false 
   Skills:
-  - setVar{k=skill.value;a=<skill.value.tostring>;t=STRING} @self
+  - delay 0
+  - setVar{k=skill.value;a="<skill.value>";t=STRING} @self
   - message{m="<skill.var.sortDMG> == <skill.var.value>"} @PIR{r=32}
   - addVar{k=skill.count;a=1} @self
 
