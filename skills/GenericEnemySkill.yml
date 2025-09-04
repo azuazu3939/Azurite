@@ -185,11 +185,11 @@ Generic_Enemy_MCLove32_SHOW_RANKING_LISTING:
   - setVar{k=skill.size;a=<caster.var.rankMap.size>;t=INTEGER} @self
   - setVar{k=skill.value;a="0";t=STRING} @self
   - setVar{k=skill.count;a="<caster.var.sortL.sortnum.reverse.indexof.<skill.var.sortDMG>>";t=INTEGER} @self
-  - message{m="<caster.var.sortL>"} @PIR{r=32}
+  - message{m="<caster.var.sortL.sortnum.reverse>"} @PIR{r=32}
   - delay 1 
   - setVar{k=skill.sortRank;a=<skill.var.sortL.sortnum.reverse.<skill.var.count>.add.1>;t=INTEGER} @self
   - setVar{k=skill.player;a=<target.name>;t=STRING} @UniqueIdentifier{u=<skill.key>} ?!varrange{k=skill.sortRank;r=>10} 
-  - message{m="<caster.var.sortL>"} @PIR{r=32}
+  - message{m="<caster.var.sortL.sortnum.reverse>"} @PIR{r=32}
   - message{m="<skill.var.player>"} @PIR{r=32}
 
   - message{m="&a&l<skill.var.sortRank>位 &6&l<skill.var.player> &f&lスコア &b<skill.var.sortDMG>"} @PIR{r=<skill.var.range>} ?varset{k=skill.player}
