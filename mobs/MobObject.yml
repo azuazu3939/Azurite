@@ -68,7 +68,7 @@ Azuriter_バサモスサンド_幻想1:
   - sound{s=entity.guardian.attack;p=2;v=1;sc=AMBIENT;repeat=599;repeati=2} @self ~onSpawn 
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDespawn 
   - sound{s=block.anvil.place;P=2;sc=AMBIENT;v=0.5;cd=0.5} @trigger ~onDamaged 
-  - skill{s=Azuriter_バサモスサンド_幻想1_Effect} @self ~onDespawn
+  - skill{s=Azuriter_バサモスサンド_幻想1_Effect;continueafterdeath=true} @self ~onDespawn
   - remove{delay=800} @self ~onSpawn
 
 Azuriter_バサモスサンド_幻想2:

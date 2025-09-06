@@ -315,7 +315,7 @@ Azuriter_バサモスサンド_幻想1_Effect:
       - mmType{t=Azuriter_Boss_Basamos} 
     ];
     ot=[
-      - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.1} @self
+      - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.1}
     ];
     oh=[
       - heal{a=-500}
