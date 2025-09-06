@@ -143,6 +143,6 @@ Azuriter_Multi_Melee_Weapon_1:
 Azuriter_Down_Melee: 
   Cooldown: 10
   Conditions:
-  - (wearing{s=HAND;i=Azuriter_ハイメレーソード} || wearing{s=HAND;i=Azuriter_メレーソード} || wearing{s=HAND;i=Azuriter_ガーディアンソード} || wearing{s=HAND;i=Azuriter_ハイガーディアンソード})
+  - itemgroup{s=HAND;g=MELEE}
   Skills:
   - onattack{n=Azuriter_Down_Melee;m=1.5;i=10;t=200;rd=true} @self
