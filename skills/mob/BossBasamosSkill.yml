@@ -310,12 +310,12 @@ Azuriter_Boss_Basamos_SpawnDrop:
 
 Azuriter_バサモスサンド_幻想1_Effect:
   Skills:
-  - missile{v=4;i=1;in=5;vr=10;sb=false;hp=false;hnp=true;hr=2.5;sdir=@MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST};syo=-1;sfo=0;
+  - missile{v=0.5;i=1;in=4;vr=10;sb=false;hp=false;hnp=true;hr=1.5;syo=-1;sfo=0;
     c=[ 
       - mmType{t=Azuriter_Boss_Basamos} 
     ];
     ot=[
-      - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.1}
+      - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.025}
     ];
     oh=[
       - heal{a=-500}
