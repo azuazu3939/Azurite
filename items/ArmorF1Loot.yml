@@ -101,9 +101,6 @@ Azuriter_L_ピュアマジカルH:
   Options:
     Unbreakable: true
     Color: 215,55,255
-  Lore:
-  - "&b最大マナ +75"
-  - "&dマナ回復 +1.25"
   Attributes:
     Head:
       ArmorToughness: 25 ADD 
