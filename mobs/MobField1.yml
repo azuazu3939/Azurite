@@ -1,5 +1,5 @@
 Azuriter_Neutral_Zombie:
-  Template: Azuriter_Enemy_Base
+  Template: Azuriter_Enemy_F1Base
   Display: "&fゾンビ"
   Health: 20
   Damage: 5
@@ -14,7 +14,7 @@ Azuriter_Neutral_Zombie:
   Skills:
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16} @self ~onDropcombat 
-  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} {c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
   - cmd{c="mlgo <target.name> Azuriter_粗悪な装備片 <random.1to3> 0.4"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
   - cmd{c="mlgo <target.name> Azuriter_粗悪な装備片 <random.4to8> 0.05"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath 
@@ -28,7 +28,7 @@ Azuriter_Neutral_Zombie:
   - potion{t=SPEED;d=99999999;l=0;p=true;a=true} @self ~onSpawn ?!day
 
 Azuriter_Big_Zombie:
-  Template: Azuriter_Enemy_Base
+  Template: Azuriter_Enemy_F1Base
   Display: "&f大きなゾンビ"
   Health: 250
   Damage: 5
@@ -64,7 +64,7 @@ Azuriter_Big_Zombie:
   - cmd{c="mlgo <target.name> Azuriter_CombatGift_G1 1 0.03"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true - hasAuraStacks{n=Azuriter_Player_EnterCombat;s=>500} true ]} ~onDeath
 
 Azuriter_Warrior_Zombie:
-  Template: Azuriter_Enemy_Base
+  Template: Azuriter_Enemy_F1Base
   Display: "&f戦士ゾンビ"
   Health: 125
   Damage: 7
@@ -97,7 +97,7 @@ Azuriter_Warrior_Zombie:
   - skill{s=Azuriter_Warrior_Zombie_Skills} @self ~onEntercombat 
 
 Azuriter_High_Zombie:
-  Template: Azuriter_Enemy_Base
+  Template: Azuriter_Enemy_F1Base
   Type: baby_zombie
   Display: "&fハイゾンビ"
   Health: 50
@@ -132,7 +132,7 @@ Azuriter_High_Zombie:
   - potion{t=STRENGTH;d=99999999;l=1;p=true;a=true} @self ~onSpawn ?!day
 
 Azuriter_Elite_Zombie:
-  Template: Azuriter_Enemy_Base
+  Template: Azuriter_Enemy_F1Base
   Display: "&fエリートゾンビ"
   Health: 600
   Damage: 12
@@ -173,7 +173,7 @@ Azuriter_Elite_Zombie:
   - skill{s=Azuriter_Elite_Zombie_Skills} @self ~onEntercombat 
 
 Azuriter_letthelater:
-  Template: Azuriter_Enemy_Abstract_Generic
+  Template: Azuriter_Enemy_F1Base
   Type: skeleton
   Display: "&fレットザレーター"
   Health: 100
@@ -207,7 +207,7 @@ Azuriter_letthelater:
   - skill{s=Azuriter_レットザレーター_Skills} @self ~onShoot 
 
 Azuriter_Altwolf:
-  Template: Azuriter_Enemy_Base
+  Template: Azuriter_Enemy_F1Base
   Type: wolf
   Display: "&fアルトゥルフ"
   Health: 85
@@ -239,7 +239,7 @@ Azuriter_Altwolf:
   - potion{t=SPEED;d=99999999;l=1;p=true;a=true} @self ~onSpawn ?day
 
 Azuriter_BigCamela:
-  Template: Azuriter_Enemy_Base
+  Template: Azuriter_Enemy_F1Base
   Type: zombie
   Display: "&fビッグキャムラ"
   Health: 150
