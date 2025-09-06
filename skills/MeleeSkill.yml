@@ -145,4 +145,5 @@ Azuriter_Down_Melee:
   Conditions:
   - itemgroup{s=HAND;g=MELEE}
   Skills:
+  - message{m="a"} @self{}
   - onattack{n=Azuriter_Down_Melee;m=1.5;i=10;t=200;rd=true} @self
