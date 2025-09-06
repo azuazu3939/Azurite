@@ -1,18 +1,22 @@
 DiamondFull:
   Enabled: true # Will default to true if not set
-  Display: "&bダイヤモンドフル"
+  Display: "ダイヤモンドフル"
   Lore:
-  - "&bダイヤモンドフル&f - &aSet"
-  - "&3[2]: &c攻撃力+3"
-  - "&3[4]: &c攻撃力+6&f、&9防御+8&f、&9強度+4"
+  - "<aqua>ダイヤモンドフル&f - <green>Set"
+  - "<blue>[2]: <red>攻撃力+3"
+  - "<blue>[4]: <red>攻撃力+6<white>、<dark_auqa>防御+8&f、<dark_auqa>強度+4"
   Bonuses:
   - Pieces: 2
     Attributes:
       All:
         Damage: 3 ADD
+    Skills:
+    - message{m="a"} @self ~onSwing
   - Pieces: 4
     Attributes:
       All:
         Damage: 6 ADD
         Armor: 8 ADD 
         ArmorToughness: 4 ADD
+    Skills:
+    - message{m="b"} @self ~onSwing
