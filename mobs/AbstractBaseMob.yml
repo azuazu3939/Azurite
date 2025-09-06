@@ -44,7 +44,7 @@ Azuriter_Enemy_F1Base:
   Skills:
   - cmd{c="mlg <target.name> Azuriter_Pureオフハンド<random.1to30> 1 0.000001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlg <target.name> Azuriter_ハイPureオフハンド<random.1to30> 1 0.0000001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
-  - cmd{c="mlgo <target.name> Azuriter_CombatGift_G1 1 0.00005"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_CombatGift_G1 1 0.000025"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
 
 Azuriter_Enemy_RaidBoss_Base:
   Template: Azuriter_Enemy_Abstract_Generic
