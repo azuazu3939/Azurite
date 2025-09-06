@@ -93,6 +93,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2:
   - hasTag{t=ATTACK} false 
   Skills:
   - addtag{t=ATTACK} @self
+  - addtag{t=SHOW} @self
   - setVar{var=skill.dmg;val="<caster.damage> + 1";t=FLOAT} @self
   - skill:Generic_Enemy_MCLove32_BUFF @self
   - o{
@@ -225,6 +226,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5:
   - incombat
   - hasTag{t=DOWN} false
   - hasTag{t=ATTACK} false 
+  - hasTag{t=SHOW} true
   Skills:
   - addtag{t=ATTACK} @self
   - sound{s=entity.evoker.prepare_summon;v=2;sc=AMBIENT;repeat=2;repeati=10} @self
