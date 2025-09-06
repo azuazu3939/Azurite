@@ -1,30 +1,21 @@
 Azuriter_L_ガーディア_Full:
   Cooldown: 5
-  Conditions:
-  - wearing{s=HEAD;i=Azuriter_L_ガーディアH}
-  - wearing{s=CHEST;i=Azuriter_L_ガーディアC}
-  - wearing{s=LEGS;i=Azuriter_L_ガーディアL}
-  - wearing{s=FEET;i=Azuriter_L_ガーディアB}
   Skills:
   - cancelEvent{sync=true} @self 0.15
   - potion{t=RESISTANCE;l=0;d=600;p=false} @self
   - potion{t=REGENERATION;l=1;d=600;p=false} @self
   - potion{t=SPEED;l=5;d=600;p=false} @self
   
-Azuriter_L_ガーディア_Full_Damage:
+Azuriter_L_ガーディア_Full_Combat:
   Cooldown: 0.5
   Conditions:
-  - wearing{s=HEAD;i=Azuriter_L_ガーディアH}
-  - wearing{s=CHEST;i=Azuriter_L_ガーディアC}
-  - wearing{s=LEGS;i=Azuriter_L_ガーディアL}
-  - wearing{s=FEET;i=Azuriter_L_ガーディアB}
   - damagecause{cause=ENTITY_ATTACK}
   TriggerConditions:
   - isplayer false 
   Skills:
   - sudoskill{
     s=[
-      - threat{m=add;a="<caster.damage> * 20"} @trigger 
+      - threat{m=add;a="<caster.damage> * 5"} @trigger 
     ];cat=true} @trigger
   - potion{t=RESISTANCE;l=1;d=150;p=false} @PIR{r=32}
   - setVar{k=caster.tank_job;a="<caster.var.tank_job|0> + 1";t=INTEGER} @self
@@ -33,11 +24,7 @@ Azuriter_L_ガーディア_Full_Damage:
 
 Azuriter_L_ガーディア_Full_Counter:
   Conditions:
-  - wearing{s=HEAD;i=Azuriter_L_ガーディアH}
-  - wearing{s=CHEST;i=Azuriter_L_ガーディアC}
-  - wearing{s=LEGS;i=Azuriter_L_ガーディアL}
-  - wearing{s=FEET;i=Azuriter_L_ガーディアB}
-  - varrange{k=caster.tank_job;r=>3}
+  - varrange{k=caster.tank_job;r=>19}
   - hasMana{a=>200;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
@@ -46,6 +33,6 @@ Azuriter_L_ガーディア_Full_Counter:
   Skills:
   - setVar{k=caster.tank_job;a="0";t=INTEGER} @self
   - modifyMana{a=-200} @self 
-  - damage{a="<caster.damage> + 100";pi=true;ii=true;repeat=4;repeati=2} @trigger 
-  - e:p{p=explosion_emitter;s=2;a=5;ys=2;hs=2;audience=caster;repeat=4;repeati=2} @trigger
+  - damage{a="<caster.damage> + 150";pi=true;ii=true;repeat=4;repeati=2} @trigger 
+  - e:p{p=explosion_emitter;s=1;a=5;ys=2;hs=2;audience=caster;repeat=4;repeati=2} @trigger
   - sound{s=item.totem.use;v=0.5;audience=caster;sc=AMBIENT} @self

@@ -1,14 +1,12 @@
 Azuriter_ディフェンス_Skills:
   Cooldown: 1
-  Conditions:
-  - (wearing{s=HEAD;i=Azuriter_ディフェンスH} && wearing{s=CHEST;i=Azuriter_ディフェンスC} && wearing{s=LEGS;i=Azuriter_ディフェンスL} && wearing{s=FEET;i=Azuriter_ディフェンスB} ||
-     wearing{s=HEAD;i=Azuriter_エリートディフェンスH} && wearing{s=CHEST;i=Azuriter_エリートディフェンスC} && wearing{s=LEGS;i=Azuriter_エリートディフェンスL} && wearing{s=FEET;i=Azuriter_エリートディフェンスB}
-     ) castinstead Azuriter_ディフェンス_Full
   Skills:
   - potion{t=REGENERATION;d=60;l=0;p=false} @self
+  - heal{a=1} @self
 
 Azuriter_ディフェンス_Full:
   Cooldown: 1
   Skills:
   - potion{t=REGENERATION;d=100;l=1;p=false} @self
   - potion{t=SPEED;d=100;l=0;p=false} @self
+  - heal{a=4} @self

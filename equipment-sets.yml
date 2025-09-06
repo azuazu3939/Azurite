@@ -1,22 +1,100 @@
-DiamondFull:
+Diamond_S1End:
   Enabled: true # Will default to true if not set
-  Display: "ダイヤモンドフル"
-  Lore:
-  - "<aqua>ダイヤモンドフル&f - <green>Set"
-  - "<blue>[2]: <red>攻撃力+3"
-  - "<blue>[4]: <red>攻撃力+6<white>、<dark_auqa>防御+8&f、<dark_auqa>強度+4"
   Bonuses:
-  - Pieces: 2
-    Attributes:
-      All:
-        Damage: 3 ADD
+  - Pieces: 1
     Skills:
-    - message{m="a"} @self ~onSwing
+    - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
+    - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged
+    - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing
+    - skill{s=Azuriter_シリーズエンド1_Skills}@self ~onSkillHit
   - Pieces: 4
-    Attributes:
-      All:
-        Damage: 6 ADD
-        Armor: 8 ADD 
-        ArmorToughness: 4 ADD
     Skills:
-    - message{m="b"} @self ~onSwing
+    - skill{s=Azuriter_シリーズエンド1_Full} @self ~onKill
+    - skill{s=Azuriter_シリーズエンド1_Full} @self ~onDamaged
+    - skill{s=Azuriter_シリーズエンド1_Full} @self ~onSwing
+    - skill{s=Azuriter_シリーズエンド1_Full} @self ~onSkillHit
+
+Magical:
+  Enabled: true # Will default to true if not set
+  Bonuses:
+  - Pieces: 1
+    Skills:
+    - skill{s=Azuriter_L_マジカル_Kill} @self ~onKill
+    - skill{s=Azuriter_L_マジカル_Damaged} @self ~onDamaged
+  - Pieces: 4
+    Skills:
+    - skill{s=Azuriter_L_マジカル_Skills} @self ~onKill
+    - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged
+    - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing
+    - skill{s=Azuriter_L_マジカル_Skills} @self ~onSkillHit
+
+Pure_Magical:
+  Enabled: true # Will default to true if not set
+  Bonuses:
+  - Pieces: 1
+    Skills:
+    - skill{s=Azuriter_L_マジカル_Kill} @self ~onKill
+    - skill{s=Azuriter_L_マジカル_Damaged} @self ~onDamaged
+  - Pieces: 4
+    Skills:
+    - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill
+    - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged
+    - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing
+    - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSkillHit
+
+Guardia:
+  Enabled: true # Will default to true if not set
+  Bonuses:
+  - Pieces: 4
+    Skills:
+    - skill{s=Azuriter_L_ガーディア_Full} @self ~onKill
+    - skill{s=Azuriter_L_ガーディア_Full} @self ~onDamaged
+    - skill{s=Azuriter_L_ガーディア_Full} @self ~onSwing
+    - skill{s=Azuriter_L_ガーディア_Full} @self ~onSkillHit
+
+    - skill{s=Azuriter_L_ガーディア_Full_Combat} @self ~onSkillHit
+    - skill{s=Azuriter_L_ガーディア_Full_Combat} @self ~onDamaged
+
+Healthal:
+  Enabled: true # Will default to true if not set
+  Bonuses:
+  - Pieces: 4
+    Skills:
+    - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onKill
+    - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onDamaged
+    - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onSwing
+    - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onSkillHit
+
+    - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onSignal:support
+
+Attacker:
+  Enabled: true # Will default to true if not set
+  Bonuses:
+  - Pieces: 1
+    Skills:
+    - skill{s=Azuriter_アタッカー_Skills} @self ~onKill
+    - skill{s=Azuriter_アタッカー_Skills} @self ~onDamaged
+    - skill{s=Azuriter_アタッカー_Skills} @self ~onSwing
+    - skill{s=Azuriter_アタッカー_Skills} @self ~onSkillHit
+  - Pieces: 4
+    Skills:
+    - skill{s=Azuriter_アタッカー_Full} @self ~onKill
+    - skill{s=Azuriter_アタッカー_Full} @self ~onDamaged
+    - skill{s=Azuriter_アタッカー_Full} @self ~onSwing
+    - skill{s=Azuriter_アタッカー_Full} @self ~onSkillHit
+
+Defender:
+  Enabled: true # Will default to true if not set
+  Bonuses:
+  - Pieces: 1
+    Skills:
+    - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
+    - skill{s=Azuriter_ディフェンス_Skills} @self ~onDamaged
+    - skill{s=Azuriter_ディフェンス_Skills} @self ~onSwing
+    - skill{s=Azuriter_ディフェンス_Skills} @self ~onSkillHit
+  - Pieces: 4
+    Skills:
+    - skill{s=Azuriter_ディフェンス_Full} @self ~onKill
+    - skill{s=Azuriter_ディフェンス_Full} @self ~onDamaged
+    - skill{s=Azuriter_ディフェンス_Full} @self ~onSwing
+    - skill{s=Azuriter_ディフェンス_Full} @self ~onSkillHit

@@ -1,7 +1,5 @@
 Azuriter_シリーズエンド1_Skills:
   Cooldown: 10
-  Conditions:
-  - (wearing{s=HEAD;i=Azuriter_シリーズエンド1H} && wearing{s=CHEST;i=Azuriter_シリーズエンド1C} && wearing{s=LEGS;i=Azuriter_シリーズエンド1L} && wearing{s=FEET;i=Azuriter_シリーズエンド1B}) castinstead Azuriter_シリーズエンド1_Full
   Skills:
   - potion{t=SPEED;d=500;l=0;p=false} @self
   - potion{t=STRENGTH;d=500;l=0;p=false} @self

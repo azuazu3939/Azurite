@@ -1,10 +1,5 @@
 Azuriter_L_マジカル_Skills:
   Cooldown: 5
-  Conditions:
-  - wearing{s=HEAD;i=Azuriter_L_マジカルH}
-  - wearing{s=CHEST;i=Azuriter_L_マジカルC}
-  - wearing{s=LEGS;i=Azuriter_L_マジカルL}
-  - wearing{s=FEET;i=Azuriter_L_マジカルB}
   Skills:
   - potion{t=RESISTANCE;l=0;d=300;p=false} @self
   - potion{t=STRENGTH;l=2;d=300;p=false} @self
@@ -15,11 +10,6 @@ Azuriter_L_マジカル_Skills:
 
 Azuriter_L_ピュアマジカル_Skills:
   Cooldown: 5
-  Conditions:
-  - wearing{s=HEAD;i=Azuriter_L_ピュアマジカルH}
-  - wearing{s=CHEST;i=Azuriter_L_ピュアマジカルC}
-  - wearing{s=LEGS;i=Azuriter_L_ピュアマジカルL}
-  - wearing{s=FEET;i=Azuriter_L_ピュアマジカルB}
   Skills:
   - potion{t=RESISTANCE;l=0;d=500;p=false} @self
   - potion{t=STRENGTH;l=1;d=500;p=false} @self
@@ -27,16 +17,14 @@ Azuriter_L_ピュアマジカル_Skills:
   - heal{a=10} @self
   - modifyMana{a=100} @self
 
-Azuriter_L_ピュアマジカル_Damaged:
+Azuriter_L_マジカル_Damaged:
   Cooldown: 1
   Conditions:
-  - (wearing{s=HEAD;i=Azuriter_L_ピュアマジカルH} || wearing{s=CHEST;i=Azuriter_L_ピュアマジカルC} || wearing{s=LEGS;i=Azuriter_L_ピュアマジカルL} || wearing{s=FEET;i=Azuriter_L_ピュアマジカルB}) true 
   Skills:
   - modifyMana{a=10} @self
 
-Azuriter_L_ピュアマジカル_Kill:
+Azuriter_L_マジカル_Kill:
   Cooldown: 0.5
   Conditions:
-  - (wearing{s=HEAD;i=Azuriter_L_ピュアマジカルH} || wearing{s=CHEST;i=Azuriter_L_ピュアマジカルC} || wearing{s=LEGS;i=Azuriter_L_ピュアマジカルL} || wearing{s=FEET;i=Azuriter_L_ピュアマジカルB}) true 
   Skills:
   - modifyMana{a=20} @self

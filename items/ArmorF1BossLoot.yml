@@ -1,6 +1,8 @@
 Azuriter_L_マジカルH:
   Id: leather_helmet
   Display: "&aマジカルヘルメット &f&lL1"
+  EquipSlot: HEAD
+  EquipmentSet: Magical
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -17,9 +19,6 @@ Azuriter_L_マジカルH:
   - az:max_mana 1
   - az:mana_regen 1
   Skills:
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onKill 
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
@@ -29,6 +28,8 @@ Azuriter_L_マジカルH:
 Azuriter_L_マジカルC:
   Id: leather_chestplate
   Display: "&aマジカルチェストプレート &f&lL1"
+  EquipSlot: CHEST
+  EquipmentSet: Magical
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -45,13 +46,12 @@ Azuriter_L_マジカルC:
   - az:max_mana 1
   - az:mana_regen 1
   Skills:
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onKill 
 
 Azuriter_L_マジカルL:
   Id: leather_leggings
   Display: "&aマジカルレギンス &f&lL1"
+  EquipSlot: LEGS
+  EquipmentSet: Magical
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -68,13 +68,12 @@ Azuriter_L_マジカルL:
   - az:max_mana 1
   - az:mana_regen 1
   Skills:
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onKill 
 
 Azuriter_L_マジカルB:
   Id: leather_boots
   Display: "&aマジカルブーツ &f&lL1"
+  EquipSlot: FEET
+  EquipmentSet: Magical
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -91,13 +90,12 @@ Azuriter_L_マジカルB:
   - az:max_mana 1
   - az:mana_regen 1
   Skills:
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
-  - skill{s=Azuriter_L_マジカル_Skills} @self ~onKill 
 
 Azuriter_L_ピュアマジカルH:
   Id: leather_helmet
   Display: "&aピュアマジカルヘルメット &f&lL1"
+  EquipSlot: HEAD
+  EquipmentSet: Pure_Magical
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -112,11 +110,6 @@ Azuriter_L_ピュアマジカルH:
   - az:max_mana 2
   - az:mana_regen 2
   Skills:
-  - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
-  - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing 
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill 
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
@@ -126,6 +119,8 @@ Azuriter_L_ピュアマジカルH:
 Azuriter_L_ピュアマジカルC:
   Id: leather_chestplate
   Display: "&aピュアマジカルチェストプレート &f&lL1"
+  EquipSlot: CHEST
+  EquipmentSet: Pure_Magical
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -140,15 +135,12 @@ Azuriter_L_ピュアマジカルC:
   - az:max_mana 2
   - az:mana_regen 2
   Skills:
-  - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
-  - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing 
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill 
 
 Azuriter_L_ピュアマジカルL:
   Id: leather_leggings
   Display: "&aピュアマジカルレギンス &f&lL1"
+  EquipSlot: LEGS
+  EquipmentSet: Pure_Magical
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -163,15 +155,12 @@ Azuriter_L_ピュアマジカルL:
   - az:max_mana 2
   - az:mana_regen 2
   Skills:
-  - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
-  - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing 
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill 
 
 Azuriter_L_ピュアマジカルB:
   Id: leather_boots
   Display: "&aピュアマジカルブーツ &f&lL1"
+  EquipSlot: FEET
+  EquipmentSet: Pure_Magical
   Options:
     Unbreakable: true
     Color: 215,55,255
@@ -186,15 +175,12 @@ Azuriter_L_ピュアマジカルB:
   - az:max_mana 2
   - az:mana_regen 2
   Skills:
-  - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
-  - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing 
-  - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill 
 
 Azuriter_L_ガーディアH:
   Id: netherite_helmet
   Display: "&aガーディア・ヘルメット &f&lL1"
+  EquipSlot: HEAD
+  EquipmentSet: Guardia
   Lore: 
   - "&fFullSetでタンク本来の性能を発揮する。"
   - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
@@ -216,15 +202,12 @@ Azuriter_L_ガーディアH:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
   - skill{s=Azuriter_HealthColor} @self ~onSwing
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
-  - skill{s=Azuriter_L_ガーディア_Full} @self ~onDamaged 
-  - skill{s=Azuriter_L_ガーディア_Full} @self ~onSwing
-  - skill{s=Azuriter_L_ガーディア_Full} @self ~onKill
-  - skill{s=Azuriter_L_ガーディア_Full} @self ~onJump 
-  - skill{s=Azuriter_L_ガーディア_Full_Damage} @self ~onDamaged 
 
 Azuriter_L_ガーディアC:
   Id: netherite_chestplate
   Display: "&aガーディア・チェストプレート &f&lL1"
+  EquipSlot: CHEST
+  EquipmentSet: Guardia
   Lore: 
   - "&fFullSetでタンク本来の性能を発揮する。"
   - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
@@ -245,6 +228,8 @@ Azuriter_L_ガーディアC:
 Azuriter_L_ガーディアL:
   Id: netherite_leggings
   Display: "&aガーディア・レギンス &f&lL1"
+  EquipSlot: LEGS
+  EquipmentSet: Guardia
   Lore: 
   - "&fFullSetでタンク本来の性能を発揮する。"
   - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
@@ -265,6 +250,8 @@ Azuriter_L_ガーディアL:
 Azuriter_L_ガーディアB:
   Id: netherite_boots
   Display: "&aガーディア・ブーツ &f&lL1"
+  EquipSlot: FEET
+  EquipmentSet: Guardia
   Lore: 
   - "&fFullSetでタンク本来の性能を発揮する。"
   - "&f被弾を重ねると、対象に強烈カウンターを放つ。"
@@ -286,6 +273,8 @@ Azuriter_L_ガーディアB:
 Azuriter_L_ヘルシティアH:
   Id: leather_helmet
   Display: "&aヘルシティア・ヘルメット &f&lL1"
+  EquipSlot: HEAD
+  EquipmentSet: Healthal
   Lore: 
   - "&fFullSetでヒーラー本来の性能を発揮する。"
   - "&f被弾時に周囲に強力なバフを付与する。"
@@ -309,14 +298,12 @@ Azuriter_L_ヘルシティアH:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
   - skill{s=Azuriter_HealthColor} @self ~onSwing
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
-  - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onDamaged 
-  - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onSwing
-  - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onKill
-  - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onSignal:support
 
 Azuriter_L_ヘルシティアC:
   Id: leather_chestplate
   Display: "&aヘルシティア・チェストプレート &f&lL1"
+  EquipSlot: CHEST
+  EquipmentSet: Healthal
   Lore: 
   - "&fFullSetでヒーラー本来の性能を発揮する。"
   - "&f被弾時に周囲に強力なバフを付与する。"
@@ -339,6 +326,8 @@ Azuriter_L_ヘルシティアC:
 Azuriter_L_ヘルシティアL:
   Id: leather_leggings
   Display: "&aヘルシティア・レギンス &f&lL1"
+  EquipSlot: LEGS
+  EquipmentSet: Healthal
   Lore: 
   - "&fFullSetでヒーラー本来の性能を発揮する。"
   - "&f被弾時に周囲に強力なバフを付与する。"
@@ -361,6 +350,8 @@ Azuriter_L_ヘルシティアL:
 Azuriter_L_ヘルシティアB:
   Id: leather_boots
   Display: "&aヘルシティア・ブーツ &f&lL1"
+  EquipSlot: FEET
+  EquipmentSet: Healthal
   Lore: 
   - "&fFullSetでヒーラー本来の性能を発揮する。"
   - "&f被弾時に周囲に強力なバフを付与する。"

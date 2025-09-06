@@ -113,9 +113,8 @@ Azuriter_トラベラーB:
 Azuriter_ディフェンスH:
   Id: leather_helmet
   Display: "&fディフェンダーヘルメット"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: HEAD
+  EquipmentSet: Defender
   Options:
     Unbreakable: true
     Color: 28,30,137
@@ -128,7 +127,6 @@ Azuriter_ディフェンスH:
       Health: 2 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
@@ -138,9 +136,8 @@ Azuriter_ディフェンスH:
 Azuriter_ディフェンスC:
   Id: leather_chestplate
   Display: "&fディフェンダーチェストプレート"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: CHEST
+  EquipmentSet: Defender
   Options:
     Unbreakable: true
     Color: 28,30,137
@@ -153,14 +150,12 @@ Azuriter_ディフェンスC:
       Health: 4 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
 
 Azuriter_ディフェンスL:
   Id: leather_leggings
   Display: "&fディフェンダーレギンス"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: LEGS
+  EquipmentSet: Defender
   Options:
     Unbreakable: true
     Color: 28,30,137
@@ -173,14 +168,12 @@ Azuriter_ディフェンスL:
       Health: 2 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
 
 Azuriter_ディフェンスB:
   Id: leather_boots
   Display: "&fディフェンダーブーツ"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: FEET
+  EquipmentSet: Defender
   Options:
     Unbreakable: true
     Color: 28,30,137
@@ -193,14 +186,12 @@ Azuriter_ディフェンスB:
       Health: 1 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
 
 Azuriter_アタッカーH:
   Id: leather_helmet
   Display: "&fアタッカーヘルメット"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: HEAD
+  EquipmentSet: Attacker
   Options:
     Unbreakable: true
     Color: 228,32,32
@@ -213,7 +204,6 @@ Azuriter_アタッカーH:
       Damage: 1 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
@@ -223,9 +213,8 @@ Azuriter_アタッカーH:
 Azuriter_アタッカーC:
   Id: leather_chestplate
   Display: "&fアタッカーチェストプレート"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: CHEST
+  EquipmentSet: Attacker
   Options:
     Unbreakable: true
     Color: 228,32,32
@@ -238,14 +227,12 @@ Azuriter_アタッカーC:
       Damage: 1 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
 
 Azuriter_アタッカーL:
   Id: leather_leggings
   Display: "&fアタッカーレギンス"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: LEGS
+  EquipmentSet: Attacker
   Options:
     Unbreakable: true
     Color: 228,32,32
@@ -258,14 +245,12 @@ Azuriter_アタッカーL:
       Damage: 1 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
 
 Azuriter_アタッカーB:
   Id: leather_boots
   Display: "&fアタッカーブーツ"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: FEET
+  EquipmentSet: Attacker
   Options:
     Unbreakable: true
     Color: 228,32,32
@@ -278,7 +263,6 @@ Azuriter_アタッカーB:
       Damage: 1 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
 
 Azuriter_ハイトラベラーH:
   Id: leather_helmet
@@ -424,9 +408,8 @@ Azuriter_スカウトB:
 Azuriter_エリートアタッカーH:
   Id: golden_helmet
   Display: "&fエリートアタッカーヘルメット"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: HEAD
+  EquipmentSet: Attacker
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -439,7 +422,6 @@ Azuriter_エリートアタッカーH:
       Health: 3 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
@@ -449,9 +431,8 @@ Azuriter_エリートアタッカーH:
 Azuriter_エリートアタッカーC:
   Id: golden_chestplate
   Display: "&fエリートアタッカーチェストプレート"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: CHEST
+  EquipmentSet: Attacker
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -464,14 +445,12 @@ Azuriter_エリートアタッカーC:
       Health: 3 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
 
 Azuriter_エリートアタッカーL:
   Id: golden_leggings
   Display: "&fエリートアタッカーレギンス"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: LEGS
+  EquipmentSet: Attacker
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -484,14 +463,12 @@ Azuriter_エリートアタッカーL:
       Health: 3 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
 
 Azuriter_エリートアタッカーB:
   Id: golden_boots
   Display: "&fエリートアタッカーブーツ"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: FEET
+  EquipmentSet: Attacker
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -504,14 +481,12 @@ Azuriter_エリートアタッカーB:
       Health: 3 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_アタッカー_Skills} @self ~onKill 
 
 Azuriter_エリートディフェンスH:
   Id: iron_helmet
   Display: "&fエリートディフェンダーヘルメット"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: HEAD
+  EquipmentSet: Defender
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -523,7 +498,6 @@ Azuriter_エリートディフェンスH:
       Health: 5 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
@@ -533,9 +507,8 @@ Azuriter_エリートディフェンスH:
 Azuriter_エリートディフェンスC:
   Id: iron_chestplate
   Display: "&fエリートディフェンダーチェストプレート"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: CHEST
+  EquipmentSet: Defender
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -547,14 +520,12 @@ Azuriter_エリートディフェンスC:
       Health: 5 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
 
 Azuriter_エリートディフェンスL:
   Id: iron_leggings
   Display: "&fエリートディフェンダーレギンス"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: LEGS
+  EquipmentSet: Defender
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -566,14 +537,12 @@ Azuriter_エリートディフェンスL:
       Health: 5 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
 
 Azuriter_エリートディフェンスB:
   Id: iron_boots
   Display: "&fエリートディフェンダーブーツ"
-  Lore:
-  - "&f装着し、敵を倒すとことでBuff効果が得られる。"
-  - "&fFullセットで追加効果と、性能が上昇する。"
+  EquipSlot: FEET
+  EquipmentSet: Defender
   Options:
     Unbreakable: true
   ItemUpdater:
@@ -585,13 +554,12 @@ Azuriter_エリートディフェンスB:
       Health: 5 ADD
   Group: 'Armor'
   Skills:
-  - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
 
 Azuriter_シリーズエンド1H:
   Material: diamond_helmet
   Display: "&aシリーズエンド・I・ヘルメット"
   EquipSlot: HEAD
-  EquipmentSet: DiamondFull
+  EquipmentSet: Diamond_S1End
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"
@@ -606,10 +574,6 @@ Azuriter_シリーズエンド1H:
       Health: 8 ADD
       Damage: 2 ADD
   Group: 'Armor'
-  Skills:
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing 
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
@@ -620,7 +584,7 @@ Azuriter_シリーズエンド1C:
   Material: diamond_chestplate
   Display: "&aシリーズエンド・I・チェストプレート"
   EquipSlot: CHEST
-  EquipmentSet: DiamondFull
+  EquipmentSet: Diamond_S1End
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"
@@ -635,16 +599,12 @@ Azuriter_シリーズエンド1C:
       Health: 8 ADD
       Damage: 2 ADD
   Group: 'Armor'
-  Skills:
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing 
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
 
 Azuriter_シリーズエンド1L:
   Material: diamond_leggings
   Display: "&aシリーズエンド・I・レギンス"
   EquipSlot: LEGS
-  EquipmentSet: DiamondFull
+  EquipmentSet: Diamond_S1End
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"
@@ -659,16 +619,12 @@ Azuriter_シリーズエンド1L:
       Health: 8 ADD
       Damage: 2 ADD
   Group: 'Armor'
-  Skills:
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing 
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
 
 Azuriter_シリーズエンド1B:
   Material: diamond_boots
   Display: "&aシリーズエンド・I・ブーツ"
   EquipSlot: FEET
-  EquipmentSet: DiamondFull
+  EquipmentSet: Diamond_S1End
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"
@@ -683,7 +639,3 @@ Azuriter_シリーズエンド1B:
       Health: 8 ADD
       Damage: 2 ADD
   Group: 'Armor'
-  Skills:
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged 
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing
-  - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
