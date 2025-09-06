@@ -2,22 +2,19 @@ Azuriter_ファイアバレットボウ_Skills:
   Cooldown: 0.2
   Conditions:
   - wearing{s=HAND;i=Azuriter_ファイアバレットボウ}
-  - hasMana{a=>30;
+  - hasMana{a=>50;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]}
   - matCooldown{m=BOW} false 
   Skills:
   - setMaterialCooldown{m=BOW;d=5} @self
-  - modifyMana{a=-30} @self
+  - modifyMana{a=-50} @self
   - aura{ms=100;i=10;t=40;rd=true;n=Azuriter_ファイアバレットボウ;
     oe=[ 
-      - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks>";t=INTEGER} @self
-      - modifyMana{a=0.1;m=true} @self ?!varrange{k=skill.aura_regen;r=<5}
-      - modifyMana{a=0.1;m=true;delay=1} @self ?!varrange{k=skill.aura_regen;r=<10}
-      - modifyMana{a=0.1;m=true;delay=2} @self ?!varrange{k=skill.aura_regen;r=<15}
-      - modifyMana{a=0.1;m=true;delay=3} @self ?!varrange{k=skill.aura_regen;r=<20}
-      - modifyMana{a=0.1;m=true;delay=4} @self ?!varrange{k=skill.aura_regen;r=<25}
+      - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 20";t=INTEGER} @self
+      - modifyMana{a=<skill.var.aura_regen>;m=true} @self
+
     ];mc=true} @self
   - setVar{k=skill.damage;a="<caster.damage> * 0.75";t=FLOAT} @self
   - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> + 1";t=INTEGER} @self

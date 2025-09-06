@@ -10,7 +10,7 @@ Azuriter_カーブショットボウ:
     Version: 1
   Attributes:
     MainHand:
-      Damage: 24 ADD 
+      Damage: 25 ADD 
       Armor: -0.25 MULTIPLY_BASE
       ArmorToughness: -0.25 MULTIPLY_BASE
       Health: -0.2 MULTIPLY_BASE
@@ -26,14 +26,14 @@ Azuriter_ファイアバレットボウ:
   Options:
     Unbreakable: true
   Lore:
-  - "&fマナを30消費し、3発放つ。"
+  - "&fマナを50消費し、3発放つ。"
   - "&f特定条件で、hit周囲の範囲ダメを引き起こす。"
   ItemUpdater:
     Version: 1
   Attributes:
     MainHand:
       Damage: 32 ADD 
-      MovementSpeed: 0.4 MULTIPLY_BASE
+      MovementSpeed: 0.25 MULTIPLY_BASE
       Health: -0.2 MULTIPLY_BASE
   Group: 'Range-Weapon'
   Skills:
