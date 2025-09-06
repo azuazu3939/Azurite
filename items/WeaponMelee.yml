@@ -1,0 +1,368 @@
+Azuriter_ビギナーソード:
+  Id: wooden_sword
+  Display: "&fビギナーソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&fマナを100消費し、移動を行う。"
+  - "&f少しの間、落下ダメージがなくなる。"
+  - "&fまた、回避判定があり、"
+  - "&f回避するとマナの回復を行う。"
+  Options: 
+    Unbreakable: true
+  Enchantments:
+  - az:max_mana 2
+  Attributes:
+    MainHand:
+      Damage: 15 ADD
+  Group: 'Melee-Weapon'
+  Skills: 
+  - skill{s=Azuriter_ビギナーソード_R1_Skills} @self ~onUse 
+  - skill{s=Azuriter_ビギナーソード_R1_Skills} @self ~onInteract ?!crouching 
+
+Azuriter_トラベラーソード:
+  Id: golden_sword
+  Display: "&fトラベラーソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&f持っている間、自身の移動速度を上昇し、"
+  - "&f近くの敵の移動速度を下げる。"
+  - "&fまた、敵を倒すと攻撃速度上昇を付与する。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 32 ADD 
+      AttackSpeed: -0.7 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+  Skills: 
+  - potion{t=SPEED;l=0;d=20;p=false;cd=0.5} @self ~onTimer:10 ?wearing{s=HAND;i=Azuriter_トラベラーソード}
+  - potion{t=SLOWNESS;l=0;d=60;p=false;cd=0.5} @EIR{r=7;ignore=players} ~onTimer:10 ?wearing{s=HAND;i=Azuriter_トラベラーソード}
+  - skill{s=Azuriter_トラベラーソード_Kill} @self ~onKill 
+  - potionclear{t=HASTE} @self ~onUnheld
+
+Azuriter_ハイトラベラーソード:
+  Id: golden_sword
+  Display: "&aハイトラベラーソード"
+  Lore:
+  - "&f持っている間、自身の移動速度を上昇し、"
+  - "&f近くの敵の移動速度を下げる。"
+  - "&fまた、敵を倒すと攻撃速度上昇を付与する。"
+  Options:
+    Unbreakable: true
+    Glint: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    MainHand:
+      Damage: 44
+      AttackSpeed: -0.7 MULTIPLY_BASE
+  Group: 'Multi-Melee-Weapon'
+  Skills: 
+  - potion{t=SPEED;l=1;d=20;p=false;cd=0.5} @self ~onTimer:10 ?wearing{s=HAND;i=Azuriter_ハイトラベラーソード}
+  - potion{t=SLOWNESS;l=1;d=60;p=false;cd=0.5} @EIR{r=8;ignore=players} ~onTimer:10 ?wearing{s=HAND;i=Azuriter_ハイトラベラーソード}
+  - skill{s=Azuriter_トラベラーソード_Kill} @self ~onKill 
+  - potionclear{t=HASTE} @self ~onUnheld
+
+Azuriter_トマホーク:
+  Id: golden_axe
+  Display: "&fトマホーク"
+  Lore:
+  - "&f敵を切り上げ、鈍足を付与する。"
+  - "&fまた、敵を倒すと攻撃力上昇を付与する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    MainHand:
+      Damage: 32
+      AttackSpeed: -0.3 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+  Skills: 
+  - skill{s=Azuriter_トマホーク_Skills} @self ~onUse
+  - skill{s=Azuriter_トマホーク_Skills} @self ~onInteract ?!crouching 
+  - skill{s=Azuriter_トマホーク_Kill} @self ~onKill 
+  - potionclear{t=STRENGTH} @self ~onUnheld
+
+Azuriter_ハイトマホーク:
+  Id: golden_axe
+  Display: "&aハイトマホーク"
+  Lore:
+  - "&f敵を切り上げ、鈍足を付与する。"
+  - "&fまた、敵を倒すと攻撃力上昇を付与する。"
+  Options:
+    Unbreakable: true
+    Glint: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    MainHand:
+      Damage: 40
+      AttackSpeed: -0.3 MULTIPLY_BASE
+  Group: 'Multi-Melee-Weapon'
+  Skills: 
+  - skill{s=Azuriter_トマホーク_Skills} @self ~onUse
+  - skill{s=Azuriter_トマホーク_Skills} @self ~onInteract ?!crouching 
+  - skill{s=Azuriter_トマホーク_Kill} @self ~onKill 
+  - potionclear{t=STRENGTH} @self ~onUnheld
+
+Azuriter_ハルバード:
+  Id: iron_axe
+  Display: "&fハルバード"
+  Lore:
+  - "&f敵を切り倒し、斧を暴発させることで"
+  - "&f周辺へダメージを与える。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    MainHand:
+      Damage: 16
+      AttackSpeed: 0.5 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+  Skills: 
+  - skill{s=Azuriter_ハルバード_A1_Skills} @self ~onKill
+
+Azuriter_ハイハルバード:
+  Id: iron_axe
+  Display: "&aハイハルバード"
+  Lore:
+  - "&f敵を切り倒し、斧を暴発させることで"
+  - "&f周辺へダメージを与える。"
+  Options:
+    Unbreakable: true
+    Glint: true
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    MainHand:
+      Damage: 20
+      AttackSpeed: 0.5 MULTIPLY_BASE
+  Group: 'Multi-Melee-Weapon'
+  Skills: 
+  - skill{s=Azuriter_ハルバード_A1_Skills} @self ~onKill
+
+Azuriter_ステップソード:
+  Id: stone_sword
+  Display: "&aステップソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&fマナを80消費し、わずかに前進する。"
+  - "&f回避判定がわずかにあり、"
+  - "&f回避するとカウンターを行う。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 20 ADD 
+      AttackSpeed: -0.3 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+  Skills: 
+  - skill{s=Azuriter_ステップソード_R1_Skills} @self ~onUse
+  - skill{s=Azuriter_ステップソード_R1_Skills} @self ~onInteract ?!crouching 
+
+Azuriter_ハイステップソード:
+  Id: iron_sword
+  Display: "&9ハイステップソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&fマナを60消費し、わずかに前進する。"
+  - "&f回避判定がわずかにあり、"
+  - "&f回避するとカウンターを行う。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 28 ADD
+  Group: 'Melee-Weapon'
+  Skills: 
+  - skill{s=Azuriter_ハイステップソード_R1_Skills} @self ~onUse
+  - skill{s=Azuriter_ハイステップソード_R1_Skills} @self ~onInteract ?!crouching 
+
+Azuriter_ノーマルソード:
+  Id: stone_sword
+  Display: "&fノーマルソード"
+  ItemUpdater:
+    Version: 1
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 20 ADD
+  Group: 'Melee-Weapon'
+  Skills: 
+
+Azuriter_スモールソード:
+  Id: stone_sword
+  Display: "&fスモールソード"
+  ItemUpdater:
+    Version: 1
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 12 ADD
+      AttackSpeed: 1 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+  Skills: 
+
+Azuriter_ハイノーマルソード:
+  Id: stone_sword
+  Display: "&fハイノーマルソード"
+  ItemUpdater:
+    Version: 1
+  Options: 
+    Unbreakable: true
+    Glint: true
+  Attributes:
+    MainHand:
+      Damage: 25 ADD
+  Group: 'Multi-Melee-Weapon'
+  Skills: 
+
+Azuriter_ハイスモールソード:
+  Id: stone_sword
+  Display: "&fハイスモールソード"
+  ItemUpdater:
+    Version: 1
+  Options: 
+    Unbreakable: true
+    Glint: true
+  Attributes:
+    MainHand:
+      Damage: 14 ADD
+      AttackSpeed: 1 MULTIPLY_BASE
+  Group: 'Multi-Melee-Weapon'
+  Skills: 
+
+Azuriter_ステップライズソード:
+  Id: diamond_sword
+  Display: "&9ステップライズソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&fマナを100消費し、上昇する。"
+  - "&f少しの間、落下ダメージがなくなる。"
+  - "&fまた、回避判定があり、"
+  - "&f回避すると着地時に攻撃を行う。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 32 ADD
+  Group: 'Melee-Weapon'
+  Skills:
+  - skill{s=Azuriter_ステップライズソード_R1_Skills} @self ~onUse 
+  - skill{s=Azuriter_ステップライズソード_R1_Skills} @self ~onInteract ?!crouching  
+
+Azuriter_ステップダッシュソード:
+  Id: diamond_sword
+  Display: "&9ステップダッシュソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&fマナを100消費し、少しの移動性能と、"
+  - "&f回避判定を獲得する。"
+  - "&f回避すると周囲に攻撃を行う。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 36 ADD
+  Group: 'Melee-Weapon'
+  Skills:
+  - skill{s=Azuriter_ステップダッシュソード_R1_Skills} @self ~onUse
+  - skill{s=Azuriter_ステップダッシュソード_R1_Skills} @self ~onInteract ?!crouching  
+
+Azuriter_ステップアベンジソード:
+  Id: golden_sword
+  Display: "&9ステップアベンジソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&fマナを40消費し、回避待機状態にする。"
+  - "&f回避すると対象に攻撃を行う。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 28 ADD
+      AttackSpeed: -0.5 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+  Skills:
+  - skill{s=Azuriter_ステップアベンジソード_R1_Skills} @self ~onUse 
+  - skill{s=Azuriter_ステップアベンジソード_R1_Skills} @self ~onInteract ?!crouching  
+
+Azuriter_メレーソード:
+  Id: golden_sword
+  Display: "&aメレーソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&f純粋に殴るのに特化した武器。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 42 ADD
+      AttackSpeed: 0.15 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+  Skills: 
+
+Azuriter_ハイメレーソード:
+  Id: netherite_sword
+  Display: "&9ハイメレーソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&f純粋に殴るのに特化した武器。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 48 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'Multi-Melee-Weapon'
+  Skills: 
+
+Azuriter_ガーディアンソード:
+  Id: stone_sword
+  Display: "&aガーディアン・ソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&f耐久と火力を両立した殴り武器。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 36 ADD
+      AttackSpeed: -0.15 MULTIPLY_BASE
+      Armor: 8 ADD 
+      ArmorToughness: 8 ADD 
+      Health: 4 ADD
+  Group: 'Melee-Weapon'
+  Skills: 
+
+Azuriter_ハイガーディアンソード:
+  Id: diamond_sword
+  Display: "&aハイガーディアン・ソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&f耐久と火力を両立した殴り武器。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 40 ADD
+      Armor: 12 ADD 
+      ArmorToughness: 12 ADD 
+      Health: 6 ADD
+  Group: 'Multi-Melee-Weapon'
+  Skills:

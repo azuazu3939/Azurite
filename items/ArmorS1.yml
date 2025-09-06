@@ -590,6 +590,7 @@ Azuriter_エリートディフェンスB:
 Azuriter_シリーズエンド1H:
   Id: diamond_helmet
   Display: "&aシリーズエンド・I・ヘルメット"
+  EquipmentSet: DiamondFull
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"
@@ -617,6 +618,7 @@ Azuriter_シリーズエンド1H:
 Azuriter_シリーズエンド1C:
   Id: diamond_chestplate
   Display: "&aシリーズエンド・I・チェストプレート"
+  EquipmentSet: DiamondFull
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"
@@ -639,6 +641,7 @@ Azuriter_シリーズエンド1C:
 Azuriter_シリーズエンド1L:
   Id: diamond_leggings
   Display: "&aシリーズエンド・I・レギンス"
+  EquipmentSet: DiamondFull
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"
@@ -661,6 +664,7 @@ Azuriter_シリーズエンド1L:
 Azuriter_シリーズエンド1B:
   Id: diamond_boots
   Display: "&aシリーズエンド・I・ブーツ"
+  EquipmentSet: DiamondFull
   Lore:
   - "&f攻撃や被弾でBuff効果が得られる。"
   - "&fFullセットで追加効果と、性能が上昇する。"

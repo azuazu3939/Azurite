@@ -1,0 +1,29 @@
+Azuriter_ビギナーF:
+  Id: cooked_beef
+  Display: "&fビギナーフード"
+  ItemUpdater:
+    Version: 1
+  Group: 'Food'
+
+Azuriter_ウルフード:
+  Id: cooked_mutton
+  Display: "&fウルフード"
+  Lore:
+  - "&f夜目に長ける能力を一時的に得る。"
+  ItemUpdater:
+    Version: 1
+  Group: 'Food'
+  Skills:
+  - potion{t=NIGHT_VISION;l=0;d=36000;p=false} @self ~onConsume 
+
+Azuriter_ビッグステーキ:
+  Id: cooked_beef
+  Display: "&aビッグステーキ"
+  ItemUpdater:
+    Version: 1
+  Group: 'Food'
+  Skills:
+  - potion{t=SATURATION;d=100;p=false} @self ~onConsume 
+  - potion{t=NIGHT_VISION;d=36000;p=false} @self ~onConsume
+  - potion{t=LUCK;d=36000;p=false;l=4} @self ~onConsume 
+  - heal{a=6} @self ~onConsume 
