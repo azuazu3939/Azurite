@@ -55,6 +55,7 @@ Azuriter_Enemy_RaidBoss_Base:
   Skills:
   - raidBoss @self ~onSpawn 
   - addtag{t=BOSS} @self ~onSpawn
+  - attribute{attr=WAYPOINT_TRANSMIT_RANGE;a=4096} @self ~onSpawn
 
   - removetag{t=START} @self ~onDropcombat 
   - removetag{t=ATTACK} @self ~onDropcombat
