@@ -5,7 +5,7 @@ Azuriter_カーブショットボウ_Skills:
   - matCooldown{m=BOW} false 
   Skills:
   - setMaterialCooldown{m=BOW;d=12} @self
-  - setVar{k=skill.damage;a="<caster.damage> * 1.2";t=FLOAT} @self
+  - setVar{k=skill.damage;a="<caster.damage> + 10";t=FLOAT} @self
   - setVar{k=caster.shot_ct;a="<caster.var.shot_ct|0> + 1";t=INTEGER} @self
   - setVar{k=skill.damage;a="<skill.var.damage> * 0.98";t=FLOAT;repeat=<caster.var.shot_ct|0>;repeati=0} @self ?!hasAura{n=Azuriter_RangeWeaponDamageEnsure}
   - delay 2

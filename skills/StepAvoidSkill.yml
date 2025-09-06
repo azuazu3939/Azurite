@@ -49,7 +49,7 @@ Azuriter_StepAvoid_StepSword_Process:
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.6} @self 
     ];
     oh=[
-      - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> * 1.1 + 15";t=FLOAT} @self
+      - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> + 20";t=FLOAT} @self
       - setVar{k=skill.damage;a="<skill.var.damage> / 2";t=FLOAT} @self ?!wearing{s=HAND;i=Azuriter_ステップソード}
       - damage{a="<skill.var.damage>";ii=true;pi=true}
       - modifyMana{a=5} @self
@@ -75,7 +75,7 @@ Azuriter_StepAvoid_StepSword_Process2:
       - modifyProjectile{trait=INERTIA;action=MULTIPLY;value=0.6} @self 
     ];
     oh=[
-      - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> * 1.15 + 15";t=FLOAT} @self
+      - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> + 25";t=FLOAT} @self
       - setVar{k=skill.damage;a="<skill.var.damage> / 2";t=FLOAT} @self ?!wearing{s=HAND;i=Azuriter_ハイステップソード}
       - damage{a="<skill.var.damage>";ii=true;pi=true}
       - modifyMana{a=5} @self
@@ -107,7 +107,7 @@ Azuriter_StepAvoid_StepRiseSword:
   Conditions:
   - wearing{s=HAND;i=Azuriter_ステップライズソード}
   Skills:
-  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> * 4";t=FLOAT} @self
+  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> + 80";t=FLOAT} @self
   - skill{s=Generic_onGroundトリガースキル_MCLove32;s_name=Azuriter_StepAvoid_StepRiseSword_Success} @self
   - modifyMana{a=50} @self 
   - sound{s=block.note_block.chime;p=1.68;audience=caster}
@@ -141,7 +141,7 @@ Azuriter_StepAvoid_StepDashSword:
   - wearing{s=HAND;i=Azuriter_ステップダッシュソード}
   Skills:
   - modifyMana{a=50} @self 
-  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> * 4 + 25";t=FLOAT} @self
+  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> + 100";t=FLOAT} @self
   - sound{s=block.note_block.chime;p=1.68;audience=caster}
   - sound{s=block.note_block.chime;p=1.26;audience=caster;delay=2}
   - sound{s=block.note_block.chime;v=0.9;p=1.68;audience=caster;delay=4}
@@ -166,7 +166,7 @@ Azuriter_StepAvoid_StepAvengeSword:
   - wearing{s=HAND;i=Azuriter_ステップアベンジソード}
   Skills:
   - modifyMana{a=30} @self
-  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> * 2.5 + 15";t=FLOAT} @self
+  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> + 45";t=FLOAT} @self
   - sound{s=block.note_block.chime;p=1.68;audience=caster}
   - sound{s=block.note_block.chime;p=1.26;audience=caster;delay=2}
   - sound{s=block.note_block.chime;v=0.9;p=1.68;audience=caster;delay=4}

@@ -46,6 +46,6 @@ Azuriter_L_ガーディア_Full_Counter:
   Skills:
   - setVar{k=caster.tank_job;a="0";t=INTEGER} @self
   - modifyMana{a=-300} @self 
-  - damage{a="<caster.damage> * 10";pi=true;ii=true;repeat=4;repeati=2} @trigger 
+  - damage{a="<caster.damage> + 100";pi=true;ii=true;repeat=4;repeati=2} @trigger 
   - e:p{p=explosion_emitter;s=2;a=5;ys=2;hs=2;audience=caster;repeat=4;repeati=2} @trigger
   - sound{s=item.totem.use;v=0.5;audience=caster;sc=AMBIENT} @self
