@@ -4,9 +4,6 @@ Azuriter_L_マジカルH:
   Options:
     Unbreakable: true
     Color: 215,55,255
-  Lore:
-  - "&b最大マナ +50"
-  - "&dマナ回復 +1"
   Attributes:
     Head:
       ArmorToughness: 20 ADD 
@@ -16,10 +13,9 @@ Azuriter_L_マジカルH:
       AttackSpeed: 0.05 MULTIPLY_BASE
       MovementSpeed: 0.05 MULTIPLY_BASE
   Group: 'Loot-Armor'
-  NBT:
-    PublicBukkitValues:
-      az:max_mana: "50"
-      az:mana_regen: "1"
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
   Skills:
   - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
   - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
@@ -36,9 +32,6 @@ Azuriter_L_マジカルC:
   Options:
     Unbreakable: true
     Color: 215,55,255
-  Lore:
-  - "&b最大マナ +50"
-  - "&dマナ回復 +1"
   Attributes:
     Chest:
       ArmorToughness: 20 ADD 
@@ -48,10 +41,9 @@ Azuriter_L_マジカルC:
       AttackSpeed: 0.05 MULTIPLY_BASE
       MovementSpeed: 0.05 MULTIPLY_BASE
   Group: 'Loot-Armor'
-  NBT:
-    PublicBukkitValues:
-      az:max_mana: "50"
-      az:mana_regen: "1"
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
   Skills:
   - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
   - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
@@ -63,9 +55,6 @@ Azuriter_L_マジカルL:
   Options:
     Unbreakable: true
     Color: 215,55,255
-  Lore:
-  - "&b最大マナ +50"
-  - "&dマナ回復 +1"
   Attributes:
     Legs:
       ArmorToughness: 20 ADD 
@@ -75,10 +64,9 @@ Azuriter_L_マジカルL:
       AttackSpeed: 0.05 MULTIPLY_BASE
       MovementSpeed: 0.05 MULTIPLY_BASE
   Group: 'Loot-Armor'
-  NBT:
-    PublicBukkitValues:
-      az:max_mana: "50"
-      az:mana_regen: "1"
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
   Skills:
   - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
   - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
@@ -90,9 +78,6 @@ Azuriter_L_マジカルB:
   Options:
     Unbreakable: true
     Color: 215,55,255
-  Lore:
-  - "&b最大マナ +50"
-  - "&dマナ回復 +1"
   Attributes:
     Feet:
       ArmorToughness: 20 ADD 
@@ -102,10 +87,9 @@ Azuriter_L_マジカルB:
       AttackSpeed: 0.05 MULTIPLY_BASE
       MovementSpeed: 0.05 MULTIPLY_BASE
   Group: 'Loot-Armor'
-  NBT:
-    PublicBukkitValues:
-      az:max_mana: "50"
-      az:mana_regen: "1"
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
   Skills:
   - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged 
   - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing 
@@ -127,10 +111,9 @@ Azuriter_L_ピュアマジカルH:
       Health: 8 ADD
       Damage: 1.5
   Group: 'Loot-Armor'
-  NBT:
-    PublicBukkitValues:
-      az:max_mana: "75"
-      az:mana_regen: "1.25"
+  Enchantments:
+  - az:max_mana 2
+  - az:mana_regen 2
   Skills:
   - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
   - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
@@ -149,9 +132,6 @@ Azuriter_L_ピュアマジカルC:
   Options:
     Unbreakable: true
     Color: 215,55,255
-  Lore:
-  - "&b最大マナ +75"
-  - "&dマナ回復 +1.25"
   Attributes:
     Chest:
       ArmorToughness: 25 ADD 
@@ -159,10 +139,9 @@ Azuriter_L_ピュアマジカルC:
       Health: 8 ADD
       Damage: 1.5
   Group: 'Loot-Armor'
-  NBT:
-    PublicBukkitValues:
-      az:max_mana: "75"
-      az:mana_regen: "1.25"
+  Enchantments:
+  - az:max_mana 2
+  - az:mana_regen 2
   Skills:
   - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
   - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
@@ -176,9 +155,6 @@ Azuriter_L_ピュアマジカルL:
   Options:
     Unbreakable: true
     Color: 215,55,255
-  Lore:
-  - "&b最大マナ +75"
-  - "&dマナ回復 +1.25"
   Attributes:
     Legs:
       ArmorToughness: 25 ADD 
@@ -186,10 +162,9 @@ Azuriter_L_ピュアマジカルL:
       Health: 8 ADD
       Damage: 1.5
   Group: 'Loot-Armor'
-  NBT:
-    PublicBukkitValues:
-      az:max_mana: "75"
-      az:mana_regen: "1.25"
+  Enchantments:
+  - az:max_mana 2
+  - az:mana_regen 2
   Skills:
   - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
   - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
@@ -203,9 +178,6 @@ Azuriter_L_ピュアマジカルB:
   Options:
     Unbreakable: true
     Color: 215,55,255
-  Lore:
-  - "&b最大マナ +75"
-  - "&dマナ回復 +1.25"
   Attributes:
     Feet:
       ArmorToughness: 25 ADD 
@@ -213,10 +185,9 @@ Azuriter_L_ピュアマジカルB:
       Health: 8 ADD
       Damage: 1.5
   Group: 'Loot-Armor'
-  NBT:
-    PublicBukkitValues:
-      az:max_mana: "75"
-      az:mana_regen: "1.25"
+  Enchantments:
+  - az:max_mana 2
+  - az:mana_regen 2
   Skills:
   - skill{s=Azuriter_L_ピュアマジカル_Damaged} @self ~onDamaged
   - skill{s=Azuriter_L_ピュアマジカル_Kill} @self ~onKill
@@ -331,6 +302,9 @@ Azuriter_L_ヘルシティアH:
       ArmorToughness: 24
       Armor: 28
       Health: 10
+  Enchantments:
+  - az:max_mana 2
+  - az:mana_regen 1
   Group: 'Armor'
   Skills:
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
@@ -359,6 +333,9 @@ Azuriter_L_ヘルシティアC:
       ArmorToughness: 24
       Armor: 28
       Health: 10
+  Enchantments:
+  - az:max_mana 2
+  - az:mana_regen 1
   Group: 'Armor'
   Skills:
 
@@ -378,6 +355,9 @@ Azuriter_L_ヘルシティアL:
       ArmorToughness: 24
       Armor: 28
       Health: 10
+  Enchantments:
+  - az:max_mana 2
+  - az:mana_regen 1
   Group: 'Armor'
   Skills:
 
@@ -392,6 +372,9 @@ Azuriter_L_ヘルシティアB:
     Unbreakable: true
   ItemUpdater:
     Version: 1
+  Enchantments:
+  - az:max_mana 2
+  - az:mana_regen 1
   Attributes:
     Feet:
       ArmorToughness: 24

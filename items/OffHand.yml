@@ -36,10 +36,9 @@ Azuriter_Utilityオフハンド1:
       MovementSpeed: 0.125 MULTIPLY_BASE
       SafeFallDistance: 2.5 ADD
   Group: 'OffHand'
-  NBT:
-    PublicBukkitValues:
-      az:max_mana: "100"
-      az:mana_regen: "2"
+  Enchantments:
+  - az:max_mana 2
+  - az:mana_regen 2
 
 Azuriter_Attackオフハンド2:
   Id: red_dye
@@ -79,7 +78,6 @@ Azuriter_Utilityオフハンド2:
       MovementSpeed: 0.2 MULTIPLY_BASE
       SafeFallDistance: 3.5 ADD
   Group: 'OffHand'
-  NBT:
-    PublicBukkitValues:
-      az:max_mana: "150"
-      az:mana_regen: "3"
+  Enchantments:
+  - az:max_mana 3
+  - az:mana_regen 3

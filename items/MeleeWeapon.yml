@@ -10,6 +10,8 @@ Azuriter_ビギナーソード:
   - "&f回避するとマナの回復を行う。"
   Options: 
     Unbreakable: true
+  Enchantments:
+  - az:max_mana 2
   Attributes:
     MainHand:
       Damage: 15 ADD
