@@ -141,6 +141,13 @@ Azuriter_Multi_Melee_Weapon_1:
   - meta:Azuriter_Melee_Weapon{attack=<skill.var.dmg>} @EIC{r=8;a=180;ignore=players;limit=3;sort=NEAREST;p=true}
 
 Azuriter_Down_Melee: 
-  Cooldown: 10
   Skills:
+  - message{m="a"}
+  - skill{s=Azuriter_Down_Melee2} @self
   - onattack{n=Azuriter_Down_Melee;m=1.5;i=10;t=200;rd=true} @self
+
+Azuriter_Down_Melee2:
+  Conditions:
+  - itemgroup{s=HAND;g=Melee}
+  Skills:
+  - message{m="b"} 
