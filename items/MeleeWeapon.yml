@@ -291,3 +291,68 @@ Azuriter_ステップアベンジソード:
   Skills:
   - skill{s=Azuriter_ステップアベンジソード_R1_Skills} @self ~onUse 
   - skill{s=Azuriter_ステップアベンジソード_R1_Skills} @self ~onInteract ?!crouching 
+
+Azuriter_メレーソード:
+  Id: golden_sword
+  Display: "&aメレーソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&f純粋に殴るのに特化した武器。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 38 ADD
+      AttackSpeed: 0.15 MULTIPLY_BASE
+  Group: 'Melee-Weapon'
+
+Azuriter_ハイメレーソード:
+  Id: netherite_sword
+  Display: "&9ハイメレーソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&f純粋に殴るのに特化した武器。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 40 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'Multi-Melee-Weapon'
+
+Azuriter_ガーディアンソード:
+  Id: stone_sword
+  Display: "&aガーディアン・ソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&f耐久と火力を両立した殴り武器。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 36 ADD
+      AttackSpeed: -0.15 MULTIPLY_BASE
+      Armor: 8 ADD 
+      ArmorToughness: 8 ADD 
+      Health: 4 ADD
+  Group: 'Melee-Weapon'
+
+Azuriter_ハイガーディアンソード:
+  Id: diamond_sword
+  Display: "&aハイガーディアン・ソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&f耐久と火力を両立した殴り武器。"
+  Options: 
+    Unbreakable: true
+  Attributes:
+    MainHand:
+      Damage: 36 ADD
+      Armor: 12 ADD 
+      ArmorToughness: 12 ADD 
+      Health: 6 ADD
+  Group: 'Multi-Melee-Weapon'
