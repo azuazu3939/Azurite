@@ -40,7 +40,7 @@ Azuriter_バサモスサンド_幻2:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=50} @self ~onSpawn
   - remove{delay=800} @self ~onSpawn
   - sound{s=entity.wind_charge.wind_burst;sc=AMBIENT;v=0.75} @self ~onDespawn 
-  - e:p{p=explosion_emitter;a=2;size=0.5;s=1;ys=1;hs=1} @self ~onDespawn 
+  - e:p{p=explosion_emitter;a=1;size=0.5;s=1;ys=1;hs=1} @self ~onDespawn 
 
 
 Azuriter_バサモスサンド_幻想1:
