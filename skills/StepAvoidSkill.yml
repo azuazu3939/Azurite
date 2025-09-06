@@ -166,7 +166,7 @@ Azuriter_StepAvoid_StepAvengeSword:
   - wearing{s=HAND;i=Azuriter_ステップアベンジソード}
   Skills:
   - modifyMana{a=30} @self
-  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> + 45";t=FLOAT} @self
+  - setVar{k=skill.damage;a="<skill.var.damageStepAvoid> + 75";t=FLOAT} @self
   - sound{s=block.note_block.chime;p=1.68;audience=caster}
   - sound{s=block.note_block.chime;p=1.26;audience=caster;delay=2}
   - sound{s=block.note_block.chime;v=0.9;p=1.68;audience=caster;delay=4}
