@@ -574,6 +574,7 @@ Azuriter_シリーズエンド1H:
       Health: 8 ADD
       Damage: 2 ADD
   Group: 'Armor'
+  Skills:
   - skill{s=Azuriter_HealthColor} @self ~onDamaged
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
