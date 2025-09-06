@@ -139,3 +139,10 @@ Azuriter_Multi_Melee_Weapon_1:
   Skills:
   - setVar{k=skill.dmg;a="<caster.damage> * 0.1";t=FLOAT} @self
   - meta:Azuriter_Melee_Weapon{attack=<skill.var.dmg>} @EIC{r=8;a=180;ignore=players;limit=3;sort=NEAREST;p=true}
+
+Azuriter_Down_Melee: 
+  Cooldown: 10
+  Conditions:
+  - (wearing{s=HAND;i=Azuriter_ハイメレーソード} || wearing{s=HAND;i=Azuriter_メレーソード} || wearing{s=HAND;i=Azuriter_ガーディアンソード} || wearing{s=HAND;i=Azuriter_ハイガーディアンソード})
+  Skills:
+  - onattack{n=Azuriter_Down_Melee;m=1.5;i=10;t=200;rd=true} @self

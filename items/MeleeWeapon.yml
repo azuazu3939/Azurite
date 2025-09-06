@@ -303,9 +303,12 @@ Azuriter_メレーソード:
     Unbreakable: true
   Attributes:
     MainHand:
-      Damage: 40 ADD
+      Damage: 38 ADD
       AttackSpeed: 0.15 MULTIPLY_BASE
   Group: 'Melee-Weapon'
+  Skills:
+  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
+  - skill{s=Azuriter_Down_Melee} @self ~onSignal:BOSS_DOWN 
 
 Azuriter_ハイメレーソード:
   Id: netherite_sword
@@ -318,9 +321,12 @@ Azuriter_ハイメレーソード:
     Unbreakable: true
   Attributes:
     MainHand:
-      Damage: 44 ADD
+      Damage: 42 ADD
       AttackSpeed: 0.3 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
+  Skills:
+  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
+  - skill{s=Azuriter_Down_Melee} @self ~onSignal:BOSS_DOWN 
 
 Azuriter_ガーディアンソード:
   Id: stone_sword
@@ -339,6 +345,9 @@ Azuriter_ガーディアンソード:
       ArmorToughness: 8 ADD 
       Health: 4 ADD
   Group: 'Melee-Weapon'
+  Skills:
+  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
+  - skill{s=Azuriter_Down_Melee} @self ~onSignal:BOSS_DOWN 
 
 Azuriter_ハイガーディアンソード:
   Id: diamond_sword
@@ -356,3 +365,6 @@ Azuriter_ハイガーディアンソード:
       ArmorToughness: 12 ADD 
       Health: 6 ADD
   Group: 'Multi-Melee-Weapon'
+  Skills:
+  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
+  - skill{s=Azuriter_Down_Melee} @self ~onSignal:BOSS_DOWN 
