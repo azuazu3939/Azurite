@@ -307,3 +307,17 @@ Azuriter_Boss_Basamos_SpawnDrop:
   - cmd{c="mlg <caster.name> Azuriter_幻想獣の脂肪 1 0.05"} @self  
   - cmd{c="mlg <caster.name> Azuriter_砂核 1 0.025"} @self 
   - cmd{c="mlg <caster.name> Azuriter_ArmorGift_G1 1 0.025"} @self  
+
+Azuriter_バサモスサンド_幻想1_Effect:
+  Skills:
+  - missile{v=4;i=1;in=5;vr=10;sb=false;hp=false;hnp=true;hr=2.5;sdir=@MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST};syo=-1;sfo=0;
+    c=[ 
+      - mmType{t=Azuriter_Boss_Basamos} 
+    ];
+    ot=[
+      - modifyprojectile{t=VELOCITY;a=MULTIPLY;v=1.1} @self
+    ];
+    oh=[
+      - heal{a=-500}
+    ];
+    b=MOB;mm=Azuriter_バサモスサンド_幻2;bmd=true} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST}
