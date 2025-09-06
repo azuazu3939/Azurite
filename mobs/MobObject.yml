@@ -66,10 +66,9 @@ Azuriter_バサモスサンド_幻想1:
   - sound{s=entity.wind_charge.wind_burst;p=0.75;sc=AMBIENT} @self ~onDespawn 
   - e:pl{p=crit_magic;ys=0.25;hs=0.25;a=2;size=1;repeat=599;repeati=2;tyo=3.25;syo=2.75} @MIR{r=32;t=Azuriter_Boss_Basamos;limit=1;sort=NEAREST} ~onSpawn 
   - sound{s=entity.guardian.attack;p=2;v=1;sc=AMBIENT;repeat=599;repeati=2} @self ~onSpawn 
-  - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDeath
   - e:p{p=explosion_emitter;a=2;size=2;s=1;ys=1;hs=1} @self ~onDespawn 
   - sound{s=block.anvil.place;P=2;sc=AMBIENT;v=0.5;cd=0.5} @trigger ~onDamaged 
-  - skill{s=Azuriter_バサモスサンド_幻想1_Effect} @self ~onDeath 
+  - skill{s=Azuriter_バサモスサンド_幻想1_Effect} @self ~onDespawn
   - remove{delay=800} @self ~onSpawn
 
 Azuriter_バサモスサンド_幻想2:
