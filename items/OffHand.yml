@@ -34,8 +34,8 @@ Azuriter_Utilityオフハンド1:
       SafeFallDistance: 2.5 ADD
   Group: 'OffHand'
   Enchantments:
-  - az:max_mana 2
-  - az:mana_regen 2
+  - az:max_mana 1
+  - az:mana_regen 1
 
 Azuriter_Attackオフハンド2:
   Id: red_dye
@@ -73,5 +73,5 @@ Azuriter_Utilityオフハンド2:
       SafeFallDistance: 3.5 ADD
   Group: 'OffHand'
   Enchantments:
-  - az:max_mana 3
-  - az:mana_regen 3
+  - az:max_mana 2
+  - az:mana_regen 2
