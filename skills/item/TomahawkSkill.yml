@@ -6,7 +6,7 @@ Azuriter_トマホーク_Skills:
   Skills:
   - setMaterialCooldown{m=GOLDEN_AXE;d=240} @self
   - potion{t=SLOWNESS;d=150;l=5;p=false} @EIR{r=8;ignore=players}
-  - damage{a="<caster.damage> + 15";ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
+  - damage{a="<caster.damage> * 1.2";ii=true;pi=true} @EIR{r=8;ignore=players;c=[ - isLiving true - isMythicMob true ]}
   - throw{v=2;vy=12} @EIR{r=8;ignore=players} ?crouching 
   - sound{s=entity.wither.break_block;p=0.5;v=0.35;sc=PLAYERS} @self
   - e:p{p=block_crack;m=DIRT;a=50;vs=0.1;hs=3.5;y=0.5;audience=caster} @self
