@@ -588,7 +588,7 @@ Azuriter_エリートディフェンスB:
   - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
 
 Azuriter_シリーズエンド1H:
-  Id: diamond_helmet
+  Material: diamond_helmet
   Display: "&aシリーズエンド・I・ヘルメット"
   EquipmentSet: DiamondFull
   Lore:
@@ -616,7 +616,7 @@ Azuriter_シリーズエンド1H:
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
 
 Azuriter_シリーズエンド1C:
-  Id: diamond_chestplate
+  Material: diamond_chestplate
   Display: "&aシリーズエンド・I・チェストプレート"
   EquipmentSet: DiamondFull
   Lore:
@@ -639,7 +639,7 @@ Azuriter_シリーズエンド1C:
   - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
 
 Azuriter_シリーズエンド1L:
-  Id: diamond_leggings
+  Material: diamond_leggings
   Display: "&aシリーズエンド・I・レギンス"
   EquipmentSet: DiamondFull
   Lore:
@@ -662,7 +662,7 @@ Azuriter_シリーズエンド1L:
   - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
 
 Azuriter_シリーズエンド1B:
-  Id: diamond_boots
+  Material: diamond_boots
   Display: "&aシリーズエンド・I・ブーツ"
   EquipmentSet: DiamondFull
   Lore:
