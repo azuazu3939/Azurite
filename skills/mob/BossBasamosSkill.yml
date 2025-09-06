@@ -303,6 +303,8 @@ Azuriter_Boss_Basamos_HighDrop:
   - cmd{c="mlg <caster.name> Azuriter_砂核 1 0.025"} @self
   - cmd{c="mlg <caster.name> Azuriter_ArmorGift_G1 1 0.025"} @self
   - sound{s=ui.toast.challenge_complete;p=2;sc=PLAYERS;v=0.15} @self
+  - cmd{c="mlg <caster.name> Azuriter_Pureオフハンド<random.1to30> 1 0.01"}
+  - cmd{c="mlg <caster.name> Azuriter_ハイPureオフハンド<random.1to30> 1 0.001"}
 
 Azuriter_Boss_Basamos_SpawnDrop:
   Skills:

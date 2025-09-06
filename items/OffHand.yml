@@ -75,3 +75,873 @@ Azuriter_Utilityオフハンド2:
   Enchantments:
   - az:max_mana 2
   - az:mana_regen 2
+
+Azuriter_Pureオフハンド1:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Health: 6 ADD
+      Armor: 12 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_Pureオフハンド2:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Health: 6 ADD
+      ArmorToughness: 8 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_Pureオフハンド3:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Armor: 12 ADD
+      ArmorToughness: 8 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_Pureオフハンド4:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Armor: 12 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_Pureオフハンド5:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      ArmorToughness: 8 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_Pureオフハンド6:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Health: 6 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_Pureオフハンド7:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 12 ADD
+      Health: 6 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_Pureオフハンド8:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 12 ADD
+      ArmorToughness: 8 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+
+Azuriter_Pureオフハンド9:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 12 ADD
+      ArmorToughness: 8 ADD
+      Health: 6 ADD
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+
+Azuriter_Pureオフハンド10:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      ArmorToughness: 8 ADD
+      Health: 6 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_Pureオフハンド11:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Health: 6 ADD
+      Armor: 12 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_Pureオフハンド12:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Health: 6 ADD
+      ArmorToughness: 8 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_Pureオフハンド13:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Armor: 12 ADD
+      ArmorToughness: 8 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_Pureオフハンド14:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Armor: 12 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_Pureオフハンド15:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      ArmorToughness: 8 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_Pureオフハンド16:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Health: 6 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_Pureオフハンド17:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 12 ADD
+      Health: 6 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_Pureオフハンド18:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 12 ADD
+      ArmorToughness: 8 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+
+Azuriter_Pureオフハンド19:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 12 ADD
+      ArmorToughness: 8 ADD
+      Health: 6 ADD
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+
+Azuriter_Pureオフハンド20:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      ArmorToughness: 8 ADD
+      Health: 6 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_Pureオフハンド21:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Health: 6 ADD
+      Armor: 12 ADD 
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_Pureオフハンド22:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Health: 6 ADD
+      ArmorToughness: 8 ADD 
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_Pureオフハンド23:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Armor: 12 ADD
+      ArmorToughness: 8 ADD 
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_Pureオフハンド24:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Armor: 12 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_Pureオフハンド25:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      ArmorToughness: 8 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_Pureオフハンド26:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 4 ADD
+      Health: 6 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_Pureオフハンド27:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 12 ADD
+      Health: 6 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_Pureオフハンド28:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 12 ADD
+      ArmorToughness: 8 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+
+Azuriter_Pureオフハンド29:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 12 ADD
+      ArmorToughness: 8 ADD
+      Health: 6 ADD
+  Group: 'OffHand'
+  Enchantments:
+
+
+Azuriter_Pureオフハンド30:
+  Id: white_dye
+  Display: "&a純粋のシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      ArmorToughness: 8 ADD
+      Health: 6 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Azuriter_ハイPureオフハンド1:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Health: 10 ADD
+      Armor: 20 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_ハイPureオフハンド2:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Health: 10 ADD
+      ArmorToughness: 15 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_ハイPureオフハンド3:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Armor: 20 ADD
+      ArmorToughness: 15 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_ハイPureオフハンド4:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Armor: 20 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_ハイPureオフハンド5:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      ArmorToughness: 15 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_ハイPureオフハンド6:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Health: 10 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_ハイPureオフハンド7:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 20 ADD
+      Health: 10 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_ハイPureオフハンド8:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 20 ADD
+      ArmorToughness: 15 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+
+Azuriter_ハイPureオフハンド9:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 20 ADD
+      ArmorToughness: 15 ADD
+      Health: 10 ADD
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+
+Azuriter_ハイPureオフハンド10:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      ArmorToughness: 15 ADD
+      Health: 6 ADD
+      AttackSpeed: 0.2 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+  - az:mana_regen 1
+
+Azuriter_ハイPureオフハンド11:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Health: 10 ADD
+      Armor: 20 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_ハイPureオフハンド12:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Health: 10 ADD
+      ArmorToughness: 15 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_ハイPureオフハンド13:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Armor: 20 ADD
+      ArmorToughness: 15 ADD 
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_ハイPureオフハンド14:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Armor: 20 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_ハイPureオフハンド15:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      ArmorToughness: 15 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_ハイPureオフハンド16:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Health: 10 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_ハイPureオフハンド17:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 20 ADD
+      Health: 10 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_ハイPureオフハンド18:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 20 ADD
+      ArmorToughness: 15 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+
+Azuriter_ハイPureオフハンド19:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 20 ADD
+      ArmorToughness: 15 ADD
+      Health: 10 ADD
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+
+Azuriter_ハイPureオフハンド20:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      ArmorToughness: 15 ADD
+      Health: 10 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+  - az:max_mana 1
+
+Azuriter_ハイPureオフハンド21:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Health: 10 ADD
+      Armor: 20 ADD 
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_ハイPureオフハンド22:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Health: 10 ADD
+      ArmorToughness: 15 ADD 
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_ハイPureオフハンド23:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Armor: 20 ADD
+      ArmorToughness: 15 ADD 
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_ハイPureオフハンド24:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Armor: 20 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_ハイPureオフハンド25:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      ArmorToughness: 15 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_ハイPureオフハンド26:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Damage: 6 ADD
+      Health: 10 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_ハイPureオフハンド27:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 20 ADD
+      Health: 10 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+Azuriter_ハイPureオフハンド28:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 20 ADD
+      ArmorToughness: 15 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
+
+
+Azuriter_ハイPureオフハンド29:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      Armor: 20 ADD
+      ArmorToughness: 15 ADD
+      Health: 10 ADD
+  Group: 'OffHand'
+  Enchantments:
+
+
+Azuriter_ハイPureオフハンド30:
+  Id: white_dye
+  Display: "&a純粋のハイシャード"
+  ItemUpdater:
+    Version: 1
+  Attributes:
+    OffHand:
+      ArmorToughness: 15 ADD
+      Health: 10 ADD
+      AttackSpeed: 0.3 MULTIPLY_BASE
+  Group: 'OffHand'
+  Enchantments:
