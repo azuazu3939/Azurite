@@ -14,9 +14,7 @@ Azuriter_ビギナーソード:
     MainHand:
       Damage: 15 ADD
   Group: 'Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
   - skill{s=Azuriter_ビギナーソード_R1_Skills} @self ~onUse 
   - skill{s=Azuriter_ビギナーソード_R1_Skills} @self ~onInteract ?!crouching 
 
@@ -36,9 +34,7 @@ Azuriter_トラベラーソード:
       Damage: 32 ADD 
       AttackSpeed: -0.7 MULTIPLY_BASE
   Group: 'Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
   - potion{t=SPEED;l=0;d=20;p=false;cd=0.5} @self ~onTimer:10 ?wearing{s=HAND;i=Azuriter_トラベラーソード}
   - potion{t=SLOWNESS;l=0;d=60;p=false;cd=0.5} @EIR{r=7;ignore=players} ~onTimer:10 ?wearing{s=HAND;i=Azuriter_トラベラーソード}
   - skill{s=Azuriter_トラベラーソード_Kill} @self ~onKill 
@@ -61,9 +57,7 @@ Azuriter_ハイトラベラーソード:
       Damage: 44
       AttackSpeed: -0.7 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
   - potion{t=SPEED;l=1;d=20;p=false;cd=0.5} @self ~onTimer:10 ?wearing{s=HAND;i=Azuriter_ハイトラベラーソード}
   - potion{t=SLOWNESS;l=1;d=60;p=false;cd=0.5} @EIR{r=8;ignore=players} ~onTimer:10 ?wearing{s=HAND;i=Azuriter_ハイトラベラーソード}
   - skill{s=Azuriter_トラベラーソード_Kill} @self ~onKill 
@@ -84,9 +78,7 @@ Azuriter_トマホーク:
       Damage: 32
       AttackSpeed: -0.3 MULTIPLY_BASE
   Group: 'Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
   - skill{s=Azuriter_トマホーク_Skills} @self ~onUse
   - skill{s=Azuriter_トマホーク_Skills} @self ~onInteract ?!crouching 
   - skill{s=Azuriter_トマホーク_Kill} @self ~onKill 
@@ -108,9 +100,7 @@ Azuriter_ハイトマホーク:
       Damage: 40
       AttackSpeed: -0.3 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
   - skill{s=Azuriter_トマホーク_Skills} @self ~onUse
   - skill{s=Azuriter_トマホーク_Skills} @self ~onInteract ?!crouching 
   - skill{s=Azuriter_トマホーク_Kill} @self ~onKill 
@@ -131,9 +121,7 @@ Azuriter_ハルバード:
       Damage: 16
       AttackSpeed: 0.5 MULTIPLY_BASE
   Group: 'Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
   - skill{s=Azuriter_ハルバード_A1_Skills} @self ~onKill
 
 Azuriter_ハイハルバード:
@@ -152,9 +140,7 @@ Azuriter_ハイハルバード:
       Damage: 20
       AttackSpeed: 0.5 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
   - skill{s=Azuriter_ハルバード_A1_Skills} @self ~onKill
 
 Azuriter_ステップソード:
@@ -173,9 +159,7 @@ Azuriter_ステップソード:
       Damage: 20 ADD 
       AttackSpeed: -0.3 MULTIPLY_BASE
   Group: 'Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
   - skill{s=Azuriter_ステップソード_R1_Skills} @self ~onUse
   - skill{s=Azuriter_ステップソード_R1_Skills} @self ~onInteract ?!crouching 
 
@@ -194,9 +178,7 @@ Azuriter_ハイステップソード:
     MainHand:
       Damage: 28 ADD
   Group: 'Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
   - skill{s=Azuriter_ハイステップソード_R1_Skills} @self ~onUse
   - skill{s=Azuriter_ハイステップソード_R1_Skills} @self ~onInteract ?!crouching 
 
@@ -211,9 +193,7 @@ Azuriter_ノーマルソード:
     MainHand:
       Damage: 20 ADD
   Group: 'Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
 
 Azuriter_スモールソード:
   Id: stone_sword
@@ -227,9 +207,7 @@ Azuriter_スモールソード:
       Damage: 12 ADD
       AttackSpeed: 1 MULTIPLY_BASE
   Group: 'Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
 
 Azuriter_ハイノーマルソード:
   Id: stone_sword
@@ -243,9 +221,7 @@ Azuriter_ハイノーマルソード:
     MainHand:
       Damage: 25 ADD
   Group: 'Multi-Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
 
 Azuriter_ハイスモールソード:
   Id: stone_sword
@@ -260,9 +236,7 @@ Azuriter_ハイスモールソード:
       Damage: 14 ADD
       AttackSpeed: 1 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
 
 Azuriter_ステップライズソード:
   Id: diamond_sword
@@ -282,9 +256,7 @@ Azuriter_ステップライズソード:
   Group: 'Melee-Weapon'
   Skills:
   - skill{s=Azuriter_ステップライズソード_R1_Skills} @self ~onUse 
-  - skill{s=Azuriter_ステップライズソード_R1_Skills} @self ~onInteract ?!crouching 
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  - skill{s=Azuriter_ステップライズソード_R1_Skills} @self ~onInteract ?!crouching  
 
 Azuriter_ステップダッシュソード:
   Id: diamond_sword
@@ -303,9 +275,7 @@ Azuriter_ステップダッシュソード:
   Group: 'Melee-Weapon'
   Skills:
   - skill{s=Azuriter_ステップダッシュソード_R1_Skills} @self ~onUse
-  - skill{s=Azuriter_ステップダッシュソード_R1_Skills} @self ~onInteract ?!crouching 
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  - skill{s=Azuriter_ステップダッシュソード_R1_Skills} @self ~onInteract ?!crouching  
 
 Azuriter_ステップアベンジソード:
   Id: golden_sword
@@ -324,9 +294,7 @@ Azuriter_ステップアベンジソード:
   Group: 'Melee-Weapon'
   Skills:
   - skill{s=Azuriter_ステップアベンジソード_R1_Skills} @self ~onUse 
-  - skill{s=Azuriter_ステップアベンジソード_R1_Skills} @self ~onInteract ?!crouching 
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  - skill{s=Azuriter_ステップアベンジソード_R1_Skills} @self ~onInteract ?!crouching  
 
 Azuriter_メレーソード:
   Id: golden_sword
@@ -339,12 +307,10 @@ Azuriter_メレーソード:
     Unbreakable: true
   Attributes:
     MainHand:
-      Damage: 38 ADD
+      Damage: 42 ADD
       AttackSpeed: 0.15 MULTIPLY_BASE
   Group: 'Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
 
 Azuriter_ハイメレーソード:
   Id: netherite_sword
@@ -357,12 +323,10 @@ Azuriter_ハイメレーソード:
     Unbreakable: true
   Attributes:
     MainHand:
-      Damage: 42 ADD
+      Damage: 48 ADD
       AttackSpeed: 0.3 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
 
 Azuriter_ガーディアンソード:
   Id: stone_sword
@@ -381,9 +345,7 @@ Azuriter_ガーディアンソード:
       ArmorToughness: 8 ADD 
       Health: 4 ADD
   Group: 'Melee-Weapon'
-  Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down 
+  Skills: 
 
 Azuriter_ハイガーディアンソード:
   Id: diamond_sword
@@ -396,11 +358,9 @@ Azuriter_ハイガーディアンソード:
     Unbreakable: true
   Attributes:
     MainHand:
-      Damage: 38 ADD
+      Damage: 40 ADD
       Armor: 12 ADD 
       ArmorToughness: 12 ADD 
       Health: 6 ADD
   Group: 'Multi-Melee-Weapon'
   Skills:
-  - auraRemove{n=Azuriter_Down_Melee} @self ~onUnheld 
-  - skill{s=Azuriter_Down_Melee} @self ~onSignal:boss_down

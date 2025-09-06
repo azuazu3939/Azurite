@@ -79,7 +79,6 @@ Generic_Enemy_MCLove32_Down:
   Skills:
   - addtag{t=DOWN} @self
   - sound{s=item.shield.break;v=3;p=0} @self
-  - signal{s=boss_down} @PIR{r=32}
   - potion{t=GLOWING;d=<skill.var.downTick>;l=0;or=true} @self
   - ondamaged{n=Generic_Enemy_MCLove32_Down;damagemod="ENTITY_ATTACK 1.5";t=<skill.var.downTick>;i=1} @self
   - stun{t=<skill.var.downTick>} @self
