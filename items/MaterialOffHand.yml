@@ -74,7 +74,7 @@ Azuriter_Utilityオフハンド2:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 Azuriter_Pureオフハンド1:
   Id: white_dye
@@ -513,7 +513,7 @@ Azuriter_ハイPureオフハンド1:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 Azuriter_ハイPureオフハンド2:
   Id: white_dye
@@ -528,7 +528,7 @@ Azuriter_ハイPureオフハンド2:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 Azuriter_ハイPureオフハンド3:
   Id: white_dye
@@ -543,7 +543,7 @@ Azuriter_ハイPureオフハンド3:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 Azuriter_ハイPureオフハンド4:
   Id: white_dye
@@ -558,7 +558,7 @@ Azuriter_ハイPureオフハンド4:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 Azuriter_ハイPureオフハンド5:
   Id: white_dye
@@ -573,7 +573,7 @@ Azuriter_ハイPureオフハンド5:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 Azuriter_ハイPureオフハンド6:
   Id: white_dye
@@ -588,7 +588,7 @@ Azuriter_ハイPureオフハンド6:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 Azuriter_ハイPureオフハンド7:
   Id: white_dye
@@ -603,7 +603,7 @@ Azuriter_ハイPureオフハンド7:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 Azuriter_ハイPureオフハンド8:
   Id: white_dye
@@ -618,7 +618,7 @@ Azuriter_ハイPureオフハンド8:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 
 Azuriter_ハイPureオフハンド9:
@@ -634,7 +634,7 @@ Azuriter_ハイPureオフハンド9:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 
 Azuriter_ハイPureオフハンド10:
@@ -650,7 +650,7 @@ Azuriter_ハイPureオフハンド10:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 5
+  - az:mana_regen 10
 
 Azuriter_ハイPureオフハンド11:
   Id: white_dye
