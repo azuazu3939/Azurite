@@ -114,7 +114,7 @@ Azuriter_BigCamela_Spawn:
   - mobsInRadius{types=Azuriter_Boss_Basamos;amount=>0;radius=48} false
 
 Azuriter_RainyArmyCorp_A_Spawn:
-  Type: 
+  Types: 
   - Azuriter_RainyArmyCorp_A_1 50
   - Azuriter_RainyArmyCorp_A_2 50
   Worlds: Field1
