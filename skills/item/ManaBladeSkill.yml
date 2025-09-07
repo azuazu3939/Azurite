@@ -1,5 +1,5 @@
 Azuriter_マナブレード_アルファ_R1S_Skills:
-  Cooldown: 0.2
+  Cooldown: 0.4
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
   - hasMana{a=>50;
@@ -10,8 +10,10 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
   - crouching false 
   Skills:
   - modifyMana{a=-50} @self
-  - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
+  - setMaterialCooldown{m=DIAMOND_SWORD;d=8} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
+  - setVar{k=caster.ManaBlace_A_Right;a="<caster.var.ManaBlace_A_Right|0> + 1";t=INTEGER} @self
+  - sound{s=block.anvil.place;p=0;v=0.5;audience=caster;sc=BLOCKS} @self ?varrange{k=caster.ManaBlace_A_Right;r=>9}
   - slash{
     d=4;w=4;h=6;r=2;roll=<random.-60to60>;p=18;y=1.6;r=4;
     op=[
@@ -36,7 +38,7 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
     ];mc=true} @self
 
 Azuriter_マナブレード_アルファ_L1S_Skills:
-  Cooldown: 0.2
+  Cooldown: 0.4
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
   - hasMana{a=>50;
@@ -47,8 +49,10 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
   - crouching false
   Skills:
   - modifyMana{a=-50} @self
-  - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
+  - setMaterialCooldown{m=DIAMOND_SWORD;d=8} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
+  - setVar{k=caster.ManaBlace_A_Left;a="<caster.var.ManaBlace_A_Left|0> + 1";t=INTEGER} @self
+  - sound{s=block.anvil.place;p=2;v=0.5;audience=caster;sc=BLOCKS} @self ?varrange{k=caster.ManaBlace_A_Left;r=>9}
   - slash{
     d=4;w=4;h=6;r=2;roll="<random.-60to69> + 180";p=18;y=1.6;r=4;
     op=[
@@ -82,8 +86,10 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
     ]}
   - matCooldown{m=DIAMOND_SWORD} false 
   - crouching true
+  - varrange{k=caster.ManaBlace_A_Right;r=>0} true
   Skills:
-  - modifyMana{a=-200} @self
+  - modifyMana{a=-200} @self ?!varrange{k=caster.ManaBlace_A_Right;r=>9}
+  - modifyMana{a=-100} @self ?varrange{k=caster.ManaBlace_A_Right;r=>9}
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - aura{n=Azuriter_マナブレード_アルファ_R1NoS;t=100;rd=true;i=10} @self
@@ -122,8 +128,10 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
     ]}
   - matCooldown{m=DIAMOND_SWORD} false 
   - crouching true
+  - varrange{k=caster.ManaBlace_A_Left;r=>0} true
   Skills:
-  - modifyMana{a=-200} @self
+  - modifyMana{a=-200} @self ?!varrange{k=caster.ManaBlace_A_Left;r=>9}
+  - modifyMana{a=-100} @self ?varrange{k=caster.ManaBlace_A_Left;r=>9}
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - aura{n=Azuriter_マナブレード_アルファ_L1NoS;t=100;rd=true;i=10} @self
