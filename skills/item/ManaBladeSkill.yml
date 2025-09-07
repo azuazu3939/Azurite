@@ -10,6 +10,7 @@ Azuriter_マナブレード_アルファ_R1_Skills:
   Skills:
   - modifyMana{a=-20} @self
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
+  - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - slash{
     d=4;w=4;h=6;r=3;roll=<random.-45to45>;p=24;
     op=[
@@ -19,12 +20,18 @@ Azuriter_マナブレード_アルファ_R1_Skills:
     ];
     oh=[
       - damage{a=<caster.damage>;pi=true;ii=true;e=GREEN}
-      - sound{s=entity.zombie_villager.converted;p=1.25;v=0.5;audience=caster}
+      - sound{s=entity.zombie_villager.converted;p=1.25;v=0.5;audience=caster;sc=AMBIENT}
       - velocity{x=0;y=0;z=0;m=SET}
     ];
     c=[ 
       - isMythicMob true
     ]} @self
+  - aura{ms=100;i=10;t=40;rd=true;n=Azuriter_マナブレード_アルファ;
+    oe=[ 
+      - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 10";t=INTEGER} @self
+      - modifyMana{a=<skill.var.aura_regen>} @self
+      - sound{s=block.beacon.activate;p=2;audience=caster;sc=BLOCKS} @self
+    ];mc=true} @self
 
 Azuriter_マナブレード_アルファ_L1_Skills:
   Cooldown: 0.2
@@ -38,6 +45,7 @@ Azuriter_マナブレード_アルファ_L1_Skills:
   Skills:
   - modifyMana{a=-20} @self
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
+  - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - slash{
     d=4;w=4;h=6;r=3;roll="<random.-45to45> + 180";p=24;
     op=[
@@ -47,9 +55,15 @@ Azuriter_マナブレード_アルファ_L1_Skills:
     ];
     oh=[
       - damage{a=<caster.damage>;pi=true;ii=true;e=GREEN}
-      - sound{s=entity.zombie_villager.converted;p=1.25;v=0.5;audience=caster}
+      - sound{s=entity.zombie_villager.converted;p=1.25;v=0.5;audience=caster;sc=AMBIENT}
       - velocity{x=0;y=0;z=0;m=SET}
     ];
     c=[ 
       - isMythicMob true
     ]} @self
+  - aura{ms=100;i=10;t=40;rd=true;n=Azuriter_マナブレード_アルファ;
+    oe=[ 
+      - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 10";t=INTEGER} @self
+      - modifyMana{a=<skill.var.aura_regen>} @self
+      - sound{s=block.beacon.activate;p=2;audience=caster;sc=BLOCKS} @self
+    ];mc=true} @self
