@@ -111,7 +111,7 @@ Azuriter_マナブレード_アルファ:
       Damage: 48 ADD 
       Health: -0.25 MULTIPLY_BASE
   Enchantments:
-  - az:max_mana 3
+  - az:max_mana 4
   - az:mana_regen 3
   Skills:
   - skill{s=Azuriter_マナブレード_アルファ_R1S_Skills} @self ~onUse
