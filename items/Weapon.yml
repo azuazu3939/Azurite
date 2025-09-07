@@ -93,3 +93,16 @@ Azuriter_マナフル:
   Skills:
   - skill{s=Azuriter_マナフル_R1_Skills} @self ~onUse
   - skill{s=Azuriter_マナフル_L1_Skills} @self ~onSwing
+
+Azuriter_マナブレード_アルファ:
+  Id: diamond_blade
+  Display: "&aマナブレードα"
+  Lore: []
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Group: 'Weapon'
+  Skills:
+  - skill{s=Azuriter_マナブレード_アルファ_R1_Skills} @self ~onUse
+  - skill{s=Azuriter_マナブレード_アルファ_L1_Skills} @self ~onSwing

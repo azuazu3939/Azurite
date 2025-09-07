@@ -43,7 +43,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot:
     ];
     oh=[
       - modifyMana{a=2} @self
-      - damage{a=<skill.var.damage>;pi=true;ii=true} 
+      - damage{a=<skill.var.damage>;pi=true;ii=true;e=RED} 
       - e:p{p=crit_magic;a=10;vs=0.5;hs=0.5;audience=caster}
       - setVar{k=caster.bullet_bow_fire;a="<caster.var.bullet_bow_fire|0> + 1";t=INTEGER} @self
       - skill{s=Azuriter_ファイアバレットボウ_Skills_Shot_Get} @self
@@ -78,7 +78,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot_Run:
       - e:p{p=flame;a=4;ys=0.5;hs=0.5;s=0.75;audience=caster} @origin 
     ];
     oh=[
-      - damage{a="<caster.damage> * 0.5";pi=true;ii=true}
+      - damage{a="<caster.damage> * 0.5";pi=true;ii=true;e=RED}
       - modifyMana{a=5} @self
     ];
     c=[
