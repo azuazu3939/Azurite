@@ -96,8 +96,11 @@ Azuriter_マナフル:
 
 Azuriter_マナブレード_アルファ:
   Id: diamond_sword
-  Display: "&aマナブレードα"
-  Lore: []
+  Display: "&9マナブレードα"
+  Lore: 
+  - "&fマナを消費し連撃を繰り出す。"
+  - "&fShiftスキル使用後対象の"
+  - "&fShiftなしスキルの火力が上昇する。"
   Options:
     Unbreakable: true
   ItemUpdater:

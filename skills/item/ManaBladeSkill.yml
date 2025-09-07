@@ -73,7 +73,7 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
     ];mc=true} @self
 
 Azuriter_マナブレード_アルファ_R1NoS_Skills:
-  Cooldown: 5
+  Cooldown: 10
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
   - hasMana{a=>200;
@@ -113,7 +113,7 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
     ];mc=true} @self
 
 Azuriter_マナブレード_アルファ_L1NoS_Skills:
-  Cooldown: 5
+  Cooldown: 10
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
   - hasMana{a=>200;
