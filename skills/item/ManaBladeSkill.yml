@@ -21,7 +21,7 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
     ];
     oh=[
       - damage{a=<caster.damage>;pi=true;ii=true;e=GREEN}
-      - sound{s=entity.zombie_villager.cure;p=1.25;v=0.5;audience=caster;sc=AMBIENT}
+      - sound{s=entity.zombie_villager.cure;p=1.25;v=0.05;audience=caster;sc=AMBIENT}
       - velocity{x=0;y=0;z=0;m=SET}
     ];
     c=[ 
@@ -57,7 +57,7 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
     ];
     oh=[
       - damage{a=<caster.damage>;pi=true;ii=true;e=GREEN}
-      - sound{s=entity.zombie_villager.cure;p=1.25;v=0.5;audience=caster;sc=AMBIENT}
+      - sound{s=entity.zombie_villager.cure;p=1.25;v=0.05;audience=caster;sc=AMBIENT}
       - velocity{x=0;y=0;z=0;m=SET}
     ];
     c=[ 
@@ -99,7 +99,7 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
     ];
     oh=[
       - damage{a=<caster.damage> + 100;pi=true;ii=true;e=GREEN}
-      - sound{s=entity.zombie_villager.cure;p=1;v=0.5;audience=caster;sc=AMBIENT}
+      - sound{s=entity.zombie_villager.cure;p=1;v=0.15;audience=caster;sc=AMBIENT}
     ];
     v=20;i=4;se=true;vr=2;hr=3.5;mr=20;d=60;hp=false;hnp=true} @TL 
   - aura{ms=100;i=10;t=40;rd=true;n=Azuriter_マナブレード_アルファ;
@@ -138,7 +138,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
     ];
     oh=[
       - damage{a=<caster.damage> + 100;pi=true;ii=true;e=GREEN}
-      - sound{s=entity.zombie_villager.cure;p=1;v=0.5;audience=caster;sc=AMBIENT}
+      - sound{s=entity.zombie_villager.cure;p=1;v=0.15;audience=caster;sc=AMBIENT}
     ];
     v=20;i=4;se=true;vr=2;hr=3.5;mr=20;d=40;hp=false;hnp=true} @TL 
   - aura{ms=100;i=10;t=60;rd=true;n=Azuriter_マナブレード_アルファ;
