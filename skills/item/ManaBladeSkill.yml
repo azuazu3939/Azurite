@@ -14,9 +14,9 @@ Azuriter_マナブレード_アルファ_R1_Skills:
   - slash{
     d=4;w=4;h=6;r=3;roll=<random.-45to45>;p=24;
     op=[
-      - e:p{p=cloud;a=2;ys=0.2;hs=0.25;s=0.05;audience=caster} @origin
-      - e:p{p=crit;a=1;ys=0.25;hs=0.3;s=0.05;audience=caster} @origin 
-      - e:p{p=crit_magic;a=4;ys=0.35;hs=0.35;s=0.1;audience=caster} @origin 
+      - e:p{p=cloud;a=2;s=0.05;audience=caster} @origin
+      - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
+      - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
     ];
     oh=[
       - damage{a=<caster.damage>;pi=true;ii=true;e=GREEN}
@@ -49,9 +49,9 @@ Azuriter_マナブレード_アルファ_L1_Skills:
   - slash{
     d=4;w=4;h=6;r=3;roll="<random.-45to45> + 180";p=24;
     op=[
-      - e:p{p=cloud;a=2;ys=0.2;hs=0.25;s=0.05;audience=caster} @origin
-      - e:p{p=crit;a=1;ys=0.25;hs=0.3;s=0.05;audience=caster} @origin 
-      - e:p{p=crit_magic;a=4;ys=0.35;hs=0.35;s=0.1;audience=caster} @origin 
+      - e:p{p=cloud;a=2;s=0.05;audience=caster} @origin
+      - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
+      - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
     ];
     oh=[
       - damage{a=<caster.damage>;pi=true;ii=true;e=GREEN}
