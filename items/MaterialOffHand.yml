@@ -78,8 +78,8 @@ Azuriter_Utilityオフハンド2:
   - az:max_mana 2
   - az:mana_regen 2
   Skills:
-  - modifyMana{a=30;cd=1} @self ~onAttack 
-  - message{m="1"} @self ~onAttack 
+  - modifyMana{a=30;cd=1} @self ~onKill 
+  - message{m="a"} @self ~onKill 
 
 Azuriter_Pureオフハンド1:
   Id: white_dye
