@@ -95,7 +95,7 @@ Azuriter_マナフル:
   - skill{s=Azuriter_マナフル_L1_Skills} @self ~onSwing
 
 Azuriter_マナブレード_アルファ:
-  Id: diamond
+  Id: diamond_sword
   Display: "&aマナブレードα"
   Lore: []
   Options:
