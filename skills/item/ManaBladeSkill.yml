@@ -13,13 +13,11 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - slash{
-    d=4;w=4;h=6;r=0;roll=<random.-45to45>;p=16;y=1.6;
+    d=4;w=4;h=6;r=0;roll=<random.-45to45>;p=24;y=1.6;
     op=[
-      - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
-      - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
-      - e:p{p=red_dust;size=2;a=3;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
-      - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
-      - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
+      - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
+      - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
+      - e:p{p=red_dust;size=3;a=2;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
     ];
     oh=[
       - damage{a=<caster.damage>;pi=true;ii=true;e=GREEN}
@@ -51,13 +49,11 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - slash{
-    d=4;w=4;h=6;r=0;roll="<random.-45to45> + 180";p=16;y=1.6;
+    d=4;w=4;h=6;r=0;roll="<random.-45to45> + 180";p=24;y=1.6;
     op=[
-      - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
-      - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
-      - e:p{p=red_dust;size=2;a=3;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
-      - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
-      - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
+      - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
+      - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
+      - e:p{p=red_dust;size=3;a=2;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
     ];
     oh=[
       - damage{a=<caster.damage>;pi=true;ii=true;e=GREEN}
@@ -96,11 +92,9 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
           - isMythicMob true
         ];
         op=[
-          - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
-          - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
-          - e:p{p=red_dust;size=2;a=3;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
-          - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
-          - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
+          - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
+          - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
+          - e:p{p=red_dust;size=3;a=2;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
         ]} @origin{cpitch=<caster.l.pitch>}
     ];
     oh=[
@@ -136,11 +130,9 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
           - isMythicMob true
         ];
         op=[
-          - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
-          - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
-          - e:p{p=red_dust;size=2;a=3;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
-          - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
-          - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
+          - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
+          - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
+          - e:p{p=red_dust;size=3;a=2;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
         ]} @origin{cpitch=<caster.l.pitch>}
     ];
     oh=[
