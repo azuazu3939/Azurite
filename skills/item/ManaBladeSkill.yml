@@ -95,7 +95,7 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
           - e:p{p=cloud;a=2;s=0.05;audience=caster} @origin
           - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
           - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
-        ]} @origin 
+        ]} @origin{cpitch=<caster.l.pitch>}
     ];
     oh=[
       - damage{a=<caster.damage> + 100;pi=true;ii=true;e=GREEN}
@@ -133,7 +133,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
           - e:p{p=cloud;a=2;s=0.05;audience=caster} @origin
           - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
           - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
-        ]} @origin 
+        ]} @origin{cpitch=<caster.l.pitch>}
     ];
     oh=[
       - damage{a=<caster.damage> + 100;pi=true;ii=true;e=GREEN}
