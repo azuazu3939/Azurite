@@ -309,7 +309,8 @@ Azuriter_メレーソード:
     Unbreakable: true
   Attributes:
     MainHand:
-      Damage: 56 ADD
+      Damage: 54 ADD
+      AttackSpeed: 0.25 MULTIPLY_BASE
   Group: 'Melee-Weapon'
   Skills: 
 
@@ -324,8 +325,8 @@ Azuriter_ハイメレーソード:
     Unbreakable: true
   Attributes:
     MainHand:
-      Damage: 64 ADD
-      AttackSpeed: 0.15 MULTIPLY_BASE
+      Damage: 60 ADD
+      AttackSpeed: 0.5 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
   Skills: 
 
@@ -359,10 +360,11 @@ Azuriter_ハイガーディアンソード:
     Unbreakable: true
   Attributes:
     MainHand:
-      Damage: 56 ADD
+      Damage: 54 ADD
       Armor: 12 ADD 
       ArmorToughness: 12 ADD 
       Health: 6 ADD
+      AttackSpeed: 0.05 MULTIPLY_BASE
   Group: 'Multi-Melee-Weapon'
   Skills:
 
