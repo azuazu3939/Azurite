@@ -38,6 +38,7 @@ Azuriter_Utilityオフハンド1:
   - az:mana_regen 2
   Skills:
   - modifyMana{a=25;cd=0.5} @self ~onKill 
+  - modifyMana{a=20;cd=0.5} @self ~onDamaged 
 
 Azuriter_Attackオフハンド2:
   Id: red_dye
@@ -79,6 +80,7 @@ Azuriter_Utilityオフハンド2:
   - az:mana_regen 2
   Skills:
   - modifyMana{a=30;cd=0.5} @self ~onKill 
+  - modifyMana{a=25;cd=0.5} @self ~onDamaged 
 
 Azuriter_Pureオフハンド1:
   Id: white_dye
