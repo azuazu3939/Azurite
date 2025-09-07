@@ -2,14 +2,14 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
   Cooldown: 0.2
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
-  - hasMana{a=>40;
+  - hasMana{a=>50;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]}
   - matCooldown{m=DIAMOND_SWORD} false 
   - crouching false 
   Skills:
-  - modifyMana{a=-40} @self
+  - modifyMana{a=-50} @self
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - slash{
@@ -38,14 +38,14 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
   Cooldown: 0.2
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
-  - hasMana{a=>40;
+  - hasMana{a=>50;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]}
   - matCooldown{m=DIAMOND_SWORD} false 
   - crouching false
   Skills:
-  - modifyMana{a=-40} @self
+  - modifyMana{a=-50} @self
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - slash{
@@ -125,7 +125,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
   - projectile{
     ot=[
       - slash{
-        d=2;w=4;h=6;r=1;p=16;fo=true;roll=180;
+        d=2;w=4;h=6;r=1;p=16;fo=true;roll=90;
         c=[
           - isMythicMob true
         ];
