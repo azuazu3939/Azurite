@@ -87,7 +87,7 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
   - projectile{
     ot=[
       - slash{
-        d=2;w=8;h=10;r=1;p=24;fo=true;hp=false;hnp=true;
+        d=2;w=4;h=6;r=1;p=16;fo=true;
         c=[
           - isMythicMob true
         ];
@@ -100,7 +100,7 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
     oh=[
       - damage{a=<caster.damage> + 100;pi=true;ii=true;e=GREEN}
     ];
-    v=20;i=2;se=true;vr=2;hr=3.5;mr=20;d=40} @forward{lockpitch=true}
+    v=20;i=2;se=true;vr=2;hr=3.5;mr=20;d=40;hp=false;hnp=true} @TL 
   - aura{ms=100;i=10;t=40;rd=true;n=Azuriter_マナブレード_アルファ;
     oe=[ 
       - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 10";t=INTEGER} @self
@@ -125,7 +125,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
   - projectile{
     ot=[
       - slash{
-        d=2;w=8;h=10;r=1;p=24;fo=true;roll=180;hp=false;hnp=true;
+        d=2;w=4;h=6;r=1;p=16;fo=true;roll=180;
         c=[
           - isMythicMob true
         ];
@@ -138,7 +138,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
     oh=[
       - damage{a=<caster.damage> + 100;pi=true;ii=true;e=GREEN}
     ];
-    v=20;i=2;se=true;vr=2;hr=3.5;mr=20;d=40} @forward{lockpitch=true}
+    v=20;i=2;se=true;vr=2;hr=3.5;mr=20;d=40;hp=false;hnp=true} @TL 
   - aura{ms=100;i=10;t=40;rd=true;n=Azuriter_マナブレード_アルファ;
     oe=[ 
       - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 10";t=INTEGER} @self
