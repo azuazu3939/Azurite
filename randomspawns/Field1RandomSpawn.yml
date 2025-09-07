@@ -121,7 +121,7 @@ Azuriter_RainyArmyCorp_A_Spawn:
   Action: ADD
   PositionType: LAND
   Cooldown: 5
-  Chance: 0.0001
+  Chance: 0.05
   Priority: 1
   Conditions:
   - mobsinworld{a=<800} true 
