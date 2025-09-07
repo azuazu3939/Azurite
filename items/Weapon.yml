@@ -108,11 +108,8 @@ Azuriter_マナブレード_アルファ:
   Group: 'Weapon'
   Attributes:
     MainHand:
-      Damage: 36 ADD 
-      AttackSpeed: 1 MULTIPLY_BASE
-      Armor: -0.1 MULTIPLY_BASE
-      ArmorToughness: -0.1 MULTIPLY_BASE
-      Health: -0.1 MULTIPLY_BASE
+      Damage: 45 ADD 
+      Health: -0.2 MULTIPLY_BASE
   Enchantments:
   - az:max_mana 3
   - az:mana_regen 3

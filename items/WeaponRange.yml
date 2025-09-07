@@ -10,7 +10,7 @@ Azuriter_カーブショットボウ:
     Version: 1
   Attributes:
     MainHand:
-      Damage: 25 ADD 
+      Damage: 28 ADD 
       Armor: -0.25 MULTIPLY_BASE
       ArmorToughness: -0.25 MULTIPLY_BASE
       Health: -0.2 MULTIPLY_BASE
@@ -32,9 +32,11 @@ Azuriter_ファイアバレットボウ:
     Version: 1
   Attributes:
     MainHand:
-      Damage: 32 ADD 
+      Damage: 36 ADD 
       MovementSpeed: 0.25 MULTIPLY_BASE
       Health: -0.2 MULTIPLY_BASE
+      Armor: -0.25 MULTIPLY_BASE
+      ArmorToughness: -0.25 MULTIPLY_BASE
   Group: 'Range-Weapon'
   Skills:
   - skill{s=Azuriter_ファイアバレットボウ_Skills} @self ~onSwing 
