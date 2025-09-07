@@ -17,9 +17,10 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
   - slash{
     d=4;w=4;h=6;r=2;roll=<random.-60to60>;p=18;y=1.6;r=4;
     op=[
+      - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin ?!hasAura{n=Azuriter_マナブレード_アルファ_R1NoS}
       - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
-      - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
       - e:p{p=red_dust;size=3;a=2;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
+      - e:p{p=red_dust;size=3;a=2;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#d0ea0d} @origin ?hasAura{n=Azuriter_マナブレード_アルファ_R1NoS}
     ];
     oh=[
       - setVar{k=skill.dmg;a="75";t=INTEGER} @self ?hasAura{n=Azuriter_マナブレード_アルファ_R1NoS}
@@ -30,12 +31,6 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
     c=[ 
       - isMythicMob true
     ]} @self
-  - aura{ms=100;i=10;t=100;rd=true;n=Azuriter_マナブレード_アルファ;
-    oe=[ 
-      - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 10";t=INTEGER} @self
-      - modifyMana{a=<skill.var.aura_regen>} @self
-      - sound{s=block.beacon.activate;p=2;audience=caster;sc=BLOCKS} @self
-    ];mc=true} @self
 
 Azuriter_マナブレード_アルファ_L1S_Skills:
   Cooldown: 0.4
@@ -56,9 +51,10 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
   - slash{
     d=4;w=4;h=6;r=2;roll="<random.-60to69> + 180";p=18;y=1.6;r=4;
     op=[
+      - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin ?!hasAura{n=Azuriter_マナブレード_アルファ_L1NoS}
       - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
-      - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
       - e:p{p=red_dust;size=3;a=2;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
+      - e:p{p=red_dust;size=3;a=2;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#d0ea0d} @origin ?hasAura{n=Azuriter_マナブレード_アルファ_L1NoS}
     ];
     oh=[
       - setVar{k=skill.dmg;a="75";t=INTEGER} @self ?hasAura{n=Azuriter_マナブレード_アルファ_L1NoS}
@@ -69,12 +65,6 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
     c=[ 
       - isMythicMob true
     ]} @self
-  - aura{ms=100;i=10;t=100;rd=true;n=Azuriter_マナブレード_アルファ;
-    oe=[ 
-      - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 10";t=INTEGER} @self
-      - modifyMana{a=<skill.var.aura_regen>} @self
-      - sound{s=block.beacon.activate;p=2;audience=caster;sc=BLOCKS} @self
-    ];mc=true} @self
 
 Azuriter_マナブレード_アルファ_R1NoS_Skills:
   Cooldown: 10
@@ -108,16 +98,10 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
         ]} @origin{cpitch=<caster.l.pitch>}
     ];
     oh=[
-      - damage{a=<caster.damage> + 150;pi=true;ii=true;e=GREEN}
+      - damage{a=<caster.damage> + 225;pi=true;ii=true;e=GREEN}
       - sound{s=entity.zombie_villager.cure;p=1;v=0.15;audience=caster;sc=AMBIENT}
     ];
     v=20;i=4;se=false;vr=2.5;hr=6;mr=20;d=60;hp=false;hnp=true} @TL 
-  - aura{ms=100;i=10;t=100;rd=true;n=Azuriter_マナブレード_アルファ;
-    oe=[ 
-      - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 10";t=INTEGER} @self
-      - modifyMana{a=<skill.var.aura_regen>} @self
-      - sound{s=block.beacon.activate;p=2;audience=caster;sc=BLOCKS} @self
-    ];mc=true} @self
 
 Azuriter_マナブレード_アルファ_L1NoS_Skills:
   Cooldown: 10
@@ -151,13 +135,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
         ]} @origin{cpitch=<caster.l.pitch>}
     ];
     oh=[
-      - damage{a=<caster.damage> + 150;pi=true;ii=true;e=GREEN}
+      - damage{a=<caster.damage> + 225;pi=true;ii=true;e=GREEN}
       - sound{s=entity.zombie_villager.cure;p=1;v=0.15;audience=caster;sc=AMBIENT}
     ];
     v=20;i=4;se=false;vr=5;hr=3.5;mr=20;d=40;hp=false;hnp=true} @TL 
-  - aura{ms=100;i=10;t=100;rd=true;n=Azuriter_マナブレード_アルファ;
-    oe=[ 
-      - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 10";t=INTEGER} @self
-      - modifyMana{a=<skill.var.aura_regen>} @self
-      - sound{s=block.beacon.activate;p=2;audience=caster;sc=BLOCKS} @self
-    ];mc=true} @self
