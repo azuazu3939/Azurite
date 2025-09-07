@@ -13,7 +13,7 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - slash{
-    d=4;w=4;h=6;r=1;roll=<random.-45to45>;p=24;
+    d=4;w=4;h=6;r=2;roll=<random.-45to45>;p=24;
     op=[
       - e:p{p=cloud;a=2;s=0.05;audience=caster} @origin
       - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
@@ -49,7 +49,7 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - slash{
-    d=4;w=4;h=6;r=1;roll="<random.-45to45> + 180";p=24;
+    d=4;w=4;h=6;r=2;roll="<random.-45to45> + 180";p=24;
     op=[
       - e:p{p=cloud;a=2;s=0.05;audience=caster} @origin
       - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
