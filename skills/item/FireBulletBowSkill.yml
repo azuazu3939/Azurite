@@ -78,7 +78,7 @@ Azuriter_ファイアバレットボウ_Skills_Shot_Run:
       - e:p{p=flame;a=4;ys=0.5;hs=0.5;s=0.75;audience=caster} @origin 
     ];
     oh=[
-      - damage{a="<caster.damage>";pi=true;ii=true}
+      - damage{a="<caster.damage> * 0.5";pi=true;ii=true}
       - modifyMana{a=5} @self
     ];
     c=[
