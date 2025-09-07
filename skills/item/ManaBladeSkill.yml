@@ -17,6 +17,7 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
     op=[
       - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
       - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
+      - e:p{p=red_dust;size=2;a=3;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
       - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
       - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
     ];
@@ -54,6 +55,7 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
     op=[
       - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
       - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
+      - e:p{p=red_dust;size=2;a=3;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
       - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
       - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
     ];
@@ -96,6 +98,7 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
         op=[
           - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
           - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
+          - e:p{p=red_dust;size=2;a=3;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
           - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
           - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
         ]} @origin{cpitch=<caster.l.pitch>}
@@ -135,6 +138,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
         op=[
           - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
           - e:p{p=red_dust;size=2;a=2;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
+          - e:p{p=red_dust;size=2;a=3;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
           - e:p{p=crit;a=1;s=0.05;audience=caster} @origin 
           - e:p{p=crit_magic;a=4;s=0.1;audience=caster} @origin 
         ]} @origin{cpitch=<caster.l.pitch>}
