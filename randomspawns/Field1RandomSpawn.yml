@@ -112,3 +112,19 @@ Azuriter_BigCamela_Spawn:
   - mobsInRadius{types=Azuriter_Neutral_Zombie,Azuriter_High_Zombie,Azuriter_Warrior_Zombie,Azuriter_letthelater,Azuriter_Altwolf,Azuriter_BigCamela;amount=<12;radius=32} true
   - mobsInRadius{types=Azuriter_BigCamela;amount=<2;radius=48} true
   - mobsInRadius{types=Azuriter_Boss_Basamos;amount=>0;radius=48} false
+
+Azuriter_RainyArmyCorp_A_Spawn:
+  Type: 
+  - Azuriter_RainyArmyCorp_A_1 50
+  - Azuriter_RainyArmyCorp_A_2 50
+  Worlds: Field1
+  Action: ADD
+  PositionType: LAND
+  Chance: 0.15
+  Priority: 1
+  Conditions:
+  - mobsinworld{a=<800} true 
+  - containerRegion{r=field_1} true
+  - mobsInRadius{types=Azuriter_RainyArmyCorp_A_1,Azuriter_RainyArmyCorp_A_2;amount=<8;radius=128} true
+  - mobsInRadius{types=Azuriter_RainyArmyCorp_A_1,Azuriter_RainyArmyCorp_A_2;amount=<2;radius=64} true
+  - sunny true

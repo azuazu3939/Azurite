@@ -268,3 +268,74 @@ Azuriter_BigCamela:
   - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=80} @self ~onSpawn 
   - attribute{attr=GENERIC_ARMOR;a=80} @self ~onSpawn ?!day
   - attribute{attr=GENERIC_ARMOR;a=50} @self ~onSpawn ?day
+
+Azuriter_RainyArmyCorp_A_1:
+  Template: Azuriter_Enemy_F1Base_Army
+  Type: zombie
+  Display: "&b雨軍団&f-&cA隊"
+  Health: 1000
+  Damage: 18
+  Drops:
+  - money 20to35
+  Equipment:
+  - DIAMOND_HELMET HEAD
+  - DIAMOND_CHESTPLATE CHEST
+  - IRON_LEGGINGS LEGS
+  - LEATHER_BOOTS{color=RED} FEET
+  - IRON_SWORD HAND
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Options:
+    MaxCombatDistance: 24
+    KnockbackResistance: 1
+    MovementSpeed: 0.275
+    AttackSpeed: 20
+    FollowRange: 12
+    NoDamageTicks: 0
+    Scale: 1.5
+  Skills:
+  - glow{t=999999999;c=RED} @self ~onSpawn 
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropcombat 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=80} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR;a=80} @self ~onSpawn ?!day
+  - attribute{attr=GENERIC_ARMOR;a=50} @self ~onSpawn ?day
+
+
+Azuriter_RainyArmyCorp_A_2:
+  Template: Azuriter_Enemy_F1Base_Army
+  Type: skeleton
+  Display: "&b雨軍団&f-&cA隊"
+  Health: 1000
+  Damage: 18
+  Drops:
+  - money 20to35
+  Equipment:
+  - DIAMOND_HELMET HEAD
+  - DIAMOND_CHESTPLATE CHEST
+  - IRON_LEGGINGS LEGS
+  - LEATHER_BOOTS{color=RED} FEET
+  - BOW HAND
+  AITargetSelectors:
+  - clear
+  - nearestIf{c=[ - hasAura{n=Azuriter_NoCombat} false - samefaction false ]}
+  Options:
+    MaxCombatDistance: 24
+    KnockbackResistance: 1
+    MovementSpeed: 0.275
+    AttackSpeed: 20
+    FollowRange: 12
+    NoDamageTicks: 0
+    Scale: 1.5
+  Skills:
+  - glow{t=999999999;c=RED} @self ~onSpawn 
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=48} @self ~onEnterCombat
+  - attribute{attribute=GENERIC_FOLLOW_RANGE;a=12} @self ~onDropcombat 
+  - cmd{c="mlgo <target.name> Azuriter_パラライズワールド 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
+  - cmd{c="mlgo <target.name> Azuriter_ハイステップソード 1 0.0001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath  
+  - attribute{attr=GENERIC_ARMOR_TOUGHNESS;a=80} @self ~onSpawn 
+  - attribute{attr=GENERIC_ARMOR;a=80} @self ~onSpawn ?!day
+  - attribute{attr=GENERIC_ARMOR;a=50} @self ~onSpawn ?day
