@@ -47,7 +47,7 @@ Azuriter_ショートビギナーソード_R1_Skills:
   - projectile{
     ot=[
       - setVar{k=skill.count;a="<skill.var.count> + 1";t=INTEGER} @self
-      - lunge{v=1.2;vy="(-0.125 * <skill.var.count>) + 0.75"} @self
+      - lunge{v=1.2;vy="(-0.125 * <skill.var.count>) + 0.5"} @self
       - ondamaged{n=fall_canceller;t=100;damagemod="FALL 0";rd=true} @self
       - delay 2
       - auraRemove{n=fall_canceller} @self ?onGround
@@ -59,4 +59,4 @@ Azuriter_ショートビギナーソード_R1_Skills:
     oe=[
       - auraRemove{n=fall_canceller} @self ?onGround
     ];
-    i=2;hp=false;hnp=false;sb=false;se=false;tyo=2;g=1;mr=12;vr=1;hr=1;v=1;d=40} @forward{lockpitch=true} ?!crouching 
+    i=2;hp=false;hnp=false;sb=false;se=false;tyo=2;g=1;mr=12;vr=1;hr=1;v=1;d=25} @forward{lockpitch=true} ?!crouching 
