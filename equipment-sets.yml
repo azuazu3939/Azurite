@@ -6,13 +6,13 @@ Diamond_S1End:
     - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onKill
     - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onDamaged
     - skill{s=Azuriter_シリーズエンド1_Skills} @self ~onSwing
-    - skill{s=Azuriter_シリーズエンド1_Skills}@self ~onSkillHit
+    - skill{s=Azuriter_シリーズエンド1_Skills}@self ~onAzu
   - Pieces: 4
     Skills:
     - skill{s=Azuriter_シリーズエンド1_Full} @self ~onKill
     - skill{s=Azuriter_シリーズエンド1_Full} @self ~onDamaged
     - skill{s=Azuriter_シリーズエンド1_Full} @self ~onSwing
-    - skill{s=Azuriter_シリーズエンド1_Full} @self ~onSkillHit
+    - skill{s=Azuriter_シリーズエンド1_Full} @self ~onAzu
 
 Magical:
   Enabled: true # Will default to true if not set
@@ -26,7 +26,7 @@ Magical:
     - skill{s=Azuriter_L_マジカル_Skills} @self ~onKill
     - skill{s=Azuriter_L_マジカル_Skills} @self ~onDamaged
     - skill{s=Azuriter_L_マジカル_Skills} @self ~onSwing
-    - skill{s=Azuriter_L_マジカル_Skills} @self ~onSkillHit
+    - skill{s=Azuriter_L_マジカル_Skills} @self ~onAzu
 
 Pure_Magical:
   Enabled: true # Will default to true if not set
@@ -40,7 +40,7 @@ Pure_Magical:
     - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onKill
     - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onDamaged
     - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSwing
-    - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onSkillHit
+    - skill{s=Azuriter_L_ピュアマジカル_Skills} @self ~onAzu
 
 Guardia:
   Enabled: true # Will default to true if not set
@@ -50,9 +50,9 @@ Guardia:
     - skill{s=Azuriter_L_ガーディア_Full} @self ~onKill
     - skill{s=Azuriter_L_ガーディア_Full} @self ~onDamaged
     - skill{s=Azuriter_L_ガーディア_Full} @self ~onSwing
-    - skill{s=Azuriter_L_ガーディア_Full} @self ~onSkillHit
+    - skill{s=Azuriter_L_ガーディア_Full} @self ~onAzu
 
-    - skill{s=Azuriter_L_ガーディア_Full_Combat} @self ~onSkillHit
+    - skill{s=Azuriter_L_ガーディア_Full_Combat} @self ~onAzu
     - skill{s=Azuriter_L_ガーディア_Full_Combat} @self ~onDamaged
 
 Healthal:
@@ -63,7 +63,7 @@ Healthal:
     - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onKill
     - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onDamaged
     - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onSwing
-    - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onSkillHit
+    - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onAzu
 
     - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onSignal:support
 
@@ -75,13 +75,13 @@ Attacker:
     - skill{s=Azuriter_アタッカー_Skills} @self ~onKill
     - skill{s=Azuriter_アタッカー_Skills} @self ~onDamaged
     - skill{s=Azuriter_アタッカー_Skills} @self ~onSwing
-    - skill{s=Azuriter_アタッカー_Skills} @self ~onSkillHit
+    - skill{s=Azuriter_アタッカー_Skills} @self ~onAzu
   - Pieces: 4
     Skills:
     - skill{s=Azuriter_アタッカー_Full} @self ~onKill
     - skill{s=Azuriter_アタッカー_Full} @self ~onDamaged
     - skill{s=Azuriter_アタッカー_Full} @self ~onSwing
-    - skill{s=Azuriter_アタッカー_Full} @self ~onSkillHit
+    - skill{s=Azuriter_アタッカー_Full} @self ~onAzu
 
 Defender:
   Enabled: true # Will default to true if not set
@@ -91,10 +91,10 @@ Defender:
     - skill{s=Azuriter_ディフェンス_Skills} @self ~onKill
     - skill{s=Azuriter_ディフェンス_Skills} @self ~onDamaged
     - skill{s=Azuriter_ディフェンス_Skills} @self ~onSwing
-    - skill{s=Azuriter_ディフェンス_Skills} @self ~onSkillHit
+    - skill{s=Azuriter_ディフェンス_Skills} @self ~onAzu
   - Pieces: 4
     Skills:
     - skill{s=Azuriter_ディフェンス_Full} @self ~onKill
     - skill{s=Azuriter_ディフェンス_Full} @self ~onDamaged
     - skill{s=Azuriter_ディフェンス_Full} @self ~onSwing
-    - skill{s=Azuriter_ディフェンス_Full} @self ~onSkillHit
+    - skill{s=Azuriter_ディフェンス_Full} @self ~onAzu

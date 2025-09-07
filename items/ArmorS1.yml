@@ -14,6 +14,7 @@ Azuriter_ビギナーH:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
+  - skill{s=Azuriter_HealthColor} @self ~onAzu
 
 Azuriter_ビギナーC:
   Id: leather_chestplate
@@ -67,6 +68,7 @@ Azuriter_トラベラーH:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
+  - skill{s=Azuriter_HealthColor} @self ~onAzu
 
 Azuriter_トラベラーC:
   Id: leather_chestplate
@@ -131,7 +133,8 @@ Azuriter_ディフェンスH:
   - skill{s=Azuriter_HealthColor} @self ~onHeal
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
-  - skill{s=Azuriter_HealthColor} @self ~onJoin 
+  - skill{s=Azuriter_HealthColor} @self ~onJoin
+  - skill{s=Azuriter_HealthColor} @self ~onAzu
 
 Azuriter_ディフェンスC:
   Id: leather_chestplate
@@ -209,6 +212,7 @@ Azuriter_アタッカーH:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
+  - skill{s=Azuriter_HealthColor} @self ~onAzu
 
 Azuriter_アタッカーC:
   Id: leather_chestplate
@@ -285,6 +289,7 @@ Azuriter_ハイトラベラーH:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
+  - skill{s=Azuriter_HealthColor} @self ~onAzu
 
 Azuriter_ハイトラベラーC:
   Id: leather_chestplate
@@ -356,6 +361,7 @@ Azuriter_作業用ヘルメットH:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
+  - skill{s=Azuriter_HealthColor} @self ~onAzu
 
 Azuriter_鋼鉄の鎧C:
   Id: iron_chestplate
@@ -427,6 +433,7 @@ Azuriter_エリートアタッカーH:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
+  - skill{s=Azuriter_HealthColor} @self ~onAzu
 
 Azuriter_エリートアタッカーC:
   Id: golden_chestplate
@@ -503,6 +510,7 @@ Azuriter_エリートディフェンスH:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
+  - skill{s=Azuriter_HealthColor} @self ~onAzu
 
 Azuriter_エリートディフェンスC:
   Id: iron_chestplate
@@ -580,6 +588,7 @@ Azuriter_シリーズエンド1H:
   - skill{s=Azuriter_HealthColor} @self ~onRespawn 
   - skill{s=Azuriter_HealthColor} @self ~onSwing 
   - skill{s=Azuriter_HealthColor} @self ~onJoin 
+  - skill{s=Azuriter_HealthColor} @self ~onAzu
 
 Azuriter_シリーズエンド1C:
   Material: diamond_chestplate
