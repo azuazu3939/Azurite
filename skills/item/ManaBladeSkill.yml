@@ -13,7 +13,7 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - slash{
-    d=4;w=4;h=6;r=0;roll=<random.-45to45>;p=18;y=1.6;r=4;
+    d=4;w=4;h=6;r=0;roll=<random.-60to60>;p=18;y=1.6;r=4;
     op=[
       - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
       - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
@@ -49,7 +49,7 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - slash{
-    d=4;w=4;h=6;r=0;roll="<random.-45to45> + 180";p=18;y=1.6;r=4;
+    d=4;w=4;h=6;r=0;roll="<random.-60to69> + 180";p=18;y=1.6;r=4;
     op=[
       - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#16ea0f} @origin
       - e:p{p=red_dust;size=3;a=1;ys=0.05;hs=0.05;s=0.05;audience=caster;c=#1ac466} @origin
