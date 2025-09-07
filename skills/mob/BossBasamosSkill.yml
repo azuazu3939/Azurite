@@ -236,8 +236,6 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5:
   - removetag{t=ATTACK} @self
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5_CastPlayer:
-  TargetConditions:
-  - distance{d=48}
   Skills:
   - o{
     r=15;vr=6;hr=3.5;hp=false;d=600;oy=3;p=360;sp=0;hitself=true;c=1;hnp=false;
