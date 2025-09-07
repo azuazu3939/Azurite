@@ -91,7 +91,7 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
   - projectile{
     ot=[
       - slash{
-        d=4;w=4;h=6;r=0;p=12;fo=true;
+        d=0;w=4;h=6;r=0;p=12;fo=true;
         c=[
           - isMythicMob true
         ];
@@ -131,7 +131,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
   - projectile{
     ot=[
       - slash{
-        d=4;w=4;h=6;r=0;p=12;fo=true;roll=90;
+        d=0;w=4;h=6;r=0;p=12;fo=true;roll=90;
         c=[
           - isMythicMob true
         ];
