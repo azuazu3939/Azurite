@@ -35,10 +35,7 @@ Azuriter_Utilityオフハンド1:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
-  Skills:
-  - modifyMana{a=25;cd=0.5} @self ~onKill 
-  - modifyMana{a=20;cd=0.5} @self ~onDamaged 
+  - az:mana_regen 5
 
 Azuriter_Attackオフハンド2:
   Id: red_dye
@@ -77,10 +74,7 @@ Azuriter_Utilityオフハンド2:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
-  Skills:
-  - modifyMana{a=30;cd=0.5} @self ~onKill 
-  - modifyMana{a=25;cd=0.5} @self ~onDamaged 
+  - az:mana_regen 50
 
 Azuriter_Pureオフハンド1:
   Id: white_dye
@@ -95,7 +89,7 @@ Azuriter_Pureオフハンド1:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 1
-  - az:mana_regen 1
+  - az:mana_regen 5
 
 Azuriter_Pureオフハンド2:
   Id: white_dye
@@ -110,7 +104,7 @@ Azuriter_Pureオフハンド2:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 1
-  - az:mana_regen 1
+  - az:mana_regen 5
 
 Azuriter_Pureオフハンド3:
   Id: white_dye
@@ -125,7 +119,7 @@ Azuriter_Pureオフハンド3:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 1
-  - az:mana_regen 1
+  - az:mana_regen 5
 
 Azuriter_Pureオフハンド4:
   Id: white_dye
@@ -140,7 +134,7 @@ Azuriter_Pureオフハンド4:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 1
-  - az:mana_regen 1
+  - az:mana_regen 5
 
 Azuriter_Pureオフハンド5:
   Id: white_dye
@@ -155,7 +149,7 @@ Azuriter_Pureオフハンド5:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 1
-  - az:mana_regen 1
+  - az:mana_regen 5
 
 Azuriter_Pureオフハンド6:
   Id: white_dye
@@ -170,7 +164,7 @@ Azuriter_Pureオフハンド6:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 1
-  - az:mana_regen 1
+  - az:mana_regen 5
 
 Azuriter_Pureオフハンド7:
   Id: white_dye
@@ -185,7 +179,7 @@ Azuriter_Pureオフハンド7:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 1
-  - az:mana_regen 1
+  - az:mana_regen 5
 
 Azuriter_Pureオフハンド8:
   Id: white_dye
@@ -200,7 +194,7 @@ Azuriter_Pureオフハンド8:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 1
-  - az:mana_regen 1
+  - az:mana_regen 5
 
 
 Azuriter_Pureオフハンド9:
@@ -216,7 +210,7 @@ Azuriter_Pureオフハンド9:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 1
-  - az:mana_regen 1
+  - az:mana_regen 5
 
 
 Azuriter_Pureオフハンド10:
@@ -232,7 +226,7 @@ Azuriter_Pureオフハンド10:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 1
-  - az:mana_regen 1
+  - az:mana_regen 5
 
 Azuriter_Pureオフハンド11:
   Id: white_dye
@@ -519,7 +513,7 @@ Azuriter_ハイPureオフハンド1:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
+  - az:mana_regen 50
 
 Azuriter_ハイPureオフハンド2:
   Id: white_dye
@@ -534,7 +528,7 @@ Azuriter_ハイPureオフハンド2:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
+  - az:mana_regen 50
 
 Azuriter_ハイPureオフハンド3:
   Id: white_dye
@@ -549,7 +543,7 @@ Azuriter_ハイPureオフハンド3:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
+  - az:mana_regen 50
 
 Azuriter_ハイPureオフハンド4:
   Id: white_dye
@@ -564,7 +558,7 @@ Azuriter_ハイPureオフハンド4:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
+  - az:mana_regen 50
 
 Azuriter_ハイPureオフハンド5:
   Id: white_dye
@@ -579,7 +573,7 @@ Azuriter_ハイPureオフハンド5:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
+  - az:mana_regen 50
 
 Azuriter_ハイPureオフハンド6:
   Id: white_dye
@@ -594,7 +588,7 @@ Azuriter_ハイPureオフハンド6:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
+  - az:mana_regen 50
 
 Azuriter_ハイPureオフハンド7:
   Id: white_dye
@@ -609,7 +603,7 @@ Azuriter_ハイPureオフハンド7:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
+  - az:mana_regen 50
 
 Azuriter_ハイPureオフハンド8:
   Id: white_dye
@@ -624,7 +618,7 @@ Azuriter_ハイPureオフハンド8:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
+  - az:mana_regen 50
 
 
 Azuriter_ハイPureオフハンド9:
@@ -640,7 +634,7 @@ Azuriter_ハイPureオフハンド9:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
+  - az:mana_regen 50
 
 
 Azuriter_ハイPureオフハンド10:
@@ -656,7 +650,7 @@ Azuriter_ハイPureオフハンド10:
   Group: 'OffHand'
   Enchantments:
   - az:max_mana 2
-  - az:mana_regen 2
+  - az:mana_regen 50
 
 Azuriter_ハイPureオフハンド11:
   Id: white_dye
