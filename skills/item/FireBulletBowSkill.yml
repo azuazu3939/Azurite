@@ -13,7 +13,7 @@ Azuriter_ファイアバレットボウ_Skills:
   - aura{ms=100;i=10;t=40;rd=true;n=Azuriter_ファイアバレットボウ;
     oe=[ 
       - setVar{k=skill.aura_regen;a="<skill.var.aura-stacks> * 20";t=INTEGER} @self
-      - modifyMana{a=<skill.var.aura_regen>;m=true} @self
+      - modifyMana{a=<skill.var.aura_regen>} @self
 
     ];mc=true} @self
   - setVar{k=skill.damage;a="<caster.damage> * 0.75";t=FLOAT} @self
