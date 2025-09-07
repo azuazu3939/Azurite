@@ -1,10 +1,10 @@
 Azuriter_マナブレード_アルファ_R1_Skills:
   Skills:
   - slash{
-    d=4;w=6;h=8;r=5;pitch=<random.-45to45>;
+    d=4;w=6;h=8;r=5;roll=<random.-45to45>;
     op=[
-      - e:p{p=cloud;a=5;ys=0.2;hs=0.25;s=0.15} @origin
-      - e:p{p=crit;a=5;ys=0.25;hs=0.3;s=0.15} @origin 
+      - e:p{p=cloud;a=5;ys=0.2;hs=0.25;s=0.1} @origin
+      - e:p{p=crit;a=5;ys=0.25;hs=0.3;s=0.1} @origin 
     ];
     c=[ 
       - isMythicMob true
@@ -13,10 +13,10 @@ Azuriter_マナブレード_アルファ_R1_Skills:
 Azuriter_マナブレード_アルファ_L1_Skills:
   Skills:
   - slash{
-    d=4;w=6;h=8;r=5;pitch="<random.-45to45> + 180";
+    d=4;w=6;h=8;r=5;roll="<random.-45to45> + 180";
     op=[
-      - e:p{p=cloud;a=5;ys=0.2;hs=0.25;s=0.15} @origin
-      - e:p{p=crit;a=5;ys=0.25;hs=0.3;s=0.15} @origin 
+      - e:p{p=cloud;a=5;ys=0.2;hs=0.25;s=0.1} @origin
+      - e:p{p=crit;a=5;ys=0.25;hs=0.3;s=0.1} @origin 
     ];
     c=[ 
       - isMythicMob true
