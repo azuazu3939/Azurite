@@ -1,4 +1,4 @@
-Azuriter_マナブレード_アルファ_R1_Skills:
+Azuriter_マナブレード_アルファ_R1S_Skills:
   Cooldown: 0.2
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
@@ -7,6 +7,7 @@ Azuriter_マナブレード_アルファ_R1_Skills:
       - message{m="&cマナが足りません。"} @self 
     ]}
   - matCooldown{m=DIAMOND_SWORD} false 
+  - crouching 
   Skills:
   - modifyMana{a=-20} @self
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
@@ -33,7 +34,7 @@ Azuriter_マナブレード_アルファ_R1_Skills:
       - sound{s=block.beacon.activate;p=2;audience=caster;sc=BLOCKS} @self
     ];mc=true} @self
 
-Azuriter_マナブレード_アルファ_L1_Skills:
+Azuriter_マナブレード_アルファ_L1S_Skills:
   Cooldown: 0.2
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
@@ -42,6 +43,7 @@ Azuriter_マナブレード_アルファ_L1_Skills:
       - message{m="&cマナが足りません。"} @self 
     ]}
   - matCooldown{m=DIAMOND_SWORD} false 
+  - crouching 
   Skills:
   - modifyMana{a=-20} @self
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
@@ -67,3 +69,11 @@ Azuriter_マナブレード_アルファ_L1_Skills:
       - modifyMana{a=<skill.var.aura_regen>} @self
       - sound{s=block.beacon.activate;p=2;audience=caster;sc=BLOCKS} @self
     ];mc=true} @self
+
+Azuriter_マナブレード_アルファ_R1NoS_Skills:
+  Skills:
+  - message{m="a"} @self
+
+Azuriter_マナブレード_アルファ_L1NoS_Skills:
+  Skills:
+  - message{m="b"} @self

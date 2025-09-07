@@ -95,7 +95,7 @@ Azuriter_マナフル:
   - skill{s=Azuriter_マナフル_L1_Skills} @self ~onSwing
 
 Azuriter_マナブレード_アルファ:
-  Id: diamond_sword
+  Id: diamond
   Display: "&aマナブレードα"
   Lore: []
   Options:
@@ -114,5 +114,7 @@ Azuriter_マナブレード_アルファ:
   - az:max_mana 3
   - az:mana_regen 3
   Skills:
-  - skill{s=Azuriter_マナブレード_アルファ_R1_Skills} @self ~onUse
-  - skill{s=Azuriter_マナブレード_アルファ_L1_Skills} @self ~onSwing
+  - skill{s=Azuriter_マナブレード_アルファ_R1S_Skills} @self ~onUse
+  - skill{s=Azuriter_マナブレード_アルファ_L1S_Skills} @self ~onSwing
+  - skill{s=Azuriter_マナブレード_アルファ_R1NoS_Skills} @self ~onUse
+  - skill{s=Azuriter_マナブレード_アルファ_L1NoS_Skills} @self ~onSwing
