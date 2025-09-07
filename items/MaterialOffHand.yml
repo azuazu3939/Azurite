@@ -79,7 +79,7 @@ Azuriter_Utilityオフハンド2:
   - az:mana_regen 2
   Skills:
   - modifyMana{a=30;cd=1} @self ~onSkillDamage
-  - message{m="1"} @self ~onSkillDamage
+  - message{m="1"} @trigger ~onSkillDamage
 
 Azuriter_Pureオフハンド1:
   Id: white_dye
