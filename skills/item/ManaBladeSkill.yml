@@ -93,7 +93,7 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - setVar{k=caster.ManaBlace_A_Right;a="0";t=INTEGER} @self
-  - aura{n=Azuriter_マナブレード_アルファ_R1NoS;t=200;rd=true;i=10} @self
+  - aura{n=Azuriter_マナブレード_アルファ_R1NoS;t=200;rd=true;i=10;oe=[ - sound{s=block.enchantment_table.use;p=0;v=0.5;sc=AMBIENT;audience=caster} @self ]} @self
   - projectile{
     ot=[
       - slash{
@@ -136,7 +136,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - setVar{k=caster.ManaBlace_A_Left;a="0";t=INTEGER} @self
-  - aura{n=Azuriter_マナブレード_アルファ_L1NoS;t=200;rd=true;i=10} @self
+  - aura{n=Azuriter_マナブレード_アルファ_L1NoS;t=200;rd=true;i=10;oe=[ - sound{s=block.enchantment_table.use;p=2;v=0.5;sc=AMBIENT;audience=caster} @self ]} @self
   - projectile{
     ot=[
       - slash{
