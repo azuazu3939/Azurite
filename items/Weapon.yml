@@ -1,5 +1,3 @@
-
-
 Azuriter_パラライズワールド:
   Id: diamond_shovel
   Display: "&9パラライズワールド"
@@ -115,6 +113,8 @@ Azuriter_マナブレード_アルファ:
   - az:mana_regen 3
   Skills:
   - skill{s=Azuriter_マナブレード_アルファ_R1S_Skills} @self ~onUse
+  - skill{s=Azuriter_マナブレード_アルファ_R1S_Skills} @self ~onInteract ?!crouching 
   - skill{s=Azuriter_マナブレード_アルファ_L1S_Skills} @self ~onSwing
   - skill{s=Azuriter_マナブレード_アルファ_R1NoS_Skills} @self ~onUse
+  - skill{s=Azuriter_マナブレード_アルファ_R1NoS_Skills} @self ~onInteract ?!crouching  
   - skill{s=Azuriter_マナブレード_アルファ_L1NoS_Skills} @self ~onSwing

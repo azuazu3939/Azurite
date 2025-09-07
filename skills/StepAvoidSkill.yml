@@ -4,6 +4,7 @@ Azuriter_StepAvoid:
   - skill{s=Azuriter_StepAvoid_StepSword} @self
   - skill{s=Azuriter_StepAvoid_HighStepSword} @self
   - skill{s=Azuriter_StepAvoid_BeginnerSword} @self
+  - skill{s=Azuriter_StepAvoid_ShortBeginnerSword} @self
   - skill{s=Azuriter_StepAvoid_StepRiseSword} @self
   - skill{s=Azuriter_StepAvoid_StepDashSword} @self
   - skill{s=Azuriter_StepAvoid_StepAvengeSword} @self
@@ -96,7 +97,20 @@ Azuriter_StepAvoid_BeginnerSword:
   Skills:
   - modifyMana{a=80} @self 
   - modifyMana{a=0.2;m=true;delay=10} @self 
-  - healpercent{m=0.05} @self
+  - healpercent{m=0.05;delay=0} @self
+  - sound{s=block.note_block.chime;p=1.68;audience=caster}
+  - sound{s=block.note_block.chime;p=1.26;delay=2;audience=caster}
+  - sound{s=block.note_block.chime;v=0.9;p=1.68;delay=4;audience=caster}
+  - sound{s=block.note_block.chime;v=0.9;p=1.26;delay=6;audience=caster}
+  - sound{s=block.note_block.chime;v=0.3;p=1.68;delay=8;audience=caster}
+
+Azuriter_StepAvoid_ShortBeginnerSword:
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_ショートビギナーソード}
+  Skills:
+  - modifyMana{a=20} @self 
+  - modifyMana{a=0.2;m=true;delay=10} @self 
+  - healpercent{m=0.05;delay=0} @self
   - sound{s=block.note_block.chime;p=1.68;audience=caster}
   - sound{s=block.note_block.chime;p=1.26;delay=2;audience=caster}
   - sound{s=block.note_block.chime;v=0.9;p=1.68;delay=4;audience=caster}

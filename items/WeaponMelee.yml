@@ -366,3 +366,25 @@ Azuriter_ハイガーディアンソード:
       Health: 6 ADD
   Group: 'Multi-Melee-Weapon'
   Skills:
+
+Azuriter_ショートビギナーソード:
+  Id: wooden_sword
+  Display: "&fショートビギナーソード"
+  ItemUpdater:
+    Version: 1
+  Lore:
+  - "&fマナを60消費し、移動を行う。"
+  - "&f少しの間、落下ダメージがなくなる。"
+  - "&fまた、回避判定があり、"
+  - "&f回避するとマナの回復を行う。"
+  Options: 
+    Unbreakable: true
+  Enchantments:
+  - az:max_mana 4
+  Attributes:
+    MainHand:
+      Damage: 20 ADD
+  Group: 'Melee-Weapon'
+  Skills: 
+  - skill{s=Azuriter_ショートビギナーソード_R1_Skills} @self ~onUse 
+  - skill{s=Azuriter_ショートビギナーソード_R1_Skills} @self ~onInteract ?!crouching 
