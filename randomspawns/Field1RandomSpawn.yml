@@ -120,11 +120,13 @@ Azuriter_RainyArmyCorp_A_Spawn:
   Worlds: Field1
   Action: ADD
   PositionType: LAND
-  Chance: 0.15
+  Cooldown: 5
+  Chance: 0.0001
   Priority: 1
   Conditions:
   - mobsinworld{a=<800} true 
   - containerRegion{r=field_1} true
+  - containerRegion{r=spawn} false
   - mobsInRadius{types=Azuriter_RainyArmyCorp_A_1,Azuriter_RainyArmyCorp_A_2;amount=<8;radius=128} true
   - mobsInRadius{types=Azuriter_RainyArmyCorp_A_1,Azuriter_RainyArmyCorp_A_2;amount=<2;radius=64} true
-  - sunny true
+  - raining true

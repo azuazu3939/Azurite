@@ -89,7 +89,6 @@ Azuriter_Enemy_F1Base_Army:
   Template: Azuriter_Enemy_Base
   Skills:
   - raidBoss @self ~onSpawn 
-  - weather{type=storm;duration=36000} @self ~onSpawn ?sunny 0.05
   - cmd{c="mlg <target.name> Azuriter_Pureオフハンド<random.1to30> 1 0.000001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlg <target.name> Azuriter_ハイPureオフハンド<random.1to30> 1 0.0000001"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
   - cmd{c="mlgo <target.name> Azuriter_CombatGift_G1 1 0.000025"} @ThreatTablePlayers{c=[ - hasAura{n=Azuriter_Player_EnterCombat} true ]} ~onDeath
