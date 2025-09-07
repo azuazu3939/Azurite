@@ -195,7 +195,7 @@ Azuriter_AreaDamageH:
 Azuriter_AreaDamage:
   Skills:
   - e:blockMask{b=RED_TERRACOTTA;r=<skill.area>;d=<skill.wait>} @selfLocation 
-  - setVar{k=skill.addWait;a="<skill.wait> + <skill.addWait>";t=INTEGER} @self
+  - setVar{k=skill.addWait;a="<skill.wait> + <skill.addWait> +  <skill.willDamage>";t=INTEGER} @self
   - damage{a="<skill.var.dmg> * <skill.damageM>";pi=true;ii=true;delay=<skill.var.addWait>;origin=@selfLocation;fo=true} @PIR{r=<skill.area>}
 
 Azuriter_Cloud:
