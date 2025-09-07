@@ -22,7 +22,7 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
       - e:p{p=red_dust;size=3;a=2;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
     ];
     oh=[
-      - setVar{k=skill.dmg;a="50";t=INTEGER} @self ?hasAura{n=Azuriter_マナブレード_アルファ_R1NoS}
+      - setVar{k=skill.dmg;a="75";t=INTEGER} @self ?hasAura{n=Azuriter_マナブレード_アルファ_R1NoS}
       - damage{a="<caster.damage> + <skill.var.dmg|0>";pi=true;ii=true;e=GREEN}
       - sound{s=entity.zombie_villager.cure;p=1.25;v=0.05;audience=caster;sc=AMBIENT}
       - velocity{x=0;y=0;z=0;m=SET}
@@ -61,7 +61,7 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
       - e:p{p=red_dust;size=3;a=2;ys=0.15;hs=0.15;s=0.05;audience=caster;c=#80d214} @origin
     ];
     oh=[
-      - setVar{k=skill.dmg;a="50";t=INTEGER} @self ?hasAura{n=Azuriter_マナブレード_アルファ_L1NoS}
+      - setVar{k=skill.dmg;a="75";t=INTEGER} @self ?hasAura{n=Azuriter_マナブレード_アルファ_L1NoS}
       - damage{a="<caster.damage> + <skill.var.dmg|0>";pi=true;ii=true;e=GREEN}
       - sound{s=entity.zombie_villager.cure;p=1.25;v=0.05;audience=caster;sc=AMBIENT}
       - velocity{x=0;y=0;z=0;m=SET}
