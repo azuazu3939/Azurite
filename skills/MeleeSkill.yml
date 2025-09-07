@@ -7,13 +7,12 @@ Azuriter_Melee_Weapon:
   - targets 
   Skills:
   - sound{s=entity.player.attack.sweep;sc=PLAYERS;audience=caster} @self
-  - damage{a=<skill.var.dmg>;pi=true;ii=true}
+  - damage{a="<skill.var.dmg> * 1.2";pi=true;ii=true}
 
 Azuriter_Melee_Weapon_Down:
   Skills:
-  - setVar{k=skill.dmg;a="<caster.damage> * 1.25";t=FLOAT} @self
   - sound{s=entity.player.attack.sweep;sc=PLAYERS;audience=caster} @self
-  - damage{a=<skill.var.dmg>;pi=true;ii=true}
+  - damage{a="<skill.var.dmg> * 1.5";pi=true;ii=true}
 
 Azuriter_Melee_Weapon_Full:
   TargetConditions:
@@ -23,15 +22,14 @@ Azuriter_Melee_Weapon_Full:
   Conditions:
   - targets 
   Skills:
-  - damage{a=<skill.var.dmg>;pi=true;ii=true}
+  - damage{a="<skill.var.dmg> * 1.2";pi=true;ii=true}
   - sound{s=entity.player.attack.sweep;sc=PLAYERS;audience=caster;p=0.6} @self
   - sound{s=entity.player.attack.knockback;sc=PLAYERS;audience=caster;p=0.5;delay=1} @self
   - sound{s=entity.player.attack.knockback;sc=PLAYERS;audience=caster;p=0.55;delay=1} @self
 
 Azuriter_Melee_Weapon_Full_Down:
   Skills:
-  - setVar{k=skill.dmg;a="<caster.damage> * 1.25";t=FLOAT} @self
-  - damage{a=<skill.var.dmg>;pi=true;ii=true}
+  - damage{a="<skill.var.dmg> * 1.5";pi=true;ii=true}
   - sound{s=entity.player.attack.sweep;sc=PLAYERS;audience=caster;p=0.6} @self
   - sound{s=entity.player.attack.knockback;sc=PLAYERS;audience=caster;p=0.5;delay=1} @self
   - sound{s=entity.player.attack.knockback;sc=PLAYERS;audience=caster;p=0.55;delay=1} @self
