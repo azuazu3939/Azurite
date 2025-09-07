@@ -2,14 +2,14 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
   Cooldown: 0.4
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
-  - hasMana{a=>50;
+  - hasMana{a=>40;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]}
   - matCooldown{m=DIAMOND_SWORD} false 
   - crouching false 
   Skills:
-  - modifyMana{a=-50} @self
+  - modifyMana{a=-40} @self
   - setMaterialCooldown{m=DIAMOND_SWORD;d=8} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - setVar{k=caster.ManaBlace_A_Right;a="<caster.var.ManaBlace_A_Right|0> + 1";t=INTEGER} @self
@@ -41,14 +41,14 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
   Cooldown: 0.4
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
-  - hasMana{a=>50;
+  - hasMana{a=>40;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]}
   - matCooldown{m=DIAMOND_SWORD} false 
   - crouching false
   Skills:
-  - modifyMana{a=-50} @self
+  - modifyMana{a=-40} @self
   - setMaterialCooldown{m=DIAMOND_SWORD;d=8} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - setVar{k=caster.ManaBlace_A_Left;a="<caster.var.ManaBlace_A_Left|0> + 1";t=INTEGER} @self
@@ -108,7 +108,7 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
         ]} @origin{cpitch=<caster.l.pitch>}
     ];
     oh=[
-      - damage{a=<caster.damage> + 125;pi=true;ii=true;e=GREEN}
+      - damage{a=<caster.damage> + 150;pi=true;ii=true;e=GREEN}
       - sound{s=entity.zombie_villager.cure;p=1;v=0.15;audience=caster;sc=AMBIENT}
     ];
     v=20;i=4;se=false;vr=2.5;hr=6;mr=20;d=60;hp=false;hnp=true} @TL 
@@ -151,7 +151,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
         ]} @origin{cpitch=<caster.l.pitch>}
     ];
     oh=[
-      - damage{a=<caster.damage> + 125;pi=true;ii=true;e=GREEN}
+      - damage{a=<caster.damage> + 150;pi=true;ii=true;e=GREEN}
       - sound{s=entity.zombie_villager.cure;p=1;v=0.15;audience=caster;sc=AMBIENT}
     ];
     v=20;i=4;se=false;vr=5;hr=3.5;mr=20;d=40;hp=false;hnp=true} @TL 

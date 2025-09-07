@@ -24,7 +24,7 @@ Azuriter_L_ガーディア_Full_Combat:
 
 Azuriter_L_ガーディア_Full_Counter:
   Conditions:
-  - varrange{k=caster.tank_job;r=>19}
+  - varrange{k=caster.tank_job;r=>3}
   - hasMana{a=>200;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
@@ -33,6 +33,6 @@ Azuriter_L_ガーディア_Full_Counter:
   Skills:
   - setVar{k=caster.tank_job;a="0";t=INTEGER} @self
   - modifyMana{a=-200} @self 
-  - damage{a="<caster.damage> + 150";pi=true;ii=true;repeat=4;repeati=2} @trigger 
+  - damage{a="<caster.damage> + 200";pi=true;ii=true;repeat=4;repeati=2} @trigger 
   - e:p{p=explosion_emitter;s=1;a=5;ys=2;hs=2;audience=caster;repeat=4;repeati=2} @trigger
   - sound{s=item.totem.use;v=0.5;audience=caster;sc=AMBIENT} @self
