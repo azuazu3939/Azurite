@@ -92,6 +92,7 @@ Azuriter_マナブレード_アルファ_R1NoS_Skills:
   - modifyMana{a=-100} @self ?varrange{k=caster.ManaBlace_A_Right;r=>9}
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
+  - setVar{k=caster.ManaBlace_A_Right;a="0";t=INTEGER} @self
   - aura{n=Azuriter_マナブレード_アルファ_R1NoS;t=100;rd=true;i=10} @self
   - projectile{
     ot=[
@@ -134,6 +135,7 @@ Azuriter_マナブレード_アルファ_L1NoS_Skills:
   - modifyMana{a=-100} @self ?varrange{k=caster.ManaBlace_A_Left;r=>9}
   - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
+  - setVar{k=caster.ManaBlace_A_Left;a="0";t=INTEGER} @self
   - aura{n=Azuriter_マナブレード_アルファ_L1NoS;t=100;rd=true;i=10} @self
   - projectile{
     ot=[
