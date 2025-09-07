@@ -1,7 +1,7 @@
 Azuriter_マナブレード_アルファ_R1_Skills:
   Skills:
   - slash{ss=2;d=30;w=2;h=1.5;pitch=30;yaw=30;roll=30;dtt=true;
-    ot=[
+    op=[
       - e:p{p=cloud;a=5;ys=0.2;hs=0.25} @origin
       - e:p{p=crit;a=5;ys=0.25;hs=0.3} @origin 
     ];
@@ -12,7 +12,7 @@ Azuriter_マナブレード_アルファ_R1_Skills:
 Azuriter_マナブレード_アルファ_L1_Skills:
   Skills:
   - slash{ss=2;d=30;w=2;h=1.5;pitch=30;yaw=30;roll=30;
-    ot=[
+    op=[
       - e:p{p=cloud;a=5;ys=0.2;hs=0.25} @origin
       - e:p{p=crit;a=5;ys=0.25;hs=0.3} @origin 
     ];
