@@ -1,22 +1,54 @@
 Azuriter_マナブレード_アルファ_R1_Skills:
+  Cooldown: 0.2
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
+  - hasMana{a=>20;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=DIAMOND_SWORD} false 
   Skills:
+  - modifyMana{a=-20} @self
+  - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - slash{
     d=4;w=6;h=8;r=5;roll=<random.-45to45>;p=24;
     op=[
-      - e:p{p=cloud;a=3;ys=0.2;hs=0.25;s=0.05;audience=caster} @origin
+      - e:p{p=cloud;a=2;ys=0.2;hs=0.25;s=0.05;audience=caster} @origin
       - e:p{p=crit;a=1;ys=0.25;hs=0.3;s=0.05;audience=caster} @origin 
+      - e:p{p=crit_magic;a=4;ys=0.35;hs=0.35;s=0.1;audience=caster} @origin 
+    ];
+    oh=[
+      - damage{a=<caster.damage>;pi=true;ii=true;e=GREEN}
+      - sound{s=entity.zombie_villager.converted;p=1.25;v=0.5;audience=caster}
+      - velocity{x=0;y=0;z=0;m=SET}
     ];
     c=[ 
       - isMythicMob true
     ]} @self
 
 Azuriter_マナブレード_アルファ_L1_Skills:
+  Cooldown: 0.2
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
+  - hasMana{a=>20;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=DIAMOND_SWORD} false 
   Skills:
+  - modifyMana{a=-20} @self
+  - setMaterialCooldown{m=DIAMOND_SWORD;d=4} @self
   - slash{
     d=4;w=6;h=8;r=5;roll="<random.-45to45> + 180";p=24;
     op=[
-      - e:p{p=cloud;a=3;ys=0.2;hs=0.25;s=0.05;audience=caster} @origin
+      - e:p{p=cloud;a=2;ys=0.2;hs=0.25;s=0.05;audience=caster} @origin
       - e:p{p=crit;a=1;ys=0.25;hs=0.3;s=0.05;audience=caster} @origin 
+      - e:p{p=crit_magic;a=4;ys=0.35;hs=0.35;s=0.1;audience=caster} @origin 
+    ];
+    oh=[
+      - damage{a=<caster.damage>;pi=true;ii=true;e=GREEN}
+      - sound{s=entity.zombie_villager.converted;p=1.25;v=0.5;audience=caster}
+      - velocity{x=0;y=0;z=0;m=SET}
     ];
     c=[ 
       - isMythicMob true
