@@ -83,6 +83,8 @@ Azuriter_Enemy_RaidBoss_Base_Attack:
 
   - addtag{t=MIDDLE_HEALTH} @self ~onDamaged =70%
   - addtag{t=LOW_HEALTH} @self ~onDamaged =40%
+  - removetag{t=MIDDLE_HEALTH} @self ~onDamaged >70%
+  - removetag{t=LOW_HEALTH} @self ~onDamaged >40%
   - skill{s=Azuriter_Enemy_RaidBoss_操作} @trigger ~onSignal:Azuriter_Boss_Stick ?~isplayer 
 
 Azuriter_Enemy_F1Base_Army:

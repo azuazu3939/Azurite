@@ -47,7 +47,8 @@ Azuriter_Boss_Feldos:
   - skill:OpenField_Enemy_焔獣フェルドス_MCLove32_ATTACK @T ~onEntercombat
   
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
-
+   
+  - potionclear{t=STRENGTH} @self ~onDamaged >70%
   - potion{t=STRENGTH;l=0;d=9999999;p=false;or=true} @self ~onDamaged =70%
   - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =40%
 
@@ -120,7 +121,8 @@ Azuriter_Boss_Wedler:
   - skill:OpenField_Enemy_風牙狼ウィデラー_MCLove32_ATTACK @T ~onEntercombat
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=10;delay=5} @self ~onDropCombat
-
+  
+  - potionclear{t=STRENGTH} @self ~onDamaged >70%
   - potion{t=STRENGTH;l=0;d=9999999;p=false;or=true} @self ~onDamaged =70%
   - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =40%
 
@@ -193,6 +195,7 @@ Azuriter_Boss_Basamos:
 
   - attribute{attribute=GENERIC_FOLLOW_RANGE;a=16;delay=5} @self ~onDropCombat
 
+  - potionclear{t=STRENGTH} @self ~onDamaged >70%
   - potion{t=STRENGTH;l=0;d=9999999;p=false;or=true} @self ~onDamaged =70%
   - potion{t=STRENGTH;l=1;d=9999999;p=false;or=true} @self ~onDamaged =40%
 
