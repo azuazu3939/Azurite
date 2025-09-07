@@ -36,6 +36,8 @@ Azuriter_Utilityオフハンド1:
   Enchantments:
   - az:max_mana 2
   - az:mana_regen 2
+  Skills:
+  - modifyMana{a=25;cd=1} @self ~onSkillHit
 
 Azuriter_Attackオフハンド2:
   Id: red_dye
@@ -75,6 +77,8 @@ Azuriter_Utilityオフハンド2:
   Enchantments:
   - az:max_mana 2
   - az:mana_regen 2
+  Skills:
+  - modifyMana{a=30;cd=1} @self ~onSkillHit
 
 Azuriter_Pureオフハンド1:
   Id: white_dye
