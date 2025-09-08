@@ -205,7 +205,7 @@ Azuriter_AreaDamageH_Remove_Run:
 #area wait addWait willDamage damageM
 Azuriter_AreaDamageH_Set:
   Skills:
-  - skill{s=Azuriter_AreaDamageH_Set_Run;origin=@targetedLoc;fo=true;area=<skill.area>;wait=<skill.wait>;addWait=<skill.addWait>;willDamage=<skill.willDamage>;damageM=<skill.damageM>} @targetedLoc 
+  - skill{s=Azuriter_AreaDamageH_Set_Run;origin=@targetedLoc;fo=true;area=<skill.area>;wait=<skill.wait>;addWait=<skill.addWait>;willDamage=<skill.willDamage>;damageM=<skill.damageM>;f=true} @targetedLoc 
 
 Azuriter_AreaDamageH_Set_Run:
   Skills:
