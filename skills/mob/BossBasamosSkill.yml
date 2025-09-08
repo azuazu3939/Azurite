@@ -305,12 +305,12 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_6:
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_6_Repeat:
   Skills:
   - delay 10
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=12;p=5}
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=16;p=7}
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=20;p=9}
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=24;p=11}
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=28;p=13}
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=32;p=15}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=2;addWait=18;willDamage=2} @ring{r=12;p=5}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=2;addWait=18;willDamage=2} @ring{r=16;p=7}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=2;addWait=18;willDamage=2} @ring{r=20;p=9}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=2;addWait=18;willDamage=2} @ring{r=24;p=11}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=2;addWait=18;willDamage=2} @ring{r=28;p=13}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=2;addWait=18;willDamage=2} @ring{r=32;p=15}
   - skill{s=Azuriter_AreaDamageH_Remove;noArea=3;wait=30;addWait=18} @ring{r=12;p=3}
   - skill{s=Azuriter_AreaDamageH_Remove;noArea=3;wait=30;addWait=18} @ring{r=16;p=5}
   - skill{s=Azuriter_AreaDamageH_Remove;noArea=3;wait=30;addWait=18} @ring{r=20;p=7}
