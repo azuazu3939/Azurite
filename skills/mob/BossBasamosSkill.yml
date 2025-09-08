@@ -7,15 +7,7 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK:
   Skills:
   - addtag{t=CHARGE} ?!night 
   - removetag{t=CHARGE} ?night 
-  - randomskill{s=
-    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1,
-    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_2,
-    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_3,
-    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_4,
-    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_5,
-    OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_6;
-    fbs=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_1;
-    repeat=1;repeati=60} @self
+  - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_6} @self
   - delay <random.180to260>
   - skill{s=OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK} @T
 
