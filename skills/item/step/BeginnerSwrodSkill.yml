@@ -59,4 +59,4 @@ Azuriter_ショートビギナーソード_R1_Skills:
     oe=[
       - auraRemove{n=fall_canceller} @self ?onGround
     ];
-    i=2;hp=false;hnp=false;sb=false;se=false;tyo=2;g=1;mr=12;vr=1;hr=1;v=1;d=25} @forward{lockpitch=true} ?!crouching 
+    i=2;hp=false;hnp=false;sb=false;se=false;tyo=2;g=1;mr=12;vr=1;hr=1;v=1;d=20} @forward{lockpitch=true} ?!crouching 
