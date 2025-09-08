@@ -73,7 +73,8 @@ Azuriter_Enemy_RaidBoss_Base_Attack:
   Options:
     Interactable: false
   Skills:
-  - raidBoss @self ~onSpawn 
+  - raidBoss @self ~onSpawn
+  - ranking @self ~onSpawn
   - addtag{t=BOSS} @self ~onSpawn
 
   - removetag{t=START} @self ~onDropcombat 
