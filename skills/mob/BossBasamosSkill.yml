@@ -311,7 +311,6 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_6_Repeat:
   - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=24;p=<random.19to21>}
   - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=28;p=<random.23to25>}
   - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=32;p=<random.27to29>}
-  - delay 0
   - skill{s=Azuriter_AreaDamageH_Remove;noArea=4;wait=30;addWait=18} @ring{r=12;p=<random.6to8>}
   - skill{s=Azuriter_AreaDamageH_Remove;noArea=4;wait=30;addWait=18} @ring{r=16;p=<random.8to10>}
   - skill{s=Azuriter_AreaDamageH_Remove;noArea=4;wait=30;addWait=18} @ring{r=20;p=<random.10to12>}
