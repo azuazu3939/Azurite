@@ -196,16 +196,16 @@ Azuriter_AreaDamageH:
 Azuriter_AreaDamageH_Remove:
   Skills:
   - removemask{r=<skill.noArea>;delay=0;fo=true} @targetedLoc 
-  - auraRemove{n=Azuriter_NoAreaDamage;delay="<skill.addWait> + <skill.wait>";origin=@targetedLoc;s=1} @PNO{r=<skill.noArea>;c=[ - hasAura{n=Azuriter_NoAreaDamage} ]}
+  - auraRemove{n=Azuriter_NoAreaDamage;delay="<skill.addWait> + <skill.wait>";s=1} @playersNearTargetLocations{r=<skill.noArea>;c=[ - hasAura{n=Azuriter_NoAreaDamage} ]}
 
 #area wait addWait willDamage damageM
 Azuriter_AreaDamageH_Set:
   Skills:
   - e:blockMask{b=RED_TERRACOTTA;r=<skill.area>;d=<skill.wait>;fo=true} @targetedLoc 
   - setVar{k=skill.addWait;a="<skill.wait> + <skill.addWait>";t=INTEGER} @self
-  - aura{n=Azuriter_NoAreaDamage;t=4;i=10;delay=<skill.var.addWait>;origin=@targetedLoc;ow=true;ms=99;rd=truec} @PNO{r=<skill.area>}
+  - aura{n=Azuriter_NoAreaDamage;t=4;i=10;delay=<skill.var.addWait>;ow=true;ms=99;rd=true} @playersNearTargetLocations{r=<skill.area>}
   - setVar{k=skill.addWait;a="<skill.var.addWait> + <skill.willDamage>";t=INTEGER;delay=<skill.var.addWait>} @self
-  - damage{a="<skill.var.dmg> * <skill.damageM>";pi=true;ii=true;delay="<skill.var.addWait>";origin=@targetedLoc} @PNO{r=<skill.area>;c=[ - hasAura{n=Azuriter_NoAreaDamage} true ]}
+  - damage{a="<skill.var.dmg> * <skill.damageM>";pi=true;ii=true;delay="<skill.var.addWait>"} @playersNearTargetLocations{r=<skill.area>;c=[ - hasAura{n=Azuriter_NoAreaDamage} true ]}
 
 Azuriter_AreaDamage:
   Skills:
