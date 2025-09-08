@@ -304,19 +304,20 @@ OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_6:
 
 OpenField_Enemy_幻想獣バサモス_MCLove32_ATTACK_6_Repeat:
   Skills:
+  - delay 10
   - sound{s=block.end_portal.spawn;p=2;delay=50;sc=AMBIENT;repeat=2;repeati=4} @self
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=12;p=<random.7to9>}
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=16;p=<random.11to13>}
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=20;p=<random.15to17>}
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=24;p=<random.19to21>}
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=28;p=<random.23to25>}
-  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=32;p=<random.27to29>}
-  - skill{s=Azuriter_AreaDamageH_Remove;noArea=4;wait=30;addWait=18} @ring{r=12;p=<random.5to7>}
-  - skill{s=Azuriter_AreaDamageH_Remove;noArea=4;wait=30;addWait=18} @ring{r=16;p=<random.7to9>}
-  - skill{s=Azuriter_AreaDamageH_Remove;noArea=4;wait=30;addWait=18} @ring{r=20;p=<random.9to11>}
-  - skill{s=Azuriter_AreaDamageH_Remove;noArea=4;wait=30;addWait=18} @ring{r=24;p=<random.13to15>}
-  - skill{s=Azuriter_AreaDamageH_Remove;noArea=4;wait=30;addWait=18} @ring{r=28;p=<random.15to17>}
-  - skill{s=Azuriter_AreaDamageH_Remove;noArea=4;wait=30;addWait=18} @ring{r=32;p=<random.17to19>}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=12;p=5}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=16;p=7}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=20;p=9}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=24;p=11}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=28;p=13}
+  - skill{s=Azuriter_AreaDamageH_Set;area=8;wait=30;damageM=1.5;addWait=18;willDamage=2} @ring{r=32;p=15}
+  - skill{s=Azuriter_AreaDamageH_Remove;noArea=3;wait=30;addWait=18} @ring{r=12;p=3}
+  - skill{s=Azuriter_AreaDamageH_Remove;noArea=3;wait=30;addWait=18} @ring{r=16;p=5}
+  - skill{s=Azuriter_AreaDamageH_Remove;noArea=3;wait=30;addWait=18} @ring{r=20;p=7}
+  - skill{s=Azuriter_AreaDamageH_Remove;noArea=3;wait=30;addWait=18} @ring{r=24;p=9}
+  - skill{s=Azuriter_AreaDamageH_Remove;noArea=3;wait=30;addWait=18} @ring{r=28;p=11}
+  - skill{s=Azuriter_AreaDamageH_Remove;noArea=3;wait=30;addWait=18} @ring{r=32;p=13}
 
 Azuriter_Boss_Basamos_HighDrop:
   Skills:
