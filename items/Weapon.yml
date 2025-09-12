@@ -118,3 +118,23 @@ Azuriter_マナブレード_アルファ:
   - skill{s=Azuriter_マナブレード_アルファ_R1NoS_Skills} @self ~onUse
   - skill{s=Azuriter_マナブレード_アルファ_R1NoS_Skills} @self ~onInteract ?!crouching  
   - skill{s=Azuriter_マナブレード_アルファ_L1NoS_Skills} @self ~onSwing
+
+
+Azuriter_Test:
+  Id: diamond
+  Display: "&test"
+  Lore: []
+  Options:
+    Unbreakable: true
+  Skills:
+  - raytrace{
+    es=[
+      - damage{a="<caster.damage> * 1.2";ii=true;pi=true}
+      - e:pl{p=flame;a=1} @self
+    ];
+    ls=[
+      - e:pl{p=flame;a=1} @self
+    ];
+    rc=[
+      - isPlayer false
+    ]} @TL ~onUse 
