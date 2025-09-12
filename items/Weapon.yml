@@ -130,10 +130,10 @@ Azuriter_Test:
   - raytrace{
     es=[
       - damage{a="<caster.damage> * 1.2";ii=true;pi=true}
-      - e:pl{p=flame;a=1} @self
+      - e:pl{p=flame;a=1;fo=true}
     ];
     ls=[
-      - e:pl{p=flame;a=1} @self
+      - e:pl{p=flame;a=1;fo=true} 
     ];
     rc=[
       - isPlayer false
