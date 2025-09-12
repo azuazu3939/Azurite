@@ -76,6 +76,22 @@ Azuriter_リジピド:
   - skill{s=Azuriter_リジピド_R1_Skills} @self ~onUse
   - skill{s=Azuriter_リジピド_L1_Skills} @self ~onSwing 
 
+Azuriter_マナリジ:
+  Id: netherite_shovel
+  Display: "&aマナリジ"
+  Lore:
+  - "&fマナを20消費し、自身と周囲のマナを回復させる。"
+  - "&fSwingすることで、マナを10消費し次のマナ回復スキルの"
+  - "&f発動量を1増加する。"
+  Options:
+    Unbreakable: true
+  ItemUpdater:
+    Version: 1
+  Group: 'Weapon'
+  Skills:
+  - skill{s=Azuriter_マナフル_R1_Skills} @self ~onUse
+  - skill{s=Azuriter_マナフル_L1_Skills} @self ~onSwing
+
 Azuriter_マナフル:
   Id: netherite_shovel
   Display: "&aマナフル"
@@ -91,6 +107,7 @@ Azuriter_マナフル:
   Skills:
   - skill{s=Azuriter_マナフル_R1_Skills} @self ~onUse
   - skill{s=Azuriter_マナフル_L1_Skills} @self ~onSwing
+
 
 Azuriter_マナブレード_アルファ:
   Id: diamond_sword

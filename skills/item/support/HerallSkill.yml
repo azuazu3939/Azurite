@@ -44,6 +44,10 @@ Azuriter_ヒラル_L1_Skills:
     oe=[
       - message{m="&cヒールスタックの効果が切れた"} @self
     ]} @self
+  - aura{ms=10;rd=true;t=120;i=10;n=Azuriter_ヒールスタック;bt=true;bartimertext="&eヒールスタック <skill.var.aura-stacks>";bartimercolor=GREEN;mc=true;
+    oe=[
+      - message{m="&cヒールスタックの効果が切れた"} @self
+    ]} @self ?wearing{s=HEAD;i=Azuriter_L_ヘルシティアH} ?wearing{s=CHEST;i=Azuriter_L_ヘルシティアC} ?wearing{s=LEGS;i=Azuriter_L_ヘルシティアL} ?wearing{s=FEET;i=Azuriter_L_ヘルシティアB}
 
 Azuriter_ハイヒラル_R1_Skills:
   Cooldown: 60
@@ -79,8 +83,11 @@ Azuriter_ハイヒラル_L1_Skills:
     ]}
   Skills:
   - modifyMana{a=-30} @self
-  - aura{ms=10;rd=true;t=120;i=10;n=Azuriter_ヒールスタック;bt=true;bartimertext="&eヒールスタック <skill.var.aura-stacks>";bartimercolor=GREEN;mc=true} @self
   - aura{ms=10;rd=true;t=120;i=10;n=Azuriter_ヒールスタック;bt=true;bartimertext="&eヒールスタック <skill.var.aura-stacks>";bartimercolor=GREEN;mc=true;
     oe=[
       - message{m="&cヒールスタックの効果が切れた"} @self
-    ]} @self
+    ];repeat=1;repeati=0} @self
+  - aura{ms=10;rd=true;t=120;i=10;n=Azuriter_ヒールスタック;bt=true;bartimertext="&eヒールスタック <skill.var.aura-stacks>";bartimercolor=GREEN;mc=true;
+    oe=[
+      - message{m="&cヒールスタックの効果が切れた"} @self
+    ];repeat=1;repeati=0} @self ?wearing{s=HEAD;i=Azuriter_L_ヘルシティアH} ?wearing{s=CHEST;i=Azuriter_L_ヘルシティアC} ?wearing{s=LEGS;i=Azuriter_L_ヘルシティアL} ?wearing{s=FEET;i=Azuriter_L_ヘルシティアB}

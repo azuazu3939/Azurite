@@ -37,6 +37,10 @@ Azuriter_ランピド_L1_Skills:
     oe=[
       - message{m="&cスピードスタックの効果が切れた"} @self
     ]} @self
+  - aura{ms=10;rd=true;t=120;i=10;n=Azuriter_ランピドスタック;bt=true;bartimertext="&eスピードスタック <skill.var.aura-stacks>";bartimercolor=WHITE;mc=true;
+    oe=[
+      - message{m="&cスピードスタックの効果が切れた"} @self
+    ]} @self ?wearing{s=HEAD;i=Azuriter_L_ヘルシティアH} ?wearing{s=CHEST;i=Azuriter_L_ヘルシティアC} ?wearing{s=LEGS;i=Azuriter_L_ヘルシティアL} ?wearing{s=FEET;i=Azuriter_L_ヘルシティアB}
 
 Azuriter_ランピド_Skill_Multi:
   Conditions:
