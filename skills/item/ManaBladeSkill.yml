@@ -10,7 +10,7 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
   - crouching false 
   Skills:
   - modifyMana{a=-30} @self
-  - setMaterialCooldown{m=DIAMOND_SWORD;d=5} @self
+  - setMaterialCooldown{m=DIAMOND_SWORD;d=2} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - setVar{k=caster.ManaBlace_A_Right;a="<caster.var.ManaBlace_A_Right|0> + 1";t=INTEGER} @self
   - sound{s=block.anvil.place;p=0;v=0.5;audience=caster;sc=BLOCKS} @self ?varrange{k=caster.ManaBlace_A_Right;r=10}
@@ -44,7 +44,7 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
   - crouching false
   Skills:
   - modifyMana{a=-30} @self
-  - setMaterialCooldown{m=DIAMOND_SWORD;d=5} @self
+  - setMaterialCooldown{m=DIAMOND_SWORD;d=2} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - setVar{k=caster.ManaBlace_A_Left;a="<caster.var.ManaBlace_A_Left|0> + 1";t=INTEGER} @self
   - sound{s=block.anvil.place;p=2;v=0.5;audience=caster;sc=BLOCKS} @self ?varrange{k=caster.ManaBlace_A_Left;r=10}
