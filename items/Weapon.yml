@@ -127,7 +127,7 @@ Azuriter_Test:
   Options:
     Unbreakable: true
   Skills:
-  - raytrace{
+  - raytraceto{
     es=[
       - damage{a="<caster.damage> * 1.2";ii=true;pi=true}
       - e:pl{p=flame;a=1;fo=true}
@@ -138,5 +138,4 @@ Azuriter_Test:
     rc=[
       - isPlayer false
     ];
-    fo=true;
-    origin=@forward{fo=<random.-1to1>;so=<random.-5to5>;y=<random.-1to3>}} @TL ~onUse 
+    ys=<random.-1to3>;sfo=<random.-1to1>;sso=<random.-5to5>} @TL ~onUse 
