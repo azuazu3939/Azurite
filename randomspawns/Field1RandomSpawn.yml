@@ -117,6 +117,14 @@ Azuriter_RainyArmyCorp_A_Spawn:
   Types: 
   - Azuriter_RainyArmyCorp_A_1 50
   - Azuriter_RainyArmyCorp_A_2 50
+  - Azuriter_RainyArmyCorp_A_1 10
+  - Azuriter_RainyArmyCorp_A_2 10
+  - Azuriter_RainyArmyCorp_A_1 5
+  - Azuriter_RainyArmyCorp_A_2 5
+  - Azuriter_RainyArmyCorp_A_1 3
+  - Azuriter_RainyArmyCorp_A_2 3
+  - Azuriter_RainyArmyCorp_A_1 1
+  - Azuriter_RainyArmyCorp_A_2 1
   Worlds: Field1
   Action: ADD
   PositionType: LAND
@@ -129,4 +137,15 @@ Azuriter_RainyArmyCorp_A_Spawn:
   - containerRegion{r=spawn} false
   - mobsInRadius{types=Azuriter_RainyArmyCorp_A_1,Azuriter_RainyArmyCorp_A_2;amount=<8;radius=128} true
   - mobsInRadius{types=Azuriter_RainyArmyCorp_A_1,Azuriter_RainyArmyCorp_A_2;amount=<2;radius=64} true
+  - mobsInRadius{types=Azuriter_Boss_Basamos;amount=>0;radius=64} false
+  - mobsInRadius{types=Azuriter_Boss_Wedler;amount=>0;radius=64} false
+  - mobsInRadius{types=Azuriter_Boss_Feldos;amount=>0;radius=64} false
+  - mobsInRadius{types=Azuriter_BigCamela;amount=<2;radius=64} true
+  - mobsInRadius{types=Azuriter_Altwolf;amount=<2;radius=64} true
+  - mobsInRadius{types=Azuriter_letthelater;amount=<2;radius=64} true
+  - mobsInRadius{types=Azuriter_Warrior_Zombie;amount=<2;radius=64} true
+  - mobsInRadius{types=Azuriter_Elite_Zombie;amount=<1;radius=64} true
+  - mobsInRadius{types=Azuriter_High_Zombie;amount=<3;radius=64} true
+  - mobsInRadius{types=Azuriter_Big_Zombie;amount=<1;radius=64} true
+  - mobsInRadius{types=Azuriter_Neutral_Zombie;amount=<3;radius=64} true
   - raining true
