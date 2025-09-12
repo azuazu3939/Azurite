@@ -1,5 +1,5 @@
 Azuriter_マナブレード_アルファ_R1S_Skills:
-  Cooldown: 0.25
+  Cooldown: 0.1
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
   - hasMana{a=>30;
@@ -33,7 +33,7 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
     ]} @self
 
 Azuriter_マナブレード_アルファ_L1S_Skills:
-  Cooldown: 0.25
+  Cooldown: 0.1
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
   - hasMana{a=>30;
