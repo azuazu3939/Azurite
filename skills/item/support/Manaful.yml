@@ -23,7 +23,7 @@ Azuriter_マナフル_R1_Skills:
   - sound{s=entity.illusioner.prepare_mirror;v=1;p=1;sc=AMBIENT;delay=4} @self
   - e:pr{p=dust;c=#006aff;a=3;size=4;vs=0.05;hs=0.1;r=5;pts=16;d=true;dir=0,2,0;s=2} @PIR{r=20}
   - message{m="<caster.name>からマナ支援をもらった！"} @PIR{r=20}
-  - signal{s=support} @self
+  - aura{n=support;t=200;c=1;i=10;rd=true} @self
 
 Azuriter_マナフル_L1_Skills:
   Cooldown: 0.2

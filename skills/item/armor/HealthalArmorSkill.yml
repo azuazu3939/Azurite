@@ -8,6 +8,7 @@ Azuriter_L_ヘルシティア_Full:
 Azuriter_L_ヘルシティア_Full_Healthal:
   Cooldown: 5
   Skills:
+  - auraRemove{n=support} @self
   - sound{s=block.brewing_stand.brew;audience=caster;sc=AMBIENT;v=0.5} @PIR{r=32}
   - heal{a=10} @PIR{r=32}
   - potion{t=STRENGTH;l=3;d=600;p=false} @PIR{r=32}

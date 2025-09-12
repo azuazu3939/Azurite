@@ -65,7 +65,11 @@ Healthal:
     - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onSwing
     - skill{s=Azuriter_L_ヘルシティア_Full} @self ~onAzu
 
-    - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onSignal:support
+    - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onAzu
+    - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onDamaged
+    - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onSwing
+    - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onUse
+    - skill{s=Azuriter_L_ヘルシティア_Full_Healthal} @self ~onKill
 
 Attacker:
   Enabled: true # Will default to true if not set

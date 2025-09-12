@@ -20,7 +20,7 @@ Azuriter_リジピド_R1_Skills:
   - sound{s=block.respawn_anchor.charge;v=0.4;p=2;sc=AMBIENT;delay=4} @self
   - e:pr{p=dust;c=#00ff33;a=3;size=4;vs=0.05;hs=0.1;r=5;pts=16;d=true;dir=0,2,0;s=2} @PIR{r=20}
   - message{m="<caster.name>から継続回復支援をもらった！"} @PIR{r=20}
-  - signal{s=support} @self
+  - aura{n=support;t=200;c=1;i=10;rd=true} @self
 
 Azuriter_リジピド_L1_Skills:
   Cooldown: 0.2

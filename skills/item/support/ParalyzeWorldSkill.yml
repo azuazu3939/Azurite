@@ -11,4 +11,4 @@ Azuriter_Azuriter_パラライズワールド_Skills:
   - potion{t=SLOWNESS;l=3;d=150;p=false} @EIR{r=16;ignore=players}
   - potion{t=WEAKNESS;l=1;d=150;p=false} @EIR{r=16;ignore=players}
   - setMaterialCooldown{m=DIAMOND_SHOVEL;d=300} @self
-  - signal{s=support} @self
+  - aura{n=support;t=200;c=1;i=10;rd=true} @self

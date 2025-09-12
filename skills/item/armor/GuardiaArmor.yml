@@ -15,7 +15,7 @@ Azuriter_L_ガーディア_Full_Combat:
   Skills:
   - sudoskill{
     s=[
-      - threat{m=add;a="<caster.damage> * 5"} @trigger 
+      - threat{m=add;a="<caster.damage> * 25"} @trigger 
     ];cat=true} @trigger
   - potion{t=RESISTANCE;l=1;d=150;p=false} @PIR{r=32}
   - setVar{k=caster.tank_job;a="<caster.var.tank_job|0> + 1";t=INTEGER} @self
