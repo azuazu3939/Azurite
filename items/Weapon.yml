@@ -130,12 +130,13 @@ Azuriter_Test:
   - raytraceto{
     es=[
       - damage{a="<caster.damage> * 1.2";ii=true;pi=true}
-      - e:pl{p=flame;a=1;fo=true}
     ];
     ls=[
       - e:pl{p=flame;a=1;fo=true} 
     ];
     rc=[
       - isPlayer false
+      - isMythicMob true
     ];
-    ys=<random.-1to3>;sfo=<random.-1to1>;sso=<random.-5to5>} @TL ~onUse 
+    fo=true;
+    origin=@forward{a=<random.-1to1>;so=<random.-5to5>;y=<random.-1to3>}} @TL ~onUse 
