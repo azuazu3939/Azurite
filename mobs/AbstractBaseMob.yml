@@ -53,7 +53,8 @@ Azuriter_Enemy_RaidBoss_Base:
   Options:
     Interactable: false
   Skills:
-  - raidBoss @self ~onSpawn 
+  - raidBoss @self ~onSpawn
+  - ranking @self ~onSpawn
   - addtag{t=BOSS} @self ~onSpawn
   - attribute{attr=WAYPOINT_TRANSMIT_RANGE;a=4096} @self ~onSpawn
 
