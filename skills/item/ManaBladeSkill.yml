@@ -2,14 +2,14 @@ Azuriter_マナブレード_アルファ_R1S_Skills:
   Cooldown: 0.25
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
-  - hasMana{a=>40;
+  - hasMana{a=>30;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]}
   - matCooldown{m=DIAMOND_SWORD} false 
   - crouching false 
   Skills:
-  - modifyMana{a=-40} @self
+  - modifyMana{a=-30} @self
   - setMaterialCooldown{m=DIAMOND_SWORD;d=5} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - setVar{k=caster.ManaBlace_A_Right;a="<caster.var.ManaBlace_A_Right|0> + 1";t=INTEGER} @self
@@ -36,14 +36,14 @@ Azuriter_マナブレード_アルファ_L1S_Skills:
   Cooldown: 0.25
   Conditions:
   - wearing{s=HAND;i=Azuriter_マナブレード_アルファ}
-  - hasMana{a=>40;
+  - hasMana{a=>30;
     onFail=[
       - message{m="&cマナが足りません。"} @self 
     ]}
   - matCooldown{m=DIAMOND_SWORD} false 
   - crouching false
   Skills:
-  - modifyMana{a=-40} @self
+  - modifyMana{a=-30} @self
   - setMaterialCooldown{m=DIAMOND_SWORD;d=5} @self
   - sound{s=block.beacon.power_select;p=2;audience=caster;sc=BLOCKS} @self
   - setVar{k=caster.ManaBlace_A_Left;a="<caster.var.ManaBlace_A_Left|0> + 1";t=INTEGER} @self
