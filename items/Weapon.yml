@@ -137,4 +137,6 @@ Azuriter_Test:
     ];
     rc=[
       - isPlayer false
-    ]} @TL ~onUse 
+    ];
+    fo=true;
+    origin=@forward{fo=<random.-1to1>;so=<random.-5to5>;y=<random.-1to3>}} @TL ~onUse 
