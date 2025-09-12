@@ -1,0 +1,52 @@
+Azuriter_マナクル_R1_Skills:
+  Cooldown: 90
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_マナクル} true
+  - hasMana{a=>500;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  - matCooldown{m=GOLDEN_SHOVEL} false
+  Skills:
+  - setMaterialCooldown{m=GOLDEN_SHOVEL;d=1200} 
+  - setVar{k=skill.mana_cul;a="0";t=INTEGER} @self
+  - modifyMana{a=-500} @self 
+  - skill{s=Azuriter_マナクル_Skill_Multi} @self
+  - delay 10
+  - modifyMana{a=0.05;m=true;repeat=<skill.var.mana_cul>;repeati=40} @self
+  - modifyMana{a=0.05;m=true;repeat=<skill.var.mana_cul>;repeati=40} @PIR{r=20}
+  - sound{s=entity.evoker.cast_spell;v=0.6;sc=AMBIENT} @self
+  - sound{s=item.trident.return;v=1;p=0;sc=AMBIENT;delay=4} @self
+  - sound{s=block.enchantment_table.use;v=1;p=2;sc=AMBIENT;delay=4} @self
+  - sound{s=entity.illusioner.prepare_mirror;v=1;p=1;sc=AMBIENT;delay=4} @self
+  - e:pr{p=dust;c=#006aff;a=3;size=4;vs=0.05;hs=0.1;r=5;pts=16;d=true;dir=0,2,0;s=2} @PIR{r=20}
+  - message{m="<caster.name>からマナ支援をもらった！"} @PIR{r=20}
+  - aura{n=support;t=200;c=1;i=10;rd=true} @self
+
+Azuriter_マナクル_L1_Skills:
+  Cooldown: 0.2
+  Conditions:
+  - wearing{s=HAND;i=Azuriter_マナクル} true
+  - hasMana{a=>10;
+    onFail=[
+      - message{m="&cマナが足りません。"} @self 
+    ]}
+  Skills:
+  - modifyMana{a=-10} @self
+  - aura{ms=20;rd=true;t=120;i=10;n=Azuriter_マナクルスタック;bt=true;bartimertext="&eマナクルスタック <skill.var.aura-stacks>";bartimercolor=BLUE;mc=true;
+    oe=[
+      - message{m="&cマナスタックの効果が切れた"} @self
+    ]} @self 
+  - aura{ms=20;rd=true;t=120;i=10;n=Azuriter_マナクルスタック;bt=true;bartimertext="&eマナクルスタック <skill.var.aura-stacks>";bartimercolor=BLUE;mc=true;
+    oe=[
+      - message{m="&cマナスタックの効果が切れた"} @self
+    ]} @self ?wearing{s=HEAD;i=Azuriter_L_ヘルシティアH} ?wearing{s=CHEST;i=Azuriter_L_ヘルシティアC} ?wearing{s=LEGS;i=Azuriter_L_ヘルシティアL} ?wearing{s=FEET;i=Azuriter_L_ヘルシティアB}  
+
+Azuriter_マナクル_Skill_Multi:
+  Conditions:
+  - hasAura{n=Azuriter_マナクルスタック} true
+  Skills:
+  - setVar{k=skill.mana_cul;a="<skill.var.mana_cul> + 1";t=INTEGER} @self
+  - auraRemove{n=Azuriter_マナクルスタック;s=1} @self 
+  - delay 0
+  - skill{s=Azuriter_マナクル_Skill_Multi} @self

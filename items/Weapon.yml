@@ -76,11 +76,11 @@ Azuriter_リジピド:
   - skill{s=Azuriter_リジピド_R1_Skills} @self ~onUse
   - skill{s=Azuriter_リジピド_L1_Skills} @self ~onSwing 
 
-Azuriter_マナリジ:
-  Id: netherite_shovel
-  Display: "&aマナリジ"
+Azuriter_マナクル:
+  Id: golden_shovel
+  Display: "&aマナクル"
   Lore:
-  - "&fマナを20消費し、自身と周囲のマナを回復させる。"
+  - "&fマナを500消費し、自身と周囲のマナを回復させる。"
   - "&fSwingすることで、マナを10消費し次のマナ回復スキルの"
   - "&f発動量を1増加する。"
   Options:
@@ -89,8 +89,8 @@ Azuriter_マナリジ:
     Version: 1
   Group: 'Weapon'
   Skills:
-  - skill{s=Azuriter_マナフル_R1_Skills} @self ~onUse
-  - skill{s=Azuriter_マナフル_L1_Skills} @self ~onSwing
+  - skill{s=Azuriter_マナクル_R1_Skills} @self ~onUse
+  - skill{s=Azuriter_マナクル_L1_Skills} @self ~onSwing
 
 Azuriter_マナフル:
   Id: netherite_shovel
